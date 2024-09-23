@@ -7,6 +7,9 @@ using ZeroRedact;
 
 namespace ZeroRedact
 {
+    /// <summary>
+    /// IPV4 redactor options.
+    /// </summary>
     public readonly struct IPv4RedactorOptions
     {
         private readonly char? _redactionCharacter;
@@ -46,6 +49,9 @@ namespace ZeroRedact
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
+        /// <summary>
+        /// Constructs a new <see cref="IPv4RedactorOptions"/> instance.
+        /// </summary>
         public IPv4RedactorOptions() { }
     }
 }

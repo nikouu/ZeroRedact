@@ -14,15 +14,19 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactMACAddress(string MACAddress)
             => RedactMACAddressInternal(MACAddress);
 
+        /// <inheritdoc />
         public string RedactMACAddress(string MACAddress, MACAddressRedactorOptions redactorOptions)
             => RedactMACAddressInternal(MACAddress, redactorOptions);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> MACAddress)
             => RedactMACAddressInternal(MACAddress);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> MACAddress, MACAddressRedactorOptions redactorOptions)
             => RedactMACAddressInternal(MACAddress, redactorOptions);
 

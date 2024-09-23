@@ -9,15 +9,19 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactCreditCard(string creditCardNumber)
             => RedactCreditCardInternal(creditCardNumber);
 
+        /// <inheritdoc />
         public string RedactCreditCard(string creditCardNumber, CreditCardRedactorOptions redactorOptions)
             => RedactCreditCardInternal(creditCardNumber, redactorOptions);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactCreditCard(ReadOnlySpan<char> creditCardNumber)
             => RedactCreditCardInternal(creditCardNumber);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactCreditCard(ReadOnlySpan<char> creditCardNumber, CreditCardRedactorOptions redactorOptions)
         => RedactCreditCardInternal(creditCardNumber, redactorOptions);
 

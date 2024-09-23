@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ZeroRedact
 {
+    /// <summary>
+    /// Phone number redactor options.
+    /// </summary>
     public readonly struct PhoneNumberRedactorOptions
     {
         private readonly char? _redactionCharacter;
@@ -45,6 +48,9 @@ namespace ZeroRedact
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
+        /// <summary>
+        /// Constructs a new <see cref="PhoneNumberRedactorOptions"/> instance.
+        /// </summary>
         public PhoneNumberRedactorOptions() { }
     }
 }

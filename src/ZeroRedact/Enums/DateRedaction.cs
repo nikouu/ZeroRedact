@@ -9,7 +9,7 @@
         /// the date is redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -33,7 +33,7 @@
         /// the date is redacted with a fixed length.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -57,7 +57,7 @@
         /// the date is redacted, showing the date separator.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -81,7 +81,7 @@
         /// The day is redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -105,7 +105,7 @@
         /// The month is redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -129,7 +129,7 @@
         /// The year is redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -153,7 +153,7 @@
         /// The day and month are redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -177,7 +177,7 @@
         /// The month and year are redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>
@@ -201,7 +201,7 @@
         /// The day and year are redacted.
         /// </summary>
         /// <remarks>
-        /// <para>Takes the current <see cref="CultureInfo"/> into account.</para>
+        /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
         /// <para>Example for "2023/06/15":
         /// <list type="bullet">      
         /// <item>

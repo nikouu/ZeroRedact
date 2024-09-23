@@ -8,15 +8,19 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactString(string value)
             => RedactStringInternal(value);
 
+        /// <inheritdoc />
         public string RedactString(string value, StringRedactorOptions redactorOptions)
             => RedactStringInternal(value, redactorOptions);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactString(ReadOnlySpan<char> value)
             => RedactStringInternal(value);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactString(ReadOnlySpan<char> value, StringRedactorOptions redactorOptions)
             => RedactStringInternal(value, redactorOptions);
 

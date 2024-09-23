@@ -5,9 +5,7 @@ using ZeroRedact.Options;
 
 namespace ZeroRedact
 {
-    /// <summary>
-    /// Implements redaction capabilities.
-    /// </summary>
+    /// <inheritdoc />
     [SkipLocalsInit]
     public sealed partial class Redactor : IRedactor 
     {

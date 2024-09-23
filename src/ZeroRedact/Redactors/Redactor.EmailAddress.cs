@@ -10,21 +10,27 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactEmailAddress(string emailAddress)
             => RedactEmailAddressInternal(emailAddress);
 
+        /// <inheritdoc />
         public string RedactEmailAddress(string emailAddress, EmailAddressRedactorOptions redactorOptions)
             => RedactEmailAddressInternal(emailAddress, redactorOptions, skipValidation: false);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactEmailAddress(ReadOnlySpan<char> emailAddress)
             => RedactEmailAddressInternal(emailAddress);
-
+        /// <inheritdoc />
+        /// 
         public ReadOnlySpan<char> RedactEmailAddress(ReadOnlySpan<char> emailAddress, EmailAddressRedactorOptions redactorOptions)
             => RedactEmailAddressInternal(emailAddress, redactorOptions, skipValidation: false);
 
+        /// <inheritdoc />
         public string RedactEmailAddress(MailAddress emailAddress)
             => RedactEmailAddressInternal(emailAddress.Address);
 
+        /// <inheritdoc />
         public string RedactEmailAddress(MailAddress emailAddress, EmailAddressRedactorOptions redactorOptions)
             => RedactEmailAddressInternal(emailAddress.Address, redactorOptions, skipValidation: true);
 

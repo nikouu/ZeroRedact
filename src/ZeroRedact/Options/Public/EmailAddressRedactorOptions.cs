@@ -7,6 +7,9 @@ using ZeroRedact;
 
 namespace ZeroRedact
 {
+    /// <summary>
+    /// Email address redactor options.
+    /// </summary>
     public readonly struct EmailAddressRedactorOptions
     {
         private readonly char? _redactionCharacter;
@@ -46,6 +49,9 @@ namespace ZeroRedact
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
+        /// <summary>
+        /// Constructs a new <see cref="EmailAddressRedactorOptions"/> instance.
+        /// </summary>
         public EmailAddressRedactorOptions() { }
     }
 }

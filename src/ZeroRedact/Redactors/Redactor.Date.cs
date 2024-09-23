@@ -7,25 +7,29 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactDate(DateTime date)
            => RedactDateInternal(DateOnly.FromDateTime(date));
 
+        /// <inheritdoc />
         public string RedactDate(DateTime date, DateRedactorOptions redactorOptions)
             => RedactDateInternal(DateOnly.FromDateTime(date), redactorOptions);
 
+        /// <inheritdoc />
         public string RedactDate(DateOnly date)
             => RedactDateInternal(date);
 
+        /// <inheritdoc />
         public string RedactDate(DateOnly date, DateRedactorOptions redactorOptions)
             => RedactDateInternal(date, redactorOptions);
 
-        public string RedactDateInternal(DateOnly date)
+        private string RedactDateInternal(DateOnly date)
         {
             var internalOptions = new InternalDateRedactorOptions(_baseRedactorOptions);
             return RedactDateInternal(date, internalOptions);
         }
 
-        public string RedactDateInternal(DateOnly date, DateRedactorOptions options)
+        private string RedactDateInternal(DateOnly date, DateRedactorOptions options)
         {
             var internalOptions = new InternalDateRedactorOptions(_baseRedactorOptions, options);
             return RedactDateInternal(date, internalOptions);

@@ -7,6 +7,9 @@ using ZeroRedact;
 
 namespace ZeroRedact
 {
+    /// <summary>
+    /// Date redactor options.
+    /// </summary>
     public readonly struct DateRedactorOptions
     {
         private readonly char? _redactionCharacter;
@@ -46,6 +49,9 @@ namespace ZeroRedact
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
+        /// <summary>
+        /// Constructs a new <see cref="DateRedactorOptions"/> instance.
+        /// </summary>
         public DateRedactorOptions() { }
     }
 }

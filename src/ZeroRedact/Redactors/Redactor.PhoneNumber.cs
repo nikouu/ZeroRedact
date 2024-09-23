@@ -8,15 +8,19 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
+        /// <inheritdoc />
         public string RedactPhoneNumber(string phoneNumber)
            => RedactPhoneNumberInternal(phoneNumber);
 
+        /// <inheritdoc />
         public string RedactPhoneNumber(string phoneNumber, PhoneNumberRedactorOptions redactorOptions)
             => RedactPhoneNumberInternal(phoneNumber, redactorOptions);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactPhoneNumber(ReadOnlySpan<char> phoneNumber)
             => RedactPhoneNumberInternal(phoneNumber);
 
+        /// <inheritdoc />
         public ReadOnlySpan<char> RedactPhoneNumber(ReadOnlySpan<char> phoneNumber, PhoneNumberRedactorOptions redactorOptions)
             => RedactPhoneNumberInternal(phoneNumber, redactorOptions);
 

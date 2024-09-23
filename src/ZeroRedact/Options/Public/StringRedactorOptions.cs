@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ZeroRedact
 {
+    /// <summary>
+    /// String redactor options.
+    /// </summary>
     public readonly struct StringRedactorOptions
     {
         private readonly char? _redactionCharacter;
@@ -45,6 +48,9 @@ namespace ZeroRedact
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
+        /// <summary>
+        /// Constructs a new <see cref="StringRedactorOptions"/> instance.
+        /// </summary>
         public StringRedactorOptions() { }
     }
 }

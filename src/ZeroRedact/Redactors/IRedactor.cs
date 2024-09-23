@@ -9,6 +9,9 @@ using ZeroRedact.Options;
 
 namespace ZeroRedact.Redactors
 {
+    /// <summary>
+    /// Implements redaction capabilities.
+    /// </summary>
     public interface IRedactor
     {
         /// <summary>
@@ -81,7 +84,7 @@ namespace ZeroRedact.Redactors
         /// Redacts the provided date.
         /// </summary>
         /// <param name="date">The date to redact.</param>
-        /// <returns>Returns redacted short date formatted for the current <see cref="CultureInfo"/>.</returns>
+        /// <returns>Returns redacted short date formatted for the current <see cref="System.Globalization.CultureInfo"/>.</returns>
         string RedactDate(DateTime date);
 
         /// <summary>
@@ -89,14 +92,14 @@ namespace ZeroRedact.Redactors
         /// </summary>
         /// <param name="date">The date to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        /// <returns>Returns redacted short date formatted for the current <see cref="CultureInfo"/>.</returns>
+        /// <returns>Returns redacted short date formatted for the current <see cref="System.Globalization.CultureInfo"/>.</returns>
         string RedactDate(DateTime date, DateRedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided date.
         /// </summary>
         /// <param name="date">The date to redact.</param>
-        /// <returns>Returns redacted short date formatted for the current <see cref="CultureInfo"/>.</returns>
+        /// <returns>Returns redacted short date formatted for the current <see cref="System.Globalization.CultureInfo"/>.</returns>
         string RedactDate(DateOnly date);
 
         /// <summary>
@@ -104,7 +107,7 @@ namespace ZeroRedact.Redactors
         /// </summary>
         /// <param name="date">The date to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        /// <returns>Returns redacted short date formatted for the current <see cref="CultureInfo"/>.</returns>
+        /// <returns>Returns redacted short date formatted for the current <see cref="System.Globalization.CultureInfo"/>.</returns>
         string RedactDate(DateOnly date, DateRedactorOptions redactorOptions);
 
         /// <summary>
@@ -228,7 +231,7 @@ namespace ZeroRedact.Redactors
         /// <summary>
         /// Redacts the provided MAC address.
         /// </summary>
-        /// <param name="ipAddress">The MAC address to redact.</param>
+        /// <param name="macAddress">The MAC address to redact.</param>
         ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> macAddress);
 
         /// <summary>

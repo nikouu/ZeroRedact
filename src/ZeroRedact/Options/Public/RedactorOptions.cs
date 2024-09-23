@@ -5,20 +5,44 @@
     /// </summary>
     public readonly struct RedactorOptions
     {
+        /// <summary>
+        /// The options for redacting strings.
+        /// </summary>
         public StringRedactorOptions StringRedactorOptions { get; init; } = Constants.DefaultStringRedactorOptions;
 
+        /// <summary>
+        /// The options for redacting email addresses.
+        /// </summary>
         public EmailAddressRedactorOptions EmailAddressRedactorOptions { get; init; } = Constants.DefaultEmailAddressRedactorOptions;
 
+        /// <summary>
+        /// The options for redacting dates.
+        /// </summary>
         public DateRedactorOptions DateRedactorOptions { get; init; } = Constants.DefaultDateRedactorOptions;
 
+        /// <summary>
+        /// The options for redacting credit card numbers.
+        /// </summary>
         public CreditCardRedactorOptions CreditCardRedactorOptions { get; init; } = Constants.DefaultCreditCardRedactorOptions;
 
+        /// <summary>
+        /// The options for redacting phone numbers.
+        /// </summary>
         public PhoneNumberRedactorOptions PhoneNumberRedactorOptions { get; init; } = Constants.DefaultPhoneNumberRedactorOptions;
 
+        /// <summary>
+        /// The options for redacting IPv4 addresses.
+        /// </summary>
         public IPv4RedactorOptions IPv4RedactorOptions { get; init; } = Constants.DefaultIPv4RedactorOptions;
 
+        /// <summary>
+        /// The options for redacting IPv6 addresses.
+        /// </summary>
         public IPv6RedactorOptions IPv6RedactorOptions { get; init; } = Constants.DefaultIPv6RedactorOptions;
 
+        /// <summary>
+        /// MAC address redactor options.
+        /// </summary>
         public MACAddressRedactorOptions MACAddressRedactorOptions { get; init; } = Constants.DefaultMACAddressRedactorOptions;
 
         /// <summary>
