@@ -14,16 +14,16 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
-        public string RedactIPv4(string ipAddress)
+        public string RedactIPv4Address(string ipAddress)
             => RedactIPv4Internal(ipAddress);
 
-        public string RedactIPv4(string ipAddress, IPv4RedactorOptions redactorOptions)
+        public string RedactIPv4Address(string ipAddress, IPv4RedactorOptions redactorOptions)
             => RedactIPv4Internal(ipAddress, redactorOptions);
 
-        public ReadOnlySpan<char> RedactIPv4(ReadOnlySpan<char> ipAddress)
+        public ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress)
             => RedactIPv4Internal(ipAddress);
 
-        public ReadOnlySpan<char> RedactIPv4(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions)
+        public ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions)
             => RedactIPv4Internal(ipAddress, redactorOptions);
 
         private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress)

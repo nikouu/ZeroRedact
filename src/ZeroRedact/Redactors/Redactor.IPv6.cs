@@ -13,16 +13,16 @@ namespace ZeroRedact
 {
     public partial class Redactor
     {
-        public string RedactIPv6(string ipAddress)
+        public string RedactIPv6Address(string ipAddress)
             => RedactIPv6Internal(ipAddress);
 
-        public string RedactIPv6(string ipAddress, IPv6RedactorOptions redactorOptions)
+        public string RedactIPv6Address(string ipAddress, IPv6RedactorOptions redactorOptions)
             => RedactIPv6Internal(ipAddress, redactorOptions);
 
-        public ReadOnlySpan<char> RedactIPv6(ReadOnlySpan<char> ipAddress)
+        public ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress)
             => RedactIPv6Internal(ipAddress);
 
-        public ReadOnlySpan<char> RedactIPv6(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions)
+        public ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions)
             => RedactIPv6Internal(ipAddress, redactorOptions);
 
         private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress)

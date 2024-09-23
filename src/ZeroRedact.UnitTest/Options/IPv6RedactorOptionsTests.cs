@@ -18,7 +18,7 @@
             var input = "2001:0db8:85a3:0000:0000:8a2e:0370:7334";
 
             // Act
-            var redactedIPv6 = redactor.RedactIPv6(input);
+            var redactedIPv6 = redactor.RedactIPv6Address(input);
 
             // Assert
             Assert.AreEqual("XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX", redactedIPv6);
@@ -39,7 +39,7 @@
             var input = "2001:0db8:85a3:0000:0000:8a2e:0370:7334";
 
             // Act
-            var redactedIPv6 = redactor.RedactIPv6(input.AsSpan());
+            var redactedIPv6 = redactor.RedactIPv6Address(input.AsSpan());
 
             // Assert
             Assert.AreEqual("XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX", redactedIPv6.ToString());
@@ -60,7 +60,7 @@
             var input = "2001:0db8:85a3:0000:0000:8a2e:0370:7334";
 
             // Act
-            var redactedIPv6 = redactor.RedactIPv6(input);
+            var redactedIPv6 = redactor.RedactIPv6Address(input);
 
             // Assert
             Assert.AreEqual("****:****:****:****:****:****:****:****", redactedIPv6);
@@ -81,7 +81,7 @@
             var input = "2001:0db8:85a3:0000:0000:8a2e:0370:7334";
 
             // Act
-            var redactedIPv6 = redactor.RedactIPv6(input.AsSpan());
+            var redactedIPv6 = redactor.RedactIPv6Address(input.AsSpan());
 
             // Assert
             Assert.AreEqual("****:****:****:****:****:****:****:****", redactedIPv6.ToString());
@@ -101,7 +101,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.All });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.All });
 
             // Assert
             Assert.AreEqual("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", result);
@@ -121,7 +121,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength });
 
             // Assert
             Assert.AreEqual("********", result);
@@ -142,7 +142,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength });
 
             // Assert
             Assert.AreEqual("XXXXXXXXXXXXXXXX", result);
@@ -196,7 +196,7 @@
             var redactor = new Redactor();
 
             // Act
-            redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength, FixedLengthSize = -1 });
+            redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength, FixedLengthSize = -1 });
 
             // Assert is handled by ExpectedException
         }
@@ -216,7 +216,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full, RedactionCharacter = 'A' });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full, RedactionCharacter = 'A' });
 
             // Assert
             Assert.AreEqual("AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA:AAAA", result);
@@ -237,7 +237,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full });
 
             // Assert
             Assert.AreEqual("BBBB:BBBB:BBBB:BBBB:BBBB:BBBB:BBBB:BBBB", result);
@@ -254,7 +254,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.Full });
 
             // Assert
             Assert.AreEqual("CCCC:CCCC:CCCC:CCCC:CCCC:CCCC:CCCC:CCCC", result);
@@ -267,7 +267,7 @@
             var redactor = new Redactor();
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength, FixedLengthSize = 1 });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength, FixedLengthSize = 1 });
 
             // Assert
             Assert.AreEqual("*", result);
@@ -283,7 +283,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv6("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { });
+            string result = redactor.RedactIPv6Address("2001:0db8:85a3:0000:0000:8a2e:0370:7334", new IPv6RedactorOptions { });
 
             // Assert
             Assert.AreEqual("****:****:****:****:****:****:****:****", result);

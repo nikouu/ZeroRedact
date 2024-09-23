@@ -164,53 +164,53 @@ namespace ZeroRedact.Redactors
         /// Redacts the provided IPv4 address.
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
-        string RedactIPv4(string ipAddress);
+        string RedactIPv4Address(string ipAddress);
 
         /// <summary>
         /// Redacts the provided IPv4 address.
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        string RedactIPv4(string ipAddress, IPv4RedactorOptions redactorOptions);
+        string RedactIPv4Address(string ipAddress, IPv4RedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv4 address.
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
-        ReadOnlySpan<char> RedactIPv4(ReadOnlySpan<char> ipAddress);
+        ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress);
 
         /// <summary>
         /// Redacts the provided IPv4 address.
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        ReadOnlySpan<char> RedactIPv4(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions);
+        ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact</param>
-        string RedactIPv6(string ipAddress);
+        string RedactIPv6Address(string ipAddress);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        string RedactIPv6(string ipAddress, IPv6RedactorOptions redactorOptions);
+        string RedactIPv6Address(string ipAddress, IPv6RedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact</param>
-        ReadOnlySpan<char> RedactIPv6(ReadOnlySpan<char> ipAddress);
+        ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        ReadOnlySpan<char> RedactIPv6(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions);
+        ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided MAC address.

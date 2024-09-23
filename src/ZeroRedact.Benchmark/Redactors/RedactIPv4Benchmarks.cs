@@ -19,13 +19,13 @@ namespace ZeroRedact.Benchmark.Redactors
         [Benchmark]
         public string RedactIPv4_String()
         {
-            return _redactor.RedactIPv4(IPv4Input.Value, new IPv4RedactorOptions { RedactorType = IPv4Input.RedactorType });
+            return _redactor.RedactIPv4Address(IPv4Input.Value, new IPv4RedactorOptions { RedactorType = IPv4Input.RedactorType });
         }
 
         [Benchmark]
         public ReadOnlySpan<char> RedactIPv4_ReadOnlySpan()
         {
-            return _redactor.RedactIPv4(IPv4Input.Value.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4Input.RedactorType });
+            return _redactor.RedactIPv4Address(IPv4Input.Value.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4Input.RedactorType });
         }
 
         public static IEnumerable<RedactIPv4Input> IPv4InputData => new[]
