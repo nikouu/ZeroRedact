@@ -14,16 +14,21 @@
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
 		<PackageProjectUrl>https://github.com/nikouu/ZeroRedact</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>An extremely fast, simple, zero allocation redacting library for .NET.</Description>
 		<Summary>An extremely fast, simple, zero allocation redacting library for .NET.</Summary>
 		<RepositoryUrl>https://github.com/nikouu/ZeroRedact</RepositoryUrl>
 		<PackageTags>redact redacting mask masking security</PackageTags>
-
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<PropertyGroup>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
