@@ -34,10 +34,10 @@ var dateResult = redactor.RedactDate(new DateTime(2023, 10, 5));
 var phoneNumberResult = redactor.RedactPhoneNumber("212-456-7890");
 
 // returns "***.*.*.***"
-var ipv4Result = redactor.RedactIPv4("192.0.2.146");
+var ipv4Result = redactor.RedactIPv4Address("192.0.2.146");
 
 // returns "****:****:****:****:****:****:****:****"
-var ipv6Result = redactor.RedactIPv6("2001:0000:130F:0000:0000:09C0:876A:130B");
+var ipv6Result = redactor.RedactIPv6Address("2001:0000:130F:0000:0000:09C0:876A:130B");
 
 // "**:**:**:**:**:**"
 var macResult = redactor.RedactMACAddress("00:B0:D0:63:C2:26");
@@ -319,19 +319,19 @@ var ipv4Address = "192.0.2.146";
 
 // Uses default redactor (Full)
 // returns "***.*.*.***"
-var fullRedaction = redactor.RedactIPv4(ipv4Address);
+var fullRedaction = redactor.RedactIPv4Address(ipv4Address);
 
 // returns "***********"
 var allOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.All };
-var allRedaction = redactor.RedactIPv4(ipv4Address, allOptions);
+var allRedaction = redactor.RedactIPv4Address(ipv4Address, allOptions);
 
 // returns "********"
 var fixedLengthOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength };
-var fixedLengthRedaction = redactor.RedactIPv4(ipv4Address, fixedLengthOptions);
+var fixedLengthRedaction = redactor.RedactIPv4Address(ipv4Address, fixedLengthOptions);
 
 // returns "***.*.*.146"
 var showLastOctetOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.ShowLastOctet };
-var showLastOctetRedaction = redactor.RedactIPv4(ipv4Address, showLastOctetOptions);
+var showLastOctetRedaction = redactor.RedactIPv4Address(ipv4Address, showLastOctetOptions);
 
 ```
 
@@ -345,19 +345,19 @@ var ipv6Address = "2001:0000:130F:0000:0000:09C0:876A:130B";
 
 // Uses default redactor (Full)
 // returns "****:****:****:****:****:****:****:****"
-var fullRedaction = redactor.RedactIPv6(ipv6Address);
+var fullRedaction = redactor.RedactIPv6Address(ipv6Address);
 
 // returns "***************************************"
 var allOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.All };
-var allRedaction = redactor.RedactIPv6(ipv6Address, allOptions);
+var allRedaction = redactor.RedactIPv6Address(ipv6Address, allOptions);
 
 // returns "********"
 var fixedLengthOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength };
-var fixedLengthRedaction = redactor.RedactIPv6(ipv6Address, fixedLengthOptions);
+var fixedLengthRedaction = redactor.RedactIPv6Address(ipv6Address, fixedLengthOptions);
 
 // returns "****:****:****:****:****:****:****:130B"
 var showLastQuartetOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.ShowLastQuartet };
-var showLastQuartetRedaction = redactor.RedactIPv6(ipv4Address, showLastQuartetOptions);
+var showLastQuartetRedaction = redactor.RedactIPv6Address(ipv4Address, showLastQuartetOptions);
 
 ```
 
