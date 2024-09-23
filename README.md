@@ -4,7 +4,7 @@ An extremely fast, simple, zero allocation redacting library for .NET.
 
 ## Getting started
 
-Install via NuGet:
+Install via [NuGet](https://www.nuget.org/packages/Nikouu.ZeroRedact/):
 ```
 Install-Package Nikouu.ZeroRedact -Version 1.0.0-alpha1
 ```
