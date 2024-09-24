@@ -15,7 +15,7 @@ namespace ZeroRedact.UnitTest.Validators
 
         public static IEnumerable<object[]> InvalidIPv4Addresses()
         {
-            yield return new object[] { "192.168.1" }; 
+            yield return new object[] { "192.168.1" };
             yield return new object[] { "192.168.1.1/24" };
             yield return new object[] { "192.168.1.1.1" };
         }

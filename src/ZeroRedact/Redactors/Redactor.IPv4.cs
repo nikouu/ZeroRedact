@@ -78,7 +78,7 @@ namespace ZeroRedact
             var result = string.Create(ipv4Address.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                
+
                 var lastDot = input.LastIndexOf('.');
 
                 for (int i = 0; i < lastDot; i++)
@@ -86,7 +86,8 @@ namespace ZeroRedact
                     if (char.IsDigit(input[i]))
                     {
                         outputBuffer[i] = state.RedactionCharacter;
-                    } else
+                    }
+                    else
                     {
                         outputBuffer[i] = input[i];
                     }

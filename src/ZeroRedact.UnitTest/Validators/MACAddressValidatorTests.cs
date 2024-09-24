@@ -15,10 +15,10 @@ namespace ZeroRedact.UnitTest.Validators
 
         public static IEnumerable<object[]> InvalidMACAddresses()
         {
-            yield return new object[] { "00:1A:2B:3C:4D" }; 
-            yield return new object[] { "00-1A-2B-3C-4D-5E-6F" }; 
-            yield return new object[] { "00:1A:2B:3C:4D:5E:6F:70:80" }; 
-            yield return new object[] { "00 1A 2B 3C 4D 5G" }; 
+            yield return new object[] { "00:1A:2B:3C:4D" };
+            yield return new object[] { "00-1A-2B-3C-4D-5E-6F" };
+            yield return new object[] { "00:1A:2B:3C:4D:5E:6F:70:80" };
+            yield return new object[] { "00 1A 2B 3C 4D 5G" };
         }
 
         [TestMethod]

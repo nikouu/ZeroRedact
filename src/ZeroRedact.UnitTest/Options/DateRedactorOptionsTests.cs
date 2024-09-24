@@ -5,9 +5,9 @@ namespace ZeroRedact.UnitTest.Options
     [TestClass]
     public class DateRedactorOptionsTests
     {
-        #pragma warning disable
+#pragma warning disable
         private CultureInfo _existingCulture;
-        #pragma warning restore CS8618
+#pragma warning restore CS8618
         [TestInitialize]
         public void Initialize()
         {
@@ -16,8 +16,8 @@ namespace ZeroRedact.UnitTest.Options
         }
 
         [TestCleanup]
-        public void Cleanup() 
-        { 
+        public void Cleanup()
+        {
             CultureInfo.CurrentCulture = _existingCulture;
         }
 

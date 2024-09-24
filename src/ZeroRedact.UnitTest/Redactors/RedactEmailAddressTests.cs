@@ -128,7 +128,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "****************************@*******.***" };
             yield return new object[] { null, "" };
         }
-               
+
         private static IEnumerable<object[]> Username_TestData()
         {
             yield return new object[] { "", "" };

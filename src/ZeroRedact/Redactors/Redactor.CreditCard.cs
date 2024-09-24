@@ -65,7 +65,7 @@ namespace ZeroRedact
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
         }
-        
+
         private unsafe string CreateShowLastSixLastFourRedaction(ReadOnlySpan<char> creditCardNumber, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(creditCardNumber);

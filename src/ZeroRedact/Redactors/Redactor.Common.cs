@@ -6,7 +6,7 @@ namespace ZeroRedact
 {
     /// <inheritdoc />
     [SkipLocalsInit]
-    public sealed partial class Redactor : IRedactor 
+    public sealed partial class Redactor : IRedactor
     {
         // Both constructors assign this. If it was defaulted here, it would be assigned twice
         private readonly RedactorOptions _baseRedactorOptions;
@@ -40,7 +40,7 @@ namespace ZeroRedact
         }
 
         private static string CreateAllRedaction(char character, int length)
-        {           
+        {
             return new string(character, length);
         }
 
@@ -74,7 +74,8 @@ namespace ZeroRedact
                     if (char.IsLetterOrDigit(input[i]))
                     {
                         outputBuffer[i] = state.RedactionCharacter;
-                    } else
+                    }
+                    else
                     {
                         outputBuffer[i] = input[i];
                     }

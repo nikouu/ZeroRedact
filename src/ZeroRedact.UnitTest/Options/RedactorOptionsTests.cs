@@ -29,7 +29,7 @@
             var expected = new string(Constants.DefaultRedactionCharacter, Constants.DefaultFixedLengthSize);
 
             // Act
-            var redactedString = Redactor.RedactString(input, new StringRedactorOptions { RedactorType = StringRedaction.FixedLength});
+            var redactedString = Redactor.RedactString(input, new StringRedactorOptions { RedactorType = StringRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual(expected, redactedString);

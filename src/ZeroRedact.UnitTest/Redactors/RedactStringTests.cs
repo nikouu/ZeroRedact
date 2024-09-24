@@ -89,7 +89,7 @@ namespace ZeroRedact.UnitTest.Redactors
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
-        }        
+        }
 
         [TestMethod]
         [DynamicData(nameof(FixedLength_TestData), DynamicDataSourceType.Method)]

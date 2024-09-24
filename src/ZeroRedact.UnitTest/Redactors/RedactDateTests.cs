@@ -267,7 +267,7 @@ namespace ZeroRedact.UnitTest.Redactors
 
             // Assert
             Assert.AreEqual(expected, result);
-        }       
+        }
 
         [TestMethod]
         [DynamicData(nameof(Day_TestData), DynamicDataSourceType.Method)]
@@ -284,7 +284,7 @@ namespace ZeroRedact.UnitTest.Redactors
 
             // Assert
             Assert.AreEqual(expected, result);
-        }       
+        }
 
         [TestMethod]
         [DynamicData(nameof(Month_TestData), DynamicDataSourceType.Method)]

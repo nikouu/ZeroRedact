@@ -32,16 +32,16 @@
             yield return new object[] { "555-123-456", "***********" };
             yield return new object[] { "555.123.456", "***********" };
 
-            yield return new object[] { "+33 1 23 45 67 89", "*****************" }; 
-            yield return new object[] { "+49 30 123456", "*************" }; 
-            yield return new object[] { "+91-9876543210", "**************" }; 
-            yield return new object[] { "+81-90-1234-5678", "****************" }; 
-            yield return new object[] { "+61 2 1234 5678", "***************" }; 
-            yield return new object[] { "+55 11 91234-5678", "*****************" }; 
+            yield return new object[] { "+33 1 23 45 67 89", "*****************" };
+            yield return new object[] { "+49 30 123456", "*************" };
+            yield return new object[] { "+91-9876543210", "**************" };
+            yield return new object[] { "+81-90-1234-5678", "****************" };
+            yield return new object[] { "+61 2 1234 5678", "***************" };
+            yield return new object[] { "+55 11 91234-5678", "*****************" };
             yield return new object[] { "+27 21 123 4567", "***************" };
-            yield return new object[] { "+34 612 34 56 78", "****************" }; 
-            yield return new object[] { "+39 06 1234 5678", "****************" }; 
-            yield return new object[] { "+7 495 123-45-67", "****************" }; 
+            yield return new object[] { "+34 612 34 56 78", "****************" };
+            yield return new object[] { "+39 06 1234 5678", "****************" };
+            yield return new object[] { "+7 495 123-45-67", "****************" };
         }
 
         private static IEnumerable<object[]> FixedLength_TestData()
