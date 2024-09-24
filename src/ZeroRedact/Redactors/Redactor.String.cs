@@ -1,7 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Text.Json;
-using ZeroRedact.Options;
 using ZeroRedact.Options.Internal;
 
 namespace ZeroRedact

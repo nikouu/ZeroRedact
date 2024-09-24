@@ -6,13 +6,13 @@
     public enum EmailAddressRedaction
     {
         /// <summary>
-        /// the email address is redacted.
+        /// The email address is redacted.
         /// </summary>
         /// <remarks>Example: "email@example.com" becomes "*****************"</remarks>
         All,
 
         /// <summary>
-        /// the email address is redacted with a fixed width.
+        /// The email address is redacted with a fixed width.
         /// </summary>
         /// <remarks>Example: "email@example.com" becomes "********"</remarks>
         FixedLength,

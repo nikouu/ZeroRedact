@@ -41,7 +41,7 @@
         public IPv6RedactorOptions IPv6RedactorOptions { get; init; } = Constants.DefaultIPv6RedactorOptions;
 
         /// <summary>
-        /// MAC address redactor options.
+        /// The MAC address redactor options.
         /// </summary>
         public MACAddressRedactorOptions MACAddressRedactorOptions { get; init; } = Constants.DefaultMACAddressRedactorOptions;
 

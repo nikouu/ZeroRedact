@@ -6,7 +6,7 @@
     public enum DateRedaction
     {
         /// <summary>
-        /// the date is redacted.
+        /// The date is redacted.
         /// </summary>
         /// <remarks>
         /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
@@ -30,7 +30,7 @@
         All,
 
         /// <summary>
-        /// the date is redacted with a fixed length.
+        /// The date is redacted with a fixed length.
         /// </summary>
         /// <remarks>
         /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>
@@ -54,7 +54,7 @@
         FixedLength,
 
         /// <summary>
-        /// the date is redacted, showing the date separator.
+        /// The date is redacted, showing the date separator.
         /// </summary>
         /// <remarks>
         /// <para>Takes the current <see cref="System.Globalization.CultureInfo"/> into account.</para>

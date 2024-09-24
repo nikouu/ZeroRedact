@@ -1,7 +1,4 @@
-﻿using ZeroRedact;
-using ZeroRedact.Options;
-
-namespace ZeroRedact
+﻿namespace ZeroRedact
 {
     internal static class Constants
     {

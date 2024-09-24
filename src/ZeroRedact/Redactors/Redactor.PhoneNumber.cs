@@ -1,8 +1,4 @@
-﻿using System.Net.Mail;
-using ZeroRedact;
-using ZeroRedact.Options;
-using ZeroRedact.Options.Internal;
-using ZeroRedact.Validators;
+﻿using ZeroRedact.Options.Internal;
 
 namespace ZeroRedact
 {

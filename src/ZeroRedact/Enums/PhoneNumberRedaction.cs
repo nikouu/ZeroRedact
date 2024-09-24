@@ -6,7 +6,7 @@
     public enum PhoneNumberRedaction
     {
         /// <summary>
-        /// the phone number is redacted.
+        /// The phone number is redacted.
         /// </summary>
         /// <remarks>
         /// Example: "212-456-7890" becomes "************"</remarks>

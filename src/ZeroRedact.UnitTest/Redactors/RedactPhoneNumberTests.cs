@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZeroRedact.Redactors;
-
-namespace ZeroRedact.UnitTest.Redactors
+﻿namespace ZeroRedact.UnitTest.Redactors
 {
     [TestClass]
     public class RedactPhoneNumberTests

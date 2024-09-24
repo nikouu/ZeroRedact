@@ -1,6 +1,4 @@
 ﻿using System.Globalization;
-using ZeroRedact;
-using ZeroRedact.Options;
 using ZeroRedact.Options.Internal;
 
 namespace ZeroRedact

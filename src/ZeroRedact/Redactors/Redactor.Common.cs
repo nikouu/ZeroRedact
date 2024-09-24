@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using ZeroRedact.Redactors;
-using ZeroRedact.Options;
 
 namespace ZeroRedact
 {

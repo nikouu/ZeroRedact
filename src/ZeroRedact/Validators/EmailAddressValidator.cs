@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ZeroRedact.Validators
+﻿namespace ZeroRedact.Validators
 {
     internal static class EmailAddressValidator
     {

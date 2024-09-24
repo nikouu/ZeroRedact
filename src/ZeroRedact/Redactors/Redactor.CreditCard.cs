@@ -1,7 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using ZeroRedact;
-using ZeroRedact.Options;
 using ZeroRedact.Options.Internal;
 using ZeroRedact.Validators;
 

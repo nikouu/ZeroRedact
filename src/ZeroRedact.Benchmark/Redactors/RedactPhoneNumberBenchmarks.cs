@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-using ZeroRedact.Redactors;
 
 namespace ZeroRedact.Benchmark.Redactors
 {

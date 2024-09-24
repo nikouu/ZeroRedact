@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ZeroRedact
+﻿namespace ZeroRedact
 {
     /// <summary>
     /// Defines the different types of redactions that can be applied to a MAC address.
@@ -12,7 +6,7 @@ namespace ZeroRedact
     public enum MACAddressRedaction
     {
         /// <summary>
-        /// the MAC address is redacted.
+        /// The MAC address is redacted.
         /// </summary>
         /// <remarks>
         /// Example: "00:B0:D0:63:C2:26" becomes "*****************"</remarks>
@@ -25,7 +19,7 @@ namespace ZeroRedact
         FixedLength,
 
         /// <summary>
-        /// the MAC address is redacted, preserving symbols.
+        /// The MAC address is redacted, preserving symbols.
         /// </summary>
         /// <remarks>Example: "00:B0:D0:63:C2:26" becomes "**:**:**:**:**:**"</remarks> 
         Full,

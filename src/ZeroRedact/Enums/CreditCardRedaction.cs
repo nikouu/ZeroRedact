@@ -6,19 +6,19 @@
     public enum CreditCardRedaction
     {
         /// <summary>
-        /// the credit card number is redacted.
+        /// The credit card number is redacted.
         /// </summary>
         /// <remarks>Example: "4111-1111-1111-1111" becomes "*******************"</remarks>
         All,
 
         /// <summary>
-        /// the credit card number is redacted with a fixed length.
+        /// The credit card number is redacted with a fixed length.
         /// </summary>
         /// <remarks>Example: "4111-1111-1111-1111" becomes "********"</remarks>
         FixedLength,
 
         /// <summary>
-        /// the credit card number is redacted, preserving symbols.
+        /// The credit card number is redacted, preserving symbols.
         /// </summary>
         /// <remarks>Example: "4111-1111-1111-1111" becomes "****-****-****-****"</remarks>
         Full,

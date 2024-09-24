@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
-using ZeroRedact;
-using ZeroRedact.Options;
+﻿using System.Net.Mail;
 
 namespace ZeroRedact.Redactors
 {
@@ -115,7 +108,6 @@ namespace ZeroRedact.Redactors
         /// </summary>
         /// <param name="creditCardNumber">The credit card number to redact.</param>
         string RedactCreditCard(string creditCardNumber);
-
 
         /// <summary>
         /// Redacts the provided credit card number.

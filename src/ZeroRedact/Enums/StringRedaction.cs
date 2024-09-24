@@ -6,13 +6,13 @@
     public enum StringRedaction
     {
         /// <summary>
-        /// the string is redacted.
+        /// The string is redacted.
         /// </summary>
         /// <remarks>Example: "Hello, world!" becomes "*************"</remarks>
         All,
 
         /// <summary>
-        /// the string is redacted with a fixed length.
+        /// The string is redacted with a fixed length.
         /// </summary>
         /// <remarks>Example: "Hello, world!" becomes "*********"</remarks>
         FixedLength,

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ZeroRedact.Options.Internal
+﻿namespace ZeroRedact.Options.Internal
 {
     internal readonly ref struct InternalCreditCardRedactorOptions
     {
