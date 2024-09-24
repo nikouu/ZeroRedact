@@ -10,18 +10,18 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "", "" };
             yield return new object[] { null!, "" };
             yield return new object[] { "4111 1111 1111 111X", "********" };
-            yield return new object[] { "1234567812345678", "****************" };
-            yield return new object[] { "1234 5678 1234 5678", "*******************" };
-            yield return new object[] { "1234-5678-1234-5678", "*******************" };
-            yield return new object[] { "123456781234567", "***************" };
-            yield return new object[] { "1234 5678 1234 567", "******************" };
-            yield return new object[] { "1234-5678-1234-567", "******************" };
-            yield return new object[] { "12345678123456", "**************" };
-            yield return new object[] { "1234 5678 1234 56", "*****************" };
-            yield return new object[] { "1234-5678-1234-56", "*****************" };
-            yield return new object[] { "1234567812345", "*************" };
-            yield return new object[] { "1234 5678 1234 5", "****************" };
-            yield return new object[] { "1234-5678-1234-5", "****************" };
+            yield return new object[] { "4111111111111111", "****************" };
+            yield return new object[] { "4111 1111 1111 1111", "*******************" };
+            yield return new object[] { "4111-1111-1111-1111", "*******************" };
+            yield return new object[] { "411111111111111", "***************" };
+            yield return new object[] { "4111 1111 1111 111", "******************" };
+            yield return new object[] { "4111-1111-1111-111", "******************" };
+            yield return new object[] { "41111111111111", "**************" };
+            yield return new object[] { "4111 1111 1111 11", "*****************" };
+            yield return new object[] { "4111-1111-1111-11", "*****************" };
+            yield return new object[] { "4111111111111", "*************" };
+            yield return new object[] { "4111 1111 1111 1", "****************" };
+            yield return new object[] { "4111-1111-1111-1", "****************" };
         }
 
         private static IEnumerable<object[]> FixedLength_TestData()
@@ -29,18 +29,18 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "", "" };
             yield return new object[] { null!, "" };
             yield return new object[] { "4111 1111 1111 111X", "********" };
-            yield return new object[] { "1234567812345678", "********" };
-            yield return new object[] { "1234 5678 1234 5678", "********" };
-            yield return new object[] { "1234-5678-1234-5678", "********" };
-            yield return new object[] { "123456781234567", "********" };
-            yield return new object[] { "1234 5678 1234 567", "********" };
-            yield return new object[] { "1234-5678-1234-567", "********" };
-            yield return new object[] { "12345678123456", "********" };
-            yield return new object[] { "1234 5678 1234 56", "********" };
-            yield return new object[] { "1234-5678-1234-56", "********" };
-            yield return new object[] { "1234567812345", "********" };
-            yield return new object[] { "1234 5678 1234 5", "********" };
-            yield return new object[] { "1234-5678-1234-5", "********" };
+            yield return new object[] { "4111111111111111", "********" };
+            yield return new object[] { "4111 1111 1111 1111", "********" };
+            yield return new object[] { "4111-1111-1111-1111", "********" };
+            yield return new object[] { "411111111111111", "********" };
+            yield return new object[] { "4111 1111 1111 111", "********" };
+            yield return new object[] { "4111-1111-1111-111", "********" };
+            yield return new object[] { "41111111111111", "********" };
+            yield return new object[] { "4111 1111 1111 11", "********" };
+            yield return new object[] { "4111-1111-1111-11", "********" };
+            yield return new object[] { "4111111111111", "********" };
+            yield return new object[] { "4111 1111 1111 1", "********" };
+            yield return new object[] { "4111-1111-1111-1", "********" };
         }
 
         private static IEnumerable<object[]> Full_TestData()
@@ -48,18 +48,18 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "", "" };
             yield return new object[] { null!, "" };
             yield return new object[] { "4111 1111 1111 111X", "********" };
-            yield return new object[] { "1234567812345678", "****************" };
-            yield return new object[] { "1234 5678 1234 5678", "**** **** **** ****" };
-            yield return new object[] { "1234-5678-1234-5678", "****-****-****-****" };
-            yield return new object[] { "123456781234567", "***************" };
-            yield return new object[] { "1234 5678 1234 567", "**** **** **** ***" };
-            yield return new object[] { "1234-5678-1234-567", "****-****-****-***" };
-            yield return new object[] { "12345678123456", "**************" };
-            yield return new object[] { "1234 5678 1234 56", "**** **** **** **" };
-            yield return new object[] { "1234-5678-1234-56", "****-****-****-**" };
-            yield return new object[] { "1234567812345", "*************" };
-            yield return new object[] { "1234 5678 1234 5", "**** **** **** *" };
-            yield return new object[] { "1234-5678-1234-5", "****-****-****-*" };
+            yield return new object[] { "4111111111111111", "****************" };
+            yield return new object[] { "4111 1111 1111 1111", "**** **** **** ****" };
+            yield return new object[] { "4111-1111-1111-1111", "****-****-****-****" };
+            yield return new object[] { "411111111111111", "***************" };
+            yield return new object[] { "4111 1111 1111 111", "**** **** **** ***" };
+            yield return new object[] { "4111-1111-1111-111", "****-****-****-***" };
+            yield return new object[] { "41111111111111", "**************" };
+            yield return new object[] { "4111 1111 1111 11", "**** **** **** **" };
+            yield return new object[] { "4111-1111-1111-11", "****-****-****-**" };
+            yield return new object[] { "4111111111111", "*************" };
+            yield return new object[] { "4111 1111 1111 1", "**** **** **** *" };
+            yield return new object[] { "4111-1111-1111-1", "****-****-****-*" };
         }
 
         private static IEnumerable<object[]> ShowLastFour_TestData()
@@ -67,18 +67,18 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "", "" };
             yield return new object[] { null!, "" };
             yield return new object[] { "4111 1111 1111 111X", "********" };
-            yield return new object[] { "1234567812345678", "************5678" };
-            yield return new object[] { "1234 5678 1234 5678", "**** **** **** 5678" };
-            yield return new object[] { "1234-5678-1234-5678", "****-****-****-5678" };
-            yield return new object[] { "123456781234567", "***********4567" };
-            yield return new object[] { "1234 5678 1234 567", "**** **** ***4 567" };
-            yield return new object[] { "1234-5678-1234-567", "****-****-***4-567" };
-            yield return new object[] { "12345678123456", "**********3456" };
-            yield return new object[] { "1234 5678 1234 56", "**** **** **34 56" };
-            yield return new object[] { "1234-5678-1234-56", "****-****-**34-56" };
-            yield return new object[] { "1234567812345", "*********2345" };
-            yield return new object[] { "1234 5678 1234 5", "**** **** *234 5" };
-            yield return new object[] { "1234-5678-1234-5", "****-****-*234-5" };
+            yield return new object[] { "4111111111111111", "************1111" };
+            yield return new object[] { "4111 1111 1111 1111", "**** **** **** 1111" };
+            yield return new object[] { "4111-1111-1111-1111", "****-****-****-1111" };
+            yield return new object[] { "411111111111111", "***********1111" };
+            yield return new object[] { "4111 1111 1111 111", "**** **** ***1 111" };
+            yield return new object[] { "4111-1111-1111-111", "****-****-***1-111" };
+            yield return new object[] { "41111111111111", "**********1111" };
+            yield return new object[] { "4111 1111 1111 11", "**** **** **11 11" };
+            yield return new object[] { "4111-1111-1111-11", "****-****-**11-11" };
+            yield return new object[] { "4111111111111", "*********1111" };
+            yield return new object[] { "4111 1111 1111 1", "**** **** *111 1" };
+            yield return new object[] { "4111-1111-1111-1", "****-****-*111-1" };
 
         }
 
@@ -87,18 +87,18 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "", "" };
             yield return new object[] { null!, "" };
             yield return new object[] { "4111 1111 1111 111X", "********" };
-            yield return new object[] { "1234567812345678", "123456******5678" };
-            yield return new object[] { "1234 5678 1234 5678", "1234 56** **** 5678" };
-            yield return new object[] { "1234-5678-1234-5678", "1234-56**-****-5678" };
-            yield return new object[] { "123456781234567", "123456*****4567" };
-            yield return new object[] { "1234 5678 1234 567", "1234 56** ***4 567" };
-            yield return new object[] { "1234-5678-1234-567", "1234-56**-***4-567" };
-            yield return new object[] { "12345678123456", "123456****3456" };
-            yield return new object[] { "1234 5678 1234 56", "1234 56** **34 56" };
-            yield return new object[] { "1234-5678-1234-56", "1234-56**-**34-56" };
-            yield return new object[] { "1234567812345", "123456***2345" };
-            yield return new object[] { "1234 5678 1234 5", "1234 56** *234 5" };
-            yield return new object[] { "1234-5678-1234-5", "1234-56**-*234-5" };
+            yield return new object[] { "4111111111111111", "411111******1111" };
+            yield return new object[] { "4111 1111 1111 1111", "4111 11** **** 1111" };
+            yield return new object[] { "4111-1111-1111-1111", "4111-11**-****-1111" };
+            yield return new object[] { "411111111111111", "411111*****1111" };
+            yield return new object[] { "4111 1111 1111 111", "4111 11** ***1 111" };
+            yield return new object[] { "4111-1111-1111-111", "4111-11**-***1-111" };
+            yield return new object[] { "41111111111111", "411111****1111" };
+            yield return new object[] { "4111 1111 1111 11", "4111 11** **11 11" };
+            yield return new object[] { "4111-1111-1111-11", "4111-11**-**11-11" };
+            yield return new object[] { "4111111111111", "411111***1111" };
+            yield return new object[] { "4111 1111 1111 1", "4111 11** *111 1" };
+            yield return new object[] { "4111-1111-1111-1", "4111-11**-*111-1" };
         }
 
         [TestMethod]

@@ -13,14 +13,14 @@ namespace ZeroRedact.UnitTest.Validators
         public static IEnumerable<object[]> ValidCreditCardNumbers()
         {
             yield return new object[] { "4111 1111 1111 1111" };
-            yield return new object[] { "5500-0000-0000-0004" };
-            yield return new object[] { "3400 0000 0000 009" };
-            yield return new object[] { "3000 0000 0000 04" };
+            yield return new object[] { "4111-1111-1111-1111" };
+            yield return new object[] { "4111 1111 1111 111" };
+            yield return new object[] { "4111 1111 1111 11" };
         }
 
         public static IEnumerable<object[]> InvalidCreditCardNumbers()
         {
-            yield return new object[] { "1234" };
+            yield return new object[] { "4111" };
             yield return new object[] { "4111 1111 1111 111X" };
             yield return new object[] { "4111_1111_1111_1111" };
         }

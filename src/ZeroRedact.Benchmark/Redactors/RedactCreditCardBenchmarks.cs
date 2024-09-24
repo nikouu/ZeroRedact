@@ -30,16 +30,16 @@ namespace ZeroRedact.Benchmark.Redactors
 
         public static IEnumerable<RedactCreditCardInput> CreditCardInputData =>
         [
-            new RedactCreditCardInput("1234567890123456", CreditCardRedaction.All),
-            new RedactCreditCardInput("1234567890123456", CreditCardRedaction.FixedLength),
-            new RedactCreditCardInput("1234567890123456", CreditCardRedaction.Full),
-            new RedactCreditCardInput("1234567890123456", CreditCardRedaction.ShowLastFour),
-            new RedactCreditCardInput("1234567890123456", CreditCardRedaction.ShowFirstSixLastFour),
-            new RedactCreditCardInput("1234-5678-9012-3456", CreditCardRedaction.All),
-            new RedactCreditCardInput("1234-5678-9012-3456", CreditCardRedaction.Full),
-            new RedactCreditCardInput("1234-5678-9012-3456", CreditCardRedaction.FixedLength),
-            new RedactCreditCardInput("1234-5678-9012-3456", CreditCardRedaction.ShowLastFour),
-            new RedactCreditCardInput("1234-5678-9012-3456", CreditCardRedaction.ShowFirstSixLastFour)
+            new RedactCreditCardInput("4111111111111111", CreditCardRedaction.All),
+            new RedactCreditCardInput("4111111111111111", CreditCardRedaction.FixedLength),
+            new RedactCreditCardInput("4111111111111111", CreditCardRedaction.Full),
+            new RedactCreditCardInput("4111111111111111", CreditCardRedaction.ShowLastFour),
+            new RedactCreditCardInput("4111111111111111", CreditCardRedaction.ShowFirstSixLastFour),
+            new RedactCreditCardInput("4111-1111-1111-1111", CreditCardRedaction.All),
+            new RedactCreditCardInput("4111-1111-1111-1111", CreditCardRedaction.Full),
+            new RedactCreditCardInput("4111-1111-1111-1111", CreditCardRedaction.FixedLength),
+            new RedactCreditCardInput("4111-1111-1111-1111", CreditCardRedaction.ShowLastFour),
+            new RedactCreditCardInput("4111-1111-1111-1111", CreditCardRedaction.ShowFirstSixLastFour)
         ];
     }
 

@@ -15,7 +15,7 @@
                 }
             };
             var redactor = new Redactor(redactorOptions);
-            var input = "1234-5678-9012-3456";
+            var input = "4111-1111-1111-1111";
 
             // Act
             var redactedCreditCard = redactor.RedactCreditCard(input);
@@ -36,7 +36,7 @@
                 }
             };
             var redactor = new Redactor(redactorOptions);
-            var input = "1234-5678-9012-3456";
+            var input = "4111-1111-1111-1111";
 
             // Act
             var redactedCreditCard = redactor.RedactCreditCard(input.AsSpan());
@@ -57,7 +57,7 @@
                 }
             };
             var redactor = new Redactor(redactorOptions);
-            var input = "1234-5678-9012-3456";
+            var input = "4111-1111-1111-1111";
 
             // Act
             var redactedCreditCard = redactor.RedactCreditCard(input);
@@ -78,7 +78,7 @@
                 }
             };
             var redactor = new Redactor(redactorOptions);
-            var input = "1234-5678-9012-3456";
+            var input = "4111-1111-1111-1111";
 
             // Act
             var redactedCreditCard = redactor.RedactCreditCard(input.AsSpan());
@@ -101,7 +101,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.All });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.All });
 
             // Assert
             Assert.AreEqual("XXXXXXXXXXXXXXXXXXX", result);
@@ -121,7 +121,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual("****", result);
@@ -142,7 +142,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual("XXXXXXXX", result);
@@ -196,7 +196,7 @@
             var redactor = new Redactor();
 
             // Act
-            redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength, FixedLengthSize = -1 });
+            redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength, FixedLengthSize = -1 });
 
             // Assert is handled by ExpectedException
         }
@@ -216,7 +216,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full, RedactionCharacter = 'A' });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full, RedactionCharacter = 'A' });
 
             // Assert
             Assert.AreEqual("AAAA-AAAA-AAAA-AAAA", result);
@@ -229,7 +229,7 @@
             var redactor = new Redactor();
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength, FixedLengthSize = 1 });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength, FixedLengthSize = 1 });
 
             // Assert
             Assert.AreEqual("*", result);
@@ -250,7 +250,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full });
 
             // Assert
             Assert.AreEqual("BBBB-BBBB-BBBB-BBBB", result);
@@ -267,7 +267,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.Full });
 
             // Assert
             Assert.AreEqual("CCCC-CCCC-CCCC-CCCC", result);
@@ -283,7 +283,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactCreditCard("1234-5678-9012-3456", new CreditCardRedactorOptions { });
+            string result = redactor.RedactCreditCard("4111-1111-1111-1111", new CreditCardRedactorOptions { });
 
             // Assert
             Assert.AreEqual("****-****-****-****", result);
