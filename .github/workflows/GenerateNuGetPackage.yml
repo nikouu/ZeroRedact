@@ -21,12 +21,7 @@ jobs:
       - name: Create Package
         run: dotnet pack src/ZeroRedact -c Release -o artifacts/
 
-      - name: Upload NuGet Package to GitHub Artifacts
+      - name: Upload NuGet Package and symbols to GitHub Artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: artifacts/*.nupkg
-
-      - name: Upload Symbol Package to GitHub Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          path: artifacts/*.snupkg
+          path: artifacts/
