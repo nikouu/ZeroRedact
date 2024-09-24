@@ -21,6 +21,8 @@
 		<PackageTags>redact redacting mask masking security</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=X:\</PathMap>
 	</PropertyGroup>
 
 	<PropertyGroup>
