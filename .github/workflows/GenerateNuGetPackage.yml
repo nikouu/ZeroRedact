@@ -5,24 +5,24 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
 
-        - name: Setup dotnet
-          uses: actions/setup-dotnet@v4
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
 
-        - name: Install dependencies
-          run: dotnet restore src/ZeroRedact
+      - name: Install dependencies
+        run: dotnet restore src/ZeroRedact
 
-        - name: Test with dotnet
-          run: dotnet test src/ZeroRedact.UnitTest
+      - name: Test with dotnet
+        run: dotnet test src/ZeroRedact.UnitTest
 
-        - name: Create Package
-          shell: pwsh
-          run: scripts/CreateNugetPackage.ps1
-          
-        - name: Upload NuGet Package to GitHub Artifacts
-          uses: actions/upload-artifact@v4
-          with:
-            path: artifacts/
+      - name: Create Package
+        shell: pwsh
+        run: scripts/CreateNugetPackage.ps1
+
+      - name: Upload NuGet Package to GitHub Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: artifacts/
