@@ -19,7 +19,6 @@
 		<Description>An extremely fast, simple, zero allocation redacting library for .NET.</Description>
 		<Summary>An extremely fast, simple, zero allocation redacting library for .NET.</Summary>
 		<RepositoryUrl>https://github.com/nikouu/ZeroRedact</RepositoryUrl>
-
 		<PackageTags>redact redacting mask masking security</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
@@ -41,10 +40,6 @@
 
 	<ItemGroup>
 		<None Include="../../README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 
 	<ItemGroup>
