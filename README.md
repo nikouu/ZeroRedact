@@ -6,7 +6,7 @@ An extremely fast, simple, zero allocation redacting library for .NET.
 
 Install via [NuGet](https://www.nuget.org/packages/Nikouu.ZeroRedact/):
 ```
-Install-Package Nikouu.ZeroRedact -Version 1.0.0-alpha1
+Install-Package Nikouu.ZeroRedact
 ```
 
 The following shows the default redaction which aims to hide the sensitive information while still making it clear what the data type is.
