@@ -2,41 +2,41 @@
 
 BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.4780/22H2/2022Update)
 Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
-.NET SDK 9.0.100-preview.7.24407.12
-  [Host]     : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
-  DefaultJob : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX2
+.NET SDK 9.0.100-rc.1.24452.12
+  [Host]     : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
 
 
 ```
-| Method                  | StringInput      | Mean      | Error     | StdDev    | Gen0   | Allocated |
-|------------------------ |----------------- |----------:|----------:|----------:|-------:|----------:|
-|RedactString_String       | 26:All           | 18.520 ns | 0.2063 ns | 0.1611 ns | 0.0191 |      80 B |
-|RedactString_ReadOnlySpan | 26:All           | 19.002 ns | 0.3590 ns | 0.2998 ns | 0.0191 |      80 B |
-|RedactString_String       | 26:FirstHalf     | 24.775 ns | 0.2171 ns | 0.1813 ns | 0.0191 |      80 B |
-|RedactString_ReadOnlySpan | 26:FirstHalf     | 28.074 ns | 0.3814 ns | 0.3185 ns | 0.0191 |      80 B |
-|RedactString_String       | 26:FixedLength   | 10.489 ns | 0.1597 ns | 0.1415 ns |      - |         - |
-|RedactString_ReadOnlySpan | 26:FixedLength   | 10.923 ns | 0.1462 ns | 0.1368 ns |      - |         - |
-|RedactString_String       | 26:IgnoreSymbols | 40.099 ns | 0.8279 ns | 0.6913 ns | 0.0191 |      80 B |
-|RedactString_ReadOnlySpan | 26:IgnoreSymbols | 42.753 ns | 0.8743 ns | 0.8979 ns | 0.0191 |      80 B |
-|RedactString_String       | 26:SecondHalf    | 24.868 ns | 0.4249 ns | 0.3766 ns | 0.0191 |      80 B |
-|RedactString_ReadOnlySpan | 26:SecondHalf    | 26.149 ns | 0.3840 ns | 0.3592 ns | 0.0191 |      80 B |
-|RedactString_String       | 5:All            | 15.924 ns | 0.1862 ns | 0.1742 ns | 0.0076 |      32 B |
-|RedactString_ReadOnlySpan | 5:All            | 16.515 ns | 0.2095 ns | 0.1635 ns | 0.0076 |      32 B |
-|RedactString_String       | 5:FirstHalf      | 20.616 ns | 0.3792 ns | 0.3724 ns | 0.0076 |      32 B |
-|RedactString_ReadOnlySpan | 5:FirstHalf      | 21.547 ns | 0.3478 ns | 0.3866 ns | 0.0076 |      32 B |
-|RedactString_String       | 5:FixedLength    |  9.424 ns | 0.1455 ns | 0.1290 ns |      - |         - |
-|RedactString_ReadOnlySpan | 5:FixedLength    | 11.221 ns | 0.0826 ns | 0.0733 ns |      - |         - |
-|RedactString_String       | 5:IgnoreSymbols  | 18.795 ns | 0.2382 ns | 0.1860 ns | 0.0076 |      32 B |
-|RedactString_ReadOnlySpan | 5:IgnoreSymbols  | 18.918 ns | 0.2925 ns | 0.2442 ns | 0.0076 |      32 B |
-|RedactString_String       | 5:SecondHalf     | 19.410 ns | 0.4453 ns | 0.4374 ns | 0.0076 |      32 B |
-|RedactString_ReadOnlySpan | 5:SecondHalf     | 22.197 ns | 0.1965 ns | 0.1742 ns | 0.0076 |      32 B |
-|RedactString_String       | 8:All            | 17.289 ns | 0.3469 ns | 0.3075 ns | 0.0095 |      40 B |
-|RedactString_ReadOnlySpan | 8:All            | 17.554 ns | 0.1788 ns | 0.1585 ns | 0.0095 |      40 B |
-|RedactString_String       | 8:FirstHalf      | 23.592 ns | 0.2442 ns | 0.2165 ns | 0.0095 |      40 B |
-|RedactString_ReadOnlySpan | 8:FirstHalf      | 21.708 ns | 0.2429 ns | 0.2153 ns | 0.0095 |      40 B |
-|RedactString_String       | 8:FixedLength    |  9.526 ns | 0.1484 ns | 0.1388 ns |      - |         - |
-|RedactString_ReadOnlySpan | 8:FixedLength    | 10.936 ns | 0.1720 ns | 0.1524 ns |      - |         - |
-|RedactString_String       | 8:IgnoreSymbols  | 21.003 ns | 0.2319 ns | 0.1810 ns | 0.0095 |      40 B |
-|RedactString_ReadOnlySpan | 8:IgnoreSymbols  | 22.916 ns | 0.2077 ns | 0.1842 ns | 0.0095 |      40 B |
-|RedactString_String       | 8:SecondHalf     | 20.759 ns | 0.1686 ns | 0.1577 ns | 0.0095 |      40 B |
-|RedactString_ReadOnlySpan | 8:SecondHalf     | 22.278 ns | 0.1733 ns | 0.1447 ns | 0.0095 |      40 B |
+| Method                    | StringInput      | Mean      | Error     | StdDev    | Gen0   | Allocated |
+|-------------------------- |----------------- |----------:|----------:|----------:|-------:|----------:|
+| RedactString_String       | 26:All           | 19.682 ns | 0.1941 ns | 0.1815 ns | 0.0191 |      80 B |
+| RedactString_ReadOnlySpan | 26:All           | 17.568 ns | 0.1533 ns | 0.1359 ns | 0.0191 |      80 B |
+| RedactString_String       | 26:FirstHalf     | 24.259 ns | 0.4539 ns | 0.4024 ns | 0.0191 |      80 B |
+| RedactString_ReadOnlySpan | 26:FirstHalf     | 24.509 ns | 0.1520 ns | 0.1269 ns | 0.0191 |      80 B |
+| RedactString_String       | 26:FixedLength   |  8.791 ns | 0.1395 ns | 0.1305 ns |      - |         - |
+| RedactString_ReadOnlySpan | 26:FixedLength   | 10.428 ns | 0.0836 ns | 0.0782 ns |      - |         - |
+| RedactString_String       | 26:IgnoreSymbols | 37.292 ns | 0.3619 ns | 0.3385 ns | 0.0191 |      80 B |
+| RedactString_ReadOnlySpan | 26:IgnoreSymbols | 37.487 ns | 0.3361 ns | 0.3144 ns | 0.0191 |      80 B |
+| RedactString_String       | 26:SecondHalf    | 24.105 ns | 0.2343 ns | 0.2077 ns | 0.0191 |      80 B |
+| RedactString_ReadOnlySpan | 26:SecondHalf    | 24.947 ns | 0.2483 ns | 0.2323 ns | 0.0191 |      80 B |
+| RedactString_String       | 5:All            | 15.582 ns | 0.2023 ns | 0.1893 ns | 0.0076 |      32 B |
+| RedactString_ReadOnlySpan | 5:All            | 16.176 ns | 0.1426 ns | 0.1264 ns | 0.0076 |      32 B |
+| RedactString_String       | 5:FirstHalf      | 19.944 ns | 0.1660 ns | 0.1552 ns | 0.0076 |      32 B |
+| RedactString_ReadOnlySpan | 5:FirstHalf      | 22.361 ns | 0.1617 ns | 0.1433 ns | 0.0076 |      32 B |
+| RedactString_String       | 5:FixedLength    | 10.290 ns | 0.0736 ns | 0.0688 ns |      - |         - |
+| RedactString_ReadOnlySpan | 5:FixedLength    | 10.789 ns | 0.0941 ns | 0.0880 ns |      - |         - |
+| RedactString_String       | 5:IgnoreSymbols  | 24.518 ns | 0.2130 ns | 0.1888 ns | 0.0076 |      32 B |
+| RedactString_ReadOnlySpan | 5:IgnoreSymbols  | 18.347 ns | 0.2076 ns | 0.1733 ns | 0.0076 |      32 B |
+| RedactString_String       | 5:SecondHalf     | 18.628 ns | 0.1718 ns | 0.1523 ns | 0.0076 |      32 B |
+| RedactString_ReadOnlySpan | 5:SecondHalf     | 20.098 ns | 0.2107 ns | 0.1867 ns | 0.0076 |      32 B |
+| RedactString_String       | 8:All            | 16.444 ns | 0.3207 ns | 0.3149 ns | 0.0095 |      40 B |
+| RedactString_ReadOnlySpan | 8:All            | 18.344 ns | 0.1352 ns | 0.1129 ns | 0.0095 |      40 B |
+| RedactString_String       | 8:FirstHalf      | 22.005 ns | 0.2051 ns | 0.1818 ns | 0.0095 |      40 B |
+| RedactString_ReadOnlySpan | 8:FirstHalf      | 22.009 ns | 0.0925 ns | 0.0773 ns | 0.0095 |      40 B |
+| RedactString_String       | 8:FixedLength    |  9.388 ns | 0.0807 ns | 0.0754 ns |      - |         - |
+| RedactString_ReadOnlySpan | 8:FixedLength    | 10.966 ns | 0.0925 ns | 0.0820 ns |      - |         - |
+| RedactString_String       | 8:IgnoreSymbols  | 19.858 ns | 0.1721 ns | 0.1610 ns | 0.0095 |      40 B |
+| RedactString_ReadOnlySpan | 8:IgnoreSymbols  | 19.923 ns | 0.1801 ns | 0.1596 ns | 0.0095 |      40 B |
+| RedactString_String       | 8:SecondHalf     | 19.348 ns | 0.3147 ns | 0.2457 ns | 0.0095 |      40 B |
+| RedactString_ReadOnlySpan | 8:SecondHalf     | 20.297 ns | 0.2317 ns | 0.2167 ns | 0.0095 |      40 B |

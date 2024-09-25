@@ -8,53 +8,53 @@ namespace ZeroRedact
     public partial class Redactor
     {
         /// <inheritdoc />
-        public string RedactMACAddress(string MACAddress)
-            => RedactMACAddressInternal(MACAddress);
+        public string RedactMACAddress(string macAddress)
+            => RedactMACAddressInternal(macAddress);
 
         /// <inheritdoc />
-        public string RedactMACAddress(string MACAddress, MACAddressRedactorOptions redactorOptions)
-            => RedactMACAddressInternal(MACAddress, redactorOptions);
+        public string RedactMACAddress(string macAddress, MACAddressRedactorOptions redactorOptions)
+            => RedactMACAddressInternal(macAddress, redactorOptions);
 
         /// <inheritdoc />
-        public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> MACAddress)
-            => RedactMACAddressInternal(MACAddress);
+        public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> macAddress)
+            => RedactMACAddressInternal(macAddress);
 
         /// <inheritdoc />
-        public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> MACAddress, MACAddressRedactorOptions redactorOptions)
-            => RedactMACAddressInternal(MACAddress, redactorOptions);
+        public ReadOnlySpan<char> RedactMACAddress(ReadOnlySpan<char> macAddress, MACAddressRedactorOptions redactorOptions)
+            => RedactMACAddressInternal(macAddress, redactorOptions);
 
-        private string RedactMACAddressInternal(ReadOnlySpan<char> MACAddress)
+        private string RedactMACAddressInternal(ReadOnlySpan<char> macAddress)
         {
             var internalOptions = new InternalMACAddressRedactorOptions(_baseRedactorOptions);
-            return RedactMACAddressInternal(MACAddress, internalOptions);
+            return RedactMACAddressInternal(macAddress, internalOptions);
         }
 
-        private string RedactMACAddressInternal(ReadOnlySpan<char> MACAddress, MACAddressRedactorOptions options)
+        private string RedactMACAddressInternal(ReadOnlySpan<char> macAddress, MACAddressRedactorOptions options)
         {
             var internalOptions = new InternalMACAddressRedactorOptions(_baseRedactorOptions, options);
-            return RedactMACAddressInternal(MACAddress, internalOptions);
+            return RedactMACAddressInternal(macAddress, internalOptions);
         }
 
-        private string RedactMACAddressInternal(ReadOnlySpan<char> MACAddress, InternalMACAddressRedactorOptions options)
+        private string RedactMACAddressInternal(ReadOnlySpan<char> macAddress, InternalMACAddressRedactorOptions options)
         {
             try
             {
-                if (MACAddress.IsEmpty)
+                if (macAddress.IsEmpty)
                 {
                     return string.Empty;
                 }
 
-                if (!MACAddressValidator.IsValidForRedaction(MACAddress))
+                if (!MACAddressValidator.IsValidForRedaction(macAddress))
                 {
                     return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
                 }
 
                 return options.RedactorType switch
                 {
-                    MACAddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, MACAddress.Length),
+                    MACAddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, macAddress.Length),
                     MACAddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    MACAddressRedaction.Full => CreateFullRedactionWithSymbols(MACAddress, options.RedactionCharacter),
-                    MACAddressRedaction.ShowLastByte => CreateShowLastByteRedaction(MACAddress, options.RedactionCharacter),
+                    MACAddressRedaction.Full => CreateFullRedactionWithSymbols(macAddress, options.RedactionCharacter),
+                    MACAddressRedaction.ShowLastByte => CreateShowLastByteRedaction(macAddress, options.RedactionCharacter),
                     _ => throw new NotImplementedException()
                 };
             }

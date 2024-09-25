@@ -6,7 +6,7 @@
         internal const char DefaultRedactionCharacter = '*';
         internal const int DefaultFixedLengthSize = 8;
 
-        internal readonly static string DefaultRedactionString = new(DefaultRedactionCharacter, DefaultFixedLengthSize);
+        internal static readonly string DefaultRedactionString = new(DefaultRedactionCharacter, DefaultFixedLengthSize);
 
         internal static readonly StringRedactorOptions DefaultStringRedactorOptions = new()
         {

@@ -1,8 +1,8 @@
 ﻿namespace ZeroRedact
 {
-    internal struct RedactorState
+    internal readonly struct RedactorState
     {
-        public IntPtr StartPointer;
-        public char RedactionCharacter;
+        public readonly IntPtr StartPointer { get; init; }
+        public readonly char RedactionCharacter { get; init; }
     }
 }

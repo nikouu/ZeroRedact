@@ -6,7 +6,7 @@ if (-not (Get-Command reportgenerator -ErrorAction SilentlyContinue)) {
 }
 
 # Run the tests and collect code coverage
-dotnet test ..\src\ZeroRedact.UnitTest\ZeroRedact.UnitTest.csproj --collect:"XPlat Code Coverage"
+dotnet test ..\src\ZeroRedact.UnitTest\ZeroRedact.UnitTest.csproj --collect:"XPlat Code Coverage" /p:CollectCoverage=true
 
 # Get the latest test results folder
 $testResultsPath = "..\src\ZeroRedact.UnitTest\TestResults"

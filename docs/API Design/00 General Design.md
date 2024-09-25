@@ -129,3 +129,9 @@ var result = redactor.RedactString("葛󠄀");
 C# has the capability to deal with this with [Rune](https://learn.microsoft.com/en-us/dotnet/api/system.text.rune?view=net-8.0) however more effort needs to go into understanding whether this can happen without allocations.
 
 Read more about these complexities via: [csharplang/Emoji character literals #4500](https://github.com/dotnet/csharplang/discussions/4500#discussioncomment-437052)
+
+## Verbosity 
+
+The method names end up being verbose, for example: `RedactEmailAddress()`, `EmailAddressRedactorOptions` and how combined they can be large. This is intentional in order to be as clear as possible with expectations. As more full redaction libraries take in whole objects or documents to find the sensitive information within and redact, whereas ZeroRedact only redacts the given discrete piece of sensitive information. 
+
+Confusion could arise if the email address redaction method was called `redactor.RedactEmail()` and while the input type is string/ReadOnlySpan, a user may put the content of their email and expect it to be redacted. 

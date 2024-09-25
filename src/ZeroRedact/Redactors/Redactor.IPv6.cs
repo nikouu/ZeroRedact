@@ -65,9 +65,9 @@ namespace ZeroRedact
         }
 
         // Technically the same as the MAC address redaction
-        private unsafe string CreateShowLastQuartetRedaction(ReadOnlySpan<char> ipv4Address, char redactionCharacter)
+        private unsafe string CreateShowLastQuartetRedaction(ReadOnlySpan<char> ipv6Address, char redactionCharacter)
         {
-            ref var valueRef = ref MemoryMarshal.GetReference(ipv4Address);
+            ref var valueRef = ref MemoryMarshal.GetReference(ipv6Address);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
 
             var redactorState = new RedactorState
@@ -76,7 +76,7 @@ namespace ZeroRedact
                 RedactionCharacter = redactionCharacter
             };
 
-            var result = string.Create(ipv4Address.Length, redactorState, static (outputBuffer, state) =>
+            var result = string.Create(ipv6Address.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
