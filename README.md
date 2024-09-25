@@ -1,5 +1,7 @@
 # ZeroRedact
 
+[![NuGet](https://img.shields.io/nuget/v/Nikouu.ZeroRedact)](https://www.nuget.org/packages/Nikouu.ZeroRedact)
+
 An extremely fast, simple, zero allocation redacting library for .NET.
 
 ## Getting started
