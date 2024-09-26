@@ -1,0 +1,224 @@
+﻿[assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "https://github.com/nikouu/ZeroRedact")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("ZeroRedact.Benchmark")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("ZeroRedact.UnitTest")]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETCoreApp,Version=v8.0", FrameworkDisplayName=".NET 8.0")]
+namespace ZeroRedact
+{
+    public enum CreditCardRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        ShowLastFour = 3,
+        ShowFirstSixLastFour = 4,
+    }
+    public readonly struct CreditCardRedactorOptions
+    {
+        public CreditCardRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.CreditCardRedaction RedactorType { get; init; }
+    }
+    public enum DateRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        Day = 3,
+        Month = 4,
+        Year = 5,
+        DayAndMonth = 6,
+        MonthAndYear = 7,
+        DayAndYear = 8,
+    }
+    public readonly struct DateRedactorOptions
+    {
+        public DateRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.DateRedaction RedactorType { get; init; }
+    }
+    public enum EmailAddressRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        Username = 3,
+        FirstHalfUsername = 4,
+        Middle = 5,
+        MostUsername = 6,
+        ShowFirstCharacters = 7,
+    }
+    public readonly struct EmailAddressRedactorOptions
+    {
+        public EmailAddressRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.EmailAddressRedaction RedactorType { get; init; }
+    }
+    public enum IPv4Redaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        ShowLastOctet = 3,
+    }
+    public readonly struct IPv4RedactorOptions
+    {
+        public IPv4RedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.IPv4Redaction RedactorType { get; init; }
+    }
+    public enum IPv6Redaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        ShowLastQuartet = 3,
+    }
+    public readonly struct IPv6RedactorOptions
+    {
+        public IPv6RedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.IPv6Redaction RedactorType { get; init; }
+    }
+    public enum MACAddressRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        ShowLastByte = 3,
+    }
+    public readonly struct MACAddressRedactorOptions
+    {
+        public MACAddressRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.MACAddressRedaction RedactorType { get; init; }
+    }
+    public enum PhoneNumberRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        Full = 2,
+        ShowLastFour = 3,
+    }
+    public readonly struct PhoneNumberRedactorOptions
+    {
+        public PhoneNumberRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.PhoneNumberRedaction RedactorType { get; init; }
+    }
+    [System.Runtime.CompilerServices.SkipLocalsInit]
+    public sealed class Redactor : ZeroRedact.Redactors.IRedactor
+    {
+        public Redactor() { }
+        public Redactor(ZeroRedact.RedactorOptions options) { }
+        public System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber) { }
+        public string RedactCreditCard(string creditCardNumber) { }
+        public System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions) { }
+        public string RedactCreditCard(string creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions) { }
+        public string RedactDate(System.DateOnly date) { }
+        public string RedactDate(System.DateTime date) { }
+        public string RedactDate(System.DateOnly date, ZeroRedact.DateRedactorOptions redactorOptions) { }
+        public string RedactDate(System.DateTime date, ZeroRedact.DateRedactorOptions redactorOptions) { }
+        public string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress) { }
+        public System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress) { }
+        public string RedactEmailAddress(string emailAddress) { }
+        public string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions) { }
+        public string RedactEmailAddress(string emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress) { }
+        public string RedactIPv4Address(string ipAddress) { }
+        public System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions) { }
+        public string RedactIPv4Address(string ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress) { }
+        public string RedactIPv6Address(string ipAddress) { }
+        public System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions) { }
+        public string RedactIPv6Address(string ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress) { }
+        public string RedactMACAddress(string macAddress) { }
+        public System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions) { }
+        public string RedactMACAddress(string macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber) { }
+        public string RedactPhoneNumber(string phoneNumber) { }
+        public System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions) { }
+        public string RedactPhoneNumber(string phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions) { }
+        public System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value) { }
+        public string RedactString(string value) { }
+        public System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value, ZeroRedact.StringRedactorOptions redactorOptions) { }
+        public string RedactString(string value, ZeroRedact.StringRedactorOptions redactorOptions) { }
+    }
+    public readonly struct RedactorOptions
+    {
+        public RedactorOptions() { }
+        public ZeroRedact.CreditCardRedactorOptions CreditCardRedactorOptions { get; init; }
+        public ZeroRedact.DateRedactorOptions DateRedactorOptions { get; init; }
+        public ZeroRedact.EmailAddressRedactorOptions EmailAddressRedactorOptions { get; init; }
+        public int FixedLengthSize { get; init; }
+        public ZeroRedact.IPv4RedactorOptions IPv4RedactorOptions { get; init; }
+        public ZeroRedact.IPv6RedactorOptions IPv6RedactorOptions { get; init; }
+        public ZeroRedact.MACAddressRedactorOptions MACAddressRedactorOptions { get; init; }
+        public ZeroRedact.PhoneNumberRedactorOptions PhoneNumberRedactorOptions { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.StringRedactorOptions StringRedactorOptions { get; init; }
+    }
+    public enum StringRedaction
+    {
+        All = 0,
+        FixedLength = 1,
+        FirstHalf = 2,
+        SecondHalf = 3,
+        IgnoreSymbols = 4,
+    }
+    public readonly struct StringRedactorOptions
+    {
+        public StringRedactorOptions() { }
+        public int FixedLengthSize { get; init; }
+        public char RedactionCharacter { get; init; }
+        public ZeroRedact.StringRedaction RedactorType { get; init; }
+    }
+}
+namespace ZeroRedact.Redactors
+{
+    public interface IRedactor
+    {
+        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber);
+        string RedactCreditCard(string creditCardNumber);
+        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
+        string RedactCreditCard(string creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
+        string RedactDate(System.DateOnly date);
+        string RedactDate(System.DateTime date);
+        string RedactDate(System.DateOnly date, ZeroRedact.DateRedactorOptions redactorOptions);
+        string RedactDate(System.DateTime date, ZeroRedact.DateRedactorOptions redactorOptions);
+        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress);
+        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress);
+        string RedactEmailAddress(string emailAddress);
+        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        string RedactEmailAddress(string emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress);
+        string RedactIPv4Address(string ipAddress);
+        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
+        string RedactIPv4Address(string ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress);
+        string RedactIPv6Address(string ipAddress);
+        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
+        string RedactIPv6Address(string ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress);
+        string RedactMACAddress(string macAddress);
+        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
+        string RedactMACAddress(string macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber);
+        string RedactPhoneNumber(string phoneNumber);
+        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
+        string RedactPhoneNumber(string phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value);
+        string RedactString(string value);
+        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value, ZeroRedact.StringRedactorOptions redactorOptions);
+        string RedactString(string value, ZeroRedact.StringRedactorOptions redactorOptions);
+    }
+}
