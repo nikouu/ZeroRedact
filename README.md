@@ -110,7 +110,7 @@ The following outline the types of data that can be redacted with ZeroRedact. Ea
 
 ### Strings
 
-See [String Redaction](docs/API%20Design/String%20Redaction.md) for more information.
+See [String Redaction](design%20docs/API%20Design/String%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -135,7 +135,7 @@ var ignoreSymbolsRedaction = redactor.RedactString(sensitiveInfo, ignoreSymbolsO
 
 ### Email address
 
-See [Email Address Redaction](docs/API%20Design/Email%20Address%20Redaction.md) for more information.
+See [Email Address Redaction](design%20docs/API%20Design/Email%20Address%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -176,7 +176,7 @@ var showFirstCharactersRedaction = redactor.RedactEmailAddress(emailAddress, sho
 
 ### Credit card
 
-See [Credit Card Redaction](docs/API%20Design/Credit%20Card%20Redaction.md) for more information.
+See [Credit Card Redaction](design%20docs/API%20Design/Credit%20Card%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -205,7 +205,7 @@ var showFirstSixLastFourRedaction = redactor.RedactCreditCard(creditCard, showFi
 
 ### Date
 
-See [Date Redaction](docs/API%20Design/Date%20Redaction.md) for more information.
+See [Date Redaction](design%20docs/API%20Design/Date%20Redaction.md) for more information.
 
 Note: Date redaction depends on the current culture. Below show four culture examples.
 
@@ -288,7 +288,7 @@ var dayAndYearRedaction = redactor.RedactDate(date, dayAndYearOptions);
 
 ### Phone number
 
-See [Phone Number Redaction](docs/API%20Design/Phone%20Number%20Redaction.md) for more information on redacting and number formats.
+See [Phone Number Redaction](design%20docs/API%20Design/Phone%20Number%20Redaction.md) for more information on redacting and number formats.
 
 ```csharp
 var redactor = new Redactor();
@@ -313,7 +313,7 @@ var showLastFourRedaction = redactor.RedactPhoneNumber(phoneNumber, showLastFour
 
 ### IPv4 address
 
-See [IPv4 Address Redaction](docs/API%20Design/IPv4%20Address%20Redaction.md) for more information.
+See [IPv4 Address Redaction](design%20docs/API%20Design/IPv4%20Address%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -339,7 +339,7 @@ var showLastOctetRedaction = redactor.RedactIPv4Address(ipv4Address, showLastOct
 
 ### IPv6 address
 
-See [IPv6 Address Redaction](docs/API%20Design/IPv6%20Address%20Redaction.md) for more information.
+See [IPv6 Address Redaction](design%20docs/API%20Design/IPv6%20Address%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -365,7 +365,7 @@ var showLastQuartetRedaction = redactor.RedactIPv6Address(ipv4Address, showLastQ
 
 ### MAC address
 
-See [MAC Address Redaction](docs/API%20Design/MAC%20Address%20Redaction.md) for more information.
+See [MAC Address Redaction](design%20docs/API%20Design/MAC%20Address%20Redaction.md) for more information.
 
 ```csharp
 var redactor = new Redactor();
@@ -392,7 +392,7 @@ var showLastByteRedaction = redactor.RedactMACAddress(macAddress, showLastByteOp
 
 ### API Design
 
-Read more in the [General Design document](<docs/API Design/00 General Design.md>).
+Read more in the [General Design document](<design%20docs/API Design/00 General Design.md>).
 
 ### Permissive inputs
 
