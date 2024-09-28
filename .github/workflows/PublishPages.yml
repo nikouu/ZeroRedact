@@ -22,21 +22,70 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
+ #deploy-root:
+ #  environment:
+ #    name: github-pages
+ #    url: ${{ steps.deployment.outputs.page_url }}
+ #  runs-on: ubuntu-latest
+ #  steps:
+ #    - name: Checkout
+ #      uses: actions/checkout@v4
+ #    - name: Setup Pages
+ #      uses: actions/configure-pages@v5
+ #    - name: Upload artifact
+ #      uses: actions/upload-pages-artifact@v3
+ #      with:
+ #        path: 'site'
+ #    - name: Deploy to GitHub Pages
+ #      id: deployment
+ #      uses: actions/deploy-pages@v4
+
+  publish-docs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v3
+
+    - run: dotnet tool update -g docfx
+    - run: docfx src/ZeroRedact/docfx.json
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        # Upload entire repository
+        path: '\docfx\_site'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4  
+
+  deploy-wasmDemo:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the code
+      - uses: actions/checkout@v4
+
+      # Install .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
         with:
-          path: 'site'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          dotnet-version: 8.0.x
+      - name: Install .NET WebAssembly Tools
+        run: dotnet workload install wasm-tools
+
+      # Publish the site
+      - name: Publish
+        run: dotnet publish \src\ZeroRedact.DemoSite -c:Release -o:publish -p:GHPages=true
+
+      # Deploy the site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: publish/wwwroot
+          force_orphan: true
+          destination_dir: wasmDemo
