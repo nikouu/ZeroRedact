@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.Redactors
+  commentId: N:ZeroRedact.Redactors
+  id: ZeroRedact.Redactors
+  children:
+  - ZeroRedact.Redactors.IRedactor
+  langs:
+  - csharp
+  - vb
+  name: ZeroRedact.Redactors
+  nameWithType: ZeroRedact.Redactors
+  fullName: ZeroRedact.Redactors
+  type: Namespace
+  assemblies:
+  - ZeroRedact
+references:
+- uid: ZeroRedact.Redactors.IRedactor
+  commentId: T:ZeroRedact.Redactors.IRedactor
+  parent: ZeroRedact.Redactors
+  href: ZeroRedact.Redactors.IRedactor.html
+  name: IRedactor
+  nameWithType: IRedactor
+  fullName: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.Redactors
+  commentId: N:ZeroRedact.Redactors
+  href: ZeroRedact.html
+  name: ZeroRedact.Redactors
+  nameWithType: ZeroRedact.Redactors
+  fullName: ZeroRedact.Redactors
+  spec.csharp:
+  - uid: ZeroRedact
+    name: ZeroRedact
+    href: ZeroRedact.html
+  - name: .
+  - uid: ZeroRedact.Redactors
+    name: Redactors
+    href: ZeroRedact.Redactors.html
+  spec.vb:
+  - uid: ZeroRedact
+    name: ZeroRedact
+    href: ZeroRedact.html
+  - name: .
+  - uid: ZeroRedact.Redactors
+    name: Redactors
+    href: ZeroRedact.Redactors.html

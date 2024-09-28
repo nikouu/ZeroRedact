@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.DateRedaction
+  commentId: T:ZeroRedact.DateRedaction
+  id: DateRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.DateRedaction.All
+  - ZeroRedact.DateRedaction.Day
+  - ZeroRedact.DateRedaction.DayAndMonth
+  - ZeroRedact.DateRedaction.DayAndYear
+  - ZeroRedact.DateRedaction.FixedLength
+  - ZeroRedact.DateRedaction.Full
+  - ZeroRedact.DateRedaction.Month
+  - ZeroRedact.DateRedaction.MonthAndYear
+  - ZeroRedact.DateRedaction.Year
+  langs:
+  - csharp
+  - vb
+  name: DateRedaction
+  nameWithType: DateRedaction
+  fullName: ZeroRedact.DateRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: DateRedaction
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to a date.
+  example: []
+  syntax:
+    content: public enum DateRedaction
+    content.vb: Public Enum DateRedaction
+- uid: ZeroRedact.DateRedaction.All
+  commentId: F:ZeroRedact.DateRedaction.All
+  id: All
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: DateRedaction.All
+  fullName: ZeroRedact.DateRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The date is redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "*********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul></p>
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.FixedLength
+  commentId: F:ZeroRedact.DateRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: DateRedaction.FixedLength
+  fullName: ZeroRedact.DateRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 53
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The date is redacted with a fixed length.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul></p>
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.Full
+  commentId: F:ZeroRedact.DateRedaction.Full
+  id: Full
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: DateRedaction.Full
+  fullName: ZeroRedact.DateRedaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 77
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The date is redacted, showing the date separator.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "**/**/****"</li><li>en-US: "*/**/****"</li><li>ja-JP: "****/**/**"</li><li>InvariantCulture: "**/**/****"</li></ul></p>
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.Day
+  commentId: F:ZeroRedact.DateRedaction.Day
+  id: Day
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: Day
+  nameWithType: DateRedaction.Day
+  fullName: ZeroRedact.DateRedaction.Day
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Day
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 101
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The day is redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "**/06/2023"</li><li>en-US: "6/**/2023"</li><li>ja-JP: "2023/06/**"</li><li>InvariantCulture: "06/**/2023"</li></ul></p>
+  example: []
+  syntax:
+    content: Day = 3
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.Month
+  commentId: F:ZeroRedact.DateRedaction.Month
+  id: Month
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: Month
+  nameWithType: DateRedaction.Month
+  fullName: ZeroRedact.DateRedaction.Month
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Month
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 125
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The month is redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "15/**/2023"</li><li>en-US: "*/15/2023"</li><li>ja-JP: "2023/**/15"</li><li>InvariantCulture: "**/15/2023"</li></ul></p>
+  example: []
+  syntax:
+    content: Month = 4
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.Year
+  commentId: F:ZeroRedact.DateRedaction.Year
+  id: Year
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: DateRedaction.Year
+  fullName: ZeroRedact.DateRedaction.Year
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Year
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 149
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The year is redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "15/06/****"</li><li>en-US: "6/15/****"</li><li>ja-JP: "****/06/15"</li><li>InvariantCulture: "06/15/****"</li></ul></p>
+  example: []
+  syntax:
+    content: Year = 5
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.DayAndMonth
+  commentId: F:ZeroRedact.DateRedaction.DayAndMonth
+  id: DayAndMonth
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: DayAndMonth
+  nameWithType: DateRedaction.DayAndMonth
+  fullName: ZeroRedact.DateRedaction.DayAndMonth
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: DayAndMonth
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 173
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The day and month are redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "**/**/2023"</li><li>en-US: "*/**/2023"</li><li>ja-JP: "2023/**/**"</li><li>InvariantCulture: "**/**/2023"</li></ul></p>
+  example: []
+  syntax:
+    content: DayAndMonth = 6
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.MonthAndYear
+  commentId: F:ZeroRedact.DateRedaction.MonthAndYear
+  id: MonthAndYear
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: MonthAndYear
+  nameWithType: DateRedaction.MonthAndYear
+  fullName: ZeroRedact.DateRedaction.MonthAndYear
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: MonthAndYear
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 197
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The month and year are redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "15/**/****"</li><li>en-US: "*/15/****"</li><li>ja-JP: "****/**/15"</li><li>InvariantCulture: "**/15/****"</li></ul></p>
+  example: []
+  syntax:
+    content: MonthAndYear = 7
+    return:
+      type: ZeroRedact.DateRedaction
+- uid: ZeroRedact.DateRedaction.DayAndYear
+  commentId: F:ZeroRedact.DateRedaction.DayAndYear
+  id: DayAndYear
+  parent: ZeroRedact.DateRedaction
+  langs:
+  - csharp
+  - vb
+  name: DayAndYear
+  nameWithType: DateRedaction.DayAndYear
+  fullName: ZeroRedact.DateRedaction.DayAndYear
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/DateRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: DayAndYear
+    path: ../src/ZeroRedact/Enums/DateRedaction.cs
+    startLine: 221
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The day and year are redacted.
+  remarks: >-
+    <p>Takes the current <xref href="System.Globalization.CultureInfo" data-throw-if-not-resolved="false"></xref> into account.</p>
+
+    <p>Example for "2023/06/15":
+
+    <ul><li>en-NZ: "**/06/****"</li><li>en-US: "6/**/****"</li><li>ja-JP: "****/06/**"</li><li>InvariantCulture: "06/**/****"</li></ul></p>
+  example: []
+  syntax:
+    content: DayAndYear = 8
+    return:
+      type: ZeroRedact.DateRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: ZeroRedact.DateRedaction
+  commentId: T:ZeroRedact.DateRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.DateRedaction.html
+  name: DateRedaction
+  nameWithType: DateRedaction
+  fullName: ZeroRedact.DateRedaction

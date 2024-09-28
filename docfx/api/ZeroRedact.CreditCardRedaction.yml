@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.CreditCardRedaction
+  commentId: T:ZeroRedact.CreditCardRedaction
+  id: CreditCardRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.CreditCardRedaction.All
+  - ZeroRedact.CreditCardRedaction.FixedLength
+  - ZeroRedact.CreditCardRedaction.Full
+  - ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  - ZeroRedact.CreditCardRedaction.ShowLastFour
+  langs:
+  - csharp
+  - vb
+  name: CreditCardRedaction
+  nameWithType: CreditCardRedaction
+  fullName: ZeroRedact.CreditCardRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: CreditCardRedaction
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to a credit card number.
+  example: []
+  syntax:
+    content: public enum CreditCardRedaction
+    content.vb: Public Enum CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.All
+  commentId: F:ZeroRedact.CreditCardRedaction.All
+  id: All
+  parent: ZeroRedact.CreditCardRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: CreditCardRedaction.All
+  fullName: ZeroRedact.CreditCardRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 11
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The credit card number is redacted.
+  remarks: 'Example: "4111-1111-1111-1111" becomes "*******************"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.FixedLength
+  commentId: F:ZeroRedact.CreditCardRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.CreditCardRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: CreditCardRedaction.FixedLength
+  fullName: ZeroRedact.CreditCardRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 17
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The credit card number is redacted with a fixed length.
+  remarks: 'Example: "4111-1111-1111-1111" becomes "********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.Full
+  commentId: F:ZeroRedact.CreditCardRedaction.Full
+  id: Full
+  parent: ZeroRedact.CreditCardRedaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: CreditCardRedaction.Full
+  fullName: ZeroRedact.CreditCardRedaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 23
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The credit card number is redacted, preserving symbols.
+  remarks: 'Example: "4111-1111-1111-1111" becomes "****-****-****-****"'
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.ShowLastFour
+  commentId: F:ZeroRedact.CreditCardRedaction.ShowLastFour
+  id: ShowLastFour
+  parent: ZeroRedact.CreditCardRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowLastFour
+  nameWithType: CreditCardRedaction.ShowLastFour
+  fullName: ZeroRedact.CreditCardRedaction.ShowLastFour
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowLastFour
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The last four digits of the credit card number are shown.
+  remarks: 'Example: "4111-1111-1111-1111" becomes "****-****-****-1111"'
+  example: []
+  syntax:
+    content: ShowLastFour = 3
+    return:
+      type: ZeroRedact.CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  commentId: F:ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  id: ShowFirstSixLastFour
+  parent: ZeroRedact.CreditCardRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowFirstSixLastFour
+  nameWithType: CreditCardRedaction.ShowFirstSixLastFour
+  fullName: ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/CreditCardRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowFirstSixLastFour
+    path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
+    startLine: 35
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The first six digits and the last four digits of the credit card number are shown.
+  remarks: 'Example: "4111-1111-1111-1111" becomes "4111-11**-****-1111"'
+  example: []
+  syntax:
+    content: ShowFirstSixLastFour = 4
+    return:
+      type: ZeroRedact.CreditCardRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.CreditCardRedaction
+  commentId: T:ZeroRedact.CreditCardRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.CreditCardRedaction.html
+  name: CreditCardRedaction
+  nameWithType: CreditCardRedaction
+  fullName: ZeroRedact.CreditCardRedaction

@@ -1,0 +1,773 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.RedactorOptions
+  commentId: T:ZeroRedact.RedactorOptions
+  id: RedactorOptions
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.RedactorOptions.#ctor
+  - ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  - ZeroRedact.RedactorOptions.DateRedactorOptions
+  - ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  - ZeroRedact.RedactorOptions.FixedLengthSize
+  - ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  - ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  - ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  - ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  - ZeroRedact.RedactorOptions.RedactionCharacter
+  - ZeroRedact.RedactorOptions.StringRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactorOptions
+  nameWithType: RedactorOptions
+  fullName: ZeroRedact.RedactorOptions
+  type: Struct
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Provides options to be used with <xref href="ZeroRedact.Redactor" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public readonly struct RedactorOptions
+    content.vb: Public Structure RedactorOptions
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ZeroRedact.RedactorOptions.StringRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.StringRedactorOptions
+  id: StringRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: StringRedactorOptions
+  nameWithType: RedactorOptions.StringRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.StringRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: StringRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 10
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting strings.
+  example: []
+  syntax:
+    content: public StringRedactorOptions StringRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.StringRedactorOptions
+    content.vb: Public Property StringRedactorOptions As StringRedactorOptions
+  overload: ZeroRedact.RedactorOptions.StringRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  id: EmailAddressRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: EmailAddressRedactorOptions
+  nameWithType: RedactorOptions.EmailAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: EmailAddressRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 15
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting email addresses.
+  example: []
+  syntax:
+    content: public EmailAddressRedactorOptions EmailAddressRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.EmailAddressRedactorOptions
+    content.vb: Public Property EmailAddressRedactorOptions As EmailAddressRedactorOptions
+  overload: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.DateRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.DateRedactorOptions
+  id: DateRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: DateRedactorOptions
+  nameWithType: RedactorOptions.DateRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.DateRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: DateRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 20
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting dates.
+  example: []
+  syntax:
+    content: public DateRedactorOptions DateRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.DateRedactorOptions
+    content.vb: Public Property DateRedactorOptions As DateRedactorOptions
+  overload: ZeroRedact.RedactorOptions.DateRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  id: CreditCardRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: CreditCardRedactorOptions
+  nameWithType: RedactorOptions.CreditCardRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: CreditCardRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 25
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting credit card numbers.
+  example: []
+  syntax:
+    content: public CreditCardRedactorOptions CreditCardRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.CreditCardRedactorOptions
+    content.vb: Public Property CreditCardRedactorOptions As CreditCardRedactorOptions
+  overload: ZeroRedact.RedactorOptions.CreditCardRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  id: PhoneNumberRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberRedactorOptions
+  nameWithType: RedactorOptions.PhoneNumberRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: PhoneNumberRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 30
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting phone numbers.
+  example: []
+  syntax:
+    content: public PhoneNumberRedactorOptions PhoneNumberRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.PhoneNumberRedactorOptions
+    content.vb: Public Property PhoneNumberRedactorOptions As PhoneNumberRedactorOptions
+  overload: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  id: IPv4RedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: IPv4RedactorOptions
+  nameWithType: RedactorOptions.IPv4RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IPv4RedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 35
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting IPv4 addresses.
+  example: []
+  syntax:
+    content: public IPv4RedactorOptions IPv4RedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.IPv4RedactorOptions
+    content.vb: Public Property IPv4RedactorOptions As IPv4RedactorOptions
+  overload: ZeroRedact.RedactorOptions.IPv4RedactorOptions*
+- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  id: IPv6RedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: IPv6RedactorOptions
+  nameWithType: RedactorOptions.IPv6RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IPv6RedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 40
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The options for redacting IPv6 addresses.
+  example: []
+  syntax:
+    content: public IPv6RedactorOptions IPv6RedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.IPv6RedactorOptions
+    content.vb: Public Property IPv6RedactorOptions As IPv6RedactorOptions
+  overload: ZeroRedact.RedactorOptions.IPv6RedactorOptions*
+- uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  id: MACAddressRedactorOptions
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: MACAddressRedactorOptions
+  nameWithType: RedactorOptions.MACAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: MACAddressRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 45
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The MAC address redactor options.
+  example: []
+  syntax:
+    content: public MACAddressRedactorOptions MACAddressRedactorOptions { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.MACAddressRedactorOptions
+    content.vb: Public Property MACAddressRedactorOptions As MACAddressRedactorOptions
+  overload: ZeroRedact.RedactorOptions.MACAddressRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.RedactionCharacter
+  commentId: P:ZeroRedact.RedactorOptions.RedactionCharacter
+  id: RedactionCharacter
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactionCharacter
+  nameWithType: RedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.RedactorOptions.RedactionCharacter
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactionCharacter
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 50
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The character used for the redaction.
+  example: []
+  syntax:
+    content: public char RedactionCharacter { get; init; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property RedactionCharacter As Char
+  overload: ZeroRedact.RedactorOptions.RedactionCharacter*
+- uid: ZeroRedact.RedactorOptions.FixedLengthSize
+  commentId: P:ZeroRedact.RedactorOptions.FixedLengthSize
+  id: FixedLengthSize
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: FixedLengthSize
+  nameWithType: RedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.RedactorOptions.FixedLengthSize
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLengthSize
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 55
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The fixed length size of the redaction.
+  example: []
+  syntax:
+    content: public int FixedLengthSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FixedLengthSize As Integer
+  overload: ZeroRedact.RedactorOptions.FixedLengthSize*
+- uid: ZeroRedact.RedactorOptions.#ctor
+  commentId: M:ZeroRedact.RedactorOptions.#ctor
+  id: '#ctor'
+  parent: ZeroRedact.RedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactorOptions()
+  nameWithType: RedactorOptions.RedactorOptions()
+  fullName: ZeroRedact.RedactorOptions.RedactorOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/RedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: .ctor
+    path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
+    startLine: 60
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Constructs a new <xref href="ZeroRedact.RedactorOptions" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public RedactorOptions()
+    content.vb: Public Sub New()
+  overload: ZeroRedact.RedactorOptions.#ctor*
+  nameWithType.vb: RedactorOptions.New()
+  fullName.vb: ZeroRedact.RedactorOptions.New()
+  name.vb: New()
+references:
+- uid: ZeroRedact.Redactor
+  commentId: T:ZeroRedact.Redactor
+  href: ZeroRedact.Redactor.html
+  name: Redactor
+  nameWithType: Redactor
+  fullName: ZeroRedact.Redactor
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ZeroRedact.RedactorOptions.StringRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.StringRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_StringRedactorOptions
+  name: StringRedactorOptions
+  nameWithType: RedactorOptions.StringRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.StringRedactorOptions
+- uid: ZeroRedact.StringRedactorOptions
+  commentId: T:ZeroRedact.StringRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.StringRedactorOptions.html
+  name: StringRedactorOptions
+  nameWithType: StringRedactorOptions
+  fullName: ZeroRedact.StringRedactorOptions
+- uid: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_EmailAddressRedactorOptions
+  name: EmailAddressRedactorOptions
+  nameWithType: RedactorOptions.EmailAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+- uid: ZeroRedact.EmailAddressRedactorOptions
+  commentId: T:ZeroRedact.EmailAddressRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.EmailAddressRedactorOptions.html
+  name: EmailAddressRedactorOptions
+  nameWithType: EmailAddressRedactorOptions
+  fullName: ZeroRedact.EmailAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.DateRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.DateRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_DateRedactorOptions
+  name: DateRedactorOptions
+  nameWithType: RedactorOptions.DateRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.DateRedactorOptions
+- uid: ZeroRedact.DateRedactorOptions
+  commentId: T:ZeroRedact.DateRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.DateRedactorOptions.html
+  name: DateRedactorOptions
+  nameWithType: DateRedactorOptions
+  fullName: ZeroRedact.DateRedactorOptions
+- uid: ZeroRedact.RedactorOptions.CreditCardRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_CreditCardRedactorOptions
+  name: CreditCardRedactorOptions
+  nameWithType: RedactorOptions.CreditCardRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+- uid: ZeroRedact.CreditCardRedactorOptions
+  commentId: T:ZeroRedact.CreditCardRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.CreditCardRedactorOptions.html
+  name: CreditCardRedactorOptions
+  nameWithType: CreditCardRedactorOptions
+  fullName: ZeroRedact.CreditCardRedactorOptions
+- uid: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_PhoneNumberRedactorOptions
+  name: PhoneNumberRedactorOptions
+  nameWithType: RedactorOptions.PhoneNumberRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+- uid: ZeroRedact.PhoneNumberRedactorOptions
+  commentId: T:ZeroRedact.PhoneNumberRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.PhoneNumberRedactorOptions.html
+  name: PhoneNumberRedactorOptions
+  nameWithType: PhoneNumberRedactorOptions
+  fullName: ZeroRedact.PhoneNumberRedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv4RedactorOptions
+  name: IPv4RedactorOptions
+  nameWithType: RedactorOptions.IPv4RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+- uid: ZeroRedact.IPv4RedactorOptions
+  commentId: T:ZeroRedact.IPv4RedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.IPv4RedactorOptions.html
+  name: IPv4RedactorOptions
+  nameWithType: IPv4RedactorOptions
+  fullName: ZeroRedact.IPv4RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv6RedactorOptions
+  name: IPv6RedactorOptions
+  nameWithType: RedactorOptions.IPv6RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+- uid: ZeroRedact.IPv6RedactorOptions
+  commentId: T:ZeroRedact.IPv6RedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.IPv6RedactorOptions.html
+  name: IPv6RedactorOptions
+  nameWithType: IPv6RedactorOptions
+  fullName: ZeroRedact.IPv6RedactorOptions
+- uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_MACAddressRedactorOptions
+  name: MACAddressRedactorOptions
+  nameWithType: RedactorOptions.MACAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+- uid: ZeroRedact.MACAddressRedactorOptions
+  commentId: T:ZeroRedact.MACAddressRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.MACAddressRedactorOptions.html
+  name: MACAddressRedactorOptions
+  nameWithType: MACAddressRedactorOptions
+  fullName: ZeroRedact.MACAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.RedactionCharacter*
+  commentId: Overload:ZeroRedact.RedactorOptions.RedactionCharacter
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_RedactionCharacter
+  name: RedactionCharacter
+  nameWithType: RedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.RedactorOptions.RedactionCharacter
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: ZeroRedact.RedactorOptions.FixedLengthSize*
+  commentId: Overload:ZeroRedact.RedactorOptions.FixedLengthSize
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_FixedLengthSize
+  name: FixedLengthSize
+  nameWithType: RedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.RedactorOptions.FixedLengthSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ZeroRedact.RedactorOptions
+  commentId: T:ZeroRedact.RedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.RedactorOptions.html
+  name: RedactorOptions
+  nameWithType: RedactorOptions
+  fullName: ZeroRedact.RedactorOptions
+- uid: ZeroRedact.RedactorOptions.#ctor*
+  commentId: Overload:ZeroRedact.RedactorOptions.#ctor
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions__ctor
+  name: RedactorOptions
+  nameWithType: RedactorOptions.RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.RedactorOptions
+  nameWithType.vb: RedactorOptions.New
+  fullName.vb: ZeroRedact.RedactorOptions.New
+  name.vb: New

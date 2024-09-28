@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.PhoneNumberRedactorOptions
+  commentId: T:ZeroRedact.PhoneNumberRedactorOptions
+  id: PhoneNumberRedactorOptions
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  - ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  - ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  - ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberRedactorOptions
+  nameWithType: PhoneNumberRedactorOptions
+  fullName: ZeroRedact.PhoneNumberRedactorOptions
+  type: Struct
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: PhoneNumberRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Phone number redactor options.
+  example: []
+  syntax:
+    content: public readonly struct PhoneNumberRedactorOptions
+    content.vb: Public Structure PhoneNumberRedactorOptions
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  id: RedactionCharacter
+  parent: ZeroRedact.PhoneNumberRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactionCharacter
+  nameWithType: PhoneNumberRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactionCharacter
+    path: ../src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+    startLine: 14
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The character used for the redaction.
+  example: []
+  syntax:
+    content: public char RedactionCharacter { get; init; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property RedactionCharacter As Char
+  overload: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter*
+- uid: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  id: FixedLengthSize
+  parent: ZeroRedact.PhoneNumberRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: FixedLengthSize
+  nameWithType: PhoneNumberRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLengthSize
+    path: ../src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+    startLine: 25
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The fixed length size of the redaction.
+  example: []
+  syntax:
+    content: public int FixedLengthSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FixedLengthSize As Integer
+  overload: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize*
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  id: RedactorType
+  parent: ZeroRedact.PhoneNumberRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactorType
+  nameWithType: PhoneNumberRedactorOptions.RedactorType
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactorType
+    path: ../src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+    startLine: 36
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The type of redactor to apply.
+  example: []
+  syntax:
+    content: public PhoneNumberRedaction RedactorType { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.PhoneNumberRedaction
+    content.vb: Public Property RedactorType As PhoneNumberRedaction
+  overload: ZeroRedact.PhoneNumberRedactorOptions.RedactorType*
+- uid: ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  commentId: M:ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  id: '#ctor'
+  parent: ZeroRedact.PhoneNumberRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberRedactorOptions()
+  nameWithType: PhoneNumberRedactorOptions.PhoneNumberRedactorOptions()
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.PhoneNumberRedactorOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: .ctor
+    path: ../src/ZeroRedact/Options/Public/PhoneNumberRedactorOptions.cs
+    startLine: 47
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Constructs a new <xref href="ZeroRedact.PhoneNumberRedactorOptions" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public PhoneNumberRedactorOptions()
+    content.vb: Public Sub New()
+  overload: ZeroRedact.PhoneNumberRedactorOptions.#ctor*
+  nameWithType.vb: PhoneNumberRedactorOptions.New()
+  fullName.vb: ZeroRedact.PhoneNumberRedactorOptions.New()
+  name.vb: New()
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter*
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  href: ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactionCharacter
+  name: RedactionCharacter
+  nameWithType: PhoneNumberRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize*
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  href: ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_FixedLengthSize
+  name: FixedLengthSize
+  nameWithType: PhoneNumberRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactorType*
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  href: ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactorType
+  name: RedactorType
+  nameWithType: PhoneNumberRedactorOptions.RedactorType
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+- uid: ZeroRedact.PhoneNumberRedaction
+  commentId: T:ZeroRedact.PhoneNumberRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.PhoneNumberRedaction.html
+  name: PhoneNumberRedaction
+  nameWithType: PhoneNumberRedaction
+  fullName: ZeroRedact.PhoneNumberRedaction
+- uid: ZeroRedact.PhoneNumberRedactorOptions
+  commentId: T:ZeroRedact.PhoneNumberRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.PhoneNumberRedactorOptions.html
+  name: PhoneNumberRedactorOptions
+  nameWithType: PhoneNumberRedactorOptions
+  fullName: ZeroRedact.PhoneNumberRedactorOptions
+- uid: ZeroRedact.PhoneNumberRedactorOptions.#ctor*
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  href: ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions__ctor
+  name: PhoneNumberRedactorOptions
+  nameWithType: PhoneNumberRedactorOptions.PhoneNumberRedactorOptions
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.PhoneNumberRedactorOptions
+  nameWithType.vb: PhoneNumberRedactorOptions.New
+  fullName.vb: ZeroRedact.PhoneNumberRedactorOptions.New
+  name.vb: New

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.MACAddressRedaction
+  commentId: T:ZeroRedact.MACAddressRedaction
+  id: MACAddressRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.MACAddressRedaction.All
+  - ZeroRedact.MACAddressRedaction.FixedLength
+  - ZeroRedact.MACAddressRedaction.Full
+  - ZeroRedact.MACAddressRedaction.ShowLastByte
+  langs:
+  - csharp
+  - vb
+  name: MACAddressRedaction
+  nameWithType: MACAddressRedaction
+  fullName: ZeroRedact.MACAddressRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/MACAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: MACAddressRedaction
+    path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to a MAC address.
+  example: []
+  syntax:
+    content: public enum MACAddressRedaction
+    content.vb: Public Enum MACAddressRedaction
+- uid: ZeroRedact.MACAddressRedaction.All
+  commentId: F:ZeroRedact.MACAddressRedaction.All
+  id: All
+  parent: ZeroRedact.MACAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: MACAddressRedaction.All
+  fullName: ZeroRedact.MACAddressRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/MACAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
+    startLine: 12
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The MAC address is redacted.
+  remarks: 'Example: "00:B0:D0:63:C2:26" becomes "*****************"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.MACAddressRedaction
+- uid: ZeroRedact.MACAddressRedaction.FixedLength
+  commentId: F:ZeroRedact.MACAddressRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.MACAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: MACAddressRedaction.FixedLength
+  fullName: ZeroRedact.MACAddressRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/MACAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
+    startLine: 18
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The MAC address is redacted with a fixed length.
+  remarks: 'Example: "00:B0:D0:63:C2:26" becomes "********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.MACAddressRedaction
+- uid: ZeroRedact.MACAddressRedaction.Full
+  commentId: F:ZeroRedact.MACAddressRedaction.Full
+  id: Full
+  parent: ZeroRedact.MACAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: MACAddressRedaction.Full
+  fullName: ZeroRedact.MACAddressRedaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/MACAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
+    startLine: 24
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The MAC address is redacted, preserving symbols.
+  remarks: 'Example: "00:B0:D0:63:C2:26" becomes "**:**:**:**:**:**"'
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.MACAddressRedaction
+- uid: ZeroRedact.MACAddressRedaction.ShowLastByte
+  commentId: F:ZeroRedact.MACAddressRedaction.ShowLastByte
+  id: ShowLastByte
+  parent: ZeroRedact.MACAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowLastByte
+  nameWithType: MACAddressRedaction.ShowLastByte
+  fullName: ZeroRedact.MACAddressRedaction.ShowLastByte
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/MACAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowLastByte
+    path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
+    startLine: 30
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The last byte of the MAC address is shown.
+  remarks: 'Example: "00:B0:D0:63:C2:26" becomes "**:**:**:**:**:26"'
+  example: []
+  syntax:
+    content: ShowLastByte = 3
+    return:
+      type: ZeroRedact.MACAddressRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.MACAddressRedaction
+  commentId: T:ZeroRedact.MACAddressRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.MACAddressRedaction.html
+  name: MACAddressRedaction
+  nameWithType: MACAddressRedaction
+  fullName: ZeroRedact.MACAddressRedaction

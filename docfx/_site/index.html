@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ZeroRedact | ZeroRedact </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ZeroRedact | ZeroRedact ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nikouu/ZeroRedact/blob/main/docfx/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="ZeroRedact">
+            ZeroRedact
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="zeroredact">ZeroRedact</h1>
+
+<p><a href="https://www.nuget.org/packages/Nikouu.ZeroRedact"><img src="https://img.shields.io/nuget/v/Nikouu.ZeroRedact" alt="NuGet"></a></p>
+<p>An extremely fast, simple, zero allocation redacting library for .NET.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Install via <a href="https://www.nuget.org/packages/Nikouu.ZeroRedact/">NuGet</a>:</p>
+<pre><code>dotnet add package Nikouu.ZeroRedact
+</code></pre>
+<p>The following shows the default redaction which aims to hide the sensitive information while still making it clear what the data type is.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+
+// returns &quot;*************&quot;
+var stringResult = redactor.RedactString(&quot;Hello, World!&quot;);
+
+// returns &quot;*****@*******.***&quot;
+var emailAddressResult = redactor.RedactEmailAddress(&quot;email@example.com&quot;);
+
+// returns &quot;****-****-****-****&quot;
+var creditCardResult = redactor.RedactCreditCard(&quot;4111-1111-1111-1111&quot;);
+
+// returns based on current culture
+// en-NZ: &quot;**/**/****&quot;
+// en-US: &quot;*/**/****&quot;
+// ja-JP: &quot;****/**/**&quot;
+// InvariantCulture: &quot;**/**/****&quot;
+var dateResult = redactor.RedactDate(new DateTime(2023, 10, 5));
+
+// returns &quot;***-***-****&quot;
+var phoneNumberResult = redactor.RedactPhoneNumber(&quot;212-456-7890&quot;);
+
+// returns &quot;***.*.*.***&quot;
+var ipv4Result = redactor.RedactIPv4Address(&quot;192.0.2.146&quot;);
+
+// returns &quot;****:****:****:****:****:****:****:****&quot;
+var ipv6Result = redactor.RedactIPv6Address(&quot;2001:0000:130F:0000:0000:09C0:876A:130B&quot;);
+
+// &quot;**:**:**:**:**:**&quot;
+var macResult = redactor.RedactMACAddress(&quot;00:B0:D0:63:C2:26&quot;);
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>ZeroRedact can be configured in two ways: via constructor, and via a redaction method. Both using the appropriate redactor option object.</p>
+<p>Configuration has three layers with least to most priority:</p>
+<ol>
+<li>Base defaults within the <code>Redactor</code> object.</li>
+<li>Passed in options to the <code>Redactor</code> object constructor</li>
+<li>Passed in options to a redaction method at the time of redaction</li>
+</ol>
+<p>This example shows changing the base defaults. This will apply to every redaction, whether it's a string or email address, etc.</p>
+<pre><code class="lang-csharp">// Example 1: Changing base defaults
+var options = new RedactorOptions
+{
+    RedactionCharacter = 'X'
+};
+
+var redactor = new Redactor(options);
+
+// returns &quot;XXXXXXXXXXXXX&quot;
+var result = redactor.RedactString(&quot;Hello, World!&quot;);
+</code></pre>
+<p>This example shows <code>StringRedactorOptions</code> being passed into the <code>Redactor</code> constructor. Only string redactions will now use 'A' as the redaction character, all others will continue to use the default character of '*'.</p>
+<pre><code class="lang-csharp">// Example 2: Changing specific redaction type options
+var options = new RedactorOptions
+{
+    StringRedactorOptions = new StringRedactorOptions
+    {
+        RedactionCharacter = 'A'
+    }
+};
+
+var redactor = new Redactor(options);
+
+// returns &quot;AAAAAAAAAAAAA&quot;
+var result = redactor.RedactString(&quot;Hello, World!&quot;);
+</code></pre>
+<p>This example shows passing in <code>StringRedactorOptions</code> at the time of redaction, which takes precedence over the constructor options.</p>
+<pre><code class="lang-csharp">// Example 3: Changing redaction options at redaction time
+var options = new RedactorOptions
+{
+    StringRedactorOptions = new StringRedactorOptions
+    {
+        RedactionCharacter = 'A'
+    }
+};
+
+var redactor = new Redactor(options);
+var specificOptions = new StringRedactorOptions { RedactionCharacter = 'B' };
+
+// returns &quot;BBBBBBBBBBBBB&quot;
+var result = redactor.RedactString(&quot;Hello, World!&quot;, specificOptions);
+</code></pre>
+<h2 id="redacting-types">Redacting Types</h2>
+<p>The following outline the types of data that can be redacted with ZeroRedact. Each data type comes with various redaction types.</p>
+<h3 id="strings">Strings</h3>
+<p>See <a href="design%20docs/API%20Design/String%20Redaction.md">String Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var sensitiveInfo = &quot;Hello, world!&quot;;
+
+// Uses the default redactor (All)
+// returns &quot;*************&quot;
+var allRedaction = redactor.RedactString(sensitiveInfo);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new StringRedactorOptions { RedactorType = StringRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactString(sensitiveInfo, fixedLengthOptions);
+
+// returns &quot;Hello,*******&quot;
+var firsthalfOptions =  new StringRedactorOptions { RedactorType = StringRedaction.FirstHalf };
+var firstHalfRedaction = redactor.RedactString(sensitiveInfo, firsthalfOptions);
+
+// returns &quot;******, *****!&quot;
+var ignoreSymbolsOptions = new StringRedactorOptions { RedactorType = StringRedaction.IgnoreSymbols };
+var ignoreSymbolsRedaction = redactor.RedactString(sensitiveInfo, ignoreSymbolsOptions)
+</code></pre>
+<h3 id="email-address">Email address</h3>
+<p>See <a href="design%20docs/API%20Design/Email%20Address%20Redaction.md">Email Address Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var emailAddress = &quot;email@example.com&quot;;
+
+// Uses the default redactor (Full)
+// returns &quot;*****@*******.***&quot;
+var fullRedaction = redactor.RedactEmailAddress(emailAddress);
+
+// returns &quot;*****************&quot;
+var allOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.All };
+var allRedaction = redactor.RedactEmailAddress(emailAddress, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactEmailAddress(emailAddress, fixedLengthOptions);
+
+// returns &quot;*****@example.com&quot;
+var usernameOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.Username };
+var usernameRedaction = redactor.RedactEmailAddress(emailAddress, usernameOptions);
+
+// returns &quot;***il@example.com&quot;
+var firstHalfUsernameOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.FirstHalfUsername };
+var firstHalfUsernameRedaction = redactor.RedactEmailAddress(emailAddress, firstHalfUsernameOptions);
+
+// returns &quot;em*********le.com&quot;
+var middleOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.Middle };
+var middleRedaction = redactor.RedactEmailAddress(emailAddress, middleOptions);
+
+// returns &quot;e***l@example.com&quot;
+var mostUsernameOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.MostUsername };
+var mostUsernameRedaction = redactor.RedactEmailAddress(emailAddress, mostUsernameOptions);
+
+// returns &quot;e****@e******.com&quot;
+var showFirstCharactersOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.ShowFirstCharacters };
+var showFirstCharactersRedaction = redactor.RedactEmailAddress(emailAddress, showFirstCharactersOptions);
+</code></pre>
+<h3 id="credit-card">Credit card</h3>
+<p>See <a href="design%20docs/API%20Design/Credit%20Card%20Redaction.md">Credit Card Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var creditCard = &quot;4111-1111-1111-1111&quot;;
+
+// Uses default redactor (Full)
+// returns &quot;****-****-****-****&quot;
+var fullRedaction = redactor.RedactCreditCard(creditCard);
+
+// returns &quot;*******************&quot;
+var allOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.All };
+var allRedaction = redactor.RedactCreditCard(creditCard, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactCreditCard(creditCard, fixedLengthOptions);
+
+// returns &quot;****-****-****-1111&quot;
+var showLastFourOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowLastFour };
+var showLastFourRedaction = redactor.RedactCreditCard(creditCard, showLastFourOptions);
+
+// returns &quot;4111-11**-****-1111&quot;
+var showFirstSixLastFourOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowFirstSixLastFour };
+var showFirstSixLastFourRedaction = redactor.RedactCreditCard(creditCard, showFirstSixLastFourOptions);
+</code></pre>
+<h3 id="date">Date</h3>
+<p>See <a href="design%20docs/API%20Design/Date%20Redaction.md">Date Redaction</a> for more information.</p>
+<p>Note: Date redaction depends on the current culture. Below show four culture examples.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var date = new DateTime(2023, 06, 15);
+
+// Uses default redactor (Full)
+// returns 
+// en-NZ: &quot;**/**/****&quot;
+// en-US: &quot;*/**/****&quot;
+// ja-JP: &quot;****/**/**&quot;
+// InvariantCulture: &quot;**/**/****&quot;
+var fullRedaction = redactor.RedactDate(date);
+
+// returns
+// en-NZ: &quot;*********&quot;
+// en-US: &quot;********&quot;
+// ja-JP: &quot;*********&quot;
+// InvariantCulture: &quot;*********&quot;
+var allOptions = new DateRedactorOptions { RedactorType = DateRedaction.All };
+var allRedaction = redactor.RedactDate(date, allOptions);
+
+// returns
+// en-NZ: &quot;********&quot;
+// en-US: &quot;********&quot;
+// ja-JP: &quot;********&quot;
+// InvariantCulture: &quot;********&quot;
+var fixedLengthOptions = new DateRedactorOptions { RedactorType = DateRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactDate(date, fixedLengthOptions);
+
+// returns
+// en-NZ: &quot;**/06/2023&quot;
+// en-US: &quot;6/**/2023&quot;
+// ja-JP: &quot;2023/06/**&quot;
+// InvariantCulture: &quot;06/**/2023&quot;
+var dayOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day };
+var dayRedaction = redactor.RedactDate(date, dayOptions);
+
+// returns
+// en-NZ: &quot;15/**/2023&quot;
+// en-US: &quot;*/15/2023&quot;
+// ja-JP: &quot;2023/**/15&quot;
+// InvariantCulture: &quot;**/15/2023&quot;
+var monthOptions = new DateRedactorOptions { RedactorType = DateRedaction.Month };
+var monthRedaction = redactor.RedactDate(date, monthOptions);
+
+// returns
+// en-NZ: &quot;15/06/****&quot;
+// en-US: &quot;6/15/****&quot;
+// ja-JP: &quot;****/06/15&quot;
+// InvariantCulture: &quot;06/15/****&quot;
+var yearOptions = new DateRedactorOptions { RedactorType = DateRedaction.Year };
+var yearRedaction = redactor.RedactDate(date, yearOptions); 
+
+// returns
+// en-NZ: &quot;**/**/2023&quot;
+// en-US: &quot;*/**/2023&quot;
+// ja-JP: &quot;2023/**/**&quot;
+// InvariantCulture: &quot;**/**/2023&quot;
+var dayAndMonthOptions = new DateRedactorOptions { RedactorType = DateRedaction.DayAndMonth };
+var dayAndMonthRedaction = redactor.RedactDate(date, dayAndMonthOptions); 
+
+// returns
+// en-NZ: &quot;15/**/****&quot;
+// en-US: &quot;*/15/****&quot;
+// ja-JP: &quot;****/**/15&quot;
+// InvariantCulture: &quot;**/15/****&quot;
+var monthAndYearOptions = new DateRedactorOptions { RedactorType = DateRedaction.DayAndMonth };
+var monthAndYearRedaction = redactor.RedactDate(date, monthAndYearOptions); 
+
+// returns
+// en-NZ: &quot;**/06/****&quot;
+// en-US: &quot;6/**/****&quot;
+// ja-JP: &quot;****/06/**&quot;
+// InvariantCulture: &quot;06/**/****&quot;
+var dayAndYearOptions = new DateRedactorOptions { RedactorType = DateRedaction.DayAndYear };
+var dayAndYearRedaction = redactor.RedactDate(date, dayAndYearOptions);
+</code></pre>
+<h3 id="phone-number">Phone number</h3>
+<p>See <a href="design%20docs/API%20Design/Phone%20Number%20Redaction.md">Phone Number Redaction</a> for more information on redacting and number formats.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var phoneNumber = &quot;212-456-7890&quot;;
+
+// Uses default redactor (Full)
+// returns &quot;***-***-****&quot;
+var fullRedaction = redactor.RedactPhoneNumber(phoneNumber);
+
+// returns &quot;************&quot;
+var allOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.All };
+var allRedaction = redactor.RedactPhoneNumber(phoneNumber, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactPhoneNumber(phoneNumber, fixedLengthOptions);
+
+// returns &quot;***-***-7890&quot;
+var showLastFourOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.ShowLastFour };
+var showLastFourRedaction = redactor.RedactPhoneNumber(phoneNumber, showLastFourOptions);
+</code></pre>
+<h3 id="ipv4-address">IPv4 address</h3>
+<p>See <a href="design%20docs/API%20Design/IPv4%20Address%20Redaction.md">IPv4 Address Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var ipv4Address = &quot;192.0.2.146&quot;;
+
+// Uses default redactor (Full)
+// returns &quot;***.*.*.***&quot;
+var fullRedaction = redactor.RedactIPv4Address(ipv4Address);
+
+// returns &quot;***********&quot;
+var allOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.All };
+var allRedaction = redactor.RedactIPv4Address(ipv4Address, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactIPv4Address(ipv4Address, fixedLengthOptions);
+
+// returns &quot;***.*.*.146&quot;
+var showLastOctetOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.ShowLastOctet };
+var showLastOctetRedaction = redactor.RedactIPv4Address(ipv4Address, showLastOctetOptions);
+
+</code></pre>
+<h3 id="ipv6-address">IPv6 address</h3>
+<p>See <a href="design%20docs/API%20Design/IPv6%20Address%20Redaction.md">IPv6 Address Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var ipv6Address = &quot;2001:0000:130F:0000:0000:09C0:876A:130B&quot;;
+
+// Uses default redactor (Full)
+// returns &quot;****:****:****:****:****:****:****:****&quot;
+var fullRedaction = redactor.RedactIPv6Address(ipv6Address);
+
+// returns &quot;***************************************&quot;
+var allOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.All };
+var allRedaction = redactor.RedactIPv6Address(ipv6Address, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactIPv6Address(ipv6Address, fixedLengthOptions);
+
+// returns &quot;****:****:****:****:****:****:****:130B&quot;
+var showLastQuartetOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.ShowLastQuartet };
+var showLastQuartetRedaction = redactor.RedactIPv6Address(ipv4Address, showLastQuartetOptions);
+
+</code></pre>
+<h3 id="mac-address">MAC address</h3>
+<p>See <a href="design%20docs/API%20Design/MAC%20Address%20Redaction.md">MAC Address Redaction</a> for more information.</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+var macAddress = &quot;00:B0:D0:63:C2:26&quot;;
+
+// Uses default redactor (Full)
+// returns &quot;****:****:****:****:****:****:****:****&quot;
+var fullRedaction = redactor.RedactMACAddress(macAddress);
+
+// returns &quot;***************************************&quot;
+var allOptions = new MACAddressRedactorOptions { RedactorType = MACAddressRedaction.All };
+var allRedaction = redactor.RedactMACAddress(macAddress, allOptions);
+
+// returns &quot;********&quot;
+var fixedLengthOptions = new MACAddressRedactorOptions { RedactorType = MACAddressRedaction.FixedLength };
+var fixedLengthRedaction = redactor.RedactMACAddress(macAddress, fixedLengthOptions);
+
+// returns &quot;****:****:****:****:****:****:****:130B&quot;
+var showLastByteOptions = new MACAddressRedactorOptions { RedactorType = MACAddressRedaction.ShowLastByte };
+var showLastByteRedaction = redactor.RedactMACAddress(macAddress, showLastByteOptions);
+
+</code></pre>
+<h2 id="concepts">Concepts</h2>
+<h3 id="api-design">API Design</h3>
+<p>Read more in the <a href="design%20docs/API%20Design/00%20General%20Design.md">General Design document</a>.</p>
+<h3 id="permissive-inputs">Permissive inputs</h3>
+<p>There is an assumption that the data coming into ZeroRedact is already well formed, however there are often multiple opinions or standards of what &quot;well formed&quot; means. ZeroRedact does not fully validate incoming data as the only validation is whether key shapes of the data are present for redaction. For example:</p>
+<pre><code class="lang-csharp">var invalidEmail = &quot;.email@example.com&quot;
+var redactor = new Redactor();
+
+// result &quot;******@*******.***&quot;
+var result = redactor.RedactEmailAddress(invalidEmail)
+</code></pre>
+<p>While it is invalid, it has what ZeroRedact requires:</p>
+<ol>
+<li>An '@' sign</li>
+<li>Left of the final '@' sign not being empty</li>
+<li>A '.'</li>
+<li>The right of the final '.' not being empty</li>
+</ol>
+<p>Assuming the incoming data is well formed, this means ZeroRedact has an advantage of being able to accept all sorts of formats such as for telephone numbers:</p>
+<ol>
+<li>+1 (555) 123-4567</li>
+<li>+86 137 1234 5678</li>
+<li>555 123 456</li>
+<li>555123456</li>
+<li>+7 495 123-45-67</li>
+</ol>
+<h3 id="layered-configuration">Layered configuration</h3>
+<p>Users should have a fine grained customization experience which allows for an easy to reuse item that can setup default behaviours but when needed, can adapt to the need of the redaction call at the time.</p>
+<h3 id="error-handling">Error handling</h3>
+<p>Redacting will not throw exceptions - that is, the string manipulation logic. Any exception during the redacting process will return a fixed length redaction with a default redacting character. This is to avoid disrupting the important real work happening in a user's codebase while still preventing PII from being exposed.</p>
+<p>However exceptions can occur by passing invalid options to the redactor, whether that's via the constructor, or via a redaction method.</p>
+<h3 id="no-external-dependencies">No external dependencies</h3>
+<p>No extra NuGet packages are pulled in when using ZeroRedact.</p>
+<h2 id="performance">Performance</h2>
+<h3 id="benchmarks">Benchmarks</h3>
+<p>See <a href="benchmarks">benchmarks</a>.</p>
+<h2 id="license">License</h2>
+<p><a href="LICENSE">MIT</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nikouu/ZeroRedact/blob/main/docfx/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

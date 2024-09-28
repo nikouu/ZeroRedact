@@ -3,3 +3,5 @@ if (-not (Get-Command docfx -ErrorAction SilentlyContinue)) {
     Write-Host "dotnet tool update -g docfx"
     exit 1
 }
+
+docfx init

@@ -1,0 +1,47 @@
+### YamlMime:TableOfContent
+items:
+- uid: ZeroRedact
+  name: ZeroRedact
+  items:
+  - uid: ZeroRedact.CreditCardRedaction
+    name: CreditCardRedaction
+  - uid: ZeroRedact.CreditCardRedactorOptions
+    name: CreditCardRedactorOptions
+  - uid: ZeroRedact.DateRedaction
+    name: DateRedaction
+  - uid: ZeroRedact.DateRedactorOptions
+    name: DateRedactorOptions
+  - uid: ZeroRedact.EmailAddressRedaction
+    name: EmailAddressRedaction
+  - uid: ZeroRedact.EmailAddressRedactorOptions
+    name: EmailAddressRedactorOptions
+  - uid: ZeroRedact.IPv4Redaction
+    name: IPv4Redaction
+  - uid: ZeroRedact.IPv4RedactorOptions
+    name: IPv4RedactorOptions
+  - uid: ZeroRedact.IPv6Redaction
+    name: IPv6Redaction
+  - uid: ZeroRedact.IPv6RedactorOptions
+    name: IPv6RedactorOptions
+  - uid: ZeroRedact.MACAddressRedaction
+    name: MACAddressRedaction
+  - uid: ZeroRedact.MACAddressRedactorOptions
+    name: MACAddressRedactorOptions
+  - uid: ZeroRedact.PhoneNumberRedaction
+    name: PhoneNumberRedaction
+  - uid: ZeroRedact.PhoneNumberRedactorOptions
+    name: PhoneNumberRedactorOptions
+  - uid: ZeroRedact.Redactor
+    name: Redactor
+  - uid: ZeroRedact.RedactorOptions
+    name: RedactorOptions
+  - uid: ZeroRedact.StringRedaction
+    name: StringRedaction
+  - uid: ZeroRedact.StringRedactorOptions
+    name: StringRedactorOptions
+- uid: ZeroRedact.Redactors
+  name: ZeroRedact.Redactors
+  items:
+  - uid: ZeroRedact.Redactors.IRedactor
+    name: IRedactor
+memberLayout: SamePage

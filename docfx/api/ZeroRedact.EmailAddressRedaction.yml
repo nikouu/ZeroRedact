@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.EmailAddressRedaction
+  commentId: T:ZeroRedact.EmailAddressRedaction
+  id: EmailAddressRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.EmailAddressRedaction.All
+  - ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  - ZeroRedact.EmailAddressRedaction.FixedLength
+  - ZeroRedact.EmailAddressRedaction.Full
+  - ZeroRedact.EmailAddressRedaction.Middle
+  - ZeroRedact.EmailAddressRedaction.MostUsername
+  - ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  - ZeroRedact.EmailAddressRedaction.Username
+  langs:
+  - csharp
+  - vb
+  name: EmailAddressRedaction
+  nameWithType: EmailAddressRedaction
+  fullName: ZeroRedact.EmailAddressRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: EmailAddressRedaction
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to an email address.
+  example: []
+  syntax:
+    content: public enum EmailAddressRedaction
+    content.vb: Public Enum EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.All
+  commentId: F:ZeroRedact.EmailAddressRedaction.All
+  id: All
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: EmailAddressRedaction.All
+  fullName: ZeroRedact.EmailAddressRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 11
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The email address is redacted.
+  remarks: 'Example: "email@example.com" becomes "*****************"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.FixedLength
+  commentId: F:ZeroRedact.EmailAddressRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: EmailAddressRedaction.FixedLength
+  fullName: ZeroRedact.EmailAddressRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 17
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The email address is redacted with a fixed width.
+  remarks: 'Example: "email@example.com" becomes "********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.Full
+  commentId: F:ZeroRedact.EmailAddressRedaction.Full
+  id: Full
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: EmailAddressRedaction.Full
+  fullName: ZeroRedact.EmailAddressRedaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 23
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Only the @ symbol and final dot is shown.
+  remarks: 'Example: "email@example.com" becomes "*****@*******.***"'
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.Username
+  commentId: F:ZeroRedact.EmailAddressRedaction.Username
+  id: Username
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: EmailAddressRedaction.Username
+  fullName: ZeroRedact.EmailAddressRedaction.Username
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Username
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The local-part/username is redacted.
+  remarks: 'Example: "email@example.com" becomes "*****@example.com"'
+  example: []
+  syntax:
+    content: Username = 3
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  commentId: F:ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  id: FirstHalfUsername
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: FirstHalfUsername
+  nameWithType: EmailAddressRedaction.FirstHalfUsername
+  fullName: ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FirstHalfUsername
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 35
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The first half of the username is redacted.
+  remarks: 'Example: "email@example.com" becomes "***il@example.com"'
+  example: []
+  syntax:
+    content: FirstHalfUsername = 4
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.Middle
+  commentId: F:ZeroRedact.EmailAddressRedaction.Middle
+  id: Middle
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: EmailAddressRedaction.Middle
+  fullName: ZeroRedact.EmailAddressRedaction.Middle
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Middle
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 42
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The second half of the username and the first half of the domain are redacted.
+  remarks: 'Example: "email@example.com" becomes "em*********le.com"'
+  example: []
+  syntax:
+    content: Middle = 5
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.MostUsername
+  commentId: F:ZeroRedact.EmailAddressRedaction.MostUsername
+  id: MostUsername
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: MostUsername
+  nameWithType: EmailAddressRedaction.MostUsername
+  fullName: ZeroRedact.EmailAddressRedaction.MostUsername
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: MostUsername
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 48
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Only the first and last characters of the username are shown along with showing the full domain.
+  remarks: 'Example: "email@example.com" becomes "e***l@example.com"'
+  example: []
+  syntax:
+    content: MostUsername = 6
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  commentId: F:ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  id: ShowFirstCharacters
+  parent: ZeroRedact.EmailAddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowFirstCharacters
+  nameWithType: EmailAddressRedaction.ShowFirstCharacters
+  fullName: ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowFirstCharacters
+    path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
+    startLine: 54
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Only the first character of the username and host are shown along with showing the full domain.
+  remarks: 'Example: "email@example.com" becomes "e****@e******.com"'
+  example: []
+  syntax:
+    content: ShowFirstCharacters = 7
+    return:
+      type: ZeroRedact.EmailAddressRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.EmailAddressRedaction
+  commentId: T:ZeroRedact.EmailAddressRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.EmailAddressRedaction.html
+  name: EmailAddressRedaction
+  nameWithType: EmailAddressRedaction
+  fullName: ZeroRedact.EmailAddressRedaction

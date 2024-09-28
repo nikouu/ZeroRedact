@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.StringRedaction
+  commentId: T:ZeroRedact.StringRedaction
+  id: StringRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.StringRedaction.All
+  - ZeroRedact.StringRedaction.FirstHalf
+  - ZeroRedact.StringRedaction.FixedLength
+  - ZeroRedact.StringRedaction.IgnoreSymbols
+  - ZeroRedact.StringRedaction.SecondHalf
+  langs:
+  - csharp
+  - vb
+  name: StringRedaction
+  nameWithType: StringRedaction
+  fullName: ZeroRedact.StringRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: StringRedaction
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to a string.
+  example: []
+  syntax:
+    content: public enum StringRedaction
+    content.vb: Public Enum StringRedaction
+- uid: ZeroRedact.StringRedaction.All
+  commentId: F:ZeroRedact.StringRedaction.All
+  id: All
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: StringRedaction.All
+  fullName: ZeroRedact.StringRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 11
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The string is redacted.
+  remarks: 'Example: "Hello, world!" becomes "*************"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedaction.FixedLength
+  commentId: F:ZeroRedact.StringRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: StringRedaction.FixedLength
+  fullName: ZeroRedact.StringRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 17
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The string is redacted with a fixed length.
+  remarks: 'Example: "Hello, world!" becomes "*********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedaction.FirstHalf
+  commentId: F:ZeroRedact.StringRedaction.FirstHalf
+  id: FirstHalf
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: FirstHalf
+  nameWithType: StringRedaction.FirstHalf
+  fullName: ZeroRedact.StringRedaction.FirstHalf
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FirstHalf
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 23
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The first half of the string is redacted.
+  remarks: 'Example: "Hello, world!" becomes "*******world!"'
+  example: []
+  syntax:
+    content: FirstHalf = 2
+    return:
+      type: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedaction.SecondHalf
+  commentId: F:ZeroRedact.StringRedaction.SecondHalf
+  id: SecondHalf
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: SecondHalf
+  nameWithType: StringRedaction.SecondHalf
+  fullName: ZeroRedact.StringRedaction.SecondHalf
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: SecondHalf
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The second half of the string is redacted.
+  remarks: 'Example: "Hello, world!" becomes "Hello,*******"'
+  example: []
+  syntax:
+    content: SecondHalf = 3
+    return:
+      type: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedaction.IgnoreSymbols
+  commentId: F:ZeroRedact.StringRedaction.IgnoreSymbols
+  id: IgnoreSymbols
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: IgnoreSymbols
+  nameWithType: StringRedaction.IgnoreSymbols
+  fullName: ZeroRedact.StringRedaction.IgnoreSymbols
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IgnoreSymbols
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 35
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: All characters are redacted except symbols.
+  remarks: 'Example: "Hello, world!" becomes "******, *****!"'
+  example: []
+  syntax:
+    content: IgnoreSymbols = 4
+    return:
+      type: ZeroRedact.StringRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.StringRedaction
+  commentId: T:ZeroRedact.StringRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.StringRedaction.html
+  name: StringRedaction
+  nameWithType: StringRedaction
+  fullName: ZeroRedact.StringRedaction

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.IPv6Redaction
+  commentId: T:ZeroRedact.IPv6Redaction
+  id: IPv6Redaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.IPv6Redaction.All
+  - ZeroRedact.IPv6Redaction.FixedLength
+  - ZeroRedact.IPv6Redaction.Full
+  - ZeroRedact.IPv6Redaction.ShowLastQuartet
+  langs:
+  - csharp
+  - vb
+  name: IPv6Redaction
+  nameWithType: IPv6Redaction
+  fullName: ZeroRedact.IPv6Redaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv6Redaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IPv6Redaction
+    path: ../src/ZeroRedact/Enums/IPv6Redaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to an IPv6 address.
+  example: []
+  syntax:
+    content: public enum IPv6Redaction
+    content.vb: Public Enum IPv6Redaction
+- uid: ZeroRedact.IPv6Redaction.All
+  commentId: F:ZeroRedact.IPv6Redaction.All
+  id: All
+  parent: ZeroRedact.IPv6Redaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: IPv6Redaction.All
+  fullName: ZeroRedact.IPv6Redaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv6Redaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/IPv6Redaction.cs
+    startLine: 11
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv6 address is redacted.
+  remarks: 'Example: "2001:0000:130F:0000:0000:09C0:876A:130B" becomes "***************************************"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.IPv6Redaction
+- uid: ZeroRedact.IPv6Redaction.FixedLength
+  commentId: F:ZeroRedact.IPv6Redaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.IPv6Redaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: IPv6Redaction.FixedLength
+  fullName: ZeroRedact.IPv6Redaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv6Redaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/IPv6Redaction.cs
+    startLine: 17
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv4 address is redacted with a fixed length.
+  remarks: 'Example: "2001:0000:130F:0000:0000:09C0:876A:130B" becomes "********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.IPv6Redaction
+- uid: ZeroRedact.IPv6Redaction.Full
+  commentId: F:ZeroRedact.IPv6Redaction.Full
+  id: Full
+  parent: ZeroRedact.IPv6Redaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: IPv6Redaction.Full
+  fullName: ZeroRedact.IPv6Redaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv6Redaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/IPv6Redaction.cs
+    startLine: 23
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv4 address is redacted, preserving symbols.
+  remarks: 'Example: "2001:0000:130F:0000:0000:09C0:876A:130B" becomes "****:****:****:****:****:****:****:****"'
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.IPv6Redaction
+- uid: ZeroRedact.IPv6Redaction.ShowLastQuartet
+  commentId: F:ZeroRedact.IPv6Redaction.ShowLastQuartet
+  id: ShowLastQuartet
+  parent: ZeroRedact.IPv6Redaction
+  langs:
+  - csharp
+  - vb
+  name: ShowLastQuartet
+  nameWithType: IPv6Redaction.ShowLastQuartet
+  fullName: ZeroRedact.IPv6Redaction.ShowLastQuartet
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv6Redaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowLastQuartet
+    path: ../src/ZeroRedact/Enums/IPv6Redaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The last quartet of the IPv6 address are shown.
+  remarks: 'Example: "2001:0000:130F:0000:0000:09C0:876A:130B" becomes "****:****:****:****:****:****:****:130B"'
+  example: []
+  syntax:
+    content: ShowLastQuartet = 3
+    return:
+      type: ZeroRedact.IPv6Redaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.IPv6Redaction
+  commentId: T:ZeroRedact.IPv6Redaction
+  parent: ZeroRedact
+  href: ZeroRedact.IPv6Redaction.html
+  name: IPv6Redaction
+  nameWithType: IPv6Redaction
+  fullName: ZeroRedact.IPv6Redaction

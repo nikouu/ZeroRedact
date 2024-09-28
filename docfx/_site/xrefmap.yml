@@ -1,0 +1,1728 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ZeroRedact
+  name: ZeroRedact
+  href: api/ZeroRedact.html
+  commentId: N:ZeroRedact
+  fullName: ZeroRedact
+  nameWithType: ZeroRedact
+- uid: ZeroRedact.CreditCardRedaction
+  name: CreditCardRedaction
+  href: api/ZeroRedact.CreditCardRedaction.html
+  commentId: T:ZeroRedact.CreditCardRedaction
+  fullName: ZeroRedact.CreditCardRedaction
+  nameWithType: CreditCardRedaction
+- uid: ZeroRedact.CreditCardRedaction.All
+  name: All
+  href: api/ZeroRedact.CreditCardRedaction.html#ZeroRedact_CreditCardRedaction_All
+  commentId: F:ZeroRedact.CreditCardRedaction.All
+  fullName: ZeroRedact.CreditCardRedaction.All
+  nameWithType: CreditCardRedaction.All
+- uid: ZeroRedact.CreditCardRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.CreditCardRedaction.html#ZeroRedact_CreditCardRedaction_FixedLength
+  commentId: F:ZeroRedact.CreditCardRedaction.FixedLength
+  fullName: ZeroRedact.CreditCardRedaction.FixedLength
+  nameWithType: CreditCardRedaction.FixedLength
+- uid: ZeroRedact.CreditCardRedaction.Full
+  name: Full
+  href: api/ZeroRedact.CreditCardRedaction.html#ZeroRedact_CreditCardRedaction_Full
+  commentId: F:ZeroRedact.CreditCardRedaction.Full
+  fullName: ZeroRedact.CreditCardRedaction.Full
+  nameWithType: CreditCardRedaction.Full
+- uid: ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  name: ShowFirstSixLastFour
+  href: api/ZeroRedact.CreditCardRedaction.html#ZeroRedact_CreditCardRedaction_ShowFirstSixLastFour
+  commentId: F:ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  fullName: ZeroRedact.CreditCardRedaction.ShowFirstSixLastFour
+  nameWithType: CreditCardRedaction.ShowFirstSixLastFour
+- uid: ZeroRedact.CreditCardRedaction.ShowLastFour
+  name: ShowLastFour
+  href: api/ZeroRedact.CreditCardRedaction.html#ZeroRedact_CreditCardRedaction_ShowLastFour
+  commentId: F:ZeroRedact.CreditCardRedaction.ShowLastFour
+  fullName: ZeroRedact.CreditCardRedaction.ShowLastFour
+  nameWithType: CreditCardRedaction.ShowLastFour
+- uid: ZeroRedact.CreditCardRedactorOptions
+  name: CreditCardRedactorOptions
+  href: api/ZeroRedact.CreditCardRedactorOptions.html
+  commentId: T:ZeroRedact.CreditCardRedactorOptions
+  fullName: ZeroRedact.CreditCardRedactorOptions
+  nameWithType: CreditCardRedactorOptions
+- uid: ZeroRedact.CreditCardRedactorOptions.#ctor
+  name: CreditCardRedactorOptions()
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions__ctor
+  commentId: M:ZeroRedact.CreditCardRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.CreditCardRedactorOptions.CreditCardRedactorOptions()
+  fullName.vb: ZeroRedact.CreditCardRedactorOptions.New()
+  nameWithType: CreditCardRedactorOptions.CreditCardRedactorOptions()
+  nameWithType.vb: CreditCardRedactorOptions.New()
+- uid: ZeroRedact.CreditCardRedactorOptions.#ctor*
+  name: CreditCardRedactorOptions
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.CreditCardRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.CreditCardRedactorOptions.CreditCardRedactorOptions
+  fullName.vb: ZeroRedact.CreditCardRedactorOptions.New
+  nameWithType: CreditCardRedactorOptions.CreditCardRedactorOptions
+  nameWithType.vb: CreditCardRedactorOptions.New
+- uid: ZeroRedact.CreditCardRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.CreditCardRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.CreditCardRedactorOptions.FixedLengthSize
+  nameWithType: CreditCardRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.CreditCardRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.CreditCardRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.CreditCardRedactorOptions.FixedLengthSize
+  nameWithType: CreditCardRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.CreditCardRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.CreditCardRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.CreditCardRedactorOptions.RedactionCharacter
+  nameWithType: CreditCardRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.CreditCardRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.CreditCardRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.CreditCardRedactorOptions.RedactionCharacter
+  nameWithType: CreditCardRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.CreditCardRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.CreditCardRedactorOptions.RedactorType
+  fullName: ZeroRedact.CreditCardRedactorOptions.RedactorType
+  nameWithType: CreditCardRedactorOptions.RedactorType
+- uid: ZeroRedact.CreditCardRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.CreditCardRedactorOptions.html#ZeroRedact_CreditCardRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.CreditCardRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.CreditCardRedactorOptions.RedactorType
+  nameWithType: CreditCardRedactorOptions.RedactorType
+- uid: ZeroRedact.DateRedaction
+  name: DateRedaction
+  href: api/ZeroRedact.DateRedaction.html
+  commentId: T:ZeroRedact.DateRedaction
+  fullName: ZeroRedact.DateRedaction
+  nameWithType: DateRedaction
+- uid: ZeroRedact.DateRedaction.All
+  name: All
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_All
+  commentId: F:ZeroRedact.DateRedaction.All
+  fullName: ZeroRedact.DateRedaction.All
+  nameWithType: DateRedaction.All
+- uid: ZeroRedact.DateRedaction.Day
+  name: Day
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_Day
+  commentId: F:ZeroRedact.DateRedaction.Day
+  fullName: ZeroRedact.DateRedaction.Day
+  nameWithType: DateRedaction.Day
+- uid: ZeroRedact.DateRedaction.DayAndMonth
+  name: DayAndMonth
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_DayAndMonth
+  commentId: F:ZeroRedact.DateRedaction.DayAndMonth
+  fullName: ZeroRedact.DateRedaction.DayAndMonth
+  nameWithType: DateRedaction.DayAndMonth
+- uid: ZeroRedact.DateRedaction.DayAndYear
+  name: DayAndYear
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_DayAndYear
+  commentId: F:ZeroRedact.DateRedaction.DayAndYear
+  fullName: ZeroRedact.DateRedaction.DayAndYear
+  nameWithType: DateRedaction.DayAndYear
+- uid: ZeroRedact.DateRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_FixedLength
+  commentId: F:ZeroRedact.DateRedaction.FixedLength
+  fullName: ZeroRedact.DateRedaction.FixedLength
+  nameWithType: DateRedaction.FixedLength
+- uid: ZeroRedact.DateRedaction.Full
+  name: Full
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_Full
+  commentId: F:ZeroRedact.DateRedaction.Full
+  fullName: ZeroRedact.DateRedaction.Full
+  nameWithType: DateRedaction.Full
+- uid: ZeroRedact.DateRedaction.Month
+  name: Month
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_Month
+  commentId: F:ZeroRedact.DateRedaction.Month
+  fullName: ZeroRedact.DateRedaction.Month
+  nameWithType: DateRedaction.Month
+- uid: ZeroRedact.DateRedaction.MonthAndYear
+  name: MonthAndYear
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_MonthAndYear
+  commentId: F:ZeroRedact.DateRedaction.MonthAndYear
+  fullName: ZeroRedact.DateRedaction.MonthAndYear
+  nameWithType: DateRedaction.MonthAndYear
+- uid: ZeroRedact.DateRedaction.Year
+  name: Year
+  href: api/ZeroRedact.DateRedaction.html#ZeroRedact_DateRedaction_Year
+  commentId: F:ZeroRedact.DateRedaction.Year
+  fullName: ZeroRedact.DateRedaction.Year
+  nameWithType: DateRedaction.Year
+- uid: ZeroRedact.DateRedactorOptions
+  name: DateRedactorOptions
+  href: api/ZeroRedact.DateRedactorOptions.html
+  commentId: T:ZeroRedact.DateRedactorOptions
+  fullName: ZeroRedact.DateRedactorOptions
+  nameWithType: DateRedactorOptions
+- uid: ZeroRedact.DateRedactorOptions.#ctor
+  name: DateRedactorOptions()
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions__ctor
+  commentId: M:ZeroRedact.DateRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.DateRedactorOptions.DateRedactorOptions()
+  fullName.vb: ZeroRedact.DateRedactorOptions.New()
+  nameWithType: DateRedactorOptions.DateRedactorOptions()
+  nameWithType.vb: DateRedactorOptions.New()
+- uid: ZeroRedact.DateRedactorOptions.#ctor*
+  name: DateRedactorOptions
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.DateRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.DateRedactorOptions.DateRedactorOptions
+  fullName.vb: ZeroRedact.DateRedactorOptions.New
+  nameWithType: DateRedactorOptions.DateRedactorOptions
+  nameWithType.vb: DateRedactorOptions.New
+- uid: ZeroRedact.DateRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.DateRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.DateRedactorOptions.FixedLengthSize
+  nameWithType: DateRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.DateRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.DateRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.DateRedactorOptions.FixedLengthSize
+  nameWithType: DateRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.DateRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.DateRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.DateRedactorOptions.RedactionCharacter
+  nameWithType: DateRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.DateRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.DateRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.DateRedactorOptions.RedactionCharacter
+  nameWithType: DateRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.DateRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.DateRedactorOptions.RedactorType
+  fullName: ZeroRedact.DateRedactorOptions.RedactorType
+  nameWithType: DateRedactorOptions.RedactorType
+- uid: ZeroRedact.DateRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.DateRedactorOptions.html#ZeroRedact_DateRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.DateRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.DateRedactorOptions.RedactorType
+  nameWithType: DateRedactorOptions.RedactorType
+- uid: ZeroRedact.EmailAddressRedaction
+  name: EmailAddressRedaction
+  href: api/ZeroRedact.EmailAddressRedaction.html
+  commentId: T:ZeroRedact.EmailAddressRedaction
+  fullName: ZeroRedact.EmailAddressRedaction
+  nameWithType: EmailAddressRedaction
+- uid: ZeroRedact.EmailAddressRedaction.All
+  name: All
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_All
+  commentId: F:ZeroRedact.EmailAddressRedaction.All
+  fullName: ZeroRedact.EmailAddressRedaction.All
+  nameWithType: EmailAddressRedaction.All
+- uid: ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  name: FirstHalfUsername
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_FirstHalfUsername
+  commentId: F:ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  fullName: ZeroRedact.EmailAddressRedaction.FirstHalfUsername
+  nameWithType: EmailAddressRedaction.FirstHalfUsername
+- uid: ZeroRedact.EmailAddressRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_FixedLength
+  commentId: F:ZeroRedact.EmailAddressRedaction.FixedLength
+  fullName: ZeroRedact.EmailAddressRedaction.FixedLength
+  nameWithType: EmailAddressRedaction.FixedLength
+- uid: ZeroRedact.EmailAddressRedaction.Full
+  name: Full
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_Full
+  commentId: F:ZeroRedact.EmailAddressRedaction.Full
+  fullName: ZeroRedact.EmailAddressRedaction.Full
+  nameWithType: EmailAddressRedaction.Full
+- uid: ZeroRedact.EmailAddressRedaction.Middle
+  name: Middle
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_Middle
+  commentId: F:ZeroRedact.EmailAddressRedaction.Middle
+  fullName: ZeroRedact.EmailAddressRedaction.Middle
+  nameWithType: EmailAddressRedaction.Middle
+- uid: ZeroRedact.EmailAddressRedaction.MostUsername
+  name: MostUsername
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_MostUsername
+  commentId: F:ZeroRedact.EmailAddressRedaction.MostUsername
+  fullName: ZeroRedact.EmailAddressRedaction.MostUsername
+  nameWithType: EmailAddressRedaction.MostUsername
+- uid: ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  name: ShowFirstCharacters
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_ShowFirstCharacters
+  commentId: F:ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  fullName: ZeroRedact.EmailAddressRedaction.ShowFirstCharacters
+  nameWithType: EmailAddressRedaction.ShowFirstCharacters
+- uid: ZeroRedact.EmailAddressRedaction.Username
+  name: Username
+  href: api/ZeroRedact.EmailAddressRedaction.html#ZeroRedact_EmailAddressRedaction_Username
+  commentId: F:ZeroRedact.EmailAddressRedaction.Username
+  fullName: ZeroRedact.EmailAddressRedaction.Username
+  nameWithType: EmailAddressRedaction.Username
+- uid: ZeroRedact.EmailAddressRedactorOptions
+  name: EmailAddressRedactorOptions
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html
+  commentId: T:ZeroRedact.EmailAddressRedactorOptions
+  fullName: ZeroRedact.EmailAddressRedactorOptions
+  nameWithType: EmailAddressRedactorOptions
+- uid: ZeroRedact.EmailAddressRedactorOptions.#ctor
+  name: EmailAddressRedactorOptions()
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions__ctor
+  commentId: M:ZeroRedact.EmailAddressRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.EmailAddressRedactorOptions.EmailAddressRedactorOptions()
+  fullName.vb: ZeroRedact.EmailAddressRedactorOptions.New()
+  nameWithType: EmailAddressRedactorOptions.EmailAddressRedactorOptions()
+  nameWithType.vb: EmailAddressRedactorOptions.New()
+- uid: ZeroRedact.EmailAddressRedactorOptions.#ctor*
+  name: EmailAddressRedactorOptions
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.EmailAddressRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.EmailAddressRedactorOptions.EmailAddressRedactorOptions
+  fullName.vb: ZeroRedact.EmailAddressRedactorOptions.New
+  nameWithType: EmailAddressRedactorOptions.EmailAddressRedactorOptions
+  nameWithType.vb: EmailAddressRedactorOptions.New
+- uid: ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize
+  nameWithType: EmailAddressRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.EmailAddressRedactorOptions.FixedLengthSize
+  nameWithType: EmailAddressRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter
+  nameWithType: EmailAddressRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.EmailAddressRedactorOptions.RedactionCharacter
+  nameWithType: EmailAddressRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.EmailAddressRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.EmailAddressRedactorOptions.RedactorType
+  fullName: ZeroRedact.EmailAddressRedactorOptions.RedactorType
+  nameWithType: EmailAddressRedactorOptions.RedactorType
+- uid: ZeroRedact.EmailAddressRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.EmailAddressRedactorOptions.html#ZeroRedact_EmailAddressRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.EmailAddressRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.EmailAddressRedactorOptions.RedactorType
+  nameWithType: EmailAddressRedactorOptions.RedactorType
+- uid: ZeroRedact.IPv4Redaction
+  name: IPv4Redaction
+  href: api/ZeroRedact.IPv4Redaction.html
+  commentId: T:ZeroRedact.IPv4Redaction
+  fullName: ZeroRedact.IPv4Redaction
+  nameWithType: IPv4Redaction
+- uid: ZeroRedact.IPv4Redaction.All
+  name: All
+  href: api/ZeroRedact.IPv4Redaction.html#ZeroRedact_IPv4Redaction_All
+  commentId: F:ZeroRedact.IPv4Redaction.All
+  fullName: ZeroRedact.IPv4Redaction.All
+  nameWithType: IPv4Redaction.All
+- uid: ZeroRedact.IPv4Redaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.IPv4Redaction.html#ZeroRedact_IPv4Redaction_FixedLength
+  commentId: F:ZeroRedact.IPv4Redaction.FixedLength
+  fullName: ZeroRedact.IPv4Redaction.FixedLength
+  nameWithType: IPv4Redaction.FixedLength
+- uid: ZeroRedact.IPv4Redaction.Full
+  name: Full
+  href: api/ZeroRedact.IPv4Redaction.html#ZeroRedact_IPv4Redaction_Full
+  commentId: F:ZeroRedact.IPv4Redaction.Full
+  fullName: ZeroRedact.IPv4Redaction.Full
+  nameWithType: IPv4Redaction.Full
+- uid: ZeroRedact.IPv4Redaction.ShowLastOctet
+  name: ShowLastOctet
+  href: api/ZeroRedact.IPv4Redaction.html#ZeroRedact_IPv4Redaction_ShowLastOctet
+  commentId: F:ZeroRedact.IPv4Redaction.ShowLastOctet
+  fullName: ZeroRedact.IPv4Redaction.ShowLastOctet
+  nameWithType: IPv4Redaction.ShowLastOctet
+- uid: ZeroRedact.IPv4RedactorOptions
+  name: IPv4RedactorOptions
+  href: api/ZeroRedact.IPv4RedactorOptions.html
+  commentId: T:ZeroRedact.IPv4RedactorOptions
+  fullName: ZeroRedact.IPv4RedactorOptions
+  nameWithType: IPv4RedactorOptions
+- uid: ZeroRedact.IPv4RedactorOptions.#ctor
+  name: IPv4RedactorOptions()
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions__ctor
+  commentId: M:ZeroRedact.IPv4RedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.IPv4RedactorOptions.IPv4RedactorOptions()
+  fullName.vb: ZeroRedact.IPv4RedactorOptions.New()
+  nameWithType: IPv4RedactorOptions.IPv4RedactorOptions()
+  nameWithType.vb: IPv4RedactorOptions.New()
+- uid: ZeroRedact.IPv4RedactorOptions.#ctor*
+  name: IPv4RedactorOptions
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.IPv4RedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.IPv4RedactorOptions.IPv4RedactorOptions
+  fullName.vb: ZeroRedact.IPv4RedactorOptions.New
+  nameWithType: IPv4RedactorOptions.IPv4RedactorOptions
+  nameWithType.vb: IPv4RedactorOptions.New
+- uid: ZeroRedact.IPv4RedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.IPv4RedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.IPv4RedactorOptions.FixedLengthSize
+  nameWithType: IPv4RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.IPv4RedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.IPv4RedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.IPv4RedactorOptions.FixedLengthSize
+  nameWithType: IPv4RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.IPv4RedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.IPv4RedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.IPv4RedactorOptions.RedactionCharacter
+  nameWithType: IPv4RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.IPv4RedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.IPv4RedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.IPv4RedactorOptions.RedactionCharacter
+  nameWithType: IPv4RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.IPv4RedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_RedactorType
+  commentId: P:ZeroRedact.IPv4RedactorOptions.RedactorType
+  fullName: ZeroRedact.IPv4RedactorOptions.RedactorType
+  nameWithType: IPv4RedactorOptions.RedactorType
+- uid: ZeroRedact.IPv4RedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.IPv4RedactorOptions.html#ZeroRedact_IPv4RedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.IPv4RedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.IPv4RedactorOptions.RedactorType
+  nameWithType: IPv4RedactorOptions.RedactorType
+- uid: ZeroRedact.IPv6Redaction
+  name: IPv6Redaction
+  href: api/ZeroRedact.IPv6Redaction.html
+  commentId: T:ZeroRedact.IPv6Redaction
+  fullName: ZeroRedact.IPv6Redaction
+  nameWithType: IPv6Redaction
+- uid: ZeroRedact.IPv6Redaction.All
+  name: All
+  href: api/ZeroRedact.IPv6Redaction.html#ZeroRedact_IPv6Redaction_All
+  commentId: F:ZeroRedact.IPv6Redaction.All
+  fullName: ZeroRedact.IPv6Redaction.All
+  nameWithType: IPv6Redaction.All
+- uid: ZeroRedact.IPv6Redaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.IPv6Redaction.html#ZeroRedact_IPv6Redaction_FixedLength
+  commentId: F:ZeroRedact.IPv6Redaction.FixedLength
+  fullName: ZeroRedact.IPv6Redaction.FixedLength
+  nameWithType: IPv6Redaction.FixedLength
+- uid: ZeroRedact.IPv6Redaction.Full
+  name: Full
+  href: api/ZeroRedact.IPv6Redaction.html#ZeroRedact_IPv6Redaction_Full
+  commentId: F:ZeroRedact.IPv6Redaction.Full
+  fullName: ZeroRedact.IPv6Redaction.Full
+  nameWithType: IPv6Redaction.Full
+- uid: ZeroRedact.IPv6Redaction.ShowLastQuartet
+  name: ShowLastQuartet
+  href: api/ZeroRedact.IPv6Redaction.html#ZeroRedact_IPv6Redaction_ShowLastQuartet
+  commentId: F:ZeroRedact.IPv6Redaction.ShowLastQuartet
+  fullName: ZeroRedact.IPv6Redaction.ShowLastQuartet
+  nameWithType: IPv6Redaction.ShowLastQuartet
+- uid: ZeroRedact.IPv6RedactorOptions
+  name: IPv6RedactorOptions
+  href: api/ZeroRedact.IPv6RedactorOptions.html
+  commentId: T:ZeroRedact.IPv6RedactorOptions
+  fullName: ZeroRedact.IPv6RedactorOptions
+  nameWithType: IPv6RedactorOptions
+- uid: ZeroRedact.IPv6RedactorOptions.#ctor
+  name: IPv6RedactorOptions()
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions__ctor
+  commentId: M:ZeroRedact.IPv6RedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.IPv6RedactorOptions.IPv6RedactorOptions()
+  fullName.vb: ZeroRedact.IPv6RedactorOptions.New()
+  nameWithType: IPv6RedactorOptions.IPv6RedactorOptions()
+  nameWithType.vb: IPv6RedactorOptions.New()
+- uid: ZeroRedact.IPv6RedactorOptions.#ctor*
+  name: IPv6RedactorOptions
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.IPv6RedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.IPv6RedactorOptions.IPv6RedactorOptions
+  fullName.vb: ZeroRedact.IPv6RedactorOptions.New
+  nameWithType: IPv6RedactorOptions.IPv6RedactorOptions
+  nameWithType.vb: IPv6RedactorOptions.New
+- uid: ZeroRedact.IPv6RedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.IPv6RedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.IPv6RedactorOptions.FixedLengthSize
+  nameWithType: IPv6RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.IPv6RedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.IPv6RedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.IPv6RedactorOptions.FixedLengthSize
+  nameWithType: IPv6RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.IPv6RedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.IPv6RedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.IPv6RedactorOptions.RedactionCharacter
+  nameWithType: IPv6RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.IPv6RedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.IPv6RedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.IPv6RedactorOptions.RedactionCharacter
+  nameWithType: IPv6RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.IPv6RedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_RedactorType
+  commentId: P:ZeroRedact.IPv6RedactorOptions.RedactorType
+  fullName: ZeroRedact.IPv6RedactorOptions.RedactorType
+  nameWithType: IPv6RedactorOptions.RedactorType
+- uid: ZeroRedact.IPv6RedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.IPv6RedactorOptions.html#ZeroRedact_IPv6RedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.IPv6RedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.IPv6RedactorOptions.RedactorType
+  nameWithType: IPv6RedactorOptions.RedactorType
+- uid: ZeroRedact.MACAddressRedaction
+  name: MACAddressRedaction
+  href: api/ZeroRedact.MACAddressRedaction.html
+  commentId: T:ZeroRedact.MACAddressRedaction
+  fullName: ZeroRedact.MACAddressRedaction
+  nameWithType: MACAddressRedaction
+- uid: ZeroRedact.MACAddressRedaction.All
+  name: All
+  href: api/ZeroRedact.MACAddressRedaction.html#ZeroRedact_MACAddressRedaction_All
+  commentId: F:ZeroRedact.MACAddressRedaction.All
+  fullName: ZeroRedact.MACAddressRedaction.All
+  nameWithType: MACAddressRedaction.All
+- uid: ZeroRedact.MACAddressRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.MACAddressRedaction.html#ZeroRedact_MACAddressRedaction_FixedLength
+  commentId: F:ZeroRedact.MACAddressRedaction.FixedLength
+  fullName: ZeroRedact.MACAddressRedaction.FixedLength
+  nameWithType: MACAddressRedaction.FixedLength
+- uid: ZeroRedact.MACAddressRedaction.Full
+  name: Full
+  href: api/ZeroRedact.MACAddressRedaction.html#ZeroRedact_MACAddressRedaction_Full
+  commentId: F:ZeroRedact.MACAddressRedaction.Full
+  fullName: ZeroRedact.MACAddressRedaction.Full
+  nameWithType: MACAddressRedaction.Full
+- uid: ZeroRedact.MACAddressRedaction.ShowLastByte
+  name: ShowLastByte
+  href: api/ZeroRedact.MACAddressRedaction.html#ZeroRedact_MACAddressRedaction_ShowLastByte
+  commentId: F:ZeroRedact.MACAddressRedaction.ShowLastByte
+  fullName: ZeroRedact.MACAddressRedaction.ShowLastByte
+  nameWithType: MACAddressRedaction.ShowLastByte
+- uid: ZeroRedact.MACAddressRedactorOptions
+  name: MACAddressRedactorOptions
+  href: api/ZeroRedact.MACAddressRedactorOptions.html
+  commentId: T:ZeroRedact.MACAddressRedactorOptions
+  fullName: ZeroRedact.MACAddressRedactorOptions
+  nameWithType: MACAddressRedactorOptions
+- uid: ZeroRedact.MACAddressRedactorOptions.#ctor
+  name: MACAddressRedactorOptions()
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions__ctor
+  commentId: M:ZeroRedact.MACAddressRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.MACAddressRedactorOptions.MACAddressRedactorOptions()
+  fullName.vb: ZeroRedact.MACAddressRedactorOptions.New()
+  nameWithType: MACAddressRedactorOptions.MACAddressRedactorOptions()
+  nameWithType.vb: MACAddressRedactorOptions.New()
+- uid: ZeroRedact.MACAddressRedactorOptions.#ctor*
+  name: MACAddressRedactorOptions
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.MACAddressRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.MACAddressRedactorOptions.MACAddressRedactorOptions
+  fullName.vb: ZeroRedact.MACAddressRedactorOptions.New
+  nameWithType: MACAddressRedactorOptions.MACAddressRedactorOptions
+  nameWithType.vb: MACAddressRedactorOptions.New
+- uid: ZeroRedact.MACAddressRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.MACAddressRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.MACAddressRedactorOptions.FixedLengthSize
+  nameWithType: MACAddressRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.MACAddressRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.MACAddressRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.MACAddressRedactorOptions.FixedLengthSize
+  nameWithType: MACAddressRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.MACAddressRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.MACAddressRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.MACAddressRedactorOptions.RedactionCharacter
+  nameWithType: MACAddressRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.MACAddressRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.MACAddressRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.MACAddressRedactorOptions.RedactionCharacter
+  nameWithType: MACAddressRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.MACAddressRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.MACAddressRedactorOptions.RedactorType
+  fullName: ZeroRedact.MACAddressRedactorOptions.RedactorType
+  nameWithType: MACAddressRedactorOptions.RedactorType
+- uid: ZeroRedact.MACAddressRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.MACAddressRedactorOptions.html#ZeroRedact_MACAddressRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.MACAddressRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.MACAddressRedactorOptions.RedactorType
+  nameWithType: MACAddressRedactorOptions.RedactorType
+- uid: ZeroRedact.PhoneNumberRedaction
+  name: PhoneNumberRedaction
+  href: api/ZeroRedact.PhoneNumberRedaction.html
+  commentId: T:ZeroRedact.PhoneNumberRedaction
+  fullName: ZeroRedact.PhoneNumberRedaction
+  nameWithType: PhoneNumberRedaction
+- uid: ZeroRedact.PhoneNumberRedaction.All
+  name: All
+  href: api/ZeroRedact.PhoneNumberRedaction.html#ZeroRedact_PhoneNumberRedaction_All
+  commentId: F:ZeroRedact.PhoneNumberRedaction.All
+  fullName: ZeroRedact.PhoneNumberRedaction.All
+  nameWithType: PhoneNumberRedaction.All
+- uid: ZeroRedact.PhoneNumberRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.PhoneNumberRedaction.html#ZeroRedact_PhoneNumberRedaction_FixedLength
+  commentId: F:ZeroRedact.PhoneNumberRedaction.FixedLength
+  fullName: ZeroRedact.PhoneNumberRedaction.FixedLength
+  nameWithType: PhoneNumberRedaction.FixedLength
+- uid: ZeroRedact.PhoneNumberRedaction.Full
+  name: Full
+  href: api/ZeroRedact.PhoneNumberRedaction.html#ZeroRedact_PhoneNumberRedaction_Full
+  commentId: F:ZeroRedact.PhoneNumberRedaction.Full
+  fullName: ZeroRedact.PhoneNumberRedaction.Full
+  nameWithType: PhoneNumberRedaction.Full
+- uid: ZeroRedact.PhoneNumberRedaction.ShowLastFour
+  name: ShowLastFour
+  href: api/ZeroRedact.PhoneNumberRedaction.html#ZeroRedact_PhoneNumberRedaction_ShowLastFour
+  commentId: F:ZeroRedact.PhoneNumberRedaction.ShowLastFour
+  fullName: ZeroRedact.PhoneNumberRedaction.ShowLastFour
+  nameWithType: PhoneNumberRedaction.ShowLastFour
+- uid: ZeroRedact.PhoneNumberRedactorOptions
+  name: PhoneNumberRedactorOptions
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html
+  commentId: T:ZeroRedact.PhoneNumberRedactorOptions
+  fullName: ZeroRedact.PhoneNumberRedactorOptions
+  nameWithType: PhoneNumberRedactorOptions
+- uid: ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  name: PhoneNumberRedactorOptions()
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions__ctor
+  commentId: M:ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.PhoneNumberRedactorOptions()
+  fullName.vb: ZeroRedact.PhoneNumberRedactorOptions.New()
+  nameWithType: PhoneNumberRedactorOptions.PhoneNumberRedactorOptions()
+  nameWithType.vb: PhoneNumberRedactorOptions.New()
+- uid: ZeroRedact.PhoneNumberRedactorOptions.#ctor*
+  name: PhoneNumberRedactorOptions
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.PhoneNumberRedactorOptions
+  fullName.vb: ZeroRedact.PhoneNumberRedactorOptions.New
+  nameWithType: PhoneNumberRedactorOptions.PhoneNumberRedactorOptions
+  nameWithType.vb: PhoneNumberRedactorOptions.New
+- uid: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  nameWithType: PhoneNumberRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.FixedLengthSize
+  nameWithType: PhoneNumberRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  nameWithType: PhoneNumberRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactionCharacter
+  nameWithType: PhoneNumberRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  nameWithType: PhoneNumberRedactorOptions.RedactorType
+- uid: ZeroRedact.PhoneNumberRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.PhoneNumberRedactorOptions.html#ZeroRedact_PhoneNumberRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.PhoneNumberRedactorOptions.RedactorType
+  nameWithType: PhoneNumberRedactorOptions.RedactorType
+- uid: ZeroRedact.Redactor
+  name: Redactor
+  href: api/ZeroRedact.Redactor.html
+  commentId: T:ZeroRedact.Redactor
+  fullName: ZeroRedact.Redactor
+  nameWithType: Redactor
+- uid: ZeroRedact.Redactor.#ctor
+  name: Redactor()
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor__ctor
+  commentId: M:ZeroRedact.Redactor.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.Redactor.Redactor()
+  fullName.vb: ZeroRedact.Redactor.New()
+  nameWithType: Redactor.Redactor()
+  nameWithType.vb: Redactor.New()
+- uid: ZeroRedact.Redactor.#ctor(ZeroRedact.RedactorOptions)
+  name: Redactor(RedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor__ctor_ZeroRedact_RedactorOptions_
+  commentId: M:ZeroRedact.Redactor.#ctor(ZeroRedact.RedactorOptions)
+  name.vb: New(RedactorOptions)
+  fullName: ZeroRedact.Redactor.Redactor(ZeroRedact.RedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.New(ZeroRedact.RedactorOptions)
+  nameWithType: Redactor.Redactor(RedactorOptions)
+  nameWithType.vb: Redactor.New(RedactorOptions)
+- uid: ZeroRedact.Redactor.#ctor*
+  name: Redactor
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor__ctor_
+  commentId: Overload:ZeroRedact.Redactor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.Redactor.Redactor
+  fullName.vb: ZeroRedact.Redactor.New
+  nameWithType: Redactor.Redactor
+  nameWithType.vb: Redactor.New
+- uid: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  name: RedactCreditCard(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  name.vb: RedactCreditCard(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactCreditCard(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactCreditCard(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  name: RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  name.vb: RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan<char>, ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan(Of Char), ZeroRedact.CreditCardRedactorOptions)
+  nameWithType: Redactor.RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
+  nameWithType.vb: Redactor.RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactCreditCard(System.String)
+  name: RedactCreditCard(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactCreditCard_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactCreditCard(System.String)
+  name.vb: RedactCreditCard(String)
+  fullName: ZeroRedact.Redactor.RedactCreditCard(string)
+  fullName.vb: ZeroRedact.Redactor.RedactCreditCard(String)
+  nameWithType: Redactor.RedactCreditCard(string)
+  nameWithType.vb: Redactor.RedactCreditCard(String)
+- uid: ZeroRedact.Redactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  name: RedactCreditCard(string, CreditCardRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  name.vb: RedactCreditCard(String, CreditCardRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactCreditCard(string, ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactCreditCard(String, ZeroRedact.CreditCardRedactorOptions)
+  nameWithType: Redactor.RedactCreditCard(string, CreditCardRedactorOptions)
+  nameWithType.vb: Redactor.RedactCreditCard(String, CreditCardRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactCreditCard*
+  name: RedactCreditCard
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactCreditCard_
+  commentId: Overload:ZeroRedact.Redactor.RedactCreditCard
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactCreditCard
+  nameWithType: Redactor.RedactCreditCard
+- uid: ZeroRedact.Redactor.RedactDate(System.DateOnly)
+  name: RedactDate(DateOnly)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactDate_System_DateOnly_
+  commentId: M:ZeroRedact.Redactor.RedactDate(System.DateOnly)
+  fullName: ZeroRedact.Redactor.RedactDate(System.DateOnly)
+  nameWithType: Redactor.RedactDate(DateOnly)
+- uid: ZeroRedact.Redactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  name: RedactDate(DateOnly, DateRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactDate(System.DateOnly, ZeroRedact.DateRedactorOptions)
+  nameWithType: Redactor.RedactDate(DateOnly, DateRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactDate(System.DateTime)
+  name: RedactDate(DateTime)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactDate_System_DateTime_
+  commentId: M:ZeroRedact.Redactor.RedactDate(System.DateTime)
+  name.vb: RedactDate(Date)
+  fullName: ZeroRedact.Redactor.RedactDate(System.DateTime)
+  fullName.vb: ZeroRedact.Redactor.RedactDate(Date)
+  nameWithType: Redactor.RedactDate(DateTime)
+  nameWithType.vb: Redactor.RedactDate(Date)
+- uid: ZeroRedact.Redactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  name: RedactDate(DateTime, DateRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  name.vb: RedactDate(Date, DateRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactDate(System.DateTime, ZeroRedact.DateRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactDate(Date, ZeroRedact.DateRedactorOptions)
+  nameWithType: Redactor.RedactDate(DateTime, DateRedactorOptions)
+  nameWithType.vb: Redactor.RedactDate(Date, DateRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactDate*
+  name: RedactDate
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactDate_
+  commentId: Overload:ZeroRedact.Redactor.RedactDate
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactDate
+  nameWithType: Redactor.RedactDate
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  name: RedactEmailAddress(MailAddress)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_Net_Mail_MailAddress_
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  nameWithType: Redactor.RedactEmailAddress(MailAddress)
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress, ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: Redactor.RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  name: RedactEmailAddress(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  name.vb: RedactEmailAddress(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactEmailAddress(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactEmailAddress(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  name.vb: RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan<char>, ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan(Of Char), ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: Redactor.RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
+  nameWithType.vb: Redactor.RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.String)
+  name: RedactEmailAddress(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.String)
+  name.vb: RedactEmailAddress(String)
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(string)
+  fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(String)
+  nameWithType: Redactor.RedactEmailAddress(string)
+  nameWithType.vb: Redactor.RedactEmailAddress(String)
+- uid: ZeroRedact.Redactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(string, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  name.vb: RedactEmailAddress(String, EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactEmailAddress(string, ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(String, ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: Redactor.RedactEmailAddress(string, EmailAddressRedactorOptions)
+  nameWithType.vb: Redactor.RedactEmailAddress(String, EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactEmailAddress*
+  name: RedactEmailAddress
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactEmailAddress_
+  commentId: Overload:ZeroRedact.Redactor.RedactEmailAddress
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactEmailAddress
+  nameWithType: Redactor.RedactEmailAddress
+- uid: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  name: RedactIPv4Address(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactIPv4Address(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactIPv4Address(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
+  nameWithType: Redactor.RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
+  nameWithType.vb: Redactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
+- uid: ZeroRedact.Redactor.RedactIPv4Address(System.String)
+  name: RedactIPv4Address(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv4Address_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactIPv4Address(System.String)
+  name.vb: RedactIPv4Address(String)
+  fullName: ZeroRedact.Redactor.RedactIPv4Address(string)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(String)
+  nameWithType: Redactor.RedactIPv4Address(string)
+  nameWithType.vb: Redactor.RedactIPv4Address(String)
+- uid: ZeroRedact.Redactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(string, IPv4RedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  name.vb: RedactIPv4Address(String, IPv4RedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactIPv4Address(string, ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
+  nameWithType: Redactor.RedactIPv4Address(string, IPv4RedactorOptions)
+  nameWithType.vb: Redactor.RedactIPv4Address(String, IPv4RedactorOptions)
+- uid: ZeroRedact.Redactor.RedactIPv4Address*
+  name: RedactIPv4Address
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv4Address_
+  commentId: Overload:ZeroRedact.Redactor.RedactIPv4Address
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactIPv4Address
+  nameWithType: Redactor.RedactIPv4Address
+- uid: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  name: RedactIPv6Address(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactIPv6Address(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactIPv6Address(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
+  nameWithType: Redactor.RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
+  nameWithType.vb: Redactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
+- uid: ZeroRedact.Redactor.RedactIPv6Address(System.String)
+  name: RedactIPv6Address(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv6Address_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactIPv6Address(System.String)
+  name.vb: RedactIPv6Address(String)
+  fullName: ZeroRedact.Redactor.RedactIPv6Address(string)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(String)
+  nameWithType: Redactor.RedactIPv6Address(string)
+  nameWithType.vb: Redactor.RedactIPv6Address(String)
+- uid: ZeroRedact.Redactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(string, IPv6RedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  name.vb: RedactIPv6Address(String, IPv6RedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactIPv6Address(string, ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
+  nameWithType: Redactor.RedactIPv6Address(string, IPv6RedactorOptions)
+  nameWithType.vb: Redactor.RedactIPv6Address(String, IPv6RedactorOptions)
+- uid: ZeroRedact.Redactor.RedactIPv6Address*
+  name: RedactIPv6Address
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactIPv6Address_
+  commentId: Overload:ZeroRedact.Redactor.RedactIPv6Address
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactIPv6Address
+  nameWithType: Redactor.RedactIPv6Address
+- uid: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  name: RedactMACAddress(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  name.vb: RedactMACAddress(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactMACAddress(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactMACAddress(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  name: RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  name.vb: RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan<char>, ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan(Of Char), ZeroRedact.MACAddressRedactorOptions)
+  nameWithType: Redactor.RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
+  nameWithType.vb: Redactor.RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactMACAddress(System.String)
+  name: RedactMACAddress(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactMACAddress_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactMACAddress(System.String)
+  name.vb: RedactMACAddress(String)
+  fullName: ZeroRedact.Redactor.RedactMACAddress(string)
+  fullName.vb: ZeroRedact.Redactor.RedactMACAddress(String)
+  nameWithType: Redactor.RedactMACAddress(string)
+  nameWithType.vb: Redactor.RedactMACAddress(String)
+- uid: ZeroRedact.Redactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  name: RedactMACAddress(string, MACAddressRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  name.vb: RedactMACAddress(String, MACAddressRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactMACAddress(string, ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactMACAddress(String, ZeroRedact.MACAddressRedactorOptions)
+  nameWithType: Redactor.RedactMACAddress(string, MACAddressRedactorOptions)
+  nameWithType.vb: Redactor.RedactMACAddress(String, MACAddressRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactMACAddress*
+  name: RedactMACAddress
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactMACAddress_
+  commentId: Overload:ZeroRedact.Redactor.RedactMACAddress
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactMACAddress
+  nameWithType: Redactor.RedactMACAddress
+- uid: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  name: RedactPhoneNumber(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactPhoneNumber(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactPhoneNumber(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  name: RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan<char>, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char), ZeroRedact.PhoneNumberRedactorOptions)
+  nameWithType: Redactor.RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
+  nameWithType.vb: Redactor.RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactPhoneNumber(System.String)
+  name: RedactPhoneNumber(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactPhoneNumber_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactPhoneNumber(System.String)
+  name.vb: RedactPhoneNumber(String)
+  fullName: ZeroRedact.Redactor.RedactPhoneNumber(string)
+  fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(String)
+  nameWithType: Redactor.RedactPhoneNumber(string)
+  nameWithType.vb: Redactor.RedactPhoneNumber(String)
+- uid: ZeroRedact.Redactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  name: RedactPhoneNumber(string, PhoneNumberRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  name.vb: RedactPhoneNumber(String, PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactPhoneNumber(string, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(String, ZeroRedact.PhoneNumberRedactorOptions)
+  nameWithType: Redactor.RedactPhoneNumber(string, PhoneNumberRedactorOptions)
+  nameWithType.vb: Redactor.RedactPhoneNumber(String, PhoneNumberRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactPhoneNumber*
+  name: RedactPhoneNumber
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactPhoneNumber_
+  commentId: Overload:ZeroRedact.Redactor.RedactPhoneNumber
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactPhoneNumber
+  nameWithType: Redactor.RedactPhoneNumber
+- uid: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan{System.Char})
+  name: RedactString(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactString_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactor.RedactString(System.ReadOnlySpan{System.Char})
+  name.vb: RedactString(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan(Of Char))
+  nameWithType: Redactor.RedactString(ReadOnlySpan<char>)
+  nameWithType.vb: Redactor.RedactString(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  name: RedactString(ReadOnlySpan<char>, StringRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  name.vb: RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan<char>, ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan(Of Char), ZeroRedact.StringRedactorOptions)
+  nameWithType: Redactor.RedactString(ReadOnlySpan<char>, StringRedactorOptions)
+  nameWithType.vb: Redactor.RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactString(System.String)
+  name: RedactString(string)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactString_System_String_
+  commentId: M:ZeroRedact.Redactor.RedactString(System.String)
+  name.vb: RedactString(String)
+  fullName: ZeroRedact.Redactor.RedactString(string)
+  fullName.vb: ZeroRedact.Redactor.RedactString(String)
+  nameWithType: Redactor.RedactString(string)
+  nameWithType.vb: Redactor.RedactString(String)
+- uid: ZeroRedact.Redactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  name: RedactString(string, StringRedactorOptions)
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
+  commentId: M:ZeroRedact.Redactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  name.vb: RedactString(String, StringRedactorOptions)
+  fullName: ZeroRedact.Redactor.RedactString(string, ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.Redactor.RedactString(String, ZeroRedact.StringRedactorOptions)
+  nameWithType: Redactor.RedactString(string, StringRedactorOptions)
+  nameWithType.vb: Redactor.RedactString(String, StringRedactorOptions)
+- uid: ZeroRedact.Redactor.RedactString*
+  name: RedactString
+  href: api/ZeroRedact.Redactor.html#ZeroRedact_Redactor_RedactString_
+  commentId: Overload:ZeroRedact.Redactor.RedactString
+  isSpec: "True"
+  fullName: ZeroRedact.Redactor.RedactString
+  nameWithType: Redactor.RedactString
+- uid: ZeroRedact.RedactorOptions
+  name: RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html
+  commentId: T:ZeroRedact.RedactorOptions
+  fullName: ZeroRedact.RedactorOptions
+  nameWithType: RedactorOptions
+- uid: ZeroRedact.RedactorOptions.#ctor
+  name: RedactorOptions()
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions__ctor
+  commentId: M:ZeroRedact.RedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.RedactorOptions.RedactorOptions()
+  fullName.vb: ZeroRedact.RedactorOptions.New()
+  nameWithType: RedactorOptions.RedactorOptions()
+  nameWithType.vb: RedactorOptions.New()
+- uid: ZeroRedact.RedactorOptions.#ctor*
+  name: RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.RedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.RedactorOptions.RedactorOptions
+  fullName.vb: ZeroRedact.RedactorOptions.New
+  nameWithType: RedactorOptions.RedactorOptions
+  nameWithType.vb: RedactorOptions.New
+- uid: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  name: CreditCardRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_CreditCardRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  nameWithType: RedactorOptions.CreditCardRedactorOptions
+- uid: ZeroRedact.RedactorOptions.CreditCardRedactorOptions*
+  name: CreditCardRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_CreditCardRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.CreditCardRedactorOptions
+  nameWithType: RedactorOptions.CreditCardRedactorOptions
+- uid: ZeroRedact.RedactorOptions.DateRedactorOptions
+  name: DateRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_DateRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.DateRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.DateRedactorOptions
+  nameWithType: RedactorOptions.DateRedactorOptions
+- uid: ZeroRedact.RedactorOptions.DateRedactorOptions*
+  name: DateRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_DateRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.DateRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.DateRedactorOptions
+  nameWithType: RedactorOptions.DateRedactorOptions
+- uid: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  name: EmailAddressRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_EmailAddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  nameWithType: RedactorOptions.EmailAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions*
+  name: EmailAddressRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_EmailAddressRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
+  nameWithType: RedactorOptions.EmailAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.RedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.RedactorOptions.FixedLengthSize
+  nameWithType: RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.RedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.RedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.FixedLengthSize
+  nameWithType: RedactorOptions.FixedLengthSize
+- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  name: IPv4RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv4RedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  nameWithType: RedactorOptions.IPv4RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions*
+  name: IPv4RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv4RedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  nameWithType: RedactorOptions.IPv4RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  name: IPv6RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv6RedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  nameWithType: RedactorOptions.IPv6RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions*
+  name: IPv6RedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv6RedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  nameWithType: RedactorOptions.IPv6RedactorOptions
+- uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  name: MACAddressRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_MACAddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  nameWithType: RedactorOptions.MACAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions*
+  name: MACAddressRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_MACAddressRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
+  nameWithType: RedactorOptions.MACAddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  name: PhoneNumberRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_PhoneNumberRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  nameWithType: RedactorOptions.PhoneNumberRedactorOptions
+- uid: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions*
+  name: PhoneNumberRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_PhoneNumberRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
+  nameWithType: RedactorOptions.PhoneNumberRedactorOptions
+- uid: ZeroRedact.RedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.RedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.RedactorOptions.RedactionCharacter
+  nameWithType: RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.RedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.RedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.RedactionCharacter
+  nameWithType: RedactorOptions.RedactionCharacter
+- uid: ZeroRedact.RedactorOptions.StringRedactorOptions
+  name: StringRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_StringRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.StringRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.StringRedactorOptions
+  nameWithType: RedactorOptions.StringRedactorOptions
+- uid: ZeroRedact.RedactorOptions.StringRedactorOptions*
+  name: StringRedactorOptions
+  href: api/ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_StringRedactorOptions_
+  commentId: Overload:ZeroRedact.RedactorOptions.StringRedactorOptions
+  isSpec: "True"
+  fullName: ZeroRedact.RedactorOptions.StringRedactorOptions
+  nameWithType: RedactorOptions.StringRedactorOptions
+- uid: ZeroRedact.Redactors
+  name: ZeroRedact.Redactors
+  href: api/ZeroRedact.Redactors.html
+  commentId: N:ZeroRedact.Redactors
+  fullName: ZeroRedact.Redactors
+  nameWithType: ZeroRedact.Redactors
+- uid: ZeroRedact.Redactors.IRedactor
+  name: IRedactor
+  href: api/ZeroRedact.Redactors.IRedactor.html
+  commentId: T:ZeroRedact.Redactors.IRedactor
+  fullName: ZeroRedact.Redactors.IRedactor
+  nameWithType: IRedactor
+- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  name: RedactCreditCard(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  name.vb: RedactCreditCard(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactCreditCard(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactCreditCard(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  name: RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  name.vb: RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>, ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char), ZeroRedact.CreditCardRedactorOptions)
+  nameWithType: IRedactor.RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
+  nameWithType.vb: IRedactor.RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
+  name: RedactCreditCard(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
+  name.vb: RedactCreditCard(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(String)
+  nameWithType: IRedactor.RedactCreditCard(string)
+  nameWithType.vb: IRedactor.RedactCreditCard(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  name: RedactCreditCard(string, CreditCardRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  name.vb: RedactCreditCard(String, CreditCardRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(string, ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(String, ZeroRedact.CreditCardRedactorOptions)
+  nameWithType: IRedactor.RedactCreditCard(string, CreditCardRedactorOptions)
+  nameWithType.vb: IRedactor.RedactCreditCard(String, CreditCardRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard*
+  name: RedactCreditCard
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactCreditCard
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard
+  nameWithType: IRedactor.RedactCreditCard
+- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  name: RedactDate(DateOnly)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  nameWithType: IRedactor.RedactDate(DateOnly)
+- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  name: RedactDate(DateOnly, DateRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly, ZeroRedact.DateRedactorOptions)
+  nameWithType: IRedactor.RedactDate(DateOnly, DateRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  name: RedactDate(DateTime)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  name.vb: RedactDate(Date)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactDate(Date)
+  nameWithType: IRedactor.RedactDate(DateTime)
+  nameWithType.vb: IRedactor.RedactDate(Date)
+- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  name: RedactDate(DateTime, DateRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  name.vb: RedactDate(Date, DateRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime, ZeroRedact.DateRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactDate(Date, ZeroRedact.DateRedactorOptions)
+  nameWithType: IRedactor.RedactDate(DateTime, DateRedactorOptions)
+  nameWithType.vb: IRedactor.RedactDate(Date, DateRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactDate*
+  name: RedactDate
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactDate
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactDate
+  nameWithType: IRedactor.RedactDate
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  name: RedactEmailAddress(MailAddress)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  nameWithType: IRedactor.RedactEmailAddress(MailAddress)
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress, ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: IRedactor.RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  name: RedactEmailAddress(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  name.vb: RedactEmailAddress(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactEmailAddress(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactEmailAddress(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  name.vb: RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>, ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char), ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: IRedactor.RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
+  nameWithType.vb: IRedactor.RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
+  name: RedactEmailAddress(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
+  name.vb: RedactEmailAddress(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(String)
+  nameWithType: IRedactor.RedactEmailAddress(string)
+  nameWithType.vb: IRedactor.RedactEmailAddress(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  name: RedactEmailAddress(string, EmailAddressRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  name.vb: RedactEmailAddress(String, EmailAddressRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(string, ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(String, ZeroRedact.EmailAddressRedactorOptions)
+  nameWithType: IRedactor.RedactEmailAddress(string, EmailAddressRedactorOptions)
+  nameWithType.vb: IRedactor.RedactEmailAddress(String, EmailAddressRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress*
+  name: RedactEmailAddress
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactEmailAddress
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress
+  nameWithType: IRedactor.RedactEmailAddress
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  name: RedactIPv4Address(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
+  nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
+  name: RedactIPv4Address(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
+  name.vb: RedactIPv4Address(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(String)
+  nameWithType: IRedactor.RedactIPv4Address(string)
+  nameWithType.vb: IRedactor.RedactIPv4Address(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(string, IPv4RedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  name.vb: RedactIPv4Address(String, IPv4RedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(string, ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
+  nameWithType: IRedactor.RedactIPv4Address(string, IPv4RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv4Address(String, IPv4RedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address*
+  name: RedactIPv4Address
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactIPv4Address
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address
+  nameWithType: IRedactor.RedactIPv4Address
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  name: RedactIPv6Address(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
+  nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
+  name: RedactIPv6Address(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
+  name.vb: RedactIPv6Address(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(String)
+  nameWithType: IRedactor.RedactIPv6Address(string)
+  nameWithType.vb: IRedactor.RedactIPv6Address(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(string, IPv6RedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  name.vb: RedactIPv6Address(String, IPv6RedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(string, ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
+  nameWithType: IRedactor.RedactIPv6Address(string, IPv6RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv6Address(String, IPv6RedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address*
+  name: RedactIPv6Address
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactIPv6Address
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address
+  nameWithType: IRedactor.RedactIPv6Address
+- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  name: RedactMACAddress(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  name.vb: RedactMACAddress(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactMACAddress(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactMACAddress(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  name: RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  name.vb: RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>, ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char), ZeroRedact.MACAddressRedactorOptions)
+  nameWithType: IRedactor.RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
+  nameWithType.vb: IRedactor.RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
+  name: RedactMACAddress(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
+  name.vb: RedactMACAddress(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(String)
+  nameWithType: IRedactor.RedactMACAddress(string)
+  nameWithType.vb: IRedactor.RedactMACAddress(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  name: RedactMACAddress(string, MACAddressRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  name.vb: RedactMACAddress(String, MACAddressRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(string, ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(String, ZeroRedact.MACAddressRedactorOptions)
+  nameWithType: IRedactor.RedactMACAddress(string, MACAddressRedactorOptions)
+  nameWithType.vb: IRedactor.RedactMACAddress(String, MACAddressRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress*
+  name: RedactMACAddress
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactMACAddress
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress
+  nameWithType: IRedactor.RedactMACAddress
+- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  name: RedactPhoneNumber(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactPhoneNumber(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactPhoneNumber(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  name: RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char), ZeroRedact.PhoneNumberRedactorOptions)
+  nameWithType: IRedactor.RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
+  nameWithType.vb: IRedactor.RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
+  name: RedactPhoneNumber(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
+  name.vb: RedactPhoneNumber(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(String)
+  nameWithType: IRedactor.RedactPhoneNumber(string)
+  nameWithType.vb: IRedactor.RedactPhoneNumber(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  name: RedactPhoneNumber(string, PhoneNumberRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  name.vb: RedactPhoneNumber(String, PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(string, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(String, ZeroRedact.PhoneNumberRedactorOptions)
+  nameWithType: IRedactor.RedactPhoneNumber(string, PhoneNumberRedactorOptions)
+  nameWithType.vb: IRedactor.RedactPhoneNumber(String, PhoneNumberRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber*
+  name: RedactPhoneNumber
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber
+  nameWithType: IRedactor.RedactPhoneNumber
+- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  name: RedactString(ReadOnlySpan<char>)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  name.vb: RedactString(ReadOnlySpan(Of Char))
+  fullName: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan<char>)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan(Of Char))
+  nameWithType: IRedactor.RedactString(ReadOnlySpan<char>)
+  nameWithType.vb: IRedactor.RedactString(ReadOnlySpan(Of Char))
+- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  name: RedactString(ReadOnlySpan<char>, StringRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  name.vb: RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan<char>, ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan(Of Char), ZeroRedact.StringRedactorOptions)
+  nameWithType: IRedactor.RedactString(ReadOnlySpan<char>, StringRedactorOptions)
+  nameWithType.vb: IRedactor.RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String)
+  name: RedactString(string)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.String)
+  name.vb: RedactString(String)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactString(string)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(String)
+  nameWithType: IRedactor.RedactString(string)
+  nameWithType.vb: IRedactor.RedactString(String)
+- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  name: RedactString(string, StringRedactorOptions)
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
+  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  name.vb: RedactString(String, StringRedactorOptions)
+  fullName: ZeroRedact.Redactors.IRedactor.RedactString(string, ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(String, ZeroRedact.StringRedactorOptions)
+  nameWithType: IRedactor.RedactString(string, StringRedactorOptions)
+  nameWithType.vb: IRedactor.RedactString(String, StringRedactorOptions)
+- uid: ZeroRedact.Redactors.IRedactor.RedactString*
+  name: RedactString
+  href: api/ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_
+  commentId: Overload:ZeroRedact.Redactors.IRedactor.RedactString
+  isSpec: "True"
+  fullName: ZeroRedact.Redactors.IRedactor.RedactString
+  nameWithType: IRedactor.RedactString
+- uid: ZeroRedact.StringRedaction
+  name: StringRedaction
+  href: api/ZeroRedact.StringRedaction.html
+  commentId: T:ZeroRedact.StringRedaction
+  fullName: ZeroRedact.StringRedaction
+  nameWithType: StringRedaction
+- uid: ZeroRedact.StringRedaction.All
+  name: All
+  href: api/ZeroRedact.StringRedaction.html#ZeroRedact_StringRedaction_All
+  commentId: F:ZeroRedact.StringRedaction.All
+  fullName: ZeroRedact.StringRedaction.All
+  nameWithType: StringRedaction.All
+- uid: ZeroRedact.StringRedaction.FirstHalf
+  name: FirstHalf
+  href: api/ZeroRedact.StringRedaction.html#ZeroRedact_StringRedaction_FirstHalf
+  commentId: F:ZeroRedact.StringRedaction.FirstHalf
+  fullName: ZeroRedact.StringRedaction.FirstHalf
+  nameWithType: StringRedaction.FirstHalf
+- uid: ZeroRedact.StringRedaction.FixedLength
+  name: FixedLength
+  href: api/ZeroRedact.StringRedaction.html#ZeroRedact_StringRedaction_FixedLength
+  commentId: F:ZeroRedact.StringRedaction.FixedLength
+  fullName: ZeroRedact.StringRedaction.FixedLength
+  nameWithType: StringRedaction.FixedLength
+- uid: ZeroRedact.StringRedaction.IgnoreSymbols
+  name: IgnoreSymbols
+  href: api/ZeroRedact.StringRedaction.html#ZeroRedact_StringRedaction_IgnoreSymbols
+  commentId: F:ZeroRedact.StringRedaction.IgnoreSymbols
+  fullName: ZeroRedact.StringRedaction.IgnoreSymbols
+  nameWithType: StringRedaction.IgnoreSymbols
+- uid: ZeroRedact.StringRedaction.SecondHalf
+  name: SecondHalf
+  href: api/ZeroRedact.StringRedaction.html#ZeroRedact_StringRedaction_SecondHalf
+  commentId: F:ZeroRedact.StringRedaction.SecondHalf
+  fullName: ZeroRedact.StringRedaction.SecondHalf
+  nameWithType: StringRedaction.SecondHalf
+- uid: ZeroRedact.StringRedactorOptions
+  name: StringRedactorOptions
+  href: api/ZeroRedact.StringRedactorOptions.html
+  commentId: T:ZeroRedact.StringRedactorOptions
+  fullName: ZeroRedact.StringRedactorOptions
+  nameWithType: StringRedactorOptions
+- uid: ZeroRedact.StringRedactorOptions.#ctor
+  name: StringRedactorOptions()
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions__ctor
+  commentId: M:ZeroRedact.StringRedactorOptions.#ctor
+  name.vb: New()
+  fullName: ZeroRedact.StringRedactorOptions.StringRedactorOptions()
+  fullName.vb: ZeroRedact.StringRedactorOptions.New()
+  nameWithType: StringRedactorOptions.StringRedactorOptions()
+  nameWithType.vb: StringRedactorOptions.New()
+- uid: ZeroRedact.StringRedactorOptions.#ctor*
+  name: StringRedactorOptions
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions__ctor_
+  commentId: Overload:ZeroRedact.StringRedactorOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ZeroRedact.StringRedactorOptions.StringRedactorOptions
+  fullName.vb: ZeroRedact.StringRedactorOptions.New
+  nameWithType: StringRedactorOptions.StringRedactorOptions
+  nameWithType.vb: StringRedactorOptions.New
+- uid: ZeroRedact.StringRedactorOptions.FixedLengthSize
+  name: FixedLengthSize
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_FixedLengthSize
+  commentId: P:ZeroRedact.StringRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.StringRedactorOptions.FixedLengthSize
+  nameWithType: StringRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.StringRedactorOptions.FixedLengthSize*
+  name: FixedLengthSize
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_FixedLengthSize_
+  commentId: Overload:ZeroRedact.StringRedactorOptions.FixedLengthSize
+  isSpec: "True"
+  fullName: ZeroRedact.StringRedactorOptions.FixedLengthSize
+  nameWithType: StringRedactorOptions.FixedLengthSize
+- uid: ZeroRedact.StringRedactorOptions.RedactionCharacter
+  name: RedactionCharacter
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactionCharacter
+  commentId: P:ZeroRedact.StringRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.StringRedactorOptions.RedactionCharacter
+  nameWithType: StringRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.StringRedactorOptions.RedactionCharacter*
+  name: RedactionCharacter
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactionCharacter_
+  commentId: Overload:ZeroRedact.StringRedactorOptions.RedactionCharacter
+  isSpec: "True"
+  fullName: ZeroRedact.StringRedactorOptions.RedactionCharacter
+  nameWithType: StringRedactorOptions.RedactionCharacter
+- uid: ZeroRedact.StringRedactorOptions.RedactorType
+  name: RedactorType
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactorType
+  commentId: P:ZeroRedact.StringRedactorOptions.RedactorType
+  fullName: ZeroRedact.StringRedactorOptions.RedactorType
+  nameWithType: StringRedactorOptions.RedactorType
+- uid: ZeroRedact.StringRedactorOptions.RedactorType*
+  name: RedactorType
+  href: api/ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactorType_
+  commentId: Overload:ZeroRedact.StringRedactorOptions.RedactorType
+  isSpec: "True"
+  fullName: ZeroRedact.StringRedactorOptions.RedactorType
+  nameWithType: StringRedactorOptions.RedactorType

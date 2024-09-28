@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.StringRedactorOptions
+  commentId: T:ZeroRedact.StringRedactorOptions
+  id: StringRedactorOptions
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.StringRedactorOptions.#ctor
+  - ZeroRedact.StringRedactorOptions.FixedLengthSize
+  - ZeroRedact.StringRedactorOptions.RedactionCharacter
+  - ZeroRedact.StringRedactorOptions.RedactorType
+  langs:
+  - csharp
+  - vb
+  name: StringRedactorOptions
+  nameWithType: StringRedactorOptions
+  fullName: ZeroRedact.StringRedactorOptions
+  type: Struct
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: StringRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: String redactor options.
+  example: []
+  syntax:
+    content: public readonly struct StringRedactorOptions
+    content.vb: Public Structure StringRedactorOptions
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ZeroRedact.StringRedactorOptions.RedactionCharacter
+  commentId: P:ZeroRedact.StringRedactorOptions.RedactionCharacter
+  id: RedactionCharacter
+  parent: ZeroRedact.StringRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactionCharacter
+  nameWithType: StringRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.StringRedactorOptions.RedactionCharacter
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactionCharacter
+    path: ../src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+    startLine: 14
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The character used for the redaction.
+  example: []
+  syntax:
+    content: public char RedactionCharacter { get; init; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property RedactionCharacter As Char
+  overload: ZeroRedact.StringRedactorOptions.RedactionCharacter*
+- uid: ZeroRedact.StringRedactorOptions.FixedLengthSize
+  commentId: P:ZeroRedact.StringRedactorOptions.FixedLengthSize
+  id: FixedLengthSize
+  parent: ZeroRedact.StringRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: FixedLengthSize
+  nameWithType: StringRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.StringRedactorOptions.FixedLengthSize
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLengthSize
+    path: ../src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+    startLine: 25
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The fixed length size of the redaction.
+  example: []
+  syntax:
+    content: public int FixedLengthSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FixedLengthSize As Integer
+  overload: ZeroRedact.StringRedactorOptions.FixedLengthSize*
+- uid: ZeroRedact.StringRedactorOptions.RedactorType
+  commentId: P:ZeroRedact.StringRedactorOptions.RedactorType
+  id: RedactorType
+  parent: ZeroRedact.StringRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactorType
+  nameWithType: StringRedactorOptions.RedactorType
+  fullName: ZeroRedact.StringRedactorOptions.RedactorType
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactorType
+    path: ../src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+    startLine: 36
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The type of redactor to apply.
+  example: []
+  syntax:
+    content: public StringRedaction RedactorType { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.StringRedaction
+    content.vb: Public Property RedactorType As StringRedaction
+  overload: ZeroRedact.StringRedactorOptions.RedactorType*
+- uid: ZeroRedact.StringRedactorOptions.#ctor
+  commentId: M:ZeroRedact.StringRedactorOptions.#ctor
+  id: '#ctor'
+  parent: ZeroRedact.StringRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: StringRedactorOptions()
+  nameWithType: StringRedactorOptions.StringRedactorOptions()
+  fullName: ZeroRedact.StringRedactorOptions.StringRedactorOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: .ctor
+    path: ../src/ZeroRedact/Options/Public/StringRedactorOptions.cs
+    startLine: 47
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Constructs a new <xref href="ZeroRedact.StringRedactorOptions" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public StringRedactorOptions()
+    content.vb: Public Sub New()
+  overload: ZeroRedact.StringRedactorOptions.#ctor*
+  nameWithType.vb: StringRedactorOptions.New()
+  fullName.vb: ZeroRedact.StringRedactorOptions.New()
+  name.vb: New()
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ZeroRedact.StringRedactorOptions.RedactionCharacter*
+  commentId: Overload:ZeroRedact.StringRedactorOptions.RedactionCharacter
+  href: ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactionCharacter
+  name: RedactionCharacter
+  nameWithType: StringRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.StringRedactorOptions.RedactionCharacter
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: ZeroRedact.StringRedactorOptions.FixedLengthSize*
+  commentId: Overload:ZeroRedact.StringRedactorOptions.FixedLengthSize
+  href: ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_FixedLengthSize
+  name: FixedLengthSize
+  nameWithType: StringRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.StringRedactorOptions.FixedLengthSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ZeroRedact.StringRedactorOptions.RedactorType*
+  commentId: Overload:ZeroRedact.StringRedactorOptions.RedactorType
+  href: ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions_RedactorType
+  name: RedactorType
+  nameWithType: StringRedactorOptions.RedactorType
+  fullName: ZeroRedact.StringRedactorOptions.RedactorType
+- uid: ZeroRedact.StringRedaction
+  commentId: T:ZeroRedact.StringRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.StringRedaction.html
+  name: StringRedaction
+  nameWithType: StringRedaction
+  fullName: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedactorOptions
+  commentId: T:ZeroRedact.StringRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.StringRedactorOptions.html
+  name: StringRedactorOptions
+  nameWithType: StringRedactorOptions
+  fullName: ZeroRedact.StringRedactorOptions
+- uid: ZeroRedact.StringRedactorOptions.#ctor*
+  commentId: Overload:ZeroRedact.StringRedactorOptions.#ctor
+  href: ZeroRedact.StringRedactorOptions.html#ZeroRedact_StringRedactorOptions__ctor
+  name: StringRedactorOptions
+  nameWithType: StringRedactorOptions.StringRedactorOptions
+  fullName: ZeroRedact.StringRedactorOptions.StringRedactorOptions
+  nameWithType.vb: StringRedactorOptions.New
+  fullName.vb: ZeroRedact.StringRedactorOptions.New
+  name.vb: New
