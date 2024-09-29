@@ -67,12 +67,12 @@ jobs:
       run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
 
     - name: Upload artifact
-      - uses:  actions/upload-artifact@v4
-        with:
-          path: docfx/_site
-      - uses:  actions/upload-artifact@v4
-        with:
-          path: publish/wwwroot
+      uses:  actions/upload-artifact@v4
+      with:
+        path: docfx/_site
+      uses:  actions/upload-artifact@v4
+      with:
+        path: publish/wwwroot
 
     - name: Deploy to GitHub Pages
       id: deployment
