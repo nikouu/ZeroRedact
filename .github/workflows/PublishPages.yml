@@ -78,15 +78,20 @@ jobs:
     - name: Copy .NET site to deployment directory
       run: cp -r publish/wwwroot/* deployment/demoWasm/
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: github-pages
-        path: deployment        
+    #- name: Upload artifact
+    #  uses: actions/upload-artifact@v4
+    #  with:
+    #    name: github-pages
+    #    path: deployment        
+
+    - name: Upload GitHub Pages artifact
+      uses: actions/upload-pages-artifact@v1
+       with:
+          path: deployment
 
     - name: Deploy to GitHub Pages
-      id: deployment
       uses: actions/deploy-pages@v4
+      id: deployment
 
 #  deploy-wasmDemo:
 #    runs-on: ubuntu-latest
