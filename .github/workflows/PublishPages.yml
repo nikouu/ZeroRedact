@@ -69,11 +69,14 @@ jobs:
     - name: Create deployment directory
       run: mkdir deployment
 
+    - name: Create wasm deployment directory
+      run: mkdir deployment/demoWasm/
+
     - name: Copy DocFX site to deployment directory
       run: cp -r docfx/_site/* deployment/
 
     - name: Copy .NET site to deployment directory
-      run: cp -r publish/wwwroot/* deployment/
+      run: cp -r publish/wwwroot/* deployment/demoWasm/
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
@@ -83,9 +86,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4  
-      with:
-          path: deployment
+      uses: actions/deploy-pages@v4
 
 #  deploy-wasmDemo:
 #    runs-on: ubuntu-latest
