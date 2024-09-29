@@ -64,7 +64,7 @@ jobs:
 
     # Publish the site
     - name: Publish
-      run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true =p:GHPagesBase=demoWasm
+      run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true -p:GHPagesBase=demoWasm
 
     - name: Create deployment directory
       run: mkdir deployment
