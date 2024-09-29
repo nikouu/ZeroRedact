@@ -1,1 +1,1 @@
-<iframe style="width:100%;height:100%" src="https://nikouu.github.io/ZeroRedact/wasmDemo"></iframe>
+<iframe style="width:100%;height:100%" src="https://nikouu.github.io/ZeroRedact/demoWasm/"></iframe>
