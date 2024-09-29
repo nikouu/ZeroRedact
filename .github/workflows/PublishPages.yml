@@ -67,7 +67,7 @@ jobs:
       run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
 
     - name: Create deployment directory
-        run: mkdir deployment
+      run: mkdir deployment
 
     - name: Copy DocFX site to deployment directory
       run: cp -r docfx/_site/* deployment/
