@@ -40,7 +40,7 @@ jobs:
  #      id: deployment
  #      uses: actions/deploy-pages@v4
 
-  publish-docs:
+  publish-pages:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -54,38 +54,49 @@ jobs:
     - run: dotnet tool update -g docfx
     - run: docfx docfx/docfx.json
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+     # Install .NET SDK
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
       with:
-        # Upload entire repository
-        path: docfx/_site
+        dotnet-version: 8.0.x
+    - name: Install .NET WebAssembly Tools
+      run: dotnet workload install wasm-tools
+
+    # Publish the site
+    - name: Publish
+      run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v4
+      with:
+        path: |
+          docfx/_site
+          publish/wwwroot
+
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4  
 
-  deploy-wasmDemo:
-    runs-on: ubuntu-latest
-    steps:
-      # Checkout the code
-      - uses: actions/checkout@v4
-
-      # Install .NET SDK
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.0.x
-      - name: Install .NET WebAssembly Tools
-        run: dotnet workload install wasm-tools
-
-      # Publish the site
-      - name: Publish
-        run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
-
-      # Deploy the site
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: publish/wwwroot
-          force_orphan: true
-          destination_dir: wasmDemo
+#  deploy-wasmDemo:
+#    runs-on: ubuntu-latest
+#    steps:
+#      # Checkout the code
+#      - uses: actions/checkout@v4
+#
+#      # Install .NET SDK
+#      - name: Setup .NET SDK
+#        uses: actions/setup-dotnet@v4
+#        with:
+#          dotnet-version: 8.0.x
+#      - name: Install .NET WebAssembly Tools
+#        run: dotnet workload install wasm-tools
+#
+#      # Publish the site
+#      - name: Publish
+#        run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
+#
+#      # Upload artifact
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v1
+#        with:
+#          path: publish/wwwroot
