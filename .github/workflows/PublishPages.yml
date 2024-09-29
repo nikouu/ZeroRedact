@@ -79,7 +79,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish src\ZeroRedact.DemoSite\ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
+        run: dotnet publish ZeroRedact\src\ZeroRedact.DemoSite\ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
 
       # Deploy the site
       - name: Deploy
