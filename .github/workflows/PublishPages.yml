@@ -66,16 +66,26 @@ jobs:
     - name: Publish
       run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true
 
+    - name: Create deployment directory
+        run: mkdir deployment
+
+    - name: Copy DocFX site to deployment directory
+      run: cp -r docfx/_site/* deployment/
+
+    - name: Copy .NET site to deployment directory
+      run: cp -r publish/wwwroot/* deployment/
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        path: |
-          docfx/_site
-          publish/wwwroot     
+        name: github-pages
+        path: deployment        
 
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4  
+      with:
+          path: deployment
 
 #  deploy-wasmDemo:
 #    runs-on: ubuntu-latest
