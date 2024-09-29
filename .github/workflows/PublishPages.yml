@@ -69,10 +69,9 @@ jobs:
     - name: Upload artifact
       uses:  actions/upload-artifact@v4
       with:
-        path: docfx/_site
-      uses:  actions/upload-artifact@v4
-      with:
-        path: publish/wwwroot
+        path: |
+        docfx/_site
+        publish/wwwroot     
 
     - name: Deploy to GitHub Pages
       id: deployment
