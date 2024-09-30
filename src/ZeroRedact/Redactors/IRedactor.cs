@@ -1,6 +1,6 @@
 ﻿using System.Net.Mail;
 
-namespace ZeroRedact.Redactors
+namespace ZeroRedact
 {
     /// <summary>
     /// Implements redaction capabilities.

@@ -84,6 +84,43 @@ namespace ZeroRedact
         public char RedactionCharacter { get; init; }
         public ZeroRedact.IPv6Redaction RedactorType { get; init; }
     }
+    public interface IRedactor
+    {
+        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber);
+        string RedactCreditCard(string creditCardNumber);
+        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
+        string RedactCreditCard(string creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
+        string RedactDate(System.DateOnly date);
+        string RedactDate(System.DateTime date);
+        string RedactDate(System.DateOnly date, ZeroRedact.DateRedactorOptions redactorOptions);
+        string RedactDate(System.DateTime date, ZeroRedact.DateRedactorOptions redactorOptions);
+        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress);
+        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress);
+        string RedactEmailAddress(string emailAddress);
+        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        string RedactEmailAddress(string emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress);
+        string RedactIPv4Address(string ipAddress);
+        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
+        string RedactIPv4Address(string ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress);
+        string RedactIPv6Address(string ipAddress);
+        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
+        string RedactIPv6Address(string ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress);
+        string RedactMACAddress(string macAddress);
+        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
+        string RedactMACAddress(string macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber);
+        string RedactPhoneNumber(string phoneNumber);
+        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
+        string RedactPhoneNumber(string phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
+        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value);
+        string RedactString(string value);
+        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value, ZeroRedact.StringRedactorOptions redactorOptions);
+        string RedactString(string value, ZeroRedact.StringRedactorOptions redactorOptions);
+    }
     public enum MACAddressRedaction
     {
         All = 0,
@@ -113,7 +150,7 @@ namespace ZeroRedact
         public ZeroRedact.PhoneNumberRedaction RedactorType { get; init; }
     }
     [System.Runtime.CompilerServices.SkipLocalsInit]
-    public sealed class Redactor : ZeroRedact.Redactors.IRedactor
+    public sealed class Redactor : ZeroRedact.IRedactor
     {
         public Redactor() { }
         public Redactor(ZeroRedact.RedactorOptions options) { }
@@ -180,45 +217,5 @@ namespace ZeroRedact
         public int FixedLengthSize { get; init; }
         public char RedactionCharacter { get; init; }
         public ZeroRedact.StringRedaction RedactorType { get; init; }
-    }
-}
-namespace ZeroRedact.Redactors
-{
-    public interface IRedactor
-    {
-        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber);
-        string RedactCreditCard(string creditCardNumber);
-        System.ReadOnlySpan<char> RedactCreditCard(System.ReadOnlySpan<char> creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
-        string RedactCreditCard(string creditCardNumber, ZeroRedact.CreditCardRedactorOptions redactorOptions);
-        string RedactDate(System.DateOnly date);
-        string RedactDate(System.DateTime date);
-        string RedactDate(System.DateOnly date, ZeroRedact.DateRedactorOptions redactorOptions);
-        string RedactDate(System.DateTime date, ZeroRedact.DateRedactorOptions redactorOptions);
-        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress);
-        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress);
-        string RedactEmailAddress(string emailAddress);
-        string RedactEmailAddress(System.Net.Mail.MailAddress emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactEmailAddress(System.ReadOnlySpan<char> emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
-        string RedactEmailAddress(string emailAddress, ZeroRedact.EmailAddressRedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress);
-        string RedactIPv4Address(string ipAddress);
-        System.ReadOnlySpan<char> RedactIPv4Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
-        string RedactIPv4Address(string ipAddress, ZeroRedact.IPv4RedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress);
-        string RedactIPv6Address(string ipAddress);
-        System.ReadOnlySpan<char> RedactIPv6Address(System.ReadOnlySpan<char> ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
-        string RedactIPv6Address(string ipAddress, ZeroRedact.IPv6RedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress);
-        string RedactMACAddress(string macAddress);
-        System.ReadOnlySpan<char> RedactMACAddress(System.ReadOnlySpan<char> macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
-        string RedactMACAddress(string macAddress, ZeroRedact.MACAddressRedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber);
-        string RedactPhoneNumber(string phoneNumber);
-        System.ReadOnlySpan<char> RedactPhoneNumber(System.ReadOnlySpan<char> phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
-        string RedactPhoneNumber(string phoneNumber, ZeroRedact.PhoneNumberRedactorOptions redactorOptions);
-        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value);
-        string RedactString(string value);
-        System.ReadOnlySpan<char> RedactString(System.ReadOnlySpan<char> value, ZeroRedact.StringRedactorOptions redactorOptions);
-        string RedactString(string value, ZeroRedact.StringRedactorOptions redactorOptions);
     }
 }

@@ -23,6 +23,8 @@ items:
     name: IPv6Redaction
   - uid: ZeroRedact.IPv6RedactorOptions
     name: IPv6RedactorOptions
+  - uid: ZeroRedact.IRedactor
+    name: IRedactor
   - uid: ZeroRedact.MACAddressRedaction
     name: MACAddressRedaction
   - uid: ZeroRedact.MACAddressRedactorOptions
@@ -39,9 +41,4 @@ items:
     name: StringRedaction
   - uid: ZeroRedact.StringRedactorOptions
     name: StringRedactorOptions
-- uid: ZeroRedact.Redactors
-  name: ZeroRedact.Redactors
-  items:
-  - uid: ZeroRedact.Redactors.IRedactor
-    name: IRedactor
 memberLayout: SamePage

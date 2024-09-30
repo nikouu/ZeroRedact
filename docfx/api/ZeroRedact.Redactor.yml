@@ -67,7 +67,7 @@ items:
   inheritance:
   - System.Object
   implements:
-  - ZeroRedact.Redactors.IRedactor
+  - ZeroRedact.IRedactor
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
@@ -180,7 +180,7 @@ items:
     content.vb: Public Function RedactCreditCard(creditCardNumber As String) As String
   overload: ZeroRedact.Redactor.RedactCreditCard*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
+  - ZeroRedact.IRedactor.RedactCreditCard(System.String)
   nameWithType.vb: Redactor.RedactCreditCard(String)
   fullName.vb: ZeroRedact.Redactor.RedactCreditCard(String)
   name.vb: RedactCreditCard(String)
@@ -222,7 +222,7 @@ items:
     content.vb: Public Function RedactCreditCard(creditCardNumber As String, redactorOptions As CreditCardRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactCreditCard*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  - ZeroRedact.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
   nameWithType.vb: Redactor.RedactCreditCard(String, CreditCardRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactCreditCard(String, ZeroRedact.CreditCardRedactorOptions)
   name.vb: RedactCreditCard(String, CreditCardRedactorOptions)
@@ -261,7 +261,7 @@ items:
     content.vb: Public Function RedactCreditCard(creditCardNumber As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactCreditCard*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactCreditCard(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan(Of Char))
   name.vb: RedactCreditCard(ReadOnlySpan(Of Char))
@@ -303,7 +303,7 @@ items:
     content.vb: Public Function RedactCreditCard(creditCardNumber As ReadOnlySpan(Of Char), redactorOptions As CreditCardRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactCreditCard*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  - ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
   nameWithType.vb: Redactor.RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactCreditCard(System.ReadOnlySpan(Of Char), ZeroRedact.CreditCardRedactorOptions)
   name.vb: RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
@@ -343,7 +343,7 @@ items:
     content.vb: Public Function RedactDate([date] As Date) As String
   overload: ZeroRedact.Redactor.RedactDate*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  - ZeroRedact.IRedactor.RedactDate(System.DateTime)
   nameWithType.vb: Redactor.RedactDate(Date)
   fullName.vb: ZeroRedact.Redactor.RedactDate(Date)
   name.vb: RedactDate(Date)
@@ -386,7 +386,7 @@ items:
     content.vb: Public Function RedactDate([date] As Date, redactorOptions As DateRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactDate*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  - ZeroRedact.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
   nameWithType.vb: Redactor.RedactDate(Date, DateRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactDate(Date, ZeroRedact.DateRedactorOptions)
   name.vb: RedactDate(Date, DateRedactorOptions)
@@ -426,7 +426,7 @@ items:
     content.vb: Public Function RedactDate([date] As DateOnly) As String
   overload: ZeroRedact.Redactor.RedactDate*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  - ZeroRedact.IRedactor.RedactDate(System.DateOnly)
 - uid: ZeroRedact.Redactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
   commentId: M:ZeroRedact.Redactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
   id: RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
@@ -466,7 +466,7 @@ items:
     content.vb: Public Function RedactDate([date] As DateOnly, redactorOptions As DateRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactDate*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  - ZeroRedact.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
 - uid: ZeroRedact.Redactor.RedactEmailAddress(System.String)
   commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.String)
   id: RedactEmailAddress(System.String)
@@ -502,7 +502,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As String) As String
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.String)
   nameWithType.vb: Redactor.RedactEmailAddress(String)
   fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(String)
   name.vb: RedactEmailAddress(String)
@@ -544,7 +544,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As String, redactorOptions As EmailAddressRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
   nameWithType.vb: Redactor.RedactEmailAddress(String, EmailAddressRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(String, ZeroRedact.EmailAddressRedactorOptions)
   name.vb: RedactEmailAddress(String, EmailAddressRedactorOptions)
@@ -583,7 +583,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactEmailAddress(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan(Of Char))
   name.vb: RedactEmailAddress(ReadOnlySpan(Of Char))
@@ -625,7 +625,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As ReadOnlySpan(Of Char), redactorOptions As EmailAddressRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
   nameWithType.vb: Redactor.RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactEmailAddress(System.ReadOnlySpan(Of Char), ZeroRedact.EmailAddressRedactorOptions)
   name.vb: RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
@@ -664,7 +664,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As MailAddress) As String
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
 - uid: ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
   commentId: M:ZeroRedact.Redactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
   id: RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
@@ -703,7 +703,7 @@ items:
     content.vb: Public Function RedactEmailAddress(emailAddress As MailAddress, redactorOptions As EmailAddressRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactEmailAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  - ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
 - uid: ZeroRedact.Redactor.RedactIPv4Address(System.String)
   commentId: M:ZeroRedact.Redactor.RedactIPv4Address(System.String)
   id: RedactIPv4Address(System.String)
@@ -739,7 +739,7 @@ items:
     content.vb: Public Function RedactIPv4Address(ipAddress As String) As String
   overload: ZeroRedact.Redactor.RedactIPv4Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.String)
   nameWithType.vb: Redactor.RedactIPv4Address(String)
   fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(String)
   name.vb: RedactIPv4Address(String)
@@ -781,7 +781,7 @@ items:
     content.vb: Public Function RedactIPv4Address(ipAddress As String, redactorOptions As IPv4RedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactIPv4Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
   nameWithType.vb: Redactor.RedactIPv4Address(String, IPv4RedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
   name.vb: RedactIPv4Address(String, IPv4RedactorOptions)
@@ -820,7 +820,7 @@ items:
     content.vb: Public Function RedactIPv4Address(ipAddress As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactIPv4Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactIPv4Address(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv4Address(ReadOnlySpan(Of Char))
@@ -862,7 +862,7 @@ items:
     content.vb: Public Function RedactIPv4Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv4RedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactIPv4Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
   nameWithType.vb: Redactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
   name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
@@ -901,7 +901,7 @@ items:
     content.vb: Public Function RedactIPv6Address(ipAddress As String) As String
   overload: ZeroRedact.Redactor.RedactIPv6Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.String)
   nameWithType.vb: Redactor.RedactIPv6Address(String)
   fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(String)
   name.vb: RedactIPv6Address(String)
@@ -943,7 +943,7 @@ items:
     content.vb: Public Function RedactIPv6Address(ipAddress As String, redactorOptions As IPv6RedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactIPv6Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
   nameWithType.vb: Redactor.RedactIPv6Address(String, IPv6RedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
   name.vb: RedactIPv6Address(String, IPv6RedactorOptions)
@@ -982,7 +982,7 @@ items:
     content.vb: Public Function RedactIPv6Address(ipAddress As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactIPv6Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactIPv6Address(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv6Address(ReadOnlySpan(Of Char))
@@ -1024,7 +1024,7 @@ items:
     content.vb: Public Function RedactIPv6Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv6RedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactIPv6Address*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
   nameWithType.vb: Redactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
   name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
@@ -1063,7 +1063,7 @@ items:
     content.vb: Public Function RedactMACAddress(macAddress As String) As String
   overload: ZeroRedact.Redactor.RedactMACAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
+  - ZeroRedact.IRedactor.RedactMACAddress(System.String)
   nameWithType.vb: Redactor.RedactMACAddress(String)
   fullName.vb: ZeroRedact.Redactor.RedactMACAddress(String)
   name.vb: RedactMACAddress(String)
@@ -1105,7 +1105,7 @@ items:
     content.vb: Public Function RedactMACAddress(macAddress As String, redactorOptions As MACAddressRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactMACAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  - ZeroRedact.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
   nameWithType.vb: Redactor.RedactMACAddress(String, MACAddressRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactMACAddress(String, ZeroRedact.MACAddressRedactorOptions)
   name.vb: RedactMACAddress(String, MACAddressRedactorOptions)
@@ -1144,7 +1144,7 @@ items:
     content.vb: Public Function RedactMACAddress(macAddress As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactMACAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactMACAddress(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan(Of Char))
   name.vb: RedactMACAddress(ReadOnlySpan(Of Char))
@@ -1186,7 +1186,7 @@ items:
     content.vb: Public Function RedactMACAddress(macAddress As ReadOnlySpan(Of Char), redactorOptions As MACAddressRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactMACAddress*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  - ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
   nameWithType.vb: Redactor.RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactMACAddress(System.ReadOnlySpan(Of Char), ZeroRedact.MACAddressRedactorOptions)
   name.vb: RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
@@ -1225,7 +1225,7 @@ items:
     content.vb: Public Function RedactPhoneNumber(phoneNumber As String) As String
   overload: ZeroRedact.Redactor.RedactPhoneNumber*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
+  - ZeroRedact.IRedactor.RedactPhoneNumber(System.String)
   nameWithType.vb: Redactor.RedactPhoneNumber(String)
   fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(String)
   name.vb: RedactPhoneNumber(String)
@@ -1267,7 +1267,7 @@ items:
     content.vb: Public Function RedactPhoneNumber(phoneNumber As String, redactorOptions As PhoneNumberRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactPhoneNumber*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  - ZeroRedact.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
   nameWithType.vb: Redactor.RedactPhoneNumber(String, PhoneNumberRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(String, ZeroRedact.PhoneNumberRedactorOptions)
   name.vb: RedactPhoneNumber(String, PhoneNumberRedactorOptions)
@@ -1306,7 +1306,7 @@ items:
     content.vb: Public Function RedactPhoneNumber(phoneNumber As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactPhoneNumber*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactPhoneNumber(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char))
   name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char))
@@ -1348,7 +1348,7 @@ items:
     content.vb: Public Function RedactPhoneNumber(phoneNumber As ReadOnlySpan(Of Char), redactorOptions As PhoneNumberRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactPhoneNumber*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  - ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
   nameWithType.vb: Redactor.RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char), ZeroRedact.PhoneNumberRedactorOptions)
   name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
@@ -1387,7 +1387,7 @@ items:
     content.vb: Public Function RedactString(value As String) As String
   overload: ZeroRedact.Redactor.RedactString*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactString(System.String)
+  - ZeroRedact.IRedactor.RedactString(System.String)
   nameWithType.vb: Redactor.RedactString(String)
   fullName.vb: ZeroRedact.Redactor.RedactString(String)
   name.vb: RedactString(String)
@@ -1429,7 +1429,7 @@ items:
     content.vb: Public Function RedactString(value As String, redactorOptions As StringRedactorOptions) As String
   overload: ZeroRedact.Redactor.RedactString*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  - ZeroRedact.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
   nameWithType.vb: Redactor.RedactString(String, StringRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactString(String, ZeroRedact.StringRedactorOptions)
   name.vb: RedactString(String, StringRedactorOptions)
@@ -1468,7 +1468,7 @@ items:
     content.vb: Public Function RedactString(value As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactString*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  - ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
   nameWithType.vb: Redactor.RedactString(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan(Of Char))
   name.vb: RedactString(ReadOnlySpan(Of Char))
@@ -1510,7 +1510,7 @@ items:
     content.vb: Public Function RedactString(value As ReadOnlySpan(Of Char), redactorOptions As StringRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.Redactor.RedactString*
   implements:
-  - ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  - ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
   nameWithType.vb: Redactor.RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
   fullName.vb: ZeroRedact.Redactor.RedactString(System.ReadOnlySpan(Of Char), ZeroRedact.StringRedactorOptions)
   name.vb: RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
@@ -1532,13 +1532,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: ZeroRedact.Redactors.IRedactor
-  commentId: T:ZeroRedact.Redactors.IRedactor
-  parent: ZeroRedact.Redactors
-  href: ZeroRedact.Redactors.IRedactor.html
+- uid: ZeroRedact.IRedactor
+  commentId: T:ZeroRedact.IRedactor
+  parent: ZeroRedact
+  href: ZeroRedact.IRedactor.html
   name: IRedactor
   nameWithType: IRedactor
-  fullName: ZeroRedact.Redactors.IRedactor
+  fullName: ZeroRedact.IRedactor
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1741,28 +1741,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: ZeroRedact.Redactors
-  commentId: N:ZeroRedact.Redactors
-  href: ZeroRedact.html
-  name: ZeroRedact.Redactors
-  nameWithType: ZeroRedact.Redactors
-  fullName: ZeroRedact.Redactors
-  spec.csharp:
-  - uid: ZeroRedact
-    name: ZeroRedact
-    href: ZeroRedact.html
-  - name: .
-  - uid: ZeroRedact.Redactors
-    name: Redactors
-    href: ZeroRedact.Redactors.html
-  spec.vb:
-  - uid: ZeroRedact
-    name: ZeroRedact
-    href: ZeroRedact.html
-  - name: .
-  - uid: ZeroRedact.Redactors
-    name: Redactors
-    href: ZeroRedact.Redactors.html
 - uid: ZeroRedact.Redactor
   commentId: T:ZeroRedact.Redactor
   href: ZeroRedact.Redactor.html
@@ -1804,21 +1782,21 @@ references:
   name: RedactCreditCard
   nameWithType: Redactor.RedactCreditCard
   fullName: ZeroRedact.Redactor.RedactCreditCard
-- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactCreditCard(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactCreditCard(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_
   name: RedactCreditCard(string)
   nameWithType: IRedactor.RedactCreditCard(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(string)
+  fullName: ZeroRedact.IRedactor.RedactCreditCard(string)
   nameWithType.vb: IRedactor.RedactCreditCard(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactCreditCard(String)
   name.vb: RedactCreditCard(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.String)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -1826,9 +1804,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.String)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_
   - name: (
   - uid: System.String
     name: String
@@ -1846,21 +1824,21 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
   name: RedactCreditCard(string, CreditCardRedactorOptions)
   nameWithType: IRedactor.RedactCreditCard(string, CreditCardRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(string, ZeroRedact.CreditCardRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactCreditCard(string, ZeroRedact.CreditCardRedactorOptions)
   nameWithType.vb: IRedactor.RedactCreditCard(String, CreditCardRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(String, ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactCreditCard(String, ZeroRedact.CreditCardRedactorOptions)
   name.vb: RedactCreditCard(String, CreditCardRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -1873,9 +1851,9 @@ references:
     href: ZeroRedact.CreditCardRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.String,ZeroRedact.CreditCardRedactorOptions)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_String_ZeroRedact_CreditCardRedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -1894,21 +1872,21 @@ references:
   name: CreditCardRedactorOptions
   nameWithType: CreditCardRedactorOptions
   fullName: ZeroRedact.CreditCardRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
   name: RedactCreditCard(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactCreditCard(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactCreditCard(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char))
   name.vb: RedactCreditCard(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -1922,9 +1900,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char})
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2002,21 +1980,21 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
   name: RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
   nameWithType: IRedactor.RedactCreditCard(ReadOnlySpan<char>, CreditCardRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>, ZeroRedact.CreditCardRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan<char>, ZeroRedact.CreditCardRedactorOptions)
   nameWithType.vb: IRedactor.RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char), ZeroRedact.CreditCardRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan(Of Char), ZeroRedact.CreditCardRedactorOptions)
   name.vb: RedactCreditCard(ReadOnlySpan(Of Char), CreditCardRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2035,9 +2013,9 @@ references:
     href: ZeroRedact.CreditCardRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactCreditCard(System.ReadOnlySpan{System.Char},ZeroRedact.CreditCardRedactorOptions)
     name: RedactCreditCard
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactCreditCard_System_ReadOnlySpan_System_Char__ZeroRedact_CreditCardRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2070,21 +2048,21 @@ references:
   name: RedactDate
   nameWithType: Redactor.RedactDate
   fullName: ZeroRedact.Redactor.RedactDate
-- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactDate(System.DateTime)
+  commentId: M:ZeroRedact.IRedactor.RedactDate(System.DateTime)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_
   name: RedactDate(DateTime)
   nameWithType: IRedactor.RedactDate(DateTime)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  fullName: ZeroRedact.IRedactor.RedactDate(System.DateTime)
   nameWithType.vb: IRedactor.RedactDate(Date)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactDate(Date)
+  fullName.vb: ZeroRedact.IRedactor.RedactDate(Date)
   name.vb: RedactDate(Date)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateTime)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_
   - name: (
   - uid: System.DateTime
     name: DateTime
@@ -2092,9 +2070,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.datetime
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateTime)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_
   - name: (
   - uid: System.DateTime
     name: Date
@@ -2112,21 +2090,21 @@ references:
   nameWithType.vb: Date
   fullName.vb: Date
   name.vb: Date
-- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
   name: RedactDate(DateTime, DateRedactorOptions)
   nameWithType: IRedactor.RedactDate(DateTime, DateRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime, ZeroRedact.DateRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactDate(System.DateTime, ZeroRedact.DateRedactorOptions)
   nameWithType.vb: IRedactor.RedactDate(Date, DateRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactDate(Date, ZeroRedact.DateRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactDate(Date, ZeroRedact.DateRedactorOptions)
   name.vb: RedactDate(Date, DateRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
   - name: (
   - uid: System.DateTime
     name: DateTime
@@ -2139,9 +2117,9 @@ references:
     href: ZeroRedact.DateRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateTime,ZeroRedact.DateRedactorOptions)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateTime_ZeroRedact_DateRedactorOptions_
   - name: (
   - uid: System.DateTime
     name: Date
@@ -2160,18 +2138,18 @@ references:
   name: DateRedactorOptions
   nameWithType: DateRedactorOptions
   fullName: ZeroRedact.DateRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly)
+  commentId: M:ZeroRedact.IRedactor.RedactDate(System.DateOnly)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_
   name: RedactDate(DateOnly)
   nameWithType: IRedactor.RedactDate(DateOnly)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  fullName: ZeroRedact.IRedactor.RedactDate(System.DateOnly)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_
   - name: (
   - uid: System.DateOnly
     name: DateOnly
@@ -2179,9 +2157,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.dateonly
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_
   - name: (
   - uid: System.DateOnly
     name: DateOnly
@@ -2196,18 +2174,18 @@ references:
   name: DateOnly
   nameWithType: DateOnly
   fullName: System.DateOnly
-- uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
   name: RedactDate(DateOnly, DateRedactorOptions)
   nameWithType: IRedactor.RedactDate(DateOnly, DateRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly, ZeroRedact.DateRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactDate(System.DateOnly, ZeroRedact.DateRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
   - name: (
   - uid: System.DateOnly
     name: DateOnly
@@ -2220,9 +2198,9 @@ references:
     href: ZeroRedact.DateRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactDate(System.DateOnly,ZeroRedact.DateRedactorOptions)
     name: RedactDate
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactDate_System_DateOnly_ZeroRedact_DateRedactorOptions_
   - name: (
   - uid: System.DateOnly
     name: DateOnly
@@ -2240,21 +2218,21 @@ references:
   name: RedactEmailAddress
   nameWithType: Redactor.RedactEmailAddress
   fullName: ZeroRedact.Redactor.RedactEmailAddress
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_
   name: RedactEmailAddress(string)
   nameWithType: IRedactor.RedactEmailAddress(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(string)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(string)
   nameWithType.vb: IRedactor.RedactEmailAddress(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactEmailAddress(String)
   name.vb: RedactEmailAddress(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2262,30 +2240,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
   name: RedactEmailAddress(string, EmailAddressRedactorOptions)
   nameWithType: IRedactor.RedactEmailAddress(string, EmailAddressRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(string, ZeroRedact.EmailAddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(string, ZeroRedact.EmailAddressRedactorOptions)
   nameWithType.vb: IRedactor.RedactEmailAddress(String, EmailAddressRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(String, ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactEmailAddress(String, ZeroRedact.EmailAddressRedactorOptions)
   name.vb: RedactEmailAddress(String, EmailAddressRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -2298,9 +2276,9 @@ references:
     href: ZeroRedact.EmailAddressRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_String_ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -2319,21 +2297,21 @@ references:
   name: EmailAddressRedactorOptions
   nameWithType: EmailAddressRedactorOptions
   fullName: ZeroRedact.EmailAddressRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
   name: RedactEmailAddress(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactEmailAddress(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactEmailAddress(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char))
   name.vb: RedactEmailAddress(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2347,9 +2325,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char})
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2364,21 +2342,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
   name: RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
   nameWithType: IRedactor.RedactEmailAddress(ReadOnlySpan<char>, EmailAddressRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>, ZeroRedact.EmailAddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan<char>, ZeroRedact.EmailAddressRedactorOptions)
   nameWithType.vb: IRedactor.RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char), ZeroRedact.EmailAddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan(Of Char), ZeroRedact.EmailAddressRedactorOptions)
   name.vb: RedactEmailAddress(ReadOnlySpan(Of Char), EmailAddressRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2397,9 +2375,9 @@ references:
     href: ZeroRedact.EmailAddressRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.ReadOnlySpan{System.Char},ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_ReadOnlySpan_System_Char__ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2419,18 +2397,18 @@ references:
     name: EmailAddressRedactorOptions
     href: ZeroRedact.EmailAddressRedactorOptions.html
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
   name: RedactEmailAddress(MailAddress)
   nameWithType: IRedactor.RedactEmailAddress(MailAddress)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
   - name: (
   - uid: System.Net.Mail.MailAddress
     name: MailAddress
@@ -2438,9 +2416,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.net.mail.mailaddress
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_
   - name: (
   - uid: System.Net.Mail.MailAddress
     name: MailAddress
@@ -2492,18 +2470,18 @@ references:
     name: Mail
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.net.mail
-- uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
   name: RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
   nameWithType: IRedactor.RedactEmailAddress(MailAddress, EmailAddressRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress, ZeroRedact.EmailAddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress, ZeroRedact.EmailAddressRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.Net.Mail.MailAddress
     name: MailAddress
@@ -2516,9 +2494,9 @@ references:
     href: ZeroRedact.EmailAddressRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactEmailAddress(System.Net.Mail.MailAddress,ZeroRedact.EmailAddressRedactorOptions)
     name: RedactEmailAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactEmailAddress_System_Net_Mail_MailAddress_ZeroRedact_EmailAddressRedactorOptions_
   - name: (
   - uid: System.Net.Mail.MailAddress
     name: MailAddress
@@ -2536,21 +2514,21 @@ references:
   name: RedactIPv4Address
   nameWithType: Redactor.RedactIPv4Address
   fullName: ZeroRedact.Redactor.RedactIPv4Address
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_
   name: RedactIPv4Address(string)
   nameWithType: IRedactor.RedactIPv4Address(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(string)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(string)
   nameWithType.vb: IRedactor.RedactIPv4Address(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(String)
   name.vb: RedactIPv4Address(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2558,30 +2536,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
   name: RedactIPv4Address(string, IPv4RedactorOptions)
   nameWithType: IRedactor.RedactIPv4Address(string, IPv4RedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(string, ZeroRedact.IPv4RedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(string, ZeroRedact.IPv4RedactorOptions)
   nameWithType.vb: IRedactor.RedactIPv4Address(String, IPv4RedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
   name.vb: RedactIPv4Address(String, IPv4RedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -2594,9 +2572,9 @@ references:
     href: ZeroRedact.IPv4RedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_String_ZeroRedact_IPv4RedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -2615,21 +2593,21 @@ references:
   name: IPv4RedactorOptions
   nameWithType: IPv4RedactorOptions
   fullName: ZeroRedact.IPv4RedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
   name: RedactIPv4Address(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv4Address(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2643,9 +2621,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2660,21 +2638,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
   name: RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
   nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4RedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4RedactorOptions)
   nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
   name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2693,9 +2671,9 @@ references:
     href: ZeroRedact.IPv4RedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
     name: RedactIPv4Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv4Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv4RedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2721,21 +2699,21 @@ references:
   name: RedactIPv6Address
   nameWithType: Redactor.RedactIPv6Address
   fullName: ZeroRedact.Redactor.RedactIPv6Address
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_
   name: RedactIPv6Address(string)
   nameWithType: IRedactor.RedactIPv6Address(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(string)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(string)
   nameWithType.vb: IRedactor.RedactIPv6Address(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(String)
   name.vb: RedactIPv6Address(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2743,30 +2721,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
   name: RedactIPv6Address(string, IPv6RedactorOptions)
   nameWithType: IRedactor.RedactIPv6Address(string, IPv6RedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(string, ZeroRedact.IPv6RedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(string, ZeroRedact.IPv6RedactorOptions)
   nameWithType.vb: IRedactor.RedactIPv6Address(String, IPv6RedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
   name.vb: RedactIPv6Address(String, IPv6RedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -2779,9 +2757,9 @@ references:
     href: ZeroRedact.IPv6RedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_ZeroRedact_IPv6RedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -2800,21 +2778,21 @@ references:
   name: IPv6RedactorOptions
   nameWithType: IPv6RedactorOptions
   fullName: ZeroRedact.IPv6RedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
   name: RedactIPv6Address(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv6Address(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2828,9 +2806,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2845,21 +2823,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
   name: RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
   nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6RedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6RedactorOptions)
   nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
   name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2878,9 +2856,9 @@ references:
     href: ZeroRedact.IPv6RedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
     name: RedactIPv6Address
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_ReadOnlySpan_System_Char__ZeroRedact_IPv6RedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -2906,21 +2884,21 @@ references:
   name: RedactMACAddress
   nameWithType: Redactor.RedactMACAddress
   fullName: ZeroRedact.Redactor.RedactMACAddress
-- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactMACAddress(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactMACAddress(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_
   name: RedactMACAddress(string)
   nameWithType: IRedactor.RedactMACAddress(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(string)
+  fullName: ZeroRedact.IRedactor.RedactMACAddress(string)
   nameWithType.vb: IRedactor.RedactMACAddress(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactMACAddress(String)
   name.vb: RedactMACAddress(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.String)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2928,30 +2906,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.String)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
   name: RedactMACAddress(string, MACAddressRedactorOptions)
   nameWithType: IRedactor.RedactMACAddress(string, MACAddressRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(string, ZeroRedact.MACAddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactMACAddress(string, ZeroRedact.MACAddressRedactorOptions)
   nameWithType.vb: IRedactor.RedactMACAddress(String, MACAddressRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(String, ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactMACAddress(String, ZeroRedact.MACAddressRedactorOptions)
   name.vb: RedactMACAddress(String, MACAddressRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -2964,9 +2942,9 @@ references:
     href: ZeroRedact.MACAddressRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.String,ZeroRedact.MACAddressRedactorOptions)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_ZeroRedact_MACAddressRedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -2985,21 +2963,21 @@ references:
   name: MACAddressRedactorOptions
   nameWithType: MACAddressRedactorOptions
   fullName: ZeroRedact.MACAddressRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
   name: RedactMACAddress(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactMACAddress(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactMACAddress(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char))
   name.vb: RedactMACAddress(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3013,9 +2991,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3030,21 +3008,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
   name: RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
   nameWithType: IRedactor.RedactMACAddress(ReadOnlySpan<char>, MACAddressRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>, ZeroRedact.MACAddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan<char>, ZeroRedact.MACAddressRedactorOptions)
   nameWithType.vb: IRedactor.RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char), ZeroRedact.MACAddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan(Of Char), ZeroRedact.MACAddressRedactorOptions)
   name.vb: RedactMACAddress(ReadOnlySpan(Of Char), MACAddressRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3063,9 +3041,9 @@ references:
     href: ZeroRedact.MACAddressRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
     name: RedactMACAddress
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_ReadOnlySpan_System_Char__ZeroRedact_MACAddressRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3091,21 +3069,21 @@ references:
   name: RedactPhoneNumber
   nameWithType: Redactor.RedactPhoneNumber
   fullName: ZeroRedact.Redactor.RedactPhoneNumber
-- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactPhoneNumber(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_
   name: RedactPhoneNumber(string)
   nameWithType: IRedactor.RedactPhoneNumber(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(string)
+  fullName: ZeroRedact.IRedactor.RedactPhoneNumber(string)
   nameWithType.vb: IRedactor.RedactPhoneNumber(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactPhoneNumber(String)
   name.vb: RedactPhoneNumber(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -3113,30 +3091,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
   name: RedactPhoneNumber(string, PhoneNumberRedactorOptions)
   nameWithType: IRedactor.RedactPhoneNumber(string, PhoneNumberRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(string, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactPhoneNumber(string, ZeroRedact.PhoneNumberRedactorOptions)
   nameWithType.vb: IRedactor.RedactPhoneNumber(String, PhoneNumberRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(String, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactPhoneNumber(String, ZeroRedact.PhoneNumberRedactorOptions)
   name.vb: RedactPhoneNumber(String, PhoneNumberRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -3149,9 +3127,9 @@ references:
     href: ZeroRedact.PhoneNumberRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.String,ZeroRedact.PhoneNumberRedactorOptions)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_String_ZeroRedact_PhoneNumberRedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -3170,21 +3148,21 @@ references:
   name: PhoneNumberRedactorOptions
   nameWithType: PhoneNumberRedactorOptions
   fullName: ZeroRedact.PhoneNumberRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
   name: RedactPhoneNumber(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactPhoneNumber(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactPhoneNumber(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char))
   name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3198,9 +3176,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char})
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3215,21 +3193,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
   name: RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
   nameWithType: IRedactor.RedactPhoneNumber(ReadOnlySpan<char>, PhoneNumberRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>, ZeroRedact.PhoneNumberRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan<char>, ZeroRedact.PhoneNumberRedactorOptions)
   nameWithType.vb: IRedactor.RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char), ZeroRedact.PhoneNumberRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan(Of Char), ZeroRedact.PhoneNumberRedactorOptions)
   name.vb: RedactPhoneNumber(ReadOnlySpan(Of Char), PhoneNumberRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3248,9 +3226,9 @@ references:
     href: ZeroRedact.PhoneNumberRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactPhoneNumber(System.ReadOnlySpan{System.Char},ZeroRedact.PhoneNumberRedactorOptions)
     name: RedactPhoneNumber
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactPhoneNumber_System_ReadOnlySpan_System_Char__ZeroRedact_PhoneNumberRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3276,21 +3254,21 @@ references:
   name: RedactString
   nameWithType: Redactor.RedactString
   fullName: ZeroRedact.Redactor.RedactString
-- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.String)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactString(System.String)
+  commentId: M:ZeroRedact.IRedactor.RedactString(System.String)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_
   name: RedactString(string)
   nameWithType: IRedactor.RedactString(string)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactString(string)
+  fullName: ZeroRedact.IRedactor.RedactString(string)
   nameWithType.vb: IRedactor.RedactString(String)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(String)
+  fullName.vb: ZeroRedact.IRedactor.RedactString(String)
   name.vb: RedactString(String)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String)
+  - uid: ZeroRedact.IRedactor.RedactString(System.String)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -3298,30 +3276,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String)
+  - uid: ZeroRedact.IRedactor.RedactString(System.String)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_
   - name: (
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
   name: RedactString(string, StringRedactorOptions)
   nameWithType: IRedactor.RedactString(string, StringRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactString(string, ZeroRedact.StringRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactString(string, ZeroRedact.StringRedactorOptions)
   nameWithType.vb: IRedactor.RedactString(String, StringRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(String, ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactString(String, ZeroRedact.StringRedactorOptions)
   name.vb: RedactString(String, StringRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
   - name: (
   - uid: System.String
     name: string
@@ -3334,9 +3312,9 @@ references:
     href: ZeroRedact.StringRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactString(System.String,ZeroRedact.StringRedactorOptions)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_String_ZeroRedact_StringRedactorOptions_
   - name: (
   - uid: System.String
     name: String
@@ -3355,21 +3333,21 @@ references:
   name: StringRedactorOptions
   nameWithType: StringRedactorOptions
   fullName: ZeroRedact.StringRedactorOptions
-- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  commentId: M:ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
   name: RedactString(ReadOnlySpan<char>)
   nameWithType: IRedactor.RedactString(ReadOnlySpan<char>)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan<char>)
+  fullName: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan<char>)
   nameWithType.vb: IRedactor.RedactString(ReadOnlySpan(Of Char))
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan(Of Char))
+  fullName.vb: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan(Of Char))
   name.vb: RedactString(ReadOnlySpan(Of Char))
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3383,9 +3361,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
+  - uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char})
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3400,21 +3378,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.char
   - name: )
   - name: )
-- uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
-  commentId: M:ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
-  parent: ZeroRedact.Redactors.IRedactor
+- uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  parent: ZeroRedact.IRedactor
   isExternal: true
-  href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
+  href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
   name: RedactString(ReadOnlySpan<char>, StringRedactorOptions)
   nameWithType: IRedactor.RedactString(ReadOnlySpan<char>, StringRedactorOptions)
-  fullName: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan<char>, ZeroRedact.StringRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan<char>, ZeroRedact.StringRedactorOptions)
   nameWithType.vb: IRedactor.RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
-  fullName.vb: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan(Of Char), ZeroRedact.StringRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan(Of Char), ZeroRedact.StringRedactorOptions)
   name.vb: RedactString(ReadOnlySpan(Of Char), StringRedactorOptions)
   spec.csharp:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan
@@ -3433,9 +3411,9 @@ references:
     href: ZeroRedact.StringRedactorOptions.html
   - name: )
   spec.vb:
-  - uid: ZeroRedact.Redactors.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
+  - uid: ZeroRedact.IRedactor.RedactString(System.ReadOnlySpan{System.Char},ZeroRedact.StringRedactorOptions)
     name: RedactString
-    href: ZeroRedact.Redactors.IRedactor.html#ZeroRedact_Redactors_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
+    href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactString_System_ReadOnlySpan_System_Char__ZeroRedact_StringRedactorOptions_
   - name: (
   - uid: System.ReadOnlySpan`1
     name: ReadOnlySpan

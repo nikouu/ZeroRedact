@@ -112,6 +112,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ZeroRedact.IRedactor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZeroRedact.IRedactor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ZeroRedact.MACAddressRedaction.yml",
       "output": {
         ".html": {
