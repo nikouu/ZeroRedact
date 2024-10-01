@@ -3,7 +3,7 @@
     /// <summary>
     /// Defines the different types of redactions that can be applied to an IPv4 address.
     /// </summary>
-    public enum IPv4Redaction
+    public enum IPv4AddressRedaction
     {
         /// <summary>
         /// The IPv4 address is redacted.

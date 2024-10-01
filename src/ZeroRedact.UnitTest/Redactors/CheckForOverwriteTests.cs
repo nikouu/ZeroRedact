@@ -420,7 +420,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
             {
-                RedactorType = IPv4Redaction.All
+                RedactorType = IPv4AddressRedaction.All
             });
 
             // Assert
@@ -438,7 +438,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
             {
-                RedactorType = IPv4Redaction.FixedLength
+                RedactorType = IPv4AddressRedaction.FixedLength
             });
 
             // Assert
@@ -456,7 +456,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
             {
-                RedactorType = IPv4Redaction.Full
+                RedactorType = IPv4AddressRedaction.Full
             });
 
             // Assert
@@ -474,7 +474,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
             {
-                RedactorType = IPv4Redaction.ShowLastOctet
+                RedactorType = IPv4AddressRedaction.ShowLastOctet
             });
 
             // Assert
@@ -492,7 +492,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
             {
-                RedactorType = IPv6Redaction.All
+                RedactorType = IPv6AddressRedaction.All
             });
 
             // Assert
@@ -510,7 +510,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
             {
-                RedactorType = IPv6Redaction.FixedLength
+                RedactorType = IPv6AddressRedaction.FixedLength
             });
 
             // Assert
@@ -528,7 +528,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
             {
-                RedactorType = IPv6Redaction.Full
+                RedactorType = IPv6AddressRedaction.Full
             });
 
             // Assert
@@ -546,7 +546,7 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
             {
-                RedactorType = IPv6Redaction.ShowLastQuartet
+                RedactorType = IPv6AddressRedaction.ShowLastQuartet
             });
 
             // Assert

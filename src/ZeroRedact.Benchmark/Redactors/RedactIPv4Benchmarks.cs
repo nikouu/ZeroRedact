@@ -30,19 +30,19 @@ namespace ZeroRedact.Benchmark.Redactors
 
         public static IEnumerable<RedactIPv4Input> IPv4InputData => new[]
         {
-            new RedactIPv4Input("192.168.0.1", IPv4Redaction.All),
-            new RedactIPv4Input("192.168.0.1", IPv4Redaction.FixedLength),
-            new RedactIPv4Input("192.168.0.1", IPv4Redaction.Full),
-            new RedactIPv4Input("192.168.0.1", IPv4Redaction.ShowLastOctet),
+            new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.All),
+            new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.FixedLength),
+            new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.Full),
+            new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.ShowLastOctet),
         };
     }
 
     public class RedactIPv4Input
     {
         public string Value { get; }
-        public IPv4Redaction RedactorType { get; }
+        public IPv4AddressRedaction RedactorType { get; }
 
-        public RedactIPv4Input(string value, IPv4Redaction redactorType)
+        public RedactIPv4Input(string value, IPv4AddressRedaction redactorType)
         {
             Value = value;
             RedactorType = redactorType;

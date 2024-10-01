@@ -101,7 +101,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual("XXX.XXX.X.X", result);
@@ -121,7 +121,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual("****", result);
@@ -142,7 +142,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual("XXXXXXXX", result);
@@ -196,7 +196,7 @@
             var redactor = new Redactor();
 
             // Act
-            redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength, FixedLengthSize = -1 });
+            redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength, FixedLengthSize = -1 });
 
             // Assert is handled by ExpectedException
         }
@@ -216,7 +216,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full, RedactionCharacter = 'A' });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full, RedactionCharacter = 'A' });
 
             // Assert
             Assert.AreEqual("AAA.AAA.A.A", result);
@@ -229,7 +229,7 @@
             var redactor = new Redactor();
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength, FixedLengthSize = 1 });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength, FixedLengthSize = 1 });
 
             // Assert
             Assert.AreEqual("*", result);
@@ -250,7 +250,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual("BBB.BBB.B.B", result);
@@ -267,7 +267,7 @@
             var redactor = new Redactor(redactorOptions);
 
             // Act
-            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full });
+            string result = redactor.RedactIPv4Address("192.168.1.1", new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual("CCC.CCC.C.C", result);

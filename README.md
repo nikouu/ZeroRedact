@@ -324,15 +324,15 @@ var ipv4Address = "192.0.2.146";
 var fullRedaction = redactor.RedactIPv4Address(ipv4Address);
 
 // returns "***********"
-var allOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.All };
+var allOptions = new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.All };
 var allRedaction = redactor.RedactIPv4Address(ipv4Address, allOptions);
 
 // returns "********"
-var fixedLengthOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength };
+var fixedLengthOptions = new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength };
 var fixedLengthRedaction = redactor.RedactIPv4Address(ipv4Address, fixedLengthOptions);
 
 // returns "***.*.*.146"
-var showLastOctetOptions = new IPv4RedactorOptions { RedactorType = IPv4Redaction.ShowLastOctet };
+var showLastOctetOptions = new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.ShowLastOctet };
 var showLastOctetRedaction = redactor.RedactIPv4Address(ipv4Address, showLastOctetOptions);
 
 ```
@@ -350,15 +350,15 @@ var ipv6Address = "2001:0000:130F:0000:0000:09C0:876A:130B";
 var fullRedaction = redactor.RedactIPv6Address(ipv6Address);
 
 // returns "***************************************"
-var allOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.All };
+var allOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.All };
 var allRedaction = redactor.RedactIPv6Address(ipv6Address, allOptions);
 
 // returns "********"
-var fixedLengthOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.FixedLength };
+var fixedLengthOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength };
 var fixedLengthRedaction = redactor.RedactIPv6Address(ipv6Address, fixedLengthOptions);
 
 // returns "****:****:****:****:****:****:****:130B"
-var showLastQuartetOptions = new IPv6RedactorOptions { RedactorType = IPv6Redaction.ShowLastQuartet };
+var showLastQuartetOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet };
 var showLastQuartetRedaction = redactor.RedactIPv6Address(ipv4Address, showLastQuartetOptions);
 
 ```

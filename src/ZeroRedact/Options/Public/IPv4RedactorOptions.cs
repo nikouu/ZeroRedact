@@ -7,7 +7,7 @@
     {
         private readonly char? _redactionCharacter;
         private readonly int? _fixedLengthSize;
-        private readonly IPv4Redaction? _redactorType;
+        private readonly IPv4AddressRedaction? _redactorType;
 
         /// <summary>
         /// The character used for the redaction.
@@ -34,7 +34,7 @@
         /// <summary>
         /// The type of redactor to apply.
         /// </summary>
-        public IPv4Redaction RedactorType
+        public IPv4AddressRedaction RedactorType
         {
             get => _redactorType ?? Constants.DefaultIPv4RedactorOptions.RedactorType;
             init => _redactorType = value;

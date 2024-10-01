@@ -3,7 +3,7 @@
     /// <summary>
     /// Defines the different types of redactions that can be applied to an IPv6 address.
     /// </summary>
-    public enum IPv6Redaction
+    public enum IPv6AddressRedaction
     {
         /// <summary>
         /// The IPv6 address is redacted.

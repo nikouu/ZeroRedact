@@ -51,10 +51,10 @@ namespace ZeroRedact
 
                 return options.RedactorType switch
                 {
-                    IPv4Redaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
-                    IPv4Redaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    IPv4Redaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
-                    IPv4Redaction.ShowLastOctet => CreateShowLastOctetRedaction(ipAddress, options.RedactionCharacter),
+                    IPv4AddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
+                    IPv4AddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                    IPv4AddressRedaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
+                    IPv4AddressRedaction.ShowLastOctet => CreateShowLastOctetRedaction(ipAddress, options.RedactionCharacter),
                     _ => throw new NotImplementedException()
                 };
             }

@@ -4,7 +4,7 @@
     {
         public char RedactionCharacter { get; init; }
         public int FixedLengthSize { get; init; }
-        public IPv4Redaction RedactorType { get; init; }
+        public IPv4AddressRedaction RedactorType { get; init; }
 
         public InternalIPv4RedactorOptions(RedactorOptions defaultOptions, IPv4RedactorOptions userOptions)
         {

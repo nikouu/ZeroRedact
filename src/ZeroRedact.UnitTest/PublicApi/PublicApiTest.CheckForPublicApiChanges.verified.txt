@@ -56,7 +56,7 @@ namespace ZeroRedact
         public char RedactionCharacter { get; init; }
         public ZeroRedact.EmailAddressRedaction RedactorType { get; init; }
     }
-    public enum IPv4Redaction
+    public enum IPv4AddressRedaction
     {
         All = 0,
         FixedLength = 1,
@@ -68,9 +68,9 @@ namespace ZeroRedact
         public IPv4RedactorOptions() { }
         public int FixedLengthSize { get; init; }
         public char RedactionCharacter { get; init; }
-        public ZeroRedact.IPv4Redaction RedactorType { get; init; }
+        public ZeroRedact.IPv4AddressRedaction RedactorType { get; init; }
     }
-    public enum IPv6Redaction
+    public enum IPv6AddressRedaction
     {
         All = 0,
         FixedLength = 1,
@@ -82,7 +82,7 @@ namespace ZeroRedact
         public IPv6RedactorOptions() { }
         public int FixedLengthSize { get; init; }
         public char RedactionCharacter { get; init; }
-        public ZeroRedact.IPv6Redaction RedactorType { get; init; }
+        public ZeroRedact.IPv6AddressRedaction RedactorType { get; init; }
     }
     public interface IRedactor
     {

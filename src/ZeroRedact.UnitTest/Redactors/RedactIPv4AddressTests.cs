@@ -415,7 +415,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4Redaction.All });
+            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.All });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -429,7 +429,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4Redaction.All });
+            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.All });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
@@ -443,7 +443,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength });
+            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -457,7 +457,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4Redaction.FixedLength });
+            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -471,7 +471,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full });
+            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -485,7 +485,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4Redaction.Full });
+            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
@@ -499,7 +499,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4Redaction.ShowLastOctet });
+            var result = redactor.RedactIPv4Address(input, new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.ShowLastOctet });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -513,7 +513,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4Redaction.ShowLastOctet });
+            var result = redactor.RedactIPv4Address(input.AsSpan(), new IPv4RedactorOptions { RedactorType = IPv4AddressRedaction.ShowLastOctet });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());

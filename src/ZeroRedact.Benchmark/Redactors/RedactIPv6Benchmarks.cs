@@ -30,19 +30,19 @@ namespace ZeroRedact.Benchmark.Redactors
 
         public static IEnumerable<RedactIPv6Input> IPv6InputData => new[]
         {
-            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6Redaction.All),
-            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6Redaction.FixedLength),
-            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6Redaction.Full),
-            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6Redaction.ShowLastQuartet),
+            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6AddressRedaction.All),
+            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6AddressRedaction.FixedLength),
+            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6AddressRedaction.Full),
+            new RedactIPv6Input("2001:0db8:85a3:0000:0000:8a2e:0370:7334", IPv6AddressRedaction.ShowLastQuartet),
         };
     }
 
     public class RedactIPv6Input
     {
         public string Value { get; }
-        public IPv6Redaction RedactorType { get; }
+        public IPv6AddressRedaction RedactorType { get; }
 
-        public RedactIPv6Input(string value, IPv6Redaction redactorType)
+        public RedactIPv6Input(string value, IPv6AddressRedaction redactorType)
         {
             Value = value;
             RedactorType = redactorType;

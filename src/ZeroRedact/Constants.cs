@@ -35,12 +35,12 @@
 
         internal static readonly IPv4RedactorOptions DefaultIPv4RedactorOptions = new()
         {
-            RedactorType = IPv4Redaction.Full
+            RedactorType = IPv4AddressRedaction.Full
         };
 
         internal static readonly IPv6RedactorOptions DefaultIPv6RedactorOptions = new()
         {
-            RedactorType = IPv6Redaction.Full
+            RedactorType = IPv6AddressRedaction.Full
         };
 
         internal static readonly MACAddressRedactorOptions DefaultMACAddressRedactorOptions = new()
