@@ -8,7 +8,7 @@
 
 <p>Using ZeroRedact version: @typeof(ZeroRedact.Redactor).Assembly.GetName().Version</p>
 
-<input type="text" @bind="StringToRedact" @bind:event="oninput" placeholder="example@email.com" />
+<input type="text" @bind="StringToRedact" />
 
 @foreach (var method in RedactorMethods)
 {
@@ -20,12 +20,14 @@
 
     protected override async Task OnInitializedAsync()
     {
+        Console.WriteLine($"Initializing home");
+
         var redactor = new Redactor();
 
         var g = redactor.GetType().GetMethods();
 
         var methods = redactor.GetType().GetMethods()
-            .Where(m => m.Name.StartsWith("Redact") &&
+            .Where(m => m.Name.StartsWith("RedactEmail") &&
                          m.ReturnType == typeof(string) &&
                          m.GetParameters()[0].ParameterType == typeof(string) &&
                          m.GetParameters().Length == 2)
@@ -36,7 +38,6 @@
             RedactorMethods.Add(method.Name);
         }
     }
-
 
     public string StringToRedact { get; set; }
 }

@@ -11,7 +11,7 @@
 
     private string currentRedactionType { get; set; }
 
-    private Redactor redactor = new Redactor();
+    private Redactor redactor { get; set; }
 
     private MethodInfo redactorMethod;
 
@@ -27,6 +27,10 @@
 
     protected override void OnInitialized()
     {
+        Console.WriteLine($"Initializing {FunctionName} component");
+
+        redactor = new Redactor();
+
         var methods = redactor.GetType().GetMethods()
         .Where(m => m.Name == FunctionName &&
                m.ReturnType == typeof(string) &&
@@ -36,7 +40,6 @@
         redactorMethod = methods[0];
         redactorOptionsType = redactorMethod.GetParameters()[1].ParameterType;
 
-        // Get the enum property of EmailAddressRedactorOptions
         enumProperty = redactorOptionsType.GetProperties()
             .FirstOrDefault(p => p.PropertyType.IsEnum);
 
@@ -53,17 +56,18 @@
         }
 
 
-        UpdateRedactedText();
+        //UpdateRedactedText();
     }
 
     protected override void OnParametersSet()
     {
-        UpdateRedactedText();
+        //UpdateRedactedText();
     }
 
 
-    private void UpdateRedactedText()
+    private void UpdateRedactedText(ChangeEventArgs e)
     {
+        currentRedactionType = e.Value.ToString();
 
         // Get the selected enum value
         var enumValue = Enum.Parse(enumType, currentRedactionType);
@@ -78,14 +82,18 @@
 
         Console.WriteLine($"{FunctionName}: {InputText}");
 
-        redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
+        //redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
+
+        redactedText = redactor.RedactEmailAddress(InputText.ToString(), (EmailAddressRedactorOptions)redactorOptionsInstance);
+
+        StateHasChanged();
 
     }
 }
 
 <div style="border: 1px solid #ccc; border-radius: 10px; padding: 15px;">
     <p style="margin-bottom: 5px;">@FunctionName Redacted Result: @redactedText</p>
-    <select @bind="currentRedactionType" @bind:after="UpdateRedactedText">
+    <select @onchange="UpdateRedactedText">
         @if (redactionTypes != null)
         {
             @foreach (var enumValue in redactionTypes)

@@ -1,6 +1,6 @@
 ```
 
-BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.4780/22H2/2022Update)
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.4894/22H2/2022Update)
 Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
 .NET SDK 9.0.100-rc.1.24452.12
   [Host]     : .NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
@@ -8,85 +8,85 @@ Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cor
 
 
 ```
-| Method                          | EmailAddressInput    | Mean      | Error    | StdDev   | Gen0   | Allocated |
-|-------------------------------- |--------------------- |----------:|---------:|---------:|-------:|----------:|
-| RedactEmailAddress_String       | 101:All              |  50.67 ns | 0.612 ns | 0.542 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:All              |  50.93 ns | 0.473 ns | 0.442 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 101:F(...)rname [21] |  66.32 ns | 0.490 ns | 0.410 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:F(...)rname [21] |  66.23 ns | 0.485 ns | 0.454 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 101:FixedLength      |  35.08 ns | 0.200 ns | 0.167 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 101:FixedLength      |  36.42 ns | 0.126 ns | 0.105 ns |      - |         - |
-| RedactEmailAddress_String       | 101:Full             |  55.01 ns | 0.523 ns | 0.489 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:Full             |  56.71 ns | 0.492 ns | 0.436 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 101:Middle           |  29.43 ns | 0.180 ns | 0.168 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 101:Middle           |  30.23 ns | 0.204 ns | 0.180 ns |      - |         - |
-| RedactEmailAddress_String       | 101:MostUsername     |  63.54 ns | 0.843 ns | 0.704 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:MostUsername     |  62.77 ns | 0.966 ns | 0.904 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 101:S(...)cters [23] |  59.46 ns | 0.612 ns | 0.542 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:S(...)cters [23] |  59.28 ns | 0.724 ns | 0.641 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 101:Username         |  58.26 ns | 0.618 ns | 0.516 ns | 0.0535 |     224 B |
-| RedactEmailAddress_ReadOnlySpan | 101:Username         |  58.58 ns | 0.414 ns | 0.346 ns | 0.0535 |     224 B |
-| RedactEmailAddress_String       | 17:All               |  37.09 ns | 0.304 ns | 0.254 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:All               |  37.90 ns | 0.347 ns | 0.325 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:All               |  38.35 ns | 0.301 ns | 0.266 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:All               |  38.82 ns | 0.811 ns | 0.833 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:FirstHalfUsername |  47.17 ns | 0.398 ns | 0.353 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:FirstHalfUsername |  48.75 ns | 0.660 ns | 0.617 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:FirstHalfUsername |  46.17 ns | 0.347 ns | 0.307 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:FirstHalfUsername |  46.63 ns | 0.428 ns | 0.379 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:FixedLength       |  29.65 ns | 0.203 ns | 0.180 ns |      - |         - |
-| RedactEmailAddress_String       | 17:FixedLength       |  30.75 ns | 0.126 ns | 0.111 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 17:FixedLength       |  30.62 ns | 0.164 ns | 0.146 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 17:FixedLength       |  29.87 ns | 0.149 ns | 0.124 ns |      - |         - |
-| RedactEmailAddress_String       | 17:Full              |  42.12 ns | 0.408 ns | 0.382 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Full              |  42.05 ns | 0.472 ns | 0.442 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Full              |  41.76 ns | 0.314 ns | 0.294 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Full              |  40.77 ns | 0.273 ns | 0.242 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Middle            |  25.41 ns | 0.119 ns | 0.111 ns |      - |         - |
-| RedactEmailAddress_String       | 17:Middle            |  25.41 ns | 0.167 ns | 0.148 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 17:Middle            |  25.55 ns | 0.115 ns | 0.108 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 17:Middle            |  25.07 ns | 0.078 ns | 0.069 ns |      - |         - |
-| RedactEmailAddress_String       | 17:MostUsername      |  47.06 ns | 0.399 ns | 0.373 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:MostUsername      |  47.43 ns | 0.347 ns | 0.325 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:MostUsername      |  46.17 ns | 0.319 ns | 0.283 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:MostUsername      |  47.77 ns | 0.223 ns | 0.174 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Sh(...)cters [22] |  46.33 ns | 0.309 ns | 0.274 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Sh(...)cters [22] |  45.59 ns | 0.427 ns | 0.400 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Sh(...)cters [22] |  46.36 ns | 0.442 ns | 0.414 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Sh(...)cters [22] |  46.65 ns | 0.334 ns | 0.296 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Username          |  42.66 ns | 0.356 ns | 0.316 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 17:Username          |  41.84 ns | 0.162 ns | 0.127 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Username          |  43.29 ns | 0.473 ns | 0.395 ns | 0.0134 |      56 B |
-| RedactEmailAddress_ReadOnlySpan | 17:Username          |  42.15 ns | 0.508 ns | 0.475 ns | 0.0134 |      56 B |
-| RedactEmailAddress_String       | 318:All              |  88.28 ns | 0.920 ns | 0.815 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:All              |  86.25 ns | 1.024 ns | 0.908 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 318:F(...)rname [21] | 107.91 ns | 1.263 ns | 1.181 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:F(...)rname [21] | 107.18 ns | 1.443 ns | 1.279 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 318:FixedLength      |  48.88 ns | 0.223 ns | 0.186 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 318:FixedLength      |  47.25 ns | 0.116 ns | 0.102 ns |      - |         - |
-| RedactEmailAddress_String       | 318:Full             |  93.82 ns | 1.873 ns | 1.660 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:Full             |  94.43 ns | 1.097 ns | 0.972 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 318:Middle           |  34.92 ns | 0.217 ns | 0.192 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 318:Middle           |  34.91 ns | 0.217 ns | 0.203 ns |      - |         - |
-| RedactEmailAddress_String       | 318:MostUsername     | 103.91 ns | 0.991 ns | 0.927 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:MostUsername     | 103.56 ns | 1.227 ns | 1.148 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 318:S(...)cters [23] |  99.32 ns | 1.405 ns | 1.246 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:S(...)cters [23] | 100.83 ns | 1.338 ns | 1.252 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 318:Username         |  99.77 ns | 1.595 ns | 1.492 ns | 0.1587 |     664 B |
-| RedactEmailAddress_ReadOnlySpan | 318:Username         | 101.69 ns | 2.036 ns | 2.091 ns | 0.1587 |     664 B |
-| RedactEmailAddress_String       | 32:All               |  40.32 ns | 0.338 ns | 0.299 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:All               |  39.19 ns | 0.253 ns | 0.224 ns | 0.0210 |      88 B |
-| RedactEmailAddress_String       | 32:FirstHalfUsername |  50.06 ns | 0.399 ns | 0.373 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:FirstHalfUsername |  50.51 ns | 0.495 ns | 0.463 ns | 0.0210 |      88 B |
-| RedactEmailAddress_String       | 32:FixedLength       |  31.18 ns | 0.300 ns | 0.266 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 32:FixedLength       |  30.71 ns | 0.224 ns | 0.199 ns |      - |         - |
-| RedactEmailAddress_String       | 32:Full              |  43.31 ns | 0.346 ns | 0.324 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:Full              |  42.78 ns | 0.584 ns | 0.488 ns | 0.0210 |      88 B |
-| RedactEmailAddress_String       | 32:Middle            |  25.95 ns | 0.131 ns | 0.116 ns |      - |         - |
-| RedactEmailAddress_ReadOnlySpan | 32:Middle            |  25.38 ns | 0.168 ns | 0.158 ns |      - |         - |
-| RedactEmailAddress_String       | 32:MostUsername      |  48.62 ns | 0.793 ns | 0.742 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:MostUsername      |  49.05 ns | 0.493 ns | 0.437 ns | 0.0210 |      88 B |
-| RedactEmailAddress_String       | 32:Sh(...)cters [22] |  47.31 ns | 0.579 ns | 0.513 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:Sh(...)cters [22] |  47.73 ns | 0.414 ns | 0.387 ns | 0.0210 |      88 B |
-| RedactEmailAddress_String       | 32:Username          |  44.41 ns | 0.403 ns | 0.377 ns | 0.0210 |      88 B |
-| RedactEmailAddress_ReadOnlySpan | 32:Username          |  44.08 ns | 0.321 ns | 0.284 ns | 0.0210 |      88 B |
+| Method                          | EmailAddressInput    | Mean      | Error    | StdDev   | Median    | Gen0   | Allocated |
+|-------------------------------- |--------------------- |----------:|---------:|---------:|----------:|-------:|----------:|
+| RedactEmailAddress_String       | 101:All              |  58.41 ns | 1.231 ns | 1.418 ns |  58.42 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:All              |  55.09 ns | 1.121 ns | 2.050 ns |  55.42 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:F(...)rname [21] |  79.18 ns | 2.095 ns | 5.805 ns |  77.49 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:F(...)rname [21] |  75.21 ns | 1.399 ns | 2.593 ns |  75.31 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:FixedLength      |  38.59 ns | 0.823 ns | 2.167 ns |  38.09 ns |      - |         - |
+| RedactEmailAddress_ReadOnlySpan | 101:FixedLength      |  37.75 ns | 0.775 ns | 1.295 ns |  37.27 ns |      - |         - |
+| RedactEmailAddress_String       | 101:Full             |  67.00 ns | 1.398 ns | 3.707 ns |  66.65 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:Full             |  61.88 ns | 1.137 ns | 1.117 ns |  61.59 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:Middle           |  71.93 ns | 1.484 ns | 2.787 ns |  72.05 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:Middle           |  73.19 ns | 1.100 ns | 1.029 ns |  73.05 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:MostUsername     |  65.33 ns | 1.215 ns | 1.077 ns |  65.30 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:MostUsername     |  66.15 ns | 1.347 ns | 1.932 ns |  66.01 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:S(...)cters [23] |  69.57 ns | 1.074 ns | 0.897 ns |  69.48 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:S(...)cters [23] |  67.64 ns | 1.302 ns | 1.279 ns |  67.12 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 101:Username         |  65.59 ns | 1.348 ns | 1.890 ns |  65.33 ns | 0.0535 |     224 B |
+| RedactEmailAddress_ReadOnlySpan | 101:Username         |  63.45 ns | 1.000 ns | 0.936 ns |  63.46 ns | 0.0535 |     224 B |
+| RedactEmailAddress_String       | 17:All               |  39.83 ns | 0.855 ns | 0.950 ns |  39.58 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:All               |  39.90 ns | 0.779 ns | 0.800 ns |  39.70 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:All               |  40.24 ns | 0.622 ns | 0.551 ns |  40.15 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:All               |  39.44 ns | 0.651 ns | 0.609 ns |  39.31 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:FirstHalfUsername |  48.35 ns | 0.765 ns | 0.678 ns |  48.18 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:FirstHalfUsername |  48.58 ns | 0.641 ns | 0.535 ns |  48.61 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:FirstHalfUsername |  48.31 ns | 0.459 ns | 0.429 ns |  48.20 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:FirstHalfUsername |  47.83 ns | 0.309 ns | 0.274 ns |  47.74 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:FixedLength       |  29.91 ns | 0.254 ns | 0.237 ns |  29.86 ns |      - |         - |
+| RedactEmailAddress_String       | 17:FixedLength       |  30.93 ns | 0.308 ns | 0.273 ns |  30.80 ns |      - |         - |
+| RedactEmailAddress_ReadOnlySpan | 17:FixedLength       |  30.75 ns | 0.150 ns | 0.125 ns |  30.72 ns |      - |         - |
+| RedactEmailAddress_ReadOnlySpan | 17:FixedLength       |  31.40 ns | 0.174 ns | 0.145 ns |  31.35 ns |      - |         - |
+| RedactEmailAddress_String       | 17:Full              |  42.66 ns | 0.324 ns | 0.287 ns |  42.66 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Full              |  42.98 ns | 0.232 ns | 0.206 ns |  42.93 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Full              |  43.06 ns | 0.872 ns | 0.815 ns |  42.93 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Full              |  42.67 ns | 0.424 ns | 0.376 ns |  42.49 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Middle            |  51.68 ns | 0.583 ns | 0.487 ns |  51.81 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Middle            |  51.12 ns | 0.954 ns | 1.099 ns |  50.89 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Middle            |  52.10 ns | 0.830 ns | 0.776 ns |  51.92 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Middle            |  51.17 ns | 0.863 ns | 0.807 ns |  51.00 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:MostUsername      |  45.04 ns | 0.764 ns | 0.677 ns |  44.88 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:MostUsername      |  45.46 ns | 0.957 ns | 0.940 ns |  45.34 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:MostUsername      |  45.78 ns | 0.574 ns | 0.479 ns |  45.81 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:MostUsername      |  45.73 ns | 0.922 ns | 1.025 ns |  45.83 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Sh(...)cters [22] |  47.90 ns | 0.999 ns | 1.189 ns |  47.76 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Sh(...)cters [22] |  47.25 ns | 0.805 ns | 0.753 ns |  47.01 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Sh(...)cters [22] |  46.35 ns | 0.851 ns | 0.711 ns |  46.60 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Sh(...)cters [22] |  47.24 ns | 0.881 ns | 0.825 ns |  47.01 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Username          |  45.60 ns | 0.787 ns | 0.966 ns |  45.48 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 17:Username          |  45.35 ns | 0.963 ns | 1.711 ns |  44.82 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Username          |  43.71 ns | 0.724 ns | 0.804 ns |  43.70 ns | 0.0134 |      56 B |
+| RedactEmailAddress_ReadOnlySpan | 17:Username          |  44.19 ns | 0.861 ns | 0.805 ns |  44.09 ns | 0.0134 |      56 B |
+| RedactEmailAddress_String       | 318:All              |  99.61 ns | 1.806 ns | 1.601 ns |  99.06 ns | 0.1587 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:All              | 106.35 ns | 2.050 ns | 1.918 ns | 105.94 ns | 0.1587 |     664 B |
+| RedactEmailAddress_String       | 318:F(...)rname [21] | 124.70 ns | 2.530 ns | 2.598 ns | 124.15 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:F(...)rname [21] | 124.63 ns | 1.569 ns | 1.310 ns | 124.97 ns | 0.1585 |     664 B |
+| RedactEmailAddress_String       | 318:FixedLength      |  46.53 ns | 0.473 ns | 0.420 ns |  46.49 ns |      - |         - |
+| RedactEmailAddress_ReadOnlySpan | 318:FixedLength      |  47.12 ns | 0.729 ns | 0.682 ns |  46.95 ns |      - |         - |
+| RedactEmailAddress_String       | 318:Full             | 111.06 ns | 1.696 ns | 1.503 ns | 111.36 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:Full             | 113.79 ns | 1.869 ns | 1.657 ns | 114.19 ns | 0.1587 |     664 B |
+| RedactEmailAddress_String       | 318:Middle           | 124.36 ns | 2.511 ns | 2.226 ns | 124.65 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:Middle           | 123.09 ns | 2.079 ns | 2.311 ns | 122.73 ns | 0.1585 |     664 B |
+| RedactEmailAddress_String       | 318:MostUsername     | 117.41 ns | 2.359 ns | 3.531 ns | 117.42 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:MostUsername     | 118.32 ns | 2.336 ns | 3.350 ns | 117.26 ns | 0.1585 |     664 B |
+| RedactEmailAddress_String       | 318:S(...)cters [23] | 121.93 ns | 2.436 ns | 2.900 ns | 121.95 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:S(...)cters [23] | 120.74 ns | 2.451 ns | 2.724 ns | 121.09 ns | 0.1585 |     664 B |
+| RedactEmailAddress_String       | 318:Username         | 115.90 ns | 1.763 ns | 1.649 ns | 116.33 ns | 0.1585 |     664 B |
+| RedactEmailAddress_ReadOnlySpan | 318:Username         | 117.82 ns | 2.085 ns | 1.741 ns | 118.27 ns | 0.1585 |     664 B |
+| RedactEmailAddress_String       | 32:All               |  42.39 ns | 0.557 ns | 0.521 ns |  42.25 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:All               |  41.64 ns | 0.856 ns | 1.113 ns |  41.93 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:FirstHalfUsername |  52.88 ns | 0.900 ns | 0.798 ns |  52.80 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:FirstHalfUsername |  53.44 ns | 1.094 ns | 1.260 ns |  53.78 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:FixedLength       |  31.61 ns | 0.652 ns | 0.610 ns |  31.60 ns |      - |         - |
+| RedactEmailAddress_ReadOnlySpan | 32:FixedLength       |  31.04 ns | 0.647 ns | 0.693 ns |  30.86 ns |      - |         - |
+| RedactEmailAddress_String       | 32:Full              |  46.24 ns | 0.795 ns | 0.851 ns |  46.19 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:Full              |  46.26 ns | 0.932 ns | 0.872 ns |  46.06 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:Middle            |  56.70 ns | 0.822 ns | 0.642 ns |  56.70 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:Middle            |  56.11 ns | 1.101 ns | 1.030 ns |  55.93 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:MostUsername      |  47.34 ns | 0.297 ns | 0.278 ns |  47.26 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:MostUsername      |  47.36 ns | 0.304 ns | 0.285 ns |  47.34 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:Sh(...)cters [22] |  49.45 ns | 1.018 ns | 0.952 ns |  49.64 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:Sh(...)cters [22] |  51.16 ns | 0.201 ns | 0.168 ns |  51.11 ns | 0.0210 |      88 B |
+| RedactEmailAddress_String       | 32:Username          |  46.21 ns | 0.323 ns | 0.286 ns |  46.15 ns | 0.0210 |      88 B |
+| RedactEmailAddress_ReadOnlySpan | 32:Username          |  46.93 ns | 0.195 ns | 0.163 ns |  46.92 ns | 0.0210 |      88 B |

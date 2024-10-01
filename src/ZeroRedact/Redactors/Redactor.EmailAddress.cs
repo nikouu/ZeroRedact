@@ -178,13 +178,14 @@ namespace ZeroRedact
                 var username = input[..finalAtIndex];
                 var domain = input[finalAtIndex..];
 
-                var secondHalfUsername = username.Length - (int)Math.Ceiling(username.Length / 2d);
+                var secondHalfUsernameIndex = username.Length - (int)Math.Ceiling(username.Length / 2d);
                 var halfDomain = (int)Math.Ceiling(domain.Length / 2d);
+                var secondHalfDomainIndex = finalAtIndex + halfDomain;
 
-                username[..secondHalfUsername].CopyTo(outputBuffer);
-                outputBuffer[secondHalfUsername..finalAtIndex].Fill(state.RedactionCharacter);
-                domain[..halfDomain].Fill(state.RedactionCharacter);
-                domain.CopyTo(outputBuffer[finalAtIndex..]);
+                username[..secondHalfUsernameIndex].CopyTo(outputBuffer);
+                outputBuffer[secondHalfUsernameIndex..finalAtIndex].Fill(state.RedactionCharacter);
+                outputBuffer[finalAtIndex..secondHalfDomainIndex].Fill(state.RedactionCharacter);
+                domain[halfDomain..].CopyTo(outputBuffer[secondHalfDomainIndex..]);
             });
 
             return result;
@@ -209,8 +210,10 @@ namespace ZeroRedact
                 var username = inputEmailAddress[..finalAtIndex];
                 var domain = inputEmailAddress[finalAtIndex..];
 
-                username[1..^1].Fill(state.RedactionCharacter);
-                username.CopyTo(outputBuffer);
+
+                outputBuffer[..finalAtIndex].Fill(state.RedactionCharacter);
+                outputBuffer[0] = username[0];
+                outputBuffer[username.Length - 1] = username[username.Length - 1];                
                 domain.CopyTo(outputBuffer[finalAtIndex..]);
             });
 
