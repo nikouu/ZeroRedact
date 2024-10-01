@@ -1,4 +1,5 @@
 ﻿using ZeroRedact.Options.Internal;
+using ZeroRedact.Validators;
 
 namespace ZeroRedact
 {
@@ -39,6 +40,11 @@ namespace ZeroRedact
                 if (phoneNumber.IsEmpty)
                 {
                     return string.Empty;
+                }
+
+                if (!PhoneNumberValidator.IsValidForRedaction(phoneNumber))
+                {
+                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
                 }
 
                 return options.RedactorType switch

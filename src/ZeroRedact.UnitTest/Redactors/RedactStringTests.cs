@@ -23,6 +23,14 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "abc123 !@#", "**********" };
             yield return new object[] { new string('a', 10_000), new string('*', 10_000) };
             yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "*******************" };
+            yield return new object[] { "2023/06/15", "**********" };
+            yield return new object[] { "email@example.com", "*****************" };
+            yield return new object[] { "100.100.100.100", "***************" };
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "***************************************" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "***********************" };
+            yield return new object[] { "+1 (555) 123-4567", "*****************" };
         }
 
         private static IEnumerable<object[]> FixedLength_TestData()
@@ -34,6 +42,14 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "abc123 !@#", "********" };
             yield return new object[] { new string('a', 10_000), "********" };
             yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "********" };
+            yield return new object[] { "2023/06/15", "********" };
+            yield return new object[] { "email@example.com", "********" };
+            yield return new object[] { "100.100.100.100", "********"};
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "********" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "********" };
+            yield return new object[] { "+1 (555) 123-4567", "********" };
         }
 
         private static IEnumerable<object[]> FirstHalf_TestData()
@@ -45,6 +61,14 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "abc123 !@#", "*****3 !@#" };
             yield return new object[] { new string('a', 10_000), new string('*', 5_000) + new string('a', 5_000) };
             yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "**********1111 1111" };
+            yield return new object[] { "2023/06/15", "*****06/15" };
+            yield return new object[] { "email@example.com", "*********mple.com" };
+            yield return new object[] { "100.100.100.100", "********100.100" };
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "********************0000:8a2e:0370:7334" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "************FE:3C:4D:5E" };
+            yield return new object[] { "+1 (555) 123-4567", "*********123-4567" };
         }
 
         private static IEnumerable<object[]> SecondHalf_TestData()
@@ -56,6 +80,14 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "abc123 !@#", "abc12*****" };
             yield return new object[] { new string('a', 10_000), new string('a', 5_000) + new string('*', 5_000) };
             yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "4111 1111**********" };
+            yield return new object[] { "2023/06/15", "2023/*****" };
+            yield return new object[] { "email@example.com", "email@ex*********" };
+            yield return new object[] { "100.100.100.100", "100.100********" };
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "2001:0db8:85a3:0000********************" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "00:1A:2B:FF************" };
+            yield return new object[] { "+1 (555) 123-4567", "+1 (555)*********" };
         }
 
         private static IEnumerable<object[]> IgnoreSymbols_TestData()
@@ -67,11 +99,19 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "abc123 !@#", "****** !@#" };
             yield return new object[] { new string('a', 10_000), new string('*', 10_000) };
             yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "**** **** **** ****" };
+            yield return new object[] { "2023/06/15", "****/**/**" };
+            yield return new object[] { "email@example.com", "*****@*******.***" };
+            yield return new object[] { "100.100.100.100", "***.***.***.***" };
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "****:****:****:****:****:****:****:****" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "**:**:**:**:**:**:**:**" };
+            yield return new object[] { "+1 (555) 123-4567", "+* (***) ***-****" };
         }
 
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]
-        public void RedactString_FullRedaction_ShouldReturnRedactedString_String(string input, string expected)
+        public void RedactString_AllRedaction_ShouldReturnRedactedString_String(string input, string expected)
         {
             // Act
             string result = _redactor.RedactString(input, new StringRedactorOptions { RedactorType = StringRedaction.All });
@@ -82,7 +122,7 @@ namespace ZeroRedact.UnitTest.Redactors
 
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]
-        public void RedactString_FullRedaction_ShouldReturnRedactedString_ReadOnlySpan(string input, string expected)
+        public void RedactString_AllRedaction_ShouldReturnRedactedString_ReadOnlySpan(string input, string expected)
         {
             // Act
             ReadOnlySpan<char> result = _redactor.RedactString(input.AsSpan(), new StringRedactorOptions { RedactorType = StringRedaction.All });
