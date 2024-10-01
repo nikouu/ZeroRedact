@@ -1,0 +1,97 @@
+﻿@using System.Reflection
+@code {
+    [Parameter]
+    public string FunctionName { get; set; }
+
+    [Parameter]
+    public string InputText { get; set; }
+
+    private string redactedText;
+
+
+    private string currentRedactionType { get; set; }
+
+    private Redactor redactor = new Redactor();
+
+    private MethodInfo redactorMethod;
+
+    private List<string> redactionTypes = new List<string>();
+
+    private Type enumType;
+
+    private Type redactorOptionsType;
+
+    private PropertyInfo enumProperty;
+    //private object redactorOptionsInstance;
+
+
+    protected override void OnInitialized()
+    {
+        var methods = redactor.GetType().GetMethods()
+        .Where(m => m.Name == FunctionName &&
+               m.ReturnType == typeof(string) &&
+               m.GetParameters()[0].ParameterType == typeof(string) &&
+               m.GetParameters().Length == 2).ToList();
+
+        redactorMethod = methods[0];
+        redactorOptionsType = redactorMethod.GetParameters()[1].ParameterType;
+
+        // Get the enum property of EmailAddressRedactorOptions
+        enumProperty = redactorOptionsType.GetProperties()
+            .FirstOrDefault(p => p.PropertyType.IsEnum);
+
+        if (enumProperty != null)
+        {
+            enumType = enumProperty.PropertyType;
+
+            redactionTypes = Enum.GetNames(enumType).ToList();
+
+            // Get the first value of the enum
+            var enumValue = Enum.GetValues(enumType).GetValue(0);
+
+            currentRedactionType = enumValue.ToString();
+        }
+
+
+        UpdateRedactedText();
+    }
+
+    protected override void OnParametersSet()
+    {
+        UpdateRedactedText();
+    }
+
+
+    private void UpdateRedactedText()
+    {
+
+        // Get the selected enum value
+        var enumValue = Enum.Parse(enumType, currentRedactionType);
+
+        Console.WriteLine(enumValue);
+
+        // Create an instance of EmailAddressRedactorOptions
+        var redactorOptionsInstance = Activator.CreateInstance(redactorOptionsType);
+
+        // Set the enum property to the selected value of the enum
+        enumProperty.SetValue(redactorOptionsInstance, enumValue);
+
+        Console.WriteLine($"{FunctionName}: {InputText}");
+
+        redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
+
+    }
+}
+
+<div style="border: 1px solid #ccc; border-radius: 10px; padding: 15px;">
+    <p style="margin-bottom: 5px;">@FunctionName Redacted Result: @redactedText</p>
+    <select @bind="currentRedactionType" @bind:after="UpdateRedactedText">
+        @if (redactionTypes != null)
+        {
+            @foreach (var enumValue in redactionTypes)
+            {
+                <option value="@enumValue">@enumValue</option>
+            }
+        }
+    </select>
+</div>

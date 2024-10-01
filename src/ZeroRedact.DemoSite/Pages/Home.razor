@@ -1,7 +1,42 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@using ZeroRedact
 
-<h1>Hello, world!</h1>
+<PageTitle>ZeroRedact Demo</PageTitle>
 
-Welcome to your new app.
+<h1>ZeroRedact Demo</h1>
+
+<p>Using ZeroRedact version: @typeof(ZeroRedact.Redactor).Assembly.GetName().Version</p>
+
+<input type="text" @bind="StringToRedact" @bind:event="oninput" placeholder="example@email.com" />
+
+@foreach (var method in RedactorMethods)
+{
+    <RedactorComponent FunctionName="@method" InputText="@StringToRedact" />
+}
+
+@code {
+    public List<string> RedactorMethods = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var redactor = new Redactor();
+
+        var g = redactor.GetType().GetMethods();
+
+        var methods = redactor.GetType().GetMethods()
+            .Where(m => m.Name.StartsWith("Redact") &&
+                         m.ReturnType == typeof(string) &&
+                         m.GetParameters()[0].ParameterType == typeof(string) &&
+                         m.GetParameters().Length == 2)
+            .ToList();
+
+        foreach (var method in methods)
+        {
+            RedactorMethods.Add(method.Name);
+        }
+    }
+
+
+    public string StringToRedact { get; set; }
+}
