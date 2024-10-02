@@ -4,6 +4,8 @@
 
 An extremely fast, simple, zero allocation redacting library for .NET.
 
+Read more in the [official docs](https://nikouu.github.io/ZeroRedact/).
+
 ## Getting started
 
 Install via [NuGet](https://www.nuget.org/packages/Nikouu.ZeroRedact/):
@@ -112,49 +114,17 @@ var specificOptions = new StringRedactorOptions { RedactionCharacter = 'B' };
 var result = redactor.RedactString("Hello, World!", specificOptions);
 ```
 
-
-## Concepts
-
-### API Design
-
-Read more in the [General Design document](<design%20docs/API Design/00 General Design.md>).
-
-### Permissive inputs
-
-There is an assumption that the data coming into ZeroRedact is already well formed, however there are often multiple opinions or standards of what "well formed" means. ZeroRedact does not fully validate incoming data as the only validation is whether key shapes of the data are present for redaction. For example:
-
-```csharp
-var invalidEmail = ".email@example.com"
-var redactor = new Redactor();
-
-// result "******@*******.***"
-var result = redactor.RedactEmailAddress(invalidEmail)
-```
-
-While it is invalid, it has what ZeroRedact requires:
-1. An '@' sign
-1. Left of the final '@' sign not being empty
-2. A '.'
-3. The right of the final '.' not being empty
-
-Assuming the incoming data is well formed, this means ZeroRedact has an advantage of being able to accept all sorts of formats such as for telephone numbers:
-1. +1 (555) 123-4567
-1. +86 137 1234 5678
-1. 555 123 456
-1. 555123456
-1. +7 495 123-45-67
-
-### Layered configuration
+## Layered configuration
 
 Users should have a fine grained customization experience which allows for an easy to reuse item that can setup default behaviours but when needed, can adapt to the need of the redaction call at the time.
 
-### Error handling
+## Error handling
 
 Redacting will not throw exceptions - that is, the string manipulation logic. Any exception during the redacting process will return a fixed length redaction with a default redacting character. This is to avoid disrupting the important real work happening in a user's codebase while still preventing PII from being exposed.
 
 However exceptions can occur by passing invalid options to the redactor, whether that's via the constructor, or via a redaction method.
 
-### No external dependencies
+## No external dependencies
 
 No extra NuGet packages are pulled in when using ZeroRedact. 
 
