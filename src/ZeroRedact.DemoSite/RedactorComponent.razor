@@ -8,7 +8,6 @@
 
     private string redactedText;
 
-
     private string currentRedactionType { get; set; }
 
     private Redactor redactor { get; set; }
@@ -55,13 +54,12 @@
             currentRedactionType = enumValue.ToString();
         }
 
-
-        //UpdateRedactedText();
+        UpdateRedactedText();
     }
 
     protected override void OnParametersSet()
     {
-        //UpdateRedactedText();
+        UpdateRedactedText();
     }
 
 

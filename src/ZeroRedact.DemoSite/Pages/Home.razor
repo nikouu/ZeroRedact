@@ -27,7 +27,7 @@
         var g = redactor.GetType().GetMethods();
 
         var methods = redactor.GetType().GetMethods()
-            .Where(m => m.Name.StartsWith("RedactEmail") &&
+            .Where(m => m.Name.StartsWith("Redact") &&
                          m.ReturnType == typeof(string) &&
                          m.GetParameters()[0].ParameterType == typeof(string) &&
                          m.GetParameters().Length == 2)
