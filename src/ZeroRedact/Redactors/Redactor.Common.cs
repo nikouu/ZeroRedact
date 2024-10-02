@@ -29,8 +29,8 @@ namespace ZeroRedact
             ArgumentOutOfRangeException.ThrowIfLessThan(options.CreditCardRedactorOptions.FixedLengthSize, 1);
             ArgumentOutOfRangeException.ThrowIfLessThan(options.DateRedactorOptions.FixedLengthSize, 1);
             ArgumentOutOfRangeException.ThrowIfLessThan(options.EmailAddressRedactorOptions.FixedLengthSize, 1);
-            ArgumentOutOfRangeException.ThrowIfLessThan(options.IPv4RedactorOptions.FixedLengthSize, 1);
-            ArgumentOutOfRangeException.ThrowIfLessThan(options.IPv6RedactorOptions.FixedLengthSize, 1);
+            ArgumentOutOfRangeException.ThrowIfLessThan(options.IPv4AddressRedactorOptions.FixedLengthSize, 1);
+            ArgumentOutOfRangeException.ThrowIfLessThan(options.IPv6AddressRedactorOptions.FixedLengthSize, 1);
             ArgumentOutOfRangeException.ThrowIfLessThan(options.MACAddressRedactorOptions.FixedLengthSize, 1);
             ArgumentOutOfRangeException.ThrowIfLessThan(options.PhoneNumberRedactorOptions.FixedLengthSize, 1);
             ArgumentOutOfRangeException.ThrowIfLessThan(options.StringRedactorOptions.FixedLengthSize, 1);

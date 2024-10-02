@@ -418,7 +418,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
+            _ = redactor.RedactIPv4Address(input, new IPv4AddressRedactorOptions
             {
                 RedactorType = IPv4AddressRedaction.All
             });
@@ -436,7 +436,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
+            _ = redactor.RedactIPv4Address(input, new IPv4AddressRedactorOptions
             {
                 RedactorType = IPv4AddressRedaction.FixedLength
             });
@@ -454,7 +454,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
+            _ = redactor.RedactIPv4Address(input, new IPv4AddressRedactorOptions
             {
                 RedactorType = IPv4AddressRedaction.Full
             });
@@ -472,7 +472,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv4Address(input, new IPv4RedactorOptions
+            _ = redactor.RedactIPv4Address(input, new IPv4AddressRedactorOptions
             {
                 RedactorType = IPv4AddressRedaction.ShowLastOctet
             });
@@ -490,7 +490,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
+            _ = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions
             {
                 RedactorType = IPv6AddressRedaction.All
             });
@@ -508,7 +508,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
+            _ = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions
             {
                 RedactorType = IPv6AddressRedaction.FixedLength
             });
@@ -526,7 +526,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
+            _ = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions
             {
                 RedactorType = IPv6AddressRedaction.Full
             });
@@ -544,7 +544,7 @@ namespace ZeroRedact.UnitTest.Redactors
             var expected = new string(input.ToArray());
 
             // Act
-            _ = redactor.RedactIPv6Address(input, new IPv6RedactorOptions
+            _ = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions
             {
                 RedactorType = IPv6AddressRedaction.ShowLastQuartet
             });

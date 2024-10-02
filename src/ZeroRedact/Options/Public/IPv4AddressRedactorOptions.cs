@@ -3,7 +3,7 @@
     /// <summary>
     /// IPV4 redactor options.
     /// </summary>
-    public readonly struct IPv4RedactorOptions
+    public readonly struct IPv4AddressRedactorOptions
     {
         private readonly char? _redactionCharacter;
         private readonly int? _fixedLengthSize;
@@ -36,15 +36,15 @@
         /// </summary>
         public IPv4AddressRedaction RedactorType
         {
-            get => _redactorType ?? Constants.DefaultIPv4RedactorOptions.RedactorType;
+            get => _redactorType ?? Constants.DefaultIPv4AddressRedactorOptions.RedactorType;
             init => _redactorType = value;
         }
 
         internal bool HasRedactorType => _redactorType.HasValue;
 
         /// <summary>
-        /// Constructs a new <see cref="IPv4RedactorOptions"/> instance.
+        /// Constructs a new <see cref="IPv4AddressRedactorOptions"/> instance.
         /// </summary>
-        public IPv4RedactorOptions() { }
+        public IPv4AddressRedactorOptions() { }
     }
 }

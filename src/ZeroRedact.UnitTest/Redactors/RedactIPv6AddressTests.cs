@@ -85,7 +85,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input, new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.All });
+            var result = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.All });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -99,7 +99,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.All });
+            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.All });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
@@ -113,7 +113,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input, new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength });
+            var result = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -127,7 +127,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength });
+            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
@@ -141,7 +141,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input, new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.Full });
+            var result = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -155,7 +155,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.Full });
+            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.Full });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());
@@ -169,7 +169,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input, new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet });
+            var result = redactor.RedactIPv6Address(input, new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet });
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -183,7 +183,7 @@
             var redactor = new Redactor();
 
             // Act
-            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet });
+            var result = redactor.RedactIPv6Address(input.AsSpan(), new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet });
 
             // Assert
             Assert.AreEqual(expected, result.ToString());

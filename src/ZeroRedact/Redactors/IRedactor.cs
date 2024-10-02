@@ -166,7 +166,7 @@ namespace ZeroRedact
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        string RedactIPv4Address(string ipAddress, IPv4RedactorOptions redactorOptions);
+        string RedactIPv4Address(string ipAddress, IPv4AddressRedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv4 address.
@@ -179,7 +179,7 @@ namespace ZeroRedact
         /// </summary>
         /// <param name="ipAddress">The IPv4 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions);
+        ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4AddressRedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
@@ -192,7 +192,7 @@ namespace ZeroRedact
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        string RedactIPv6Address(string ipAddress, IPv6RedactorOptions redactorOptions);
+        string RedactIPv6Address(string ipAddress, IPv6AddressRedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided IPv6 address.
@@ -205,7 +205,7 @@ namespace ZeroRedact
         /// </summary>
         /// <param name="ipAddress">The IPv6 address to redact.</param>
         /// <param name="redactorOptions">The options to control redaction behavior.</param>
-        ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions);
+        ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6AddressRedactorOptions redactorOptions);
 
         /// <summary>
         /// Redacts the provided MAC address.

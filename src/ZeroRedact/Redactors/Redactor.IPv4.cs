@@ -12,7 +12,7 @@ namespace ZeroRedact
             => RedactIPv4Internal(ipAddress);
 
         /// <inheritdoc />
-        public string RedactIPv4Address(string ipAddress, IPv4RedactorOptions redactorOptions)
+        public string RedactIPv4Address(string ipAddress, IPv4AddressRedactorOptions redactorOptions)
             => RedactIPv4Internal(ipAddress, redactorOptions);
 
         /// <inheritdoc />
@@ -20,22 +20,22 @@ namespace ZeroRedact
             => RedactIPv4Internal(ipAddress);
 
         /// <inheritdoc />
-        public ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions)
+        public ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4AddressRedactorOptions redactorOptions)
             => RedactIPv4Internal(ipAddress, redactorOptions);
 
         private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress)
         {
-            var internalOptions = new InternalIPv4RedactorOptions(_baseRedactorOptions);
+            var internalOptions = new InternalIPv4AddressRedactorOptions(_baseRedactorOptions);
             return RedactIPv4Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions)
+        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, IPv4AddressRedactorOptions redactorOptions)
         {
-            var internalOptions = new InternalIPv4RedactorOptions(_baseRedactorOptions, redactorOptions);
+            var internalOptions = new InternalIPv4AddressRedactorOptions(_baseRedactorOptions, redactorOptions);
             return RedactIPv4Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, InternalIPv4RedactorOptions options)
+        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, InternalIPv4AddressRedactorOptions options)
         {
             try
             {

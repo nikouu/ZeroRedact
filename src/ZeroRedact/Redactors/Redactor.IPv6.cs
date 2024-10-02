@@ -12,7 +12,7 @@ namespace ZeroRedact
             => RedactIPv6Internal(ipAddress);
 
         /// <inheritdoc />
-        public string RedactIPv6Address(string ipAddress, IPv6RedactorOptions redactorOptions)
+        public string RedactIPv6Address(string ipAddress, IPv6AddressRedactorOptions redactorOptions)
             => RedactIPv6Internal(ipAddress, redactorOptions);
 
         /// <inheritdoc />
@@ -20,22 +20,22 @@ namespace ZeroRedact
             => RedactIPv6Internal(ipAddress);
 
         /// <inheritdoc />
-        public ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions)
+        public ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6AddressRedactorOptions redactorOptions)
             => RedactIPv6Internal(ipAddress, redactorOptions);
 
         private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress)
         {
-            var internalOptions = new InternalIPv6RedactorOptions(_baseRedactorOptions);
+            var internalOptions = new InternalIPv6AddressRedactorOptions(_baseRedactorOptions);
             return RedactIPv6Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions options)
+        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, IPv6AddressRedactorOptions options)
         {
-            var internalOptions = new InternalIPv6RedactorOptions(_baseRedactorOptions, options);
+            var internalOptions = new InternalIPv6AddressRedactorOptions(_baseRedactorOptions, options);
             return RedactIPv6Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, InternalIPv6RedactorOptions options)
+        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, InternalIPv6AddressRedactorOptions options)
         {
             try
             {

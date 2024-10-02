@@ -33,12 +33,12 @@
             RedactorType = PhoneNumberRedaction.Full
         };
 
-        internal static readonly IPv4RedactorOptions DefaultIPv4RedactorOptions = new()
+        internal static readonly IPv4AddressRedactorOptions DefaultIPv4AddressRedactorOptions = new()
         {
             RedactorType = IPv4AddressRedaction.Full
         };
 
-        internal static readonly IPv6RedactorOptions DefaultIPv6RedactorOptions = new()
+        internal static readonly IPv6AddressRedactorOptions DefaultIPv6AddressRedactorOptions = new()
         {
             RedactorType = IPv6AddressRedaction.Full
         };
@@ -55,8 +55,8 @@
             DateRedactorOptions = DefaultDateRedactorOptions,
             CreditCardRedactorOptions = DefaultCreditCardRedactorOptions,
             PhoneNumberRedactorOptions = DefaultPhoneNumberRedactorOptions,
-            IPv4RedactorOptions = DefaultIPv4RedactorOptions,
-            IPv6RedactorOptions = DefaultIPv6RedactorOptions,
+            IPv4AddressRedactorOptions = DefaultIPv4AddressRedactorOptions,
+            IPv6AddressRedactorOptions = DefaultIPv6AddressRedactorOptions,
             MACAddressRedactorOptions = DefaultMACAddressRedactorOptions
         };
     }

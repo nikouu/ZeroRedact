@@ -33,12 +33,12 @@
         /// <summary>
         /// The options for redacting IPv4 addresses.
         /// </summary>
-        public IPv4RedactorOptions IPv4RedactorOptions { get; init; } = Constants.DefaultIPv4RedactorOptions;
+        public IPv4AddressRedactorOptions IPv4AddressRedactorOptions { get; init; } = Constants.DefaultIPv4AddressRedactorOptions;
 
         /// <summary>
         /// The options for redacting IPv6 addresses.
         /// </summary>
-        public IPv6RedactorOptions IPv6RedactorOptions { get; init; } = Constants.DefaultIPv6RedactorOptions;
+        public IPv6AddressRedactorOptions IPv6AddressRedactorOptions { get; init; } = Constants.DefaultIPv6AddressRedactorOptions;
 
         /// <summary>
         /// The MAC address redactor options.

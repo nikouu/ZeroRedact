@@ -1,12 +1,12 @@
 ﻿namespace ZeroRedact.Options.Internal
 {
-    internal readonly ref struct InternalIPv4RedactorOptions
+    internal readonly ref struct InternalIPv4AddressRedactorOptions
     {
         public char RedactionCharacter { get; init; }
         public int FixedLengthSize { get; init; }
         public IPv4AddressRedaction RedactorType { get; init; }
 
-        public InternalIPv4RedactorOptions(RedactorOptions defaultOptions, IPv4RedactorOptions userOptions)
+        public InternalIPv4AddressRedactorOptions(RedactorOptions defaultOptions, IPv4AddressRedactorOptions userOptions)
         {
             if (userOptions.HasFixedLengthSize)
             {
@@ -17,9 +17,9 @@
             {
                 RedactionCharacter = userOptions.RedactionCharacter;
             }
-            else if (defaultOptions.IPv4RedactorOptions.HasRedactionCharacter)
+            else if (defaultOptions.IPv4AddressRedactorOptions.HasRedactionCharacter)
             {
-                RedactionCharacter = defaultOptions.IPv4RedactorOptions.RedactionCharacter;
+                RedactionCharacter = defaultOptions.IPv4AddressRedactorOptions.RedactionCharacter;
             }
             else
             {
@@ -30,9 +30,9 @@
             {
                 FixedLengthSize = userOptions.FixedLengthSize;
             }
-            else if (defaultOptions.IPv4RedactorOptions.HasFixedLengthSize)
+            else if (defaultOptions.IPv4AddressRedactorOptions.HasFixedLengthSize)
             {
-                FixedLengthSize = defaultOptions.IPv4RedactorOptions.FixedLengthSize;
+                FixedLengthSize = defaultOptions.IPv4AddressRedactorOptions.FixedLengthSize;
             }
             else
             {
@@ -45,31 +45,31 @@
             }
             else
             {
-                RedactorType = defaultOptions.IPv4RedactorOptions.RedactorType;
+                RedactorType = defaultOptions.IPv4AddressRedactorOptions.RedactorType;
             }
         }
 
-        public InternalIPv4RedactorOptions(RedactorOptions defaultOptions)
+        public InternalIPv4AddressRedactorOptions(RedactorOptions defaultOptions)
         {
-            if (defaultOptions.IPv4RedactorOptions.HasRedactionCharacter)
+            if (defaultOptions.IPv4AddressRedactorOptions.HasRedactionCharacter)
             {
-                RedactionCharacter = defaultOptions.IPv4RedactorOptions.RedactionCharacter;
+                RedactionCharacter = defaultOptions.IPv4AddressRedactorOptions.RedactionCharacter;
             }
             else
             {
                 RedactionCharacter = defaultOptions.RedactionCharacter;
             }
 
-            if (defaultOptions.IPv4RedactorOptions.HasFixedLengthSize)
+            if (defaultOptions.IPv4AddressRedactorOptions.HasFixedLengthSize)
             {
-                FixedLengthSize = defaultOptions.IPv4RedactorOptions.FixedLengthSize;
+                FixedLengthSize = defaultOptions.IPv4AddressRedactorOptions.FixedLengthSize;
             }
             else
             {
                 FixedLengthSize = defaultOptions.FixedLengthSize;
             }
 
-            RedactorType = defaultOptions.IPv4RedactorOptions.RedactorType;
+            RedactorType = defaultOptions.IPv4AddressRedactorOptions.RedactorType;
         }
     }
 }
