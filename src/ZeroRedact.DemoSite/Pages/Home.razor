@@ -8,7 +8,7 @@
 
 <p>Using ZeroRedact version: @typeof(ZeroRedact.Redactor).Assembly.GetName().Version</p>
 
-<input type="text" @bind="StringToRedact" />
+<input type="text" @bind="StringToRedact" @bind:event="oninput" />
 
 @foreach (var method in RedactorMethods)
 {

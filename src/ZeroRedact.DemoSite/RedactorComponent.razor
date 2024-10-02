@@ -54,12 +54,18 @@
             currentRedactionType = enumValue.ToString();
         }
 
-        UpdateRedactedText();
+        UpdateRedactedText(new ChangeEventArgs
+            {
+                Value = currentRedactionType
+            });
     }
 
     protected override void OnParametersSet()
     {
-        UpdateRedactedText();
+        UpdateRedactedText(new ChangeEventArgs
+            {
+                Value = currentRedactionType
+            });
     }
 
 
@@ -80,9 +86,7 @@
 
         Console.WriteLine($"{FunctionName}: {InputText}");
 
-        //redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
-
-        redactedText = redactor.RedactEmailAddress(InputText.ToString(), (EmailAddressRedactorOptions)redactorOptionsInstance);
+        redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
 
         StateHasChanged();
 
