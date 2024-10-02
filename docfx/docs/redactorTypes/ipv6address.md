@@ -11,14 +11,14 @@ var ipv6Address = "2001:0000:130F:0000:0000:09C0:876A:130B";
 var fullRedaction = redactor.RedactIPv6Address(ipv6Address);
 
 // returns "***************************************"
-var allOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.All };
+var allOptions = new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.All };
 var allRedaction = redactor.RedactIPv6Address(ipv6Address, allOptions);
 
 // returns "********"
-var fixedLengthOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength };
+var fixedLengthOptions = new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.FixedLength };
 var fixedLengthRedaction = redactor.RedactIPv6Address(ipv6Address, fixedLengthOptions);
 
 // returns "****:****:****:****:****:****:****:130B"
-var showLastQuartetOptions = new IPv6RedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet };
+var showLastQuartetOptions = new IPv6AddressRedactorOptions { RedactorType = IPv6AddressRedaction.ShowLastQuartet };
 var showLastQuartetRedaction = redactor.RedactIPv6Address(ipv4Address, showLastQuartetOptions);
 ```
