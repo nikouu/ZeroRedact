@@ -4,12 +4,12 @@ if (-not (Get-Command docfx -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
-# 01 - Run the docfx tool
-# Define the relative path to the .json file
-$docsJsonPath = "..\docfx\docfx.json"
+$docsJsonPath = Resolve-Path "..\docfx\docfx.json"
+$apiFolderPath = Resolve-Path "..\docfx\api"
 
-# Get the full path to the .json
-$fulldocsJsonPath = Resolve-Path $docsJsonPath
+# Remove the /api folder and its contents
+# Gives a fresh API refresh each run
+Remove-Item -Path $apiFolderPath -Recurse -Force
 
-docfx metadata $fulldocsJsonPath
-docfx build $fulldocsJsonPath --serve --open-browser
+docfx metadata $docsJsonPath
+docfx build $docsJsonPath --serve --open-browser

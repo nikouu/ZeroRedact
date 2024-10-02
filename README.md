@@ -47,7 +47,7 @@ var phoneNumberOptions = new PhoneNumberRedactorOptions { RedactionCharacter = '
 var phoneNumberResult = redactor.RedactPhoneNumber("212-456-7890");
 
 // returns "@@@.@.@.146"
-var ipv4AddressOptions = new IPv4RedactorOptions
+var ipv4AddressOptions = new IPv4AddressRedactorOptions
 {
     RedactionCharacter = '@',
     RedactorType = IPv4AddressRedaction.ShowLastOctet
