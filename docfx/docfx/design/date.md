@@ -1,4 +1,4 @@
-# Date Redaction API Design
+# Date
 
 ## Redaction types
 

@@ -1,4 +1,4 @@
-# MAC Address Redaction API Design
+# MAC Address
 
 ## Redaction types
 

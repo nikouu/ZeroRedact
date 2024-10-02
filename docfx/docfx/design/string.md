@@ -1,4 +1,4 @@
-# String Redaction API Design
+# String
 
 ## Redaction types
 

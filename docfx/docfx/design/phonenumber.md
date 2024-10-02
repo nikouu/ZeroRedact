@@ -1,4 +1,4 @@
-# Phone Number Redaction API Design
+# Phone Number
 
 ## Redaction types
 

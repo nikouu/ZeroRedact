@@ -1,4 +1,4 @@
-# Credit Card Redaction API Design
+# Credit Card
 
 ## Redaction types
 

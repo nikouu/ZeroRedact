@@ -39,6 +39,7 @@
       "_appName": "ZeroRedact",
       "_appTitle": "ZeroRedact",
       "_enableSearch": true,
+      "_disableContribution": true,
       "pdf": true
     }
   }

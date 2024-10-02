@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>General Design | ZeroRedact </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="General Design | ZeroRedact ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nikouu/ZeroRedact/blob/main/docfx/docfx/design/general-design.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ZeroRedact">
+            ZeroRedact
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="general-design">General Design</h1>
+
+<p>The following outlines general design thoughts for ZeroRedact for, during, and after development.</p>
+<h2 id="how-is-zeroredact-used">How is ZeroRedact used?</h2>
+<p>This question is the big driver ZeroRedact design. This library is used to redact a discrete piece of sensitive information - that is, a given piece will only be the sensitive information such as an email address. This is in contrast with larger DLP libraries/services which scan entire documents and apply redacting where necessary.</p>
+<p>With this in mind, ZeroRedact offers both full and partial redaction for all types covered and they can be broken into three main types:</p>
+<ol>
+<li>Full redaction. The entire piece of sensitive information is replaced with a character and the length of the information is preserved.</li>
+<li>Full redaction at a fixed width. The entire piece of sensitive information is replaced by a fixed width string of a character. This further obscures the data by not giving away length hints.</li>
+<li>Partial redaction. Most redaction types in ZeroRedact are partial redactions.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Redaction type</th>
+<th>Explanation</th>
+<th>Use cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full redaction</td>
+<td>The entire piece of sensitive information is replaced with a character and the length of the information is preserved.</td>
+<td>To safely display or log</td>
+</tr>
+<tr>
+<td>Full redaction at a fixed width</td>
+<td>The entire piece of sensitive information is replaced by a fixed width string of a character. This further obscures the data by not giving away length hints.</td>
+<td>To safely display or log</td>
+</tr>
+<tr>
+<td>Partial redaction</td>
+<td>Most redaction types in ZeroRedact are partial redactions as these can have the most nuance with use cases</td>
+<td><ul><li>For &quot;We will send an email to {email}&quot; messages</li><li>For &quot;Payment will be made using this credit card {last four}&quot; messages</li><li>Logging as much as a privacy policy allows for auditing or record keeping</li><li>Displaying as much as a privacy policy allows</li></ul></td>
+</tr>
+</tbody>
+</table>
+<p>ZeroRedact does not redact with strings such as &quot;[REDACTED]&quot;. Only single. repeated characters such as '*'.</p>
+<h2 id="no-allocations">No allocations</h2>
+<p>The ultimate goal for this project is zero allocation; <strong>Zero</strong>Redact.</p>
+<p>However, there will most likely be an allocation for the final string that gets produced - because it has to be created at some point.</p>
+<h2 id="performance">Performance</h2>
+<p>Performance is a close second goal which often comes from no allocations. However, there may be cases that even after GC pressure is accounted for that something like source generated Regex might be faster. Except in the case for Regex, that allocates and cannot be used.</p>
+<h2 id="inspiration">Inspiration</h2>
+<p>Design inspiration came from a lot of the <a href="https://github.com/dotnet/runtime/">.NET runtime repo</a>, specifically <a href="https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/">System.Text.Json</a>. Originally ZeroRedact was going to follow the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer?view=net-8.0"><code>JsonSerializer</code></a> class of being a static partial class with static methods. However for the sake of testability and giving the user options, ZeroRedact ended up with a regular class approach.</p>
+<p>Maintability by having a partial class per type of redaction was also taken from the runtime repo.</p>
+<h2 id="option-configuration">Option configuration</h2>
+<p>Redaction options can be configured at:</p>
+<ol>
+<li>Redaction calling time</li>
+<li>Redaction object creation time</li>
+</ol>
+<p>And are layered, with a fallback to defaults if no options are ever specified.</p>
+<p>The idea of passing in options to a method is loosely based on <a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0"><code>JsonSerializerOptions</code></a> and layering options based on <a href="https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager?view=net-8.0">`ConfigurationManager'</a> (see this <a href="https://andrewlock.net/exploring-dotnet-6-part-1-looking-inside-configurationmanager-in-dotnet-6/">great post by Andrew Lock</a>).</p>
+<h2 id="convenient-overloads">Convenient overloads</h2>
+<p>Depending on redacting type, there are multiple overloads that may include different types (e.g. <code>DateTime</code> and <code>DateOnly</code> for date redaction) and having redaction options setup just for that method call which may be different from default options.</p>
+<h2 id="defaults">Defaults</h2>
+<p>If there is a common enough consensus, that will be the default and it may not be the strongest redaction type.</p>
+<p>If there is no one strong redaction type, either a redaction that keeps the structure but the data hidden (such as **/**/***) or a full redaction will be the default.</p>
+<h2 id="data-safety">Data safety</h2>
+<p>Redacting exceptions are supressed and the safest form of redaction is returned: a fixed width redaction. This was chosen because:</p>
+<ol>
+<li>The caller's execution is not interrupted.</li>
+<li>It's better to be safe and return the most anonymous and strongest form of redaction in ZeroRedact as a caller's current use case is unknown.</li>
+</ol>
+<p>The decision to return a fixed width redaction was weighed up against the security concerns above and other use cases such as:</p>
+<ul>
+<li>Having useful logs due to partial redaction</li>
+<li>Having useful user messages due to partial redaction</li>
+</ul>
+<p>Outside of exceptions, any failed data validation will also result in a fixed with redaction result.</p>
+<h3 id="invalid-option-exceptions">Invalid option exceptions</h3>
+<p>However, any invalid options will throw an exception, whether they are passed to the <code>Redactor</code> constructor, or in via one of the redaction methods. It is only during the actual redaction work that errors are suppressed.</p>
+<h2 id="data-validation">Data validation</h2>
+<p>ZeroRedact is not a data validation tool. Data is only validated enough to perform successful redactions. For example:</p>
+<ol>
+<li>&quot;email@example.com&quot; is valid and will be redacted with the requested redaction type</li>
+<li>&quot;email..@example.com&quot; is not a valid email due to &quot;..&quot; but will be redacted with the requested redaction type</li>
+<li>&quot;emailexample.com&quot; is not a valid email due to no &quot;@&quot; and will be redacted with a fixed width redaction as the &quot;@&quot; symbol is important for redacting</li>
+<li>&quot;Call me @ your earliest convenience. Thanks.&quot; is not a valid email, but will be redacted with the requested redaction type</li>
+</ol>
+<p>The reasons behind a lack of full validation are:</p>
+<ol>
+<li>Often complex to write for all edge cases</li>
+<li>Validation code may incur heap allocations</li>
+<li>Speed, as only what is necessary for ZeroRedact to perform redactions is checked</li>
+<li>It's expected the data is already validated</li>
+</ol>
+<h2 id="testing">Testing</h2>
+<p>A lot of Data Driven Testing is used to ensure that sensitive information is correctly redacted.</p>
+<h2 id="benchmarking">Benchmarking</h2>
+<p>A lot of micro-benchmarking work is used to ensure ZeroRedact is a top performing library.</p>
+<h2 id="no-external-dependencies">No external dependencies</h2>
+<p>Keeps project light, easier to maintain, easier to get approved by having Microsoft-only packages, less supply chain issues.</p>
+<h2 id="unicode">Unicode</h2>
+<p>Unicode is currently not supported. While single width unicode may work such as &quot;かわいい猫&quot; (Japanese for &quot;cute cat&quot;)</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+
+// correctly returns &quot;*****&quot;
+var result = redactor.RedactString(&quot;かわいい猫&quot;);
+</code></pre>
+<p>However, when using multiple code points for a single character, such as the three code point character &quot;葛󠄀&quot; (&quot;Kuzdu&quot; or Chinese arrowroot), we get an unexpected result:</p>
+<pre><code class="lang-csharp">var redactor = new Redactor();
+
+// Incorrectly returns &quot;***&quot;
+var result = redactor.RedactString(&quot;葛󠄀&quot;);
+</code></pre>
+<p>C# has the capability to deal with this with <a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.rune?view=net-8.0">Rune</a> however more effort needs to go into understanding whether this can happen without allocations.</p>
+<p>Read more about these complexities via: <a href="https://github.com/dotnet/csharplang/discussions/4500#discussioncomment-437052">csharplang/Emoji character literals #4500</a></p>
+<h2 id="verbosity">Verbosity</h2>
+<p>The method names end up being verbose, for example: <code>RedactEmailAddress()</code>, <code>EmailAddressRedactorOptions</code> and how combined they can be large. This is intentional in order to be as clear as possible with expectations. As more full redaction libraries take in whole objects or documents to find the sensitive information within and redact, whereas ZeroRedact only redacts the given discrete piece of sensitive information.</p>
+<p>Confusion could arise if the email address redaction method was called <code>redactor.RedactEmail()</code> and while the input type is string/ReadOnlySpan, a user may put the content of their email and expect it to be redacted.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

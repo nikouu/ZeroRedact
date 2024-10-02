@@ -1,4 +1,3 @@
-
 # Define the relative path to the .csproj file
 $projectPath = "..\src\ZeroRedact.Benchmark\ZeroRedact.Benchmark.csproj"
 

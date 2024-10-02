@@ -1,18 +1,8 @@
 # General Design
 
-## What is redaction?
+The following outlines general design thoughts for ZeroRedact for, during, and after development. 
 
-Redaction is obscuring a piece of data. We often use it to protect private or confidential information such as [Personally Identifiable Information](https://en.wikipedia.org/wiki/Personal_data) (PII). This is what you see in documents with blacked out lines. 
-
-Redaction is the goal of ZeroRedact.
-
-This similar, but different to *masking*, [via AWS](https://aws.amazon.com/what-is/data-masking/):
->Data masking creates fake versions of an organization's data by changing confidential information. Various techniques are used to create realistic and structurally similar changes. Once data is masked, you can’t reverse engineer or track back to the original data values without access to the original dataset.
-
-A simple example for masking would be taking an address, and replacing each part (street number, suburb, etc) with a different but valid piece of data. The address is still an address structure and valid looking, but now isn't the PII it was before.
-For more in depth, feel free to read: [Data Masking vs. Data Redaction: Key Differences and Uses by Graham Thompson at Privacy Dynamics](https://www.privacydynamics.io/post/data-masking-vs-data-redaction-key-differences-and-uses/)
-
-## How will ZeroRedact be used?
+## How is ZeroRedact used?
 
 This question is the big driver ZeroRedact design. This library is used to redact a discrete piece of sensitive information - that is, a given piece will only be the sensitive information such as an email address. This is in contrast with larger DLP libraries/services which scan entire documents and apply redacting where necessary. 
 
@@ -60,11 +50,13 @@ The idea of passing in options to a method is loosely based on [`JsonSerializerO
 
 Depending on redacting type, there are multiple overloads that may include different types (e.g. `DateTime` and `DateOnly` for date redaction) and having redaction options setup just for that method call which may be different from default options.
 
+
 ## Defaults
 
 If there is a common enough consensus, that will be the default and it may not be the strongest redaction type. 
 
 If there is no one strong redaction type, either a redaction that keeps the structure but the data hidden (such as \*\*/\*\*/\*\*\*\) or a full redaction will be the default.
+
 
 ## Data safety
 
@@ -77,6 +69,8 @@ The decision to return a fixed width redaction was weighed up against the securi
 - Having useful user messages due to partial redaction
 
 Outside of exceptions, any failed data validation will also result in a fixed with redaction result.
+
+
 
 ### Invalid option exceptions
 

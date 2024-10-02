@@ -1,4 +1,4 @@
-# Email Address Redaction API Design
+# Email Address
 
 ## Redaction types
 
