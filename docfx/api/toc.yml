@@ -15,14 +15,14 @@ items:
     name: EmailAddressRedaction
   - uid: ZeroRedact.EmailAddressRedactorOptions
     name: EmailAddressRedactorOptions
-  - uid: ZeroRedact.IPv4Redaction
-    name: IPv4Redaction
-  - uid: ZeroRedact.IPv4RedactorOptions
-    name: IPv4RedactorOptions
-  - uid: ZeroRedact.IPv6Redaction
-    name: IPv6Redaction
-  - uid: ZeroRedact.IPv6RedactorOptions
-    name: IPv6RedactorOptions
+  - uid: ZeroRedact.IPv4AddressRedaction
+    name: IPv4AddressRedaction
+  - uid: ZeroRedact.IPv4AddressRedactorOptions
+    name: IPv4AddressRedactorOptions
+  - uid: ZeroRedact.IPv6AddressRedaction
+    name: IPv6AddressRedaction
+  - uid: ZeroRedact.IPv6AddressRedactorOptions
+    name: IPv6AddressRedactorOptions
   - uid: ZeroRedact.IRedactor
     name: IRedactor
   - uid: ZeroRedact.MACAddressRedaction

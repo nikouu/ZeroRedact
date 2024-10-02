@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.IPv4AddressRedaction
+  commentId: T:ZeroRedact.IPv4AddressRedaction
+  id: IPv4AddressRedaction
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.IPv4AddressRedaction.All
+  - ZeroRedact.IPv4AddressRedaction.FixedLength
+  - ZeroRedact.IPv4AddressRedaction.Full
+  - ZeroRedact.IPv4AddressRedaction.ShowLastOctet
+  langs:
+  - csharp
+  - vb
+  name: IPv4AddressRedaction
+  nameWithType: IPv4AddressRedaction
+  fullName: ZeroRedact.IPv4AddressRedaction
+  type: Enum
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IPv4AddressRedaction
+    path: ../src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Defines the different types of redactions that can be applied to an IPv4 address.
+  example: []
+  syntax:
+    content: public enum IPv4AddressRedaction
+    content.vb: Public Enum IPv4AddressRedaction
+- uid: ZeroRedact.IPv4AddressRedaction.All
+  commentId: F:ZeroRedact.IPv4AddressRedaction.All
+  id: All
+  parent: ZeroRedact.IPv4AddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: IPv4AddressRedaction.All
+  fullName: ZeroRedact.IPv4AddressRedaction.All
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: All
+    path: ../src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+    startLine: 11
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv4 address is redacted.
+  remarks: 'Example: "192.0.2.146" becomes "***********"'
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: ZeroRedact.IPv4AddressRedaction
+- uid: ZeroRedact.IPv4AddressRedaction.FixedLength
+  commentId: F:ZeroRedact.IPv4AddressRedaction.FixedLength
+  id: FixedLength
+  parent: ZeroRedact.IPv4AddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: FixedLength
+  nameWithType: IPv4AddressRedaction.FixedLength
+  fullName: ZeroRedact.IPv4AddressRedaction.FixedLength
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLength
+    path: ../src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+    startLine: 17
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv4 address is redacted with a fixed length.
+  remarks: 'Example: "192.0.2.146" becomes "********"'
+  example: []
+  syntax:
+    content: FixedLength = 1
+    return:
+      type: ZeroRedact.IPv4AddressRedaction
+- uid: ZeroRedact.IPv4AddressRedaction.Full
+  commentId: F:ZeroRedact.IPv4AddressRedaction.Full
+  id: Full
+  parent: ZeroRedact.IPv4AddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: IPv4AddressRedaction.Full
+  fullName: ZeroRedact.IPv4AddressRedaction.Full
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: Full
+    path: ../src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+    startLine: 23
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The IPv4 address is redacted, preserving symbols.
+  remarks: 'Example: "192.0.2.146" becomes "***.*.*.***"'
+  example: []
+  syntax:
+    content: Full = 2
+    return:
+      type: ZeroRedact.IPv4AddressRedaction
+- uid: ZeroRedact.IPv4AddressRedaction.ShowLastOctet
+  commentId: F:ZeroRedact.IPv4AddressRedaction.ShowLastOctet
+  id: ShowLastOctet
+  parent: ZeroRedact.IPv4AddressRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowLastOctet
+  nameWithType: IPv4AddressRedaction.ShowLastOctet
+  fullName: ZeroRedact.IPv4AddressRedaction.ShowLastOctet
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowLastOctet
+    path: ../src/ZeroRedact/Enums/IPv4AddressRedaction.cs
+    startLine: 29
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The last octet of the IPv4 address are shown.
+  remarks: 'Example: "192.0.2.146" becomes "***.*.*.146"'
+  example: []
+  syntax:
+    content: ShowLastOctet = 3
+    return:
+      type: ZeroRedact.IPv4AddressRedaction
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: ZeroRedact.IPv4AddressRedaction
+  commentId: T:ZeroRedact.IPv4AddressRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.IPv4AddressRedaction.html
+  name: IPv4AddressRedaction
+  nameWithType: IPv4AddressRedaction
+  fullName: ZeroRedact.IPv4AddressRedaction

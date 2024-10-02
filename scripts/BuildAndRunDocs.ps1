@@ -11,4 +11,5 @@ $docsJsonPath = "..\docfx\docfx.json"
 # Get the full path to the .json
 $fulldocsJsonPath = Resolve-Path $docsJsonPath
 
+docfx metadata $fulldocsJsonPath
 docfx build $fulldocsJsonPath --serve --open-browser

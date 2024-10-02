@@ -10,10 +10,10 @@ items:
   - ZeroRedact.DateRedactorOptions
   - ZeroRedact.EmailAddressRedaction
   - ZeroRedact.EmailAddressRedactorOptions
-  - ZeroRedact.IPv4Redaction
-  - ZeroRedact.IPv4RedactorOptions
-  - ZeroRedact.IPv6Redaction
-  - ZeroRedact.IPv6RedactorOptions
+  - ZeroRedact.IPv4AddressRedaction
+  - ZeroRedact.IPv4AddressRedactorOptions
+  - ZeroRedact.IPv6AddressRedaction
+  - ZeroRedact.IPv6AddressRedactorOptions
   - ZeroRedact.IRedactor
   - ZeroRedact.MACAddressRedaction
   - ZeroRedact.MACAddressRedactorOptions
@@ -54,20 +54,20 @@ references:
   name: EmailAddressRedaction
   nameWithType: EmailAddressRedaction
   fullName: ZeroRedact.EmailAddressRedaction
-- uid: ZeroRedact.IPv4Redaction
-  commentId: T:ZeroRedact.IPv4Redaction
+- uid: ZeroRedact.IPv4AddressRedaction
+  commentId: T:ZeroRedact.IPv4AddressRedaction
   parent: ZeroRedact
-  href: ZeroRedact.IPv4Redaction.html
-  name: IPv4Redaction
-  nameWithType: IPv4Redaction
-  fullName: ZeroRedact.IPv4Redaction
-- uid: ZeroRedact.IPv6Redaction
-  commentId: T:ZeroRedact.IPv6Redaction
+  href: ZeroRedact.IPv4AddressRedaction.html
+  name: IPv4AddressRedaction
+  nameWithType: IPv4AddressRedaction
+  fullName: ZeroRedact.IPv4AddressRedaction
+- uid: ZeroRedact.IPv6AddressRedaction
+  commentId: T:ZeroRedact.IPv6AddressRedaction
   parent: ZeroRedact
-  href: ZeroRedact.IPv6Redaction.html
-  name: IPv6Redaction
-  nameWithType: IPv6Redaction
-  fullName: ZeroRedact.IPv6Redaction
+  href: ZeroRedact.IPv6AddressRedaction.html
+  name: IPv6AddressRedaction
+  nameWithType: IPv6AddressRedaction
+  fullName: ZeroRedact.IPv6AddressRedaction
 - uid: ZeroRedact.MACAddressRedaction
   commentId: T:ZeroRedact.MACAddressRedaction
   parent: ZeroRedact
@@ -110,20 +110,20 @@ references:
   name: EmailAddressRedactorOptions
   nameWithType: EmailAddressRedactorOptions
   fullName: ZeroRedact.EmailAddressRedactorOptions
-- uid: ZeroRedact.IPv4RedactorOptions
-  commentId: T:ZeroRedact.IPv4RedactorOptions
+- uid: ZeroRedact.IPv4AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv4AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv4RedactorOptions.html
-  name: IPv4RedactorOptions
-  nameWithType: IPv4RedactorOptions
-  fullName: ZeroRedact.IPv4RedactorOptions
-- uid: ZeroRedact.IPv6RedactorOptions
-  commentId: T:ZeroRedact.IPv6RedactorOptions
+  href: ZeroRedact.IPv4AddressRedactorOptions.html
+  name: IPv4AddressRedactorOptions
+  nameWithType: IPv4AddressRedactorOptions
+  fullName: ZeroRedact.IPv4AddressRedactorOptions
+- uid: ZeroRedact.IPv6AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv6AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv6RedactorOptions.html
-  name: IPv6RedactorOptions
-  nameWithType: IPv6RedactorOptions
-  fullName: ZeroRedact.IPv6RedactorOptions
+  href: ZeroRedact.IPv6AddressRedactorOptions.html
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions
 - uid: ZeroRedact.MACAddressRedactorOptions
   commentId: T:ZeroRedact.MACAddressRedactorOptions
   parent: ZeroRedact

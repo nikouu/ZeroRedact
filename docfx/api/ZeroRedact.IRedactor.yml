@@ -20,13 +20,13 @@ items:
   - ZeroRedact.IRedactor.RedactEmailAddress(System.String)
   - ZeroRedact.IRedactor.RedactEmailAddress(System.String,ZeroRedact.EmailAddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
-  - ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4AddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactIPv4Address(System.String)
-  - ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4AddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
-  - ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6AddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactIPv6Address(System.String)
-  - ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+  - ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6AddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char})
   - ZeroRedact.IRedactor.RedactMACAddress(System.ReadOnlySpan{System.Char},ZeroRedact.MACAddressRedactorOptions)
   - ZeroRedact.IRedactor.RedactMACAddress(System.String)
@@ -938,16 +938,16 @@ items:
   nameWithType.vb: IRedactor.RedactIPv4Address(String)
   fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(String)
   name.vb: RedactIPv4Address(String)
-- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
-  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
-  id: RedactIPv4Address(System.String,ZeroRedact.IPv4RedactorOptions)
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4AddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.String,ZeroRedact.IPv4AddressRedactorOptions)
+  id: RedactIPv4Address(System.String,ZeroRedact.IPv4AddressRedactorOptions)
   parent: ZeroRedact.IRedactor
   langs:
   - csharp
   - vb
-  name: RedactIPv4Address(string, IPv4RedactorOptions)
-  nameWithType: IRedactor.RedactIPv4Address(string, IPv4RedactorOptions)
-  fullName: ZeroRedact.IRedactor.RedactIPv4Address(string, ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(string, IPv4AddressRedactorOptions)
+  nameWithType: IRedactor.RedactIPv4Address(string, IPv4AddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(string, ZeroRedact.IPv4AddressRedactorOptions)
   type: Method
   source:
     remote:
@@ -963,21 +963,21 @@ items:
   summary: Redacts the provided IPv4 address.
   example: []
   syntax:
-    content: string RedactIPv4Address(string ipAddress, IPv4RedactorOptions redactorOptions)
+    content: string RedactIPv4Address(string ipAddress, IPv4AddressRedactorOptions redactorOptions)
     parameters:
     - id: ipAddress
       type: System.String
       description: The IPv4 address to redact.
     - id: redactorOptions
-      type: ZeroRedact.IPv4RedactorOptions
+      type: ZeroRedact.IPv4AddressRedactorOptions
       description: The options to control redaction behavior.
     return:
       type: System.String
-    content.vb: Function RedactIPv4Address(ipAddress As String, redactorOptions As IPv4RedactorOptions) As String
+    content.vb: Function RedactIPv4Address(ipAddress As String, redactorOptions As IPv4AddressRedactorOptions) As String
   overload: ZeroRedact.IRedactor.RedactIPv4Address*
-  nameWithType.vb: IRedactor.RedactIPv4Address(String, IPv4RedactorOptions)
-  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(String, ZeroRedact.IPv4RedactorOptions)
-  name.vb: RedactIPv4Address(String, IPv4RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv4Address(String, IPv4AddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(String, ZeroRedact.IPv4AddressRedactorOptions)
+  name.vb: RedactIPv4Address(String, IPv4AddressRedactorOptions)
 - uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
   commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char})
   id: RedactIPv4Address(System.ReadOnlySpan{System.Char})
@@ -1015,16 +1015,16 @@ items:
   nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv4Address(ReadOnlySpan(Of Char))
-- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
-  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
-  id: RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4RedactorOptions)
+- uid: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4AddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4AddressRedactorOptions)
+  id: RedactIPv4Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv4AddressRedactorOptions)
   parent: ZeroRedact.IRedactor
   langs:
   - csharp
   - vb
-  name: RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
-  nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>, IPv4RedactorOptions)
-  fullName: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4RedactorOptions)
+  name: RedactIPv4Address(ReadOnlySpan<char>, IPv4AddressRedactorOptions)
+  nameWithType: IRedactor.RedactIPv4Address(ReadOnlySpan<char>, IPv4AddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan<char>, ZeroRedact.IPv4AddressRedactorOptions)
   type: Method
   source:
     remote:
@@ -1040,21 +1040,21 @@ items:
   summary: Redacts the provided IPv4 address.
   example: []
   syntax:
-    content: ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4RedactorOptions redactorOptions)
+    content: ReadOnlySpan<char> RedactIPv4Address(ReadOnlySpan<char> ipAddress, IPv4AddressRedactorOptions redactorOptions)
     parameters:
     - id: ipAddress
       type: System.ReadOnlySpan{System.Char}
       description: The IPv4 address to redact.
     - id: redactorOptions
-      type: ZeroRedact.IPv4RedactorOptions
+      type: ZeroRedact.IPv4AddressRedactorOptions
       description: The options to control redaction behavior.
     return:
       type: System.ReadOnlySpan{System.Char}
-    content.vb: Function RedactIPv4Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv4RedactorOptions) As ReadOnlySpan(Of Char)
+    content.vb: Function RedactIPv4Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv4AddressRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.IRedactor.RedactIPv4Address*
-  nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
-  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4RedactorOptions)
-  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv4Address(ReadOnlySpan(Of Char), IPv4AddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv4Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv4AddressRedactorOptions)
+  name.vb: RedactIPv4Address(ReadOnlySpan(Of Char), IPv4AddressRedactorOptions)
 - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String)
   commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.String)
   id: RedactIPv6Address(System.String)
@@ -1092,16 +1092,16 @@ items:
   nameWithType.vb: IRedactor.RedactIPv6Address(String)
   fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(String)
   name.vb: RedactIPv6Address(String)
-- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
-  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
-  id: RedactIPv6Address(System.String,ZeroRedact.IPv6RedactorOptions)
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6AddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.String,ZeroRedact.IPv6AddressRedactorOptions)
+  id: RedactIPv6Address(System.String,ZeroRedact.IPv6AddressRedactorOptions)
   parent: ZeroRedact.IRedactor
   langs:
   - csharp
   - vb
-  name: RedactIPv6Address(string, IPv6RedactorOptions)
-  nameWithType: IRedactor.RedactIPv6Address(string, IPv6RedactorOptions)
-  fullName: ZeroRedact.IRedactor.RedactIPv6Address(string, ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(string, IPv6AddressRedactorOptions)
+  nameWithType: IRedactor.RedactIPv6Address(string, IPv6AddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(string, ZeroRedact.IPv6AddressRedactorOptions)
   type: Method
   source:
     remote:
@@ -1117,21 +1117,21 @@ items:
   summary: Redacts the provided IPv6 address.
   example: []
   syntax:
-    content: string RedactIPv6Address(string ipAddress, IPv6RedactorOptions redactorOptions)
+    content: string RedactIPv6Address(string ipAddress, IPv6AddressRedactorOptions redactorOptions)
     parameters:
     - id: ipAddress
       type: System.String
       description: The IPv6 address to redact.
     - id: redactorOptions
-      type: ZeroRedact.IPv6RedactorOptions
+      type: ZeroRedact.IPv6AddressRedactorOptions
       description: The options to control redaction behavior.
     return:
       type: System.String
-    content.vb: Function RedactIPv6Address(ipAddress As String, redactorOptions As IPv6RedactorOptions) As String
+    content.vb: Function RedactIPv6Address(ipAddress As String, redactorOptions As IPv6AddressRedactorOptions) As String
   overload: ZeroRedact.IRedactor.RedactIPv6Address*
-  nameWithType.vb: IRedactor.RedactIPv6Address(String, IPv6RedactorOptions)
-  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(String, ZeroRedact.IPv6RedactorOptions)
-  name.vb: RedactIPv6Address(String, IPv6RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv6Address(String, IPv6AddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(String, ZeroRedact.IPv6AddressRedactorOptions)
+  name.vb: RedactIPv6Address(String, IPv6AddressRedactorOptions)
 - uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
   commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char})
   id: RedactIPv6Address(System.ReadOnlySpan{System.Char})
@@ -1169,16 +1169,16 @@ items:
   nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char))
   fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char))
   name.vb: RedactIPv6Address(ReadOnlySpan(Of Char))
-- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
-  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
-  id: RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6RedactorOptions)
+- uid: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6AddressRedactorOptions)
+  commentId: M:ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6AddressRedactorOptions)
+  id: RedactIPv6Address(System.ReadOnlySpan{System.Char},ZeroRedact.IPv6AddressRedactorOptions)
   parent: ZeroRedact.IRedactor
   langs:
   - csharp
   - vb
-  name: RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
-  nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>, IPv6RedactorOptions)
-  fullName: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6RedactorOptions)
+  name: RedactIPv6Address(ReadOnlySpan<char>, IPv6AddressRedactorOptions)
+  nameWithType: IRedactor.RedactIPv6Address(ReadOnlySpan<char>, IPv6AddressRedactorOptions)
+  fullName: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan<char>, ZeroRedact.IPv6AddressRedactorOptions)
   type: Method
   source:
     remote:
@@ -1194,21 +1194,21 @@ items:
   summary: Redacts the provided IPv6 address.
   example: []
   syntax:
-    content: ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6RedactorOptions redactorOptions)
+    content: ReadOnlySpan<char> RedactIPv6Address(ReadOnlySpan<char> ipAddress, IPv6AddressRedactorOptions redactorOptions)
     parameters:
     - id: ipAddress
       type: System.ReadOnlySpan{System.Char}
       description: The IPv6 address to redact.
     - id: redactorOptions
-      type: ZeroRedact.IPv6RedactorOptions
+      type: ZeroRedact.IPv6AddressRedactorOptions
       description: The options to control redaction behavior.
     return:
       type: System.ReadOnlySpan{System.Char}
-    content.vb: Function RedactIPv6Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv6RedactorOptions) As ReadOnlySpan(Of Char)
+    content.vb: Function RedactIPv6Address(ipAddress As ReadOnlySpan(Of Char), redactorOptions As IPv6AddressRedactorOptions) As ReadOnlySpan(Of Char)
   overload: ZeroRedact.IRedactor.RedactIPv6Address*
-  nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
-  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6RedactorOptions)
-  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6RedactorOptions)
+  nameWithType.vb: IRedactor.RedactIPv6Address(ReadOnlySpan(Of Char), IPv6AddressRedactorOptions)
+  fullName.vb: ZeroRedact.IRedactor.RedactIPv6Address(System.ReadOnlySpan(Of Char), ZeroRedact.IPv6AddressRedactorOptions)
+  name.vb: RedactIPv6Address(ReadOnlySpan(Of Char), IPv6AddressRedactorOptions)
 - uid: ZeroRedact.IRedactor.RedactMACAddress(System.String)
   commentId: M:ZeroRedact.IRedactor.RedactMACAddress(System.String)
   id: RedactMACAddress(System.String)
@@ -1593,26 +1593,26 @@ references:
   name: RedactIPv4Address
   nameWithType: IRedactor.RedactIPv4Address
   fullName: ZeroRedact.IRedactor.RedactIPv4Address
-- uid: ZeroRedact.IPv4RedactorOptions
-  commentId: T:ZeroRedact.IPv4RedactorOptions
+- uid: ZeroRedact.IPv4AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv4AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv4RedactorOptions.html
-  name: IPv4RedactorOptions
-  nameWithType: IPv4RedactorOptions
-  fullName: ZeroRedact.IPv4RedactorOptions
+  href: ZeroRedact.IPv4AddressRedactorOptions.html
+  name: IPv4AddressRedactorOptions
+  nameWithType: IPv4AddressRedactorOptions
+  fullName: ZeroRedact.IPv4AddressRedactorOptions
 - uid: ZeroRedact.IRedactor.RedactIPv6Address*
   commentId: Overload:ZeroRedact.IRedactor.RedactIPv6Address
   href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactIPv6Address_System_String_
   name: RedactIPv6Address
   nameWithType: IRedactor.RedactIPv6Address
   fullName: ZeroRedact.IRedactor.RedactIPv6Address
-- uid: ZeroRedact.IPv6RedactorOptions
-  commentId: T:ZeroRedact.IPv6RedactorOptions
+- uid: ZeroRedact.IPv6AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv6AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv6RedactorOptions.html
-  name: IPv6RedactorOptions
-  nameWithType: IPv6RedactorOptions
-  fullName: ZeroRedact.IPv6RedactorOptions
+  href: ZeroRedact.IPv6AddressRedactorOptions.html
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions
 - uid: ZeroRedact.IRedactor.RedactMACAddress*
   commentId: Overload:ZeroRedact.IRedactor.RedactMACAddress
   href: ZeroRedact.IRedactor.html#ZeroRedact_IRedactor_RedactMACAddress_System_String_

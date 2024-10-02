@@ -10,8 +10,8 @@ items:
   - ZeroRedact.RedactorOptions.DateRedactorOptions
   - ZeroRedact.RedactorOptions.EmailAddressRedactorOptions
   - ZeroRedact.RedactorOptions.FixedLengthSize
-  - ZeroRedact.RedactorOptions.IPv4RedactorOptions
-  - ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  - ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
+  - ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
   - ZeroRedact.RedactorOptions.MACAddressRedactorOptions
   - ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions
   - ZeroRedact.RedactorOptions.RedactionCharacter
@@ -201,23 +201,23 @@ items:
       type: ZeroRedact.PhoneNumberRedactorOptions
     content.vb: Public Property PhoneNumberRedactorOptions As PhoneNumberRedactorOptions
   overload: ZeroRedact.RedactorOptions.PhoneNumberRedactorOptions*
-- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions
-  commentId: P:ZeroRedact.RedactorOptions.IPv4RedactorOptions
-  id: IPv4RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
+  id: IPv4AddressRedactorOptions
   parent: ZeroRedact.RedactorOptions
   langs:
   - csharp
   - vb
-  name: IPv4RedactorOptions
-  nameWithType: RedactorOptions.IPv4RedactorOptions
-  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
+  name: IPv4AddressRedactorOptions
+  nameWithType: RedactorOptions.IPv4AddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
   type: Property
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
       branch: main
       repo: https://github.com/nikouu/ZeroRedact.git
-    id: IPv4RedactorOptions
+    id: IPv4AddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
     startLine: 35
   assemblies:
@@ -226,29 +226,29 @@ items:
   summary: The options for redacting IPv4 addresses.
   example: []
   syntax:
-    content: public IPv4RedactorOptions IPv4RedactorOptions { get; init; }
+    content: public IPv4AddressRedactorOptions IPv4AddressRedactorOptions { get; init; }
     parameters: []
     return:
-      type: ZeroRedact.IPv4RedactorOptions
-    content.vb: Public Property IPv4RedactorOptions As IPv4RedactorOptions
-  overload: ZeroRedact.RedactorOptions.IPv4RedactorOptions*
-- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions
-  commentId: P:ZeroRedact.RedactorOptions.IPv6RedactorOptions
-  id: IPv6RedactorOptions
+      type: ZeroRedact.IPv4AddressRedactorOptions
+    content.vb: Public Property IPv4AddressRedactorOptions As IPv4AddressRedactorOptions
+  overload: ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions*
+- uid: ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
+  commentId: P:ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
+  id: IPv6AddressRedactorOptions
   parent: ZeroRedact.RedactorOptions
   langs:
   - csharp
   - vb
-  name: IPv6RedactorOptions
-  nameWithType: RedactorOptions.IPv6RedactorOptions
-  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
+  name: IPv6AddressRedactorOptions
+  nameWithType: RedactorOptions.IPv6AddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
   type: Property
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
       branch: main
       repo: https://github.com/nikouu/ZeroRedact.git
-    id: IPv6RedactorOptions
+    id: IPv6AddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
     startLine: 40
   assemblies:
@@ -257,12 +257,12 @@ items:
   summary: The options for redacting IPv6 addresses.
   example: []
   syntax:
-    content: public IPv6RedactorOptions IPv6RedactorOptions { get; init; }
+    content: public IPv6AddressRedactorOptions IPv6AddressRedactorOptions { get; init; }
     parameters: []
     return:
-      type: ZeroRedact.IPv6RedactorOptions
-    content.vb: Public Property IPv6RedactorOptions As IPv6RedactorOptions
-  overload: ZeroRedact.RedactorOptions.IPv6RedactorOptions*
+      type: ZeroRedact.IPv6AddressRedactorOptions
+    content.vb: Public Property IPv6AddressRedactorOptions As IPv6AddressRedactorOptions
+  overload: ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions*
 - uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions
   commentId: P:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
   id: MACAddressRedactorOptions
@@ -682,32 +682,32 @@ references:
   name: PhoneNumberRedactorOptions
   nameWithType: PhoneNumberRedactorOptions
   fullName: ZeroRedact.PhoneNumberRedactorOptions
-- uid: ZeroRedact.RedactorOptions.IPv4RedactorOptions*
-  commentId: Overload:ZeroRedact.RedactorOptions.IPv4RedactorOptions
-  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv4RedactorOptions
-  name: IPv4RedactorOptions
-  nameWithType: RedactorOptions.IPv4RedactorOptions
-  fullName: ZeroRedact.RedactorOptions.IPv4RedactorOptions
-- uid: ZeroRedact.IPv4RedactorOptions
-  commentId: T:ZeroRedact.IPv4RedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv4AddressRedactorOptions
+  name: IPv4AddressRedactorOptions
+  nameWithType: RedactorOptions.IPv4AddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv4AddressRedactorOptions
+- uid: ZeroRedact.IPv4AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv4AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv4RedactorOptions.html
-  name: IPv4RedactorOptions
-  nameWithType: IPv4RedactorOptions
-  fullName: ZeroRedact.IPv4RedactorOptions
-- uid: ZeroRedact.RedactorOptions.IPv6RedactorOptions*
-  commentId: Overload:ZeroRedact.RedactorOptions.IPv6RedactorOptions
-  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv6RedactorOptions
-  name: IPv6RedactorOptions
-  nameWithType: RedactorOptions.IPv6RedactorOptions
-  fullName: ZeroRedact.RedactorOptions.IPv6RedactorOptions
-- uid: ZeroRedact.IPv6RedactorOptions
-  commentId: T:ZeroRedact.IPv6RedactorOptions
+  href: ZeroRedact.IPv4AddressRedactorOptions.html
+  name: IPv4AddressRedactorOptions
+  nameWithType: IPv4AddressRedactorOptions
+  fullName: ZeroRedact.IPv4AddressRedactorOptions
+- uid: ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions*
+  commentId: Overload:ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
+  href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_IPv6AddressRedactorOptions
+  name: IPv6AddressRedactorOptions
+  nameWithType: RedactorOptions.IPv6AddressRedactorOptions
+  fullName: ZeroRedact.RedactorOptions.IPv6AddressRedactorOptions
+- uid: ZeroRedact.IPv6AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv6AddressRedactorOptions
   parent: ZeroRedact
-  href: ZeroRedact.IPv6RedactorOptions.html
-  name: IPv6RedactorOptions
-  nameWithType: IPv6RedactorOptions
-  fullName: ZeroRedact.IPv6RedactorOptions
+  href: ZeroRedact.IPv6AddressRedactorOptions.html
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions
 - uid: ZeroRedact.RedactorOptions.MACAddressRedactorOptions*
   commentId: Overload:ZeroRedact.RedactorOptions.MACAddressRedactorOptions
   href: ZeroRedact.RedactorOptions.html#ZeroRedact_RedactorOptions_MACAddressRedactorOptions

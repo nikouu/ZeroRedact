@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: ZeroRedact.IPv6AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv6AddressRedactorOptions
+  id: IPv6AddressRedactorOptions
+  parent: ZeroRedact
+  children:
+  - ZeroRedact.IPv6AddressRedactorOptions.#ctor
+  - ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+  - ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+  - ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+  langs:
+  - csharp
+  - vb
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions
+  type: Struct
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: IPv6AddressRedactorOptions
+    path: ../src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+    startLine: 5
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: IPv6 redactor options.
+  example: []
+  syntax:
+    content: public readonly struct IPv6AddressRedactorOptions
+    content.vb: Public Structure IPv6AddressRedactorOptions
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+  commentId: P:ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+  id: RedactionCharacter
+  parent: ZeroRedact.IPv6AddressRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactionCharacter
+  nameWithType: IPv6AddressRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactionCharacter
+    path: ../src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+    startLine: 14
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The character used for the redaction.
+  example: []
+  syntax:
+    content: public char RedactionCharacter { get; init; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property RedactionCharacter As Char
+  overload: ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter*
+- uid: ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+  commentId: P:ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+  id: FixedLengthSize
+  parent: ZeroRedact.IPv6AddressRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: FixedLengthSize
+  nameWithType: IPv6AddressRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: FixedLengthSize
+    path: ../src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+    startLine: 25
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The fixed length size of the redaction.
+  example: []
+  syntax:
+    content: public int FixedLengthSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FixedLengthSize As Integer
+  overload: ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize*
+- uid: ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+  commentId: P:ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+  id: RedactorType
+  parent: ZeroRedact.IPv6AddressRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: RedactorType
+  nameWithType: IPv6AddressRedactorOptions.RedactorType
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+  type: Property
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: RedactorType
+    path: ../src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+    startLine: 36
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The type of redactor to apply.
+  example: []
+  syntax:
+    content: public IPv6AddressRedaction RedactorType { get; init; }
+    parameters: []
+    return:
+      type: ZeroRedact.IPv6AddressRedaction
+    content.vb: Public Property RedactorType As IPv6AddressRedaction
+  overload: ZeroRedact.IPv6AddressRedactorOptions.RedactorType*
+- uid: ZeroRedact.IPv6AddressRedactorOptions.#ctor
+  commentId: M:ZeroRedact.IPv6AddressRedactorOptions.#ctor
+  id: '#ctor'
+  parent: ZeroRedact.IPv6AddressRedactorOptions
+  langs:
+  - csharp
+  - vb
+  name: IPv6AddressRedactorOptions()
+  nameWithType: IPv6AddressRedactorOptions.IPv6AddressRedactorOptions()
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.IPv6AddressRedactorOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: .ctor
+    path: ../src/ZeroRedact/Options/Public/IPv6AddressRedactorOptions.cs
+    startLine: 47
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: Constructs a new <xref href="ZeroRedact.IPv6AddressRedactorOptions" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public IPv6AddressRedactorOptions()
+    content.vb: Public Sub New()
+  overload: ZeroRedact.IPv6AddressRedactorOptions.#ctor*
+  nameWithType.vb: IPv6AddressRedactorOptions.New()
+  fullName.vb: ZeroRedact.IPv6AddressRedactorOptions.New()
+  name.vb: New()
+references:
+- uid: ZeroRedact
+  commentId: N:ZeroRedact
+  href: ZeroRedact.html
+  name: ZeroRedact
+  nameWithType: ZeroRedact
+  fullName: ZeroRedact
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter*
+  commentId: Overload:ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+  href: ZeroRedact.IPv6AddressRedactorOptions.html#ZeroRedact_IPv6AddressRedactorOptions_RedactionCharacter
+  name: RedactionCharacter
+  nameWithType: IPv6AddressRedactorOptions.RedactionCharacter
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.RedactionCharacter
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize*
+  commentId: Overload:ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+  href: ZeroRedact.IPv6AddressRedactorOptions.html#ZeroRedact_IPv6AddressRedactorOptions_FixedLengthSize
+  name: FixedLengthSize
+  nameWithType: IPv6AddressRedactorOptions.FixedLengthSize
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.FixedLengthSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ZeroRedact.IPv6AddressRedactorOptions.RedactorType*
+  commentId: Overload:ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+  href: ZeroRedact.IPv6AddressRedactorOptions.html#ZeroRedact_IPv6AddressRedactorOptions_RedactorType
+  name: RedactorType
+  nameWithType: IPv6AddressRedactorOptions.RedactorType
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.RedactorType
+- uid: ZeroRedact.IPv6AddressRedaction
+  commentId: T:ZeroRedact.IPv6AddressRedaction
+  parent: ZeroRedact
+  href: ZeroRedact.IPv6AddressRedaction.html
+  name: IPv6AddressRedaction
+  nameWithType: IPv6AddressRedaction
+  fullName: ZeroRedact.IPv6AddressRedaction
+- uid: ZeroRedact.IPv6AddressRedactorOptions
+  commentId: T:ZeroRedact.IPv6AddressRedactorOptions
+  parent: ZeroRedact
+  href: ZeroRedact.IPv6AddressRedactorOptions.html
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions
+- uid: ZeroRedact.IPv6AddressRedactorOptions.#ctor*
+  commentId: Overload:ZeroRedact.IPv6AddressRedactorOptions.#ctor
+  href: ZeroRedact.IPv6AddressRedactorOptions.html#ZeroRedact_IPv6AddressRedactorOptions__ctor
+  name: IPv6AddressRedactorOptions
+  nameWithType: IPv6AddressRedactorOptions.IPv6AddressRedactorOptions
+  fullName: ZeroRedact.IPv6AddressRedactorOptions.IPv6AddressRedactorOptions
+  nameWithType.vb: IPv6AddressRedactorOptions.New
+  fullName.vb: ZeroRedact.IPv6AddressRedactorOptions.New
+  name.vb: New
