@@ -1,5 +1,5 @@
 - name: Docs
-  href: docfx/
+  href: docs/
 - name: API
   href: api/
 - name: Demo
