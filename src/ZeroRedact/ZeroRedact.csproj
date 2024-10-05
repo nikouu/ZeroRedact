@@ -13,7 +13,7 @@
 		<Version>2.1.0</Version>
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
-		<PackageProjectUrl>https://github.com/nikouu/ZeroRedact</PackageProjectUrl>
+		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>An extremely fast, simple, zero allocation redacting library for .NET.</Description>
