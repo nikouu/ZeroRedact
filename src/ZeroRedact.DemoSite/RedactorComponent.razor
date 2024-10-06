@@ -102,7 +102,7 @@
         // Get the selected enum value
         var enumValue = Enum.Parse(enumType, currentRedactionType);
 
-        Console.WriteLine(enumValue);
+        //Console.WriteLine(enumValue);
 
         // Create an instance of EmailAddressRedactorOptions
         var redactorOptionsInstance = Activator.CreateInstance(redactorOptionsType);
@@ -110,7 +110,7 @@
         // Set the enum property to the selected value of the enum
         enumProperty.SetValue(redactorOptionsInstance, enumValue);
 
-        Console.WriteLine($"{FunctionName}: {InputText}");
+        //Console.WriteLine($"{FunctionName}: {InputText}");
 
         redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
 
