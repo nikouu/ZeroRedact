@@ -11,16 +11,24 @@
 
     <div class="columns">
         <div class="column is-half is-offset-one-quarter">
-            <div class="field is-grouped">
-                <p class="control is-expanded">
-                    <input class="input is-medium" type="text" @bind="StringToRedact" @bind:event="oninput" placeholder="String to redact" />
-                </p>
-                <p class="control">
-                    <button class="button is-medium" @onclick="Clear">🔄 Clear</button>
-                </p>
-                <p class="control">
-                    <button class="button is-medium" @onclick="ShuffleAll">🔀 Shuffle</button>
-                </p>
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <p class="control is-expanded">
+                            <input class="input is-medium" type="text" @bind="StringToRedact" @bind:event="oninput" placeholder="String to redact" />
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <button class="button is-medium" @onclick="Clear">🔄 Clear</button>
+                        </p>
+                        <p class="control">
+                            <button class="button is-medium" @onclick="ShuffleAll">🔀 Shuffle</button>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
