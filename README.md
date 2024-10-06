@@ -4,7 +4,6 @@
 [![GitHub Release](https://img.shields.io/github/v/release/nikouu/zeroredact)](https://github.com/nikouu/ZeroRedact/releases)
 [![Official Docs](https://img.shields.io/badge/Official_Docs-blue?logo=gitbook)](https://nikouu.github.io/ZeroRedact/)
 [![Demo](https://img.shields.io/badge/Demo-blue)](https://nikouu.github.io/ZeroRedact/demo/)
-
 [![GitHub License](https://img.shields.io/github/license/nikouu/zeroredact)](https://github.com/nikouu/ZeroRedact/blob/main/LICENSE)
 [![Blog](https://img.shields.io/badge/blog-nikouusitalo.com-8A2BE2)](https://www.nikouusitalo.com/)
 
