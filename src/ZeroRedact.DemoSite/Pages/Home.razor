@@ -4,19 +4,40 @@
 
 <PageTitle>ZeroRedact Demo</PageTitle>
 
-<h1>ZeroRedact Demo</h1>
+<div class="content">
+    <h1 class="title">ZeroRedact Demo</h1>
 
-<p>Using ZeroRedact version: @typeof(ZeroRedact.Redactor).Assembly.GetName().Version</p>
+    <p>Using ZeroRedact version: @typeof(ZeroRedact.Redactor).Assembly.GetName().Version</p>
 
-<input type="text" @bind="StringToRedact" @bind:event="oninput" />
+    <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                    <input class="input is-medium" type="text" @bind="StringToRedact" @bind:event="oninput" placeholder="String to redact" />
+                </p>
+                <p class="control">
+                    <button class="button is-medium" @onclick="Clear">🔄 Clear</button>
+                </p>
+                <p class="control">
+                    <button class="button is-medium" @onclick="ShuffleAll">🔀 Shuffle</button>
+                </p>
+            </div>
+        </div>
+    </div>
 
-@foreach (var method in RedactorMethods)
-{
-    <RedactorComponent FunctionName="@method" InputText="@StringToRedact" />
-}
+    <div class="grid is-col-min-15">
+        @foreach (var method in RedactorMethods)
+        {
+            <div class="cell">
+                <RedactorComponent @ref="redactorComponents[method]" FunctionName="@method" InputText="@StringToRedact" />
+            </div>
+        }
+    </div>
+</div>
 
 @code {
     public List<string> RedactorMethods = new();
+    private Dictionary<string, RedactorComponent> redactorComponents = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -36,6 +57,16 @@
         foreach (var method in methods)
         {
             RedactorMethods.Add(method.Name);
+        }
+    }
+
+    private void Clear() => StringToRedact = string.Empty;
+
+    private void ShuffleAll()
+    {
+        foreach (var component in redactorComponents.Values)
+        {
+            component.ShuffleSelect();
         }
     }
 

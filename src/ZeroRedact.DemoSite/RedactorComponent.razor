@@ -1,4 +1,32 @@
 ﻿@using System.Reflection
+
+<div class="box">
+    <div class="content">
+        <h2 class="subtitle">@FunctionName</h2>
+        <div class="field">
+            <label class="label">Redaction type</label>
+            <div class="control">
+                <select class="select" style="width:100%" value="@currentRedactionType" @onchange="UpdateRedactedText">
+                    @if (redactionTypes != null)
+                    {
+                        @foreach (var enumValue in redactionTypes)
+                        {
+                            <option value="@enumValue">@enumValue</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Result:</label>
+            <div class="control">
+                <textarea class="textarea is-static has-fixed-size" rows="3" readonly @bind="redactedText" />
+            </div>
+        </div>
+    </div>
+</div>
+
 @code {
     [Parameter]
     public string FunctionName { get; set; }
@@ -48,10 +76,8 @@
 
             redactionTypes = Enum.GetNames(enumType).ToList();
 
-            // Get the first value of the enum
-            var enumValue = Enum.GetValues(enumType).GetValue(0);
-
-            currentRedactionType = enumValue.ToString();
+            var fullEnumValue = Enum.GetNames(enumType).FirstOrDefault(name => name.Equals("full", StringComparison.OrdinalIgnoreCase));
+            currentRedactionType = fullEnumValue ?? redactionTypes.First();
         }
 
         UpdateRedactedText(new ChangeEventArgs
@@ -89,19 +115,40 @@
         redactedText = redactorMethod.Invoke(redactor, new object[] { InputText, redactorOptionsInstance }).ToString();
 
         StateHasChanged();
+    }
 
+    public void ShuffleSelect()
+    {
+        if (redactionTypes != null && redactionTypes.Count > 1)
+        {
+            string randomRedactionType;
+            do
+            {
+                var weightedList = redactionTypes.SelectMany(type =>
+                {
+                    if (type.Equals("all", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return Enumerable.Repeat(type, 1);
+                    }
+                    else if (type.Equals("fixedlength", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return Enumerable.Repeat(type, 1);
+                    }
+                    return Enumerable.Repeat(type, 3);
+                }).ToList();
+
+                var randomIndex = Random.Shared.Next(weightedList.Count);
+                randomRedactionType = weightedList[randomIndex];
+            } while (randomRedactionType == currentRedactionType);
+
+            currentRedactionType = randomRedactionType;
+
+            UpdateRedactedText(new ChangeEventArgs
+                {
+                    Value = randomRedactionType
+                });
+
+            StateHasChanged();
+        }
     }
 }
-
-<div style="border: 1px solid #ccc; border-radius: 10px; padding: 15px;">
-    <p style="margin-bottom: 5px;">@FunctionName Redacted Result: @redactedText</p>
-    <select @onchange="UpdateRedactedText">
-        @if (redactionTypes != null)
-        {
-            @foreach (var enumValue in redactionTypes)
-            {
-                <option value="@enumValue">@enumValue</option>
-            }
-        }
-    </select>
-</div>
