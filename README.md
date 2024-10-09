@@ -7,9 +7,7 @@
 [![GitHub License](https://img.shields.io/github/license/nikouu/zeroredact)](https://github.com/nikouu/ZeroRedact/blob/main/LICENSE)
 [![Blog](https://img.shields.io/badge/blog-nikouusitalo.com-8A2BE2)](https://www.nikouusitalo.com/)
 
-
-
-An extremely fast, simple, zero allocation redacting library for .NET.
+A fast, simple, zero allocation redacting library for .NET, with no extra dependencies.
 
 Read more in the [official docs](https://nikouu.github.io/ZeroRedact/).
 
