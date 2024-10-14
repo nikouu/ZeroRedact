@@ -3,7 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace ZeroRedact
 {
-    /// <inheritdoc />
+    /// <summary>
+    /// Implements redaction capabilities.
+    /// </summary>
     [SkipLocalsInit]
     public sealed partial class Redactor : IRedactor
     {
