@@ -60,6 +60,22 @@ var ipv6Result = redactor.RedactIPv6Address("2001:0000:130F:0000:0000:09C0:876A:
 var macResult = redactor.RedactMACAddress("00:B0:D0:63:C2:26");
 ```
 
+Or in the case of a service registration with `IServiceCollection`:
+
+```csharp
+// Default
+builder.Services.AddZeroRedact();
+
+// Or to configure
+builder.Services.AddZeroRedact(new RedactorOptions
+{
+    CreditCardRedactorOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowLastFour },
+    EmailAddressRedactorOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.ShowFirstCharacters },
+    DateRedactorOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day },
+    PhoneNumberRedactorOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.ShowLastFour }
+});
+```
+
 ## Configuration
 
 ZeroRedact can be configured in two ways: via constructor, and via a redaction method. Both using the appropriate redactor option object.

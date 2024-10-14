@@ -36,3 +36,20 @@ var options = new StringRedactorOptions
 // returns "Person#######"
 var result = redactor.RedactString("Personal data", options);
 ```
+
+## Service builder
+
+In the case of a service builder with `IServiceCollection`:
+```csharp
+// Default
+builder.Services.AddZeroRedact();
+
+// Or to configure
+builder.Services.AddZeroRedact(new RedactorOptions
+{
+    CreditCardRedactorOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowLastFour },
+    EmailAddressRedactorOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.ShowFirstCharacters },
+    DateRedactorOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day },
+    PhoneNumberRedactorOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.ShowLastFour }
+});
+```
