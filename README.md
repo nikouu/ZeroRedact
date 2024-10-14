@@ -131,7 +131,7 @@ However exceptions can occur by passing invalid options to the redactor, whether
 
 ## No external dependencies
 
-No extra NuGet packages are pulled in when using ZeroRedact. 
+Keeps project light, easier to maintain, easier to get approved by having Microsoft-only packages, less supply chain issues.
 
 ## Microsoft.Extensions.Compliance.Redaction
 
