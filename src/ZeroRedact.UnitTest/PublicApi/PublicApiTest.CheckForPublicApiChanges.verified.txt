@@ -218,4 +218,9 @@ namespace ZeroRedact
         public char RedactionCharacter { get; init; }
         public ZeroRedact.StringRedaction RedactorType { get; init; }
     }
+    public static class ZeroRedactExtensions
+    {
+        public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddZeroRedact(this Microsoft.Extensions.DependencyInjection.IServiceCollection services) { }
+        public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddZeroRedact(this Microsoft.Extensions.DependencyInjection.IServiceCollection services, ZeroRedact.RedactorOptions options) { }
+    }
 }
