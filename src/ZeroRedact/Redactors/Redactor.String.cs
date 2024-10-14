@@ -59,6 +59,7 @@ namespace ZeroRedact
             }
         }
 
+        // todo: look at possible improvements via https://source.dot.net/#Microsoft.Extensions.Compliance.Abstractions/Redaction/Redactor.cs,41
         private unsafe string CreateFirstHalfStringRedaction(ReadOnlySpan<char> value, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(value);
