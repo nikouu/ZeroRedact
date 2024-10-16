@@ -160,6 +160,10 @@ See [Compliance.Redaction-with-ZeroRedact](https://github.com/nikouu/Compliance.
 ### Benchmarks
 See [benchmarks](benchmarks).
 
+## Contributing
+
+Currently not looking for contributions, however issues for problems or feature suggestions are welcome for consideration.
+
 ## License
 
 [MIT](LICENSE)
