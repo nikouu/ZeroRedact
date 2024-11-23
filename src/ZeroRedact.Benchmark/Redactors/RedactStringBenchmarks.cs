@@ -38,16 +38,19 @@ namespace ZeroRedact.Benchmark.Redactors
             new RedactStringInput("hello", StringRedaction.FirstHalf),
             new RedactStringInput("hello", StringRedaction.SecondHalf),
             new RedactStringInput("hello", StringRedaction.IgnoreSymbols),
+            new RedactStringInput("hello", StringRedaction.ShowFirstAndLast),
             new RedactStringInput("abcdefgh", StringRedaction.All),
             new RedactStringInput("abcdefgh", StringRedaction.FixedLength),
             new RedactStringInput("abcdefgh", StringRedaction.FirstHalf),
             new RedactStringInput("abcdefgh", StringRedaction.SecondHalf),
             new RedactStringInput("abcdefgh", StringRedaction.IgnoreSymbols),
+            new RedactStringInput("abcdefgh", StringRedaction.ShowFirstAndLast),
             new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.All),
             new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.FixedLength),
             new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.FirstHalf),
             new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.SecondHalf),
-            new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.IgnoreSymbols)
+            new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.IgnoreSymbols),
+            new RedactStringInput("abcdefghijklmnopqrstuvwxyz", StringRedaction.ShowFirstAndLast)
         ];
     }
 

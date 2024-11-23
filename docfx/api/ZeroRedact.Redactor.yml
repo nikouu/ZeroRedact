@@ -59,7 +59,7 @@ items:
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
-  summary: Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  summary: Implements redaction capabilities.
   example: []
   syntax:
     content: 'public sealed class Redactor : IRedactor'
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact

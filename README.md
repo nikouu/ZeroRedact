@@ -7,7 +7,17 @@
 [![GitHub License](https://img.shields.io/github/license/nikouu/zeroredact)](https://github.com/nikouu/ZeroRedact/blob/main/LICENSE)
 [![Blog](https://img.shields.io/badge/blog-nikouusitalo.com-8A2BE2)](https://www.nikouusitalo.com/)
 
-A fast, simple, zero allocation redacting library for .NET, with no extra dependencies.
+A fast, simple, zero allocation redacting library for .NET, with no non-Microsoft dependencies.
+
+Fully or partially redact:
+- Strings
+- Email addresses
+- Credit card numbers
+- Dates
+- Phone numbers
+- IPV4 addresses
+- IPV6 addresses
+- MAC addresses
 
 Read more in the [official docs](https://nikouu.github.io/ZeroRedact/).
 

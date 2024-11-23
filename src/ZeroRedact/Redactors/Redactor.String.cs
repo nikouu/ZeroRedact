@@ -50,6 +50,7 @@ namespace ZeroRedact
                     StringRedaction.FirstHalf => CreateFirstHalfStringRedaction(value, options.RedactionCharacter),
                     StringRedaction.SecondHalf => CreateSecondHalfStringRedaction(value, options.RedactionCharacter),
                     StringRedaction.IgnoreSymbols => CreateFullRedactionWithSymbols(value, options.RedactionCharacter),
+                    StringRedaction.ShowFirstAndLast => CreateShowFirstAndLastRedaction(value, options.RedactionCharacter),
                     _ => throw new NotImplementedException()
                 };
             }
@@ -103,6 +104,29 @@ namespace ZeroRedact
 
                 outputBuffer[secondHalfLength..].Fill(state.RedactionCharacter);
                 inputSpan[..secondHalfLength].CopyTo(outputBuffer[..secondHalfLength]);
+            });
+
+            return result;
+        }
+
+        private unsafe string CreateShowFirstAndLastRedaction(ReadOnlySpan<char> value, char redactionCharacter)
+        {
+            ref var valueRef = ref MemoryMarshal.GetReference(value);
+            var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
+
+            var redactorState = new RedactorState
+            {
+                StartPointer = valuePtr,
+                RedactionCharacter = redactionCharacter
+            };
+
+            var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
+            {
+                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                
+                outputBuffer.Fill(state.RedactionCharacter);
+                outputBuffer[0] = input[0];
+                outputBuffer[^1] = input[^1];
             });
 
             return result;

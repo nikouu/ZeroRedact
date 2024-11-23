@@ -109,6 +109,25 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "+1 (555) 123-4567", "+* (***) ***-****" };
         }
 
+        private static IEnumerable<object[]> ShowFirstAndLast_TestData()
+        {
+            yield return new object[] { "", "" };
+            yield return new object[] { "a", "a" };
+            yield return new object[] { "ab", "ab" };
+            yield return new object[] { "abcdefghi", "a*******i" };
+            yield return new object[] { "abc123 !@#", "a********#" };
+            yield return new object[] { new string('a', 10_000), "a" + new string('*', 9_998) + "a" };
+            yield return new object[] { null, "" };
+
+            yield return new object[] { "4111 1111 1111 1111", "4*****************1" };
+            yield return new object[] { "2023/06/15", "2********5" };
+            yield return new object[] { "email@example.com", "e***************m" };
+            yield return new object[] { "100.100.100.100", "1*************0" };
+            yield return new object[] { "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "2*************************************4" };
+            yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "0*********************E" };
+            yield return new object[] { "+1 (555) 123-4567", "+***************7" };
+        }
+
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]
         public void RedactString_AllRedaction_ShouldReturnRedactedString_String(string input, string expected)
@@ -216,6 +235,28 @@ namespace ZeroRedact.UnitTest.Redactors
             // Act
             ReadOnlySpan<char> result = _redactor.RedactString(input.AsSpan(), new StringRedactorOptions { RedactorType = StringRedaction.IgnoreSymbols });
 
+            // Assert
+            Assert.AreEqual(expected, result.ToString());
+        }
+
+        [TestMethod]
+        [DynamicData(nameof(ShowFirstAndLast_TestData), DynamicDataSourceType.Method)]
+        public void RedactString_ShowFirstAndLast_ShouldReturnCorrectString_String(string input, string expected)
+        {
+            // Act
+            string result = _redactor.RedactString(input, new StringRedactorOptions { RedactorType = StringRedaction.ShowFirstAndLast });
+            
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        [DynamicData(nameof(ShowFirstAndLast_TestData), DynamicDataSourceType.Method)]
+        public void RedactString_ShowFirstAndLast_ShouldReturnCorrectString_ReadOnlySpan(string input, string expected)
+        {
+            // Act
+            ReadOnlySpan<char> result = _redactor.RedactString(input.AsSpan(), new StringRedactorOptions { RedactorType = StringRedaction.ShowFirstAndLast });
+            
             // Assert
             Assert.AreEqual(expected, result.ToString());
         }

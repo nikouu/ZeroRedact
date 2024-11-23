@@ -23,6 +23,7 @@ items:
   - ZeroRedact.RedactorOptions
   - ZeroRedact.StringRedaction
   - ZeroRedact.StringRedactorOptions
+  - ZeroRedact.ZeroRedactExtensions
   langs:
   - csharp
   - vb
@@ -165,6 +166,12 @@ references:
   name: Redactor
   nameWithType: Redactor
   fullName: ZeroRedact.Redactor
+- uid: ZeroRedact.ZeroRedactExtensions
+  commentId: T:ZeroRedact.ZeroRedactExtensions
+  href: ZeroRedact.ZeroRedactExtensions.html
+  name: ZeroRedactExtensions
+  nameWithType: ZeroRedactExtensions
+  fullName: ZeroRedact.ZeroRedactExtensions
 - uid: ZeroRedact
   commentId: N:ZeroRedact
   href: ZeroRedact.html

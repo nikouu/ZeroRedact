@@ -41,4 +41,6 @@ items:
     name: StringRedaction
   - uid: ZeroRedact.StringRedactorOptions
     name: StringRedactorOptions
+  - uid: ZeroRedact.ZeroRedactExtensions
+    name: ZeroRedactExtensions
 memberLayout: SamePage

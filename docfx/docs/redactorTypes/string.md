@@ -18,11 +18,15 @@ var fixedLengthRedaction = redactor.RedactString(sensitiveInfo, fixedLengthOptio
 var firstHalfOptions =  new StringRedactorOptions { RedactorType = StringRedaction.FirstHalf };
 var firstHalfRedaction = redactor.RedactString(sensitiveInfo, firstHalfOptions);
 
-// returns "Hello,*******
+// returns "Hello,*******"
 var secondHalfOptions =  new StringRedactorOptions { RedactorType = StringRedaction.SecondHalf };
 var secondHalfRedaction = redactor.RedactString(sensitiveInfo, secondHalfOptions);
 
-// returns "******, *****!"
+// returns "*****, *****!"
 var ignoreSymbolsOptions = new StringRedactorOptions { RedactorType = StringRedaction.IgnoreSymbols };
-var ignoreSymbolsRedaction = redactor.RedactString(sensitiveInfo, ignoreSymbolsOptions)
+var ignoreSymbolsRedaction = redactor.RedactString(sensitiveInfo, ignoreSymbolsOptions);
+
+// returns "H***********!"
+var showFirstAndLastCharacterOptions = new StringRedactorOptions { RedactorType = StringRedaction.ShowFirstAndLast };
+var showFirstAndLastCharacterRedaction = redactor.RedactString(sensitiveInfo, showFirstAndLastCharacterOptions);
 ```

@@ -170,9 +170,13 @@
   "ZeroRedact.StringRedaction.FixedLength": "ZeroRedact.StringRedaction.yml",
   "ZeroRedact.StringRedaction.IgnoreSymbols": "ZeroRedact.StringRedaction.yml",
   "ZeroRedact.StringRedaction.SecondHalf": "ZeroRedact.StringRedaction.yml",
+  "ZeroRedact.StringRedaction.ShowFirstAndLast": "ZeroRedact.StringRedaction.yml",
   "ZeroRedact.StringRedactorOptions": "ZeroRedact.StringRedactorOptions.yml",
   "ZeroRedact.StringRedactorOptions.#ctor": "ZeroRedact.StringRedactorOptions.yml",
   "ZeroRedact.StringRedactorOptions.FixedLengthSize": "ZeroRedact.StringRedactorOptions.yml",
   "ZeroRedact.StringRedactorOptions.RedactionCharacter": "ZeroRedact.StringRedactorOptions.yml",
-  "ZeroRedact.StringRedactorOptions.RedactorType": "ZeroRedact.StringRedactorOptions.yml"
+  "ZeroRedact.StringRedactorOptions.RedactorType": "ZeroRedact.StringRedactorOptions.yml",
+  "ZeroRedact.ZeroRedactExtensions": "ZeroRedact.ZeroRedactExtensions.yml",
+  "ZeroRedact.ZeroRedactExtensions.AddZeroRedact(Microsoft.Extensions.DependencyInjection.IServiceCollection)": "ZeroRedact.ZeroRedactExtensions.yml",
+  "ZeroRedact.ZeroRedactExtensions.AddZeroRedact(Microsoft.Extensions.DependencyInjection.IServiceCollection,ZeroRedact.RedactorOptions)": "ZeroRedact.ZeroRedactExtensions.yml"
 }

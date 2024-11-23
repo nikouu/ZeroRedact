@@ -10,6 +10,7 @@ items:
   - ZeroRedact.StringRedaction.FixedLength
   - ZeroRedact.StringRedaction.IgnoreSymbols
   - ZeroRedact.StringRedaction.SecondHalf
+  - ZeroRedact.StringRedaction.ShowFirstAndLast
   langs:
   - csharp
   - vb
@@ -176,6 +177,35 @@ items:
   example: []
   syntax:
     content: IgnoreSymbols = 4
+    return:
+      type: ZeroRedact.StringRedaction
+- uid: ZeroRedact.StringRedaction.ShowFirstAndLast
+  commentId: F:ZeroRedact.StringRedaction.ShowFirstAndLast
+  id: ShowFirstAndLast
+  parent: ZeroRedact.StringRedaction
+  langs:
+  - csharp
+  - vb
+  name: ShowFirstAndLast
+  nameWithType: StringRedaction.ShowFirstAndLast
+  fullName: ZeroRedact.StringRedaction.ShowFirstAndLast
+  type: Field
+  source:
+    remote:
+      path: src/ZeroRedact/Enums/StringRedaction.cs
+      branch: main
+      repo: https://github.com/nikouu/ZeroRedact.git
+    id: ShowFirstAndLast
+    path: ../src/ZeroRedact/Enums/StringRedaction.cs
+    startLine: 41
+  assemblies:
+  - ZeroRedact
+  namespace: ZeroRedact
+  summary: The first and last characters are shown, all others are redacted.
+  remarks: 'Example: "Hello, world!" becomes "H************!"'
+  example: []
+  syntax:
+    content: ShowFirstAndLast = 5
     return:
       type: ZeroRedact.StringRedaction
 references:

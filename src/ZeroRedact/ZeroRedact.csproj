@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>Nikouu.ZeroRedact</PackageId>
-		<Version>2.3.0</Version>
+		<Version>2.4.0</Version>
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
 		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>

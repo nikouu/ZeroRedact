@@ -33,6 +33,12 @@
         /// All characters are redacted except symbols.
         /// </summary>
         /// <remarks>Example: "Hello, world!" becomes "******, *****!"</remarks>
-        IgnoreSymbols
+        IgnoreSymbols,
+
+        /// <summary>
+        /// The first and last characters are shown, all others are redacted.
+        /// </summary>
+        /// <remarks>Example: "Hello, world!" becomes "H************!"</remarks>
+        ShowFirstAndLast
     }
 }

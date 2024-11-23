@@ -18,7 +18,9 @@ With this in mind, ZeroRedact offers both full and partial redaction for all typ
 | Full redaction at a fixed width | The entire piece of sensitive information is replaced by a fixed width string of a character. This further obscures the data by not giving away length hints. | To safely display or log |
 | Partial redaction               | Most redaction types in ZeroRedact are partial redactions as these can have the most nuance with use cases                                                    | <ul><li>For "We will send an email to {email}" messages</li><li>For "Payment will be made using this credit card {last four}" messages</li><li>Logging as much as a privacy policy allows for auditing or record keeping</li><li>Displaying as much as a privacy policy allows</li></ul>                         |
 
-ZeroRedact does not redact with strings such as "[REDACTED]". Only single. repeated characters such as '*'.
+ZeroRedact does not redact with strings such as "[REDACTED]". Only single, repeated characters such as '*'.
+
+While the main concern is sensitive information, string redaction can also be used to help censor unwanted words.
 
 ## No allocations	
 
