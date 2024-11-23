@@ -407,6 +407,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
+
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]
         public void RedactIpv4_All_ShouldReturnRedactedRedactIPv4_String(string input, string expected)

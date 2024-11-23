@@ -15,11 +15,12 @@
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
             yield return new object[] { "email@example.com", "********" };
-            yield return new object[] { "100.100.100.100", "********"};
+            yield return new object[] { "100.100.100.100", "********" };
             yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "***********************" };
             yield return new object[] { "+1 (555) 123-4567", "********" };
             yield return new object[] { "abc123 !@#", "********" };
         }
+
 
         private static IEnumerable<object[]> FixedLength_TestData()
         {
@@ -33,11 +34,12 @@
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
             yield return new object[] { "email@example.com", "********" };
-            yield return new object[] { "100.100.100.100", "********"};
+            yield return new object[] { "100.100.100.100", "********" };
             yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "********" };
             yield return new object[] { "+1 (555) 123-4567", "********" };
             yield return new object[] { "abc123 !@#", "********" };
         }
+
 
         private static IEnumerable<object[]> Full_TestData()
         {
@@ -52,11 +54,12 @@
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
             yield return new object[] { "email@example.com", "********" };
-            yield return new object[] { "100.100.100.100", "********"};
+            yield return new object[] { "100.100.100.100", "********" };
             yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "**:**:**:**:**:**:**:**" };
             yield return new object[] { "+1 (555) 123-4567", "********" };
             yield return new object[] { "abc123 !@#", "********" };
         }
+
 
         private static IEnumerable<object[]> ShowLastQuartet_TestData()
         {
@@ -71,11 +74,12 @@
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
             yield return new object[] { "email@example.com", "********" };
-            yield return new object[] { "100.100.100.100", "********"};
+            yield return new object[] { "100.100.100.100", "********" };
             yield return new object[] { "00:1A:2B:FF:FE:3C:4D:5E", "**:**:**:**:**:**:**:5E" };
             yield return new object[] { "+1 (555) 123-4567", "********" };
             yield return new object[] { "abc123 !@#", "********" };
         }
+
 
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace ZeroRedact.UnitTest.Redactors
+﻿namespace ZeroRedact.UnitTest.Redactors
 {
     // Tests to ensure that the redactors aren't manipulating the input data itself
     // https://stackoverflow.com/a/10779478
@@ -781,6 +773,24 @@ namespace ZeroRedact.UnitTest.Redactors
             _ = redactor.RedactString(input, new StringRedactorOptions
             {
                 RedactorType = StringRedaction.IgnoreSymbols
+            });
+
+            // Assert
+            Assert.AreEqual(expected, input);
+        }
+
+        [TestMethod]
+        public void CheckForOverwrite_String_ShowFirstAndLast()
+        {
+            // Arrange
+            var redactor = new Redactor();
+            var input = "Hello, world!";
+            var expected = new string(input.ToArray());
+
+            // Act
+            _ = redactor.RedactString(input, new StringRedactorOptions
+            {
+                RedactorType = StringRedaction.ShowFirstAndLast
             });
 
             // Assert

@@ -34,6 +34,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "Abc..123@example.com", "********************" };
             yield return new object[] { "just”not”right@example.com", "**************************" };
         }
+
         private static IEnumerable<object[]> FixedLength_TestData()
         {
             yield return new object[] { "email@example.com", "********" };

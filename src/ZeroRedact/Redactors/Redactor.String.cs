@@ -123,7 +123,7 @@ namespace ZeroRedact
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                
+
                 outputBuffer.Fill(state.RedactionCharacter);
                 outputBuffer[0] = input[0];
                 outputBuffer[^1] = input[^1];

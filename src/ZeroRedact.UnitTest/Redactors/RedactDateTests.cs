@@ -15,6 +15,7 @@ namespace ZeroRedact.UnitTest.Redactors
         {
             _redactor = new Redactor();
         }
+
         private static IEnumerable<object[]> All_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "**********" };
@@ -37,6 +38,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "ja-JP", 2023, 11, 1, "**********" };
             yield return new object[] { "ja-JP", 2023, 12, 31, "**********" };
         }
+
         private static IEnumerable<object[]> FixedLength_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "********" };
@@ -82,6 +84,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "ja-JP", 2023, 11, 1, "****/**/**" };
             yield return new object[] { "ja-JP", 2023, 12, 31, "****/**/**" };
         }
+
         private static IEnumerable<object[]> Day_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "01/**/2023" };
@@ -127,6 +130,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "ja-JP", 2023, 11, 1, "2023/**/01" };
             yield return new object[] { "ja-JP", 2023, 12, 31, "2023/**/31" };
         }
+
         private static IEnumerable<object[]> Year_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "01/01/****" };
@@ -149,6 +153,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "ja-JP", 2023, 11, 1, "****/11/01" };
             yield return new object[] { "ja-JP", 2023, 12, 31, "****/12/31" };
         }
+
         private static IEnumerable<object[]> DayAndMonth_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "**/**/2023" };
@@ -171,6 +176,7 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "ja-JP", 2023, 11, 1, "2023/**/**" };
             yield return new object[] { "ja-JP", 2023, 12, 31, "2023/**/**" };
         }
+
         private static IEnumerable<object[]> MonthAndYear_TestData()
         {
             yield return new object[] { null, 2023, 1, 1, "**/01/****" };
