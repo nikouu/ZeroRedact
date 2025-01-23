@@ -1,5 +1,6 @@
 # ZeroRedact
 
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Nikouu.ZeroRedact)](https://www.nuget.org/packages/Nikouu.ZeroRedact)
 [![NuGet](https://img.shields.io/nuget/v/Nikouu.ZeroRedact)](https://www.nuget.org/packages/Nikouu.ZeroRedact)
 [![GitHub Release](https://img.shields.io/github/v/release/nikouu/zeroredact)](https://github.com/nikouu/ZeroRedact/releases)
 [![Official Docs](https://img.shields.io/badge/Official_Docs-blue?logo=gitbook)](https://nikouu.github.io/ZeroRedact/)
