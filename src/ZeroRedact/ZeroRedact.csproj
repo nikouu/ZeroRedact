@@ -10,10 +10,10 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>Nikouu.ZeroRedact</PackageId>
-		<PackageVersion>2.4.1</PackageVersion>
+		<Version>2.4.1</Version>
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
-		<Copyright>Copyright (c) Niko Uusitalo 2025</Copyright>
+		<Copyright>Copyright (c) Niko Uusitalo 2024</Copyright>
 		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
