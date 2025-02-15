@@ -4,7 +4,7 @@ The following show examples of all the date redactor types:
 
 ```csharp
 var redactor = new Redactor();
-var date = new DateTime(2023, 06, 15);
+var date = new DateTime(2023, 6, 15);
 
 // Uses default redactor (Full)
 // returns 
@@ -67,7 +67,7 @@ var dayAndMonthRedaction = redactor.RedactDate(date, dayAndMonthOptions);
 // en-US: "*/15/****"
 // ja-JP: "****/**/15"
 // InvariantCulture: "**/15/****"
-var monthAndYearOptions = new DateRedactorOptions { RedactorType = DateRedaction.DayAndMonth };
+var monthAndYearOptions = new DateRedactorOptions { RedactorType = DateRedaction.MonthAndYear };
 var monthAndYearRedaction = redactor.RedactDate(date, monthAndYearOptions); 
 
 // returns

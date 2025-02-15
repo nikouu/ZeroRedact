@@ -45,12 +45,12 @@ var creditCardOptions = new CreditCardRedactorOptions { RedactorType = CreditCar
 var creditCardResult = redactor.RedactCreditCard("4111-1111-1111-1111", creditCardOptions);
 
 // returns based on current culture
-// en-NZ: "*/06/2023"
-// en-US: "6/*/2023"
+// en-NZ: "**/06/2023"
+// en-US: "6/**/2023"
 // ja-JP: "2023/06/**"
 // InvariantCulture: "06/**/2023"
 var dateOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day };
-var dateResult = redactor.RedactDate(new DateTime(2023, 10, 5), dateOptions);
+var dateResult = redactor.RedactDate(new DateTime(2023, 6, 15), dateOptions);
 
 // returns "###-###-####"
 var phoneNumberOptions = new PhoneNumberRedactorOptions { RedactionCharacter = '#' };
