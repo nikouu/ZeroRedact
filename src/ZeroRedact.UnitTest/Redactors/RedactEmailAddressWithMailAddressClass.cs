@@ -1,6 +1,4 @@
-﻿#pragma warning disable CS8618
-
-using System.Net.Mail;
+﻿using System.Net.Mail;
 
 namespace ZeroRedact.UnitTest.Redactors
 {

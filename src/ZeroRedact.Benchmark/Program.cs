@@ -23,4 +23,3 @@ Console.WriteLine(result);
 #if !DEBUG
 BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
 #endif
-

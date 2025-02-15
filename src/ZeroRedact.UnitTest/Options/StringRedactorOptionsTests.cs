@@ -22,15 +22,6 @@
 
             // Assert
             Assert.AreEqual("AAAA", redactedString);
-
-            // Example 1: Changing base defaults
-            var options = new RedactorOptions
-            {
-                StringRedactorOptions = new StringRedactorOptions
-                {
-                    RedactionCharacter = 'A'
-                }
-            };
         }
 
         [TestMethod]

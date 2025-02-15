@@ -28,13 +28,13 @@ namespace ZeroRedact.Benchmark.Redactors
             return _redactor.RedactIPv4Address(IPv4Input.Value.AsSpan(), new IPv4AddressRedactorOptions { RedactorType = IPv4Input.RedactorType });
         }
 
-        public static IEnumerable<RedactIPv4Input> IPv4InputData => new[]
-        {
+        public static IEnumerable<RedactIPv4Input> IPv4InputData =>
+        [
             new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.All),
             new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.FixedLength),
             new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.Full),
             new RedactIPv4Input("192.168.0.1", IPv4AddressRedaction.ShowLastOctet),
-        };
+        ];
     }
 
     public class RedactIPv4Input

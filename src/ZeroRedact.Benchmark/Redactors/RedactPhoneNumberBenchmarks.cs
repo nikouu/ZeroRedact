@@ -28,8 +28,8 @@ namespace ZeroRedact.Benchmark.Redactors
             return _redactor.RedactPhoneNumber(PhoneNumberInput.Value.AsSpan(), new PhoneNumberRedactorOptions { RedactorType = PhoneNumberInput.RedactorType });
         }
 
-        public static IEnumerable<RedactPhoneNumberInput> PhoneNumberInputData => new[]
-        {
+        public static IEnumerable<RedactPhoneNumberInput> PhoneNumberInputData =>
+        [
             new RedactPhoneNumberInput("123-456-7890", PhoneNumberRedaction.All),
             new RedactPhoneNumberInput("123-456-7890", PhoneNumberRedaction.FixedLength),
             new RedactPhoneNumberInput("123-456-7890", PhoneNumberRedaction.Full),
@@ -38,7 +38,7 @@ namespace ZeroRedact.Benchmark.Redactors
             new RedactPhoneNumberInput("+1 (555) 123-4567", PhoneNumberRedaction.FixedLength),
             new RedactPhoneNumberInput("+1 (555) 123-4567", PhoneNumberRedaction.Full),
             new RedactPhoneNumberInput("+1 (555) 123-4567", PhoneNumberRedaction.ShowLastFour)
-        };
+        ];
     }
 
     public class RedactPhoneNumberInput

@@ -28,13 +28,13 @@ namespace ZeroRedact.Benchmark.Redactors
             return _redactor.RedactMACAddress(MACAddressInput.Value.AsSpan(), new MACAddressRedactorOptions { RedactorType = MACAddressInput.RedactorType });
         }
 
-        public static IEnumerable<RedactMACAddressInput> MACAddressInputData => new[]
-        {
+        public static IEnumerable<RedactMACAddressInput> MACAddressInputData =>
+        [
             new RedactMACAddressInput("00:1A:2B:3C:4D:5E", MACAddressRedaction.All),
             new RedactMACAddressInput("00:1A:2B:3C:4D:5E", MACAddressRedaction.FixedLength),
             new RedactMACAddressInput("00:1A:2B:3C:4D:5E", MACAddressRedaction.Full),
             new RedactMACAddressInput("00:1A:2B:3C:4D:5E", MACAddressRedaction.ShowLastByte),
-        };
+        ];
     }
 
     public class RedactMACAddressInput

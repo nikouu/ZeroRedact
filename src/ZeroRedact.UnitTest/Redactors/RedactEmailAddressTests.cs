@@ -1,7 +1,4 @@
-﻿#pragma warning disable CS8625
-#pragma warning disable CS8618
-
-namespace ZeroRedact.UnitTest.Redactors
+﻿namespace ZeroRedact.UnitTest.Redactors
 {
     [TestClass]
     public class RedactEmailAddressTests

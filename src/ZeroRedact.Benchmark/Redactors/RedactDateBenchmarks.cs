@@ -17,7 +17,7 @@ namespace ZeroRedact.Benchmark.Redactors
         }
 
         [Benchmark]
-        public string RedactkDate_DateTime()
+        public string RedactDate_DateTime()
         {
             return _redactor.RedactDate(DateInput.Value, new DateRedactorOptions { RedactorType = DateInput.RedactorType });
         }
@@ -28,8 +28,8 @@ namespace ZeroRedact.Benchmark.Redactors
             return _redactor.RedactDate(DateInput.DateOnlyValue, new DateRedactorOptions { RedactorType = DateInput.RedactorType });
         }
 
-        public static IEnumerable<RedactDateInput> DateInputData => new[]
-        {
+        public static IEnumerable<RedactDateInput> DateInputData =>
+        [
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.All),
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.FixedLength),
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.Full),
@@ -39,7 +39,7 @@ namespace ZeroRedact.Benchmark.Redactors
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.DayAndMonth),
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.MonthAndYear),
             new RedactDateInput(new DateTime(2023, 1, 1),DateRedaction.DayAndYear)
-        };
+        ];
     }
 
     public class RedactDateInput

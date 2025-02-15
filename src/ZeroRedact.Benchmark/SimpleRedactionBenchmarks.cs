@@ -60,9 +60,9 @@ namespace ZeroRedact.Benchmark
         public string RedactFirstHalfString4(string value)
         {
             int halfLength = (value.Length + 1) / 2;
-            string firstHalf = value.Substring(0, halfLength);
+            string firstHalf = value[..halfLength];
             string redactedFirstHalf = firstHalf.Replace(firstHalf, new string('*', halfLength));
-            return redactedFirstHalf + value.Substring(halfLength);
+            return redactedFirstHalf + value[halfLength..];
         }
 
         [Benchmark]
@@ -71,6 +71,14 @@ namespace ZeroRedact.Benchmark
         {
             int halfLength = (value.Length + 1) / 2;
             return System.Text.RegularExpressions.Regex.Replace(value, "^.{" + halfLength + "}", new string('*', halfLength));
+        }
+
+        [Benchmark]
+        [Arguments("abcdefghijklmnopqrstuvwxyz")]
+        public string RedactFirstHalfString6(string value)
+        {
+            int halfLength = (value.Length + 1) / 2;
+            return string.Concat(new string('*', halfLength), value.AsSpan(halfLength));
         }
     }
 }
