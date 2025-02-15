@@ -10,20 +10,20 @@ Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cor
 ```
 | Method                 | emailAddress         | Mean      | Error     | StdDev    | Allocated |
 |----------------------- |--------------------- |----------:|----------:|----------:|----------:|
-| ValidateEmailAddresses | _______@example.com  |  8.907 ns | 0.0694 ns | 0.0542 ns |         - |
-| ValidateEmailAddresses | .email@example.com   |  8.451 ns | 0.0239 ns | 0.0199 ns |         - |
-| ValidateEmailAddresses | @example.com         |  9.396 ns | 0.0218 ns | 0.0182 ns |         - |
-| ValidateEmailAddresses | #@%^%#$@#$@#.com     |  7.796 ns | 0.0271 ns | 0.0227 ns |         - |
-| ValidateEmailAddresses | email(...)e.com [24] | 10.714 ns | 0.0747 ns | 0.0624 ns |         - |
-| ValidateEmailAddresses | email.@example.com   |  8.460 ns | 0.0216 ns | 0.0202 ns |         - |
-| ValidateEmailAddresses | email@example        |  7.408 ns | 0.0294 ns | 0.0245 ns |         - |
-| ValidateEmailAddresses | email(...)e.com [21] |  9.353 ns | 0.0357 ns | 0.0334 ns |         - |
-| ValidateEmailAddresses | email@example.co.jp  |  8.877 ns | 0.0174 ns | 0.0154 ns |         - |
-| ValidateEmailAddresses | email@example.com    |  7.906 ns | 0.0762 ns | 0.0676 ns |         - |
-| ValidateEmailAddresses | email(...)e.com [25] |  8.046 ns | 0.0442 ns | 0.0369 ns |         - |
-| ValidateEmailAddresses | email(...)e.com [27] |  8.524 ns | 0.0530 ns | 0.0442 ns |         - |
-| ValidateEmailAddresses | first(...)e.com [30] |  8.173 ns | 0.0237 ns | 0.0185 ns |         - |
-| ValidateEmailAddresses | first(...)e.com [30] |  8.160 ns | 0.0121 ns | 0.0108 ns |         - |
-| ValidateEmailAddresses | first(...)e.com [30] |  8.170 ns | 0.0284 ns | 0.0237 ns |         - |
-| ValidateEmailAddresses | Joe S(...).com&gt; [29] |  8.170 ns | 0.0261 ns | 0.0232 ns |         - |
-| ValidateEmailAddresses | plainaddress         |  4.254 ns | 0.0166 ns | 0.0147 ns |         - |
+| ValidateEmailAddresses | _______@example.com  |  8.780 ns | 0.0324 ns | 0.0303 ns |         - |
+| ValidateEmailAddresses | .email@example.com   |  8.462 ns | 0.1969 ns | 0.1841 ns |         - |
+| ValidateEmailAddresses | @example.com         |  9.388 ns | 0.0232 ns | 0.0206 ns |         - |
+| ValidateEmailAddresses | #@%^%#$@#$@#.com     |  7.630 ns | 0.0216 ns | 0.0202 ns |         - |
+| ValidateEmailAddresses | email(...)e.com [24] | 10.591 ns | 0.0277 ns | 0.0246 ns |         - |
+| ValidateEmailAddresses | email.@example.com   |  8.325 ns | 0.0242 ns | 0.0215 ns |         - |
+| ValidateEmailAddresses | email@example        |  7.392 ns | 0.0208 ns | 0.0162 ns |         - |
+| ValidateEmailAddresses | email(...)e.com [21] |  9.554 ns | 0.0445 ns | 0.0395 ns |         - |
+| ValidateEmailAddresses | email@example.co.jp  |  8.618 ns | 0.0270 ns | 0.0225 ns |         - |
+| ValidateEmailAddresses | email@example.com    |  7.834 ns | 0.0212 ns | 0.0188 ns |         - |
+| ValidateEmailAddresses | email(...)e.com [25] |  8.016 ns | 0.0179 ns | 0.0159 ns |         - |
+| ValidateEmailAddresses | email(...)e.com [27] |  8.491 ns | 0.0363 ns | 0.0303 ns |         - |
+| ValidateEmailAddresses | first(...)e.com [30] |  8.181 ns | 0.0436 ns | 0.0387 ns |         - |
+| ValidateEmailAddresses | first(...)e.com [30] |  8.159 ns | 0.0184 ns | 0.0163 ns |         - |
+| ValidateEmailAddresses | first(...)e.com [30] |  8.167 ns | 0.0369 ns | 0.0327 ns |         - |
+| ValidateEmailAddresses | Joe S(...).com&gt; [29] |  8.164 ns | 0.0288 ns | 0.0255 ns |         - |
+| ValidateEmailAddresses | plainaddress         |  4.247 ns | 0.0125 ns | 0.0104 ns |         - |

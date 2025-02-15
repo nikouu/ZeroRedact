@@ -11,7 +11,7 @@ namespace ZeroRedact.Benchmark.Validators
         [Arguments("fe80::1ff:fe23:4567:890a")]
         [Arguments("::1")]
         [Arguments("2001:db8::2:1")]
-        public static bool ValidateIPv6Addresses(string ipAddress)
+        public bool ValidateIPv6Addresses(string ipAddress)
         {
             return IPv6Validator.IsValidForRedaction(ipAddress.AsSpan());
         }
