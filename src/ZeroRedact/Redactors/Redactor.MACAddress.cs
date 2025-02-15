@@ -65,7 +65,7 @@ namespace ZeroRedact
         }
 
         // Technically the same as the IPv6 redaction
-        private unsafe string CreateShowLastByteRedaction(ReadOnlySpan<char> macAddress, char redactionCharacter)
+        private static unsafe string CreateShowLastByteRedaction(ReadOnlySpan<char> macAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(macAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
