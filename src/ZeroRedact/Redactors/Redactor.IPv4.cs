@@ -64,7 +64,7 @@ namespace ZeroRedact
             }
         }
 
-        private unsafe string CreateShowLastOctetRedaction(ReadOnlySpan<char> ipv4Address, char redactionCharacter)
+        private static unsafe string CreateShowLastOctetRedaction(ReadOnlySpan<char> ipv4Address, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(ipv4Address);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
