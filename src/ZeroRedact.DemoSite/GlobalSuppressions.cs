@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Performance", "HAA0502:Explicit new reference type allocation", Justification = "Doesn't matter for demo site.")]
+[assembly: SuppressMessage("Performance", "HAA0301:Closure Allocation Source", Justification = "Doesn't matter for demo site.")]
