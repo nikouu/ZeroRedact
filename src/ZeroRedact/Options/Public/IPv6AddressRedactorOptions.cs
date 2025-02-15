@@ -1,7 +1,7 @@
 ﻿namespace ZeroRedact
 {
     /// <summary>
-    /// IPv6 redactor options.
+    /// IPv6 address redactor options.
     /// </summary>
     public readonly struct IPv6AddressRedactorOptions
     {

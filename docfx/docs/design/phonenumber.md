@@ -21,4 +21,3 @@ The decision making to include a redaction type:
 	- [Microsoft - Globalization for telephone number formats](https://learn.microsoft.com/en-us/globalization/locale/telephone-numbers)
 	- [Microsoft - Canonical address format for phone numbers](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc728034(v=ws.10)?redirectedfrom=MSDN)
 	- [Wikipedia - National conventions for writing telephone numbers](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers) 
-	- 

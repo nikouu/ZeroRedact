@@ -24,7 +24,7 @@
         Full,
 
         /// <summary>
-        /// The local-part/username is redacted.
+        /// The username is redacted.
         /// </summary>
         /// <remarks>Example: "email@example.com" becomes "*****@example.com"</remarks>
         Username,

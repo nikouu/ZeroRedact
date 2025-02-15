@@ -24,7 +24,7 @@ namespace ZeroRedact
         /// Initializes a new instance of the <see cref="Redactor"/> class with the specified options.
         /// </summary>
         /// <param name="options">The options to configure the redactor.</param>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="options"/> has a less than zero <see cref="RedactorOptions.FixedLengthSize"/>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="options"/> has a less than one <see cref="RedactorOptions.FixedLengthSize"/>.</exception>
         public Redactor(RedactorOptions options)
         {
             ArgumentOutOfRangeException.ThrowIfLessThan(options.FixedLengthSize, 1);

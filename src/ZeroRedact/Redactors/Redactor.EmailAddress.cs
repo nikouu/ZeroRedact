@@ -213,7 +213,7 @@ namespace ZeroRedact
 
                 outputBuffer[..finalAtIndex].Fill(state.RedactionCharacter);
                 outputBuffer[0] = username[0];
-                outputBuffer[username.Length - 1] = username[username.Length - 1];
+                outputBuffer[username.Length - 1] = username[^1];
                 domain.CopyTo(outputBuffer[finalAtIndex..]);
             });
 
