@@ -17,8 +17,8 @@
 		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Description>A fast, simple, zero allocation redacting library for .NET, with no extra dependencies.</Description>
-		<Summary>A fast, simple, zero allocation redacting library for .NET, with no extra dependencies.</Summary>
+		<Description>A fast, simple, zero allocation redacting library for .NET, with no non-Microsoft dependencies.</Description>
+		<Summary>A fast, simple, zero allocation redacting library for .NET, with no non-Microsoft dependencies.</Summary>
 		<RepositoryUrl>https://github.com/nikouu/ZeroRedact</RepositoryUrl>
 		<PackageTags>redact redacting mask masking security</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
