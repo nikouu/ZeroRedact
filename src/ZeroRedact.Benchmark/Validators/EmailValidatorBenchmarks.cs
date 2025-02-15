@@ -24,7 +24,7 @@ namespace ZeroRedact.Benchmark.Validators
         [Arguments(".email@example.com")]
         [Arguments("email@example")]
         [Arguments("email.@example.com")]
-        public static bool ValidateEmailAddresses(string emailAddress)
+        public bool ValidateEmailAddresses(string emailAddress)
         {
             return EmailAddressValidator.IsValidForRedaction(emailAddress.AsSpan());
         }

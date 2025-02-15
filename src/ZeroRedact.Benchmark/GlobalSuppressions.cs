@@ -11,3 +11,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Style", "IDE0057:Use range operator", Justification = "Comparing different methods.", Scope = "namespaceanddescendants", Target = "~T:ZeroRedact.Benchmark.SimpleRedactionBenchmarks")]
 [assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "Keeping non-static as it compare to a non-static method elsewhere.", Scope = "namespaceanddescendants", Target = "~T:ZeroRedact.Benchmark.SimpleRedactionBenchmarks")]
 [assembly: SuppressMessage("Performance", "HAA0502:Explicit new reference type allocation", Justification = "Benchmark setup.")]
+[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "Benchmarks must be instance methods.", Scope = "member", Target = "~M:ZeroRedact.Benchmark.Validators.EmailValidatorBenchmarks.ValidateEmailAddresses(System.String)~System.Boolean")]

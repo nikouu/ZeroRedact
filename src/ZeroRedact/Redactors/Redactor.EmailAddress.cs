@@ -44,7 +44,7 @@ namespace ZeroRedact
             return RedactEmailInternal(emailAddress, internalOptions, skipValidation);
         }
 
-        private string RedactEmailInternal(ReadOnlySpan<char> emailAddress, InternalEmailAddressRedactorOptions options, bool skipValidation)
+        private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, InternalEmailAddressRedactorOptions options, bool skipValidation)
         {
             try
             {
@@ -80,7 +80,7 @@ namespace ZeroRedact
             }
         }
 
-        private unsafe string CreateFullEmailRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateFullEmailRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -106,7 +106,7 @@ namespace ZeroRedact
             return result;
         }
 
-        private unsafe string CreateUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -131,7 +131,7 @@ namespace ZeroRedact
             return result;
         }
 
-        private unsafe string CreateHalfUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateHalfUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -159,7 +159,7 @@ namespace ZeroRedact
 
             return result;
         }
-        private unsafe string CreateMiddleRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateMiddleRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -191,7 +191,7 @@ namespace ZeroRedact
             return result;
         }
 
-        private unsafe string CreateMostUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateMostUsernameRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -220,7 +220,7 @@ namespace ZeroRedact
             return result;
         }
 
-        private unsafe string CreateShowFirstCharactersRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
+        private static unsafe string CreateShowFirstCharactersRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(emailAddress);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
