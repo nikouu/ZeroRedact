@@ -66,7 +66,7 @@ namespace ZeroRedact
             }
         }
 
-        private unsafe string CreateShowLastSixLastFourRedaction(ReadOnlySpan<char> creditCardNumber, char redactionCharacter)
+        private static unsafe string CreateShowLastSixLastFourRedaction(ReadOnlySpan<char> creditCardNumber, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(creditCardNumber);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
