@@ -33,7 +33,7 @@ namespace ZeroRedact
             return RedactPhoneNumberInternal(phoneNumber, internalOptions);
         }
 
-        private string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, InternalPhoneNumberRedactorOptions options)
+        private static string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, InternalPhoneNumberRedactorOptions options)
         {
             try
             {

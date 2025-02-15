@@ -35,7 +35,7 @@ namespace ZeroRedact
             return RedactIPv4Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, InternalIPv4AddressRedactorOptions options)
+        private static string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, InternalIPv4AddressRedactorOptions options)
         {
             try
             {

@@ -34,7 +34,7 @@ namespace ZeroRedact
             return RedactStringInternal(value, internalOptions);
         }
 
-        private string RedactStringInternal(ReadOnlySpan<char> value, InternalStringRedactorOptions options)
+        private static string RedactStringInternal(ReadOnlySpan<char> value, InternalStringRedactorOptions options)
         {
             try
             {

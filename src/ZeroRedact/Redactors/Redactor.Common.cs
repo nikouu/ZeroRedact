@@ -55,7 +55,7 @@ namespace ZeroRedact
             return CreateAllRedaction(character, length);
         }
 
-        private unsafe string CreateFullRedactionWithSymbols(ReadOnlySpan<char> input, char redactionCharacter)
+        private static unsafe string CreateFullRedactionWithSymbols(ReadOnlySpan<char> input, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(input);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
@@ -86,7 +86,7 @@ namespace ZeroRedact
             return result;
         }
 
-        private unsafe string CreateShowLastFourDigitRedaction(ReadOnlySpan<char> input, char redactionCharacter)
+        private static unsafe string CreateShowLastFourDigitRedaction(ReadOnlySpan<char> input, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(input);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);

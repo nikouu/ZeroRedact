@@ -35,7 +35,7 @@ namespace ZeroRedact
             return RedactMACAddressInternal(macAddress, internalOptions);
         }
 
-        private string RedactMACAddressInternal(ReadOnlySpan<char> macAddress, InternalMACAddressRedactorOptions options)
+        private static string RedactMACAddressInternal(ReadOnlySpan<char> macAddress, InternalMACAddressRedactorOptions options)
         {
             try
             {

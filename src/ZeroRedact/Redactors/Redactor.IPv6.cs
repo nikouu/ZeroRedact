@@ -35,7 +35,7 @@ namespace ZeroRedact
             return RedactIPv6Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, InternalIPv6AddressRedactorOptions options)
+        private static string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, InternalIPv6AddressRedactorOptions options)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace ZeroRedact
         }
 
         // Technically the same as the MAC address redaction
-        private unsafe string CreateShowLastQuartetRedaction(ReadOnlySpan<char> ipv6Address, char redactionCharacter)
+        private static unsafe string CreateShowLastQuartetRedaction(ReadOnlySpan<char> ipv6Address, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(ipv6Address);
             var valuePtr = (IntPtr)Unsafe.AsPointer(ref valueRef);
