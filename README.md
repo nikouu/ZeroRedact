@@ -158,7 +158,7 @@ However exceptions can occur by passing invalid options to the redactor, whether
 
 ## No external dependencies
 
-Keeps project light, easier to maintain, easier to get approved by having Microsoft-only packages, less supply chain issues.
+Keeps project light, easier to maintain, easier to get approved by having Microsoft-only packages for less supply chain issues. Read more from Microsoft via [Best practices for a secure software supply chain](https://learn.microsoft.com/en-us/nuget/concepts/security-best-practices).
 
 ## Microsoft.Extensions.Compliance.Redaction
 

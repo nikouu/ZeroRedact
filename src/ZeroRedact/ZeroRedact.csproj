@@ -10,12 +10,13 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>Nikouu.ZeroRedact</PackageId>
-		<Version>2.4.1</Version>
+		<Version>2.4.2</Version>
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
 		<Copyright>Copyright (c) Niko Uusitalo 2024</Copyright>
 		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageIcon>Icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>A fast, simple, zero allocation redacting library for .NET, with no non-Microsoft dependencies.</Description>
 		<Summary>A fast, simple, zero allocation redacting library for .NET, with no non-Microsoft dependencies.</Summary>
@@ -40,6 +41,7 @@
 
 	<ItemGroup>
 		<None Include="../../README.md" Pack="true" PackagePath="\" />
+		<None Include="Icon.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
