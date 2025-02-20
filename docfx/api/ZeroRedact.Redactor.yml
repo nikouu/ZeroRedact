@@ -141,7 +141,7 @@ items:
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: Thrown when <code class="paramref">options</code> has a lass than 0 <xref href="ZeroRedact.RedactorOptions.FixedLengthSize" data-throw-if-not-resolved="false"></xref>.
+    description: Thrown when <code class="paramref">options</code> has a less than one <xref href="ZeroRedact.RedactorOptions.FixedLengthSize" data-throw-if-not-resolved="false"></xref>.
   nameWithType.vb: Redactor.New(RedactorOptions)
   fullName.vb: ZeroRedact.Redactor.New(ZeroRedact.RedactorOptions)
   name.vb: New(RedactorOptions)

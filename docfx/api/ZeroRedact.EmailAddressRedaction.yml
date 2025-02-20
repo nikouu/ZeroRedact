@@ -145,7 +145,7 @@ items:
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
-  summary: The local-part/username is redacted.
+  summary: The username is redacted.
   remarks: 'Example: "email@example.com" becomes "*****@example.com"'
   example: []
   syntax:

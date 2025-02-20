@@ -41,6 +41,8 @@
       "_appTitle": "ZeroRedact",
       "_enableSearch": true,
       "_disableContribution": true,
+      "_appLogoPath": "images/Icon.png",
+      "_appFaviconPath": "images/FavIcon.png",
       "pdf": true
     }
   }

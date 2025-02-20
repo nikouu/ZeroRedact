@@ -27,7 +27,7 @@ items:
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
-  summary: IPV4 redactor options.
+  summary: IPV4 address redactor options.
   example: []
   syntax:
     content: public readonly struct IPv4AddressRedactorOptions
