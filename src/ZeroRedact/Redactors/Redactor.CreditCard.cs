@@ -29,13 +29,13 @@ namespace ZeroRedact
             return RedactCreditCardInternal(creditCardNumber, internalOptions);
         }
 
-        private string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, CreditCardRedactorOptions options)
+        private string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, in CreditCardRedactorOptions options)
         {
             var internalOptions = new InternalCreditCardRedactorOptions(_baseRedactorOptions, options);
             return RedactCreditCardInternal(creditCardNumber, internalOptions);
         }
 
-        internal static string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, InternalCreditCardRedactorOptions options)
+        internal static string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, in InternalCreditCardRedactorOptions options)
         {
             try
             {

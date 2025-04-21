@@ -27,13 +27,13 @@ namespace ZeroRedact
             return RedactPhoneNumberInternal(phoneNumber, internalOptions);
         }
 
-        private string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, PhoneNumberRedactorOptions redactorOptions)
+        private string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, in PhoneNumberRedactorOptions redactorOptions)
         {
             var internalOptions = new InternalPhoneNumberRedactorOptions(_baseRedactorOptions, redactorOptions);
             return RedactPhoneNumberInternal(phoneNumber, internalOptions);
         }
 
-        private static string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, InternalPhoneNumberRedactorOptions options)
+        private static string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, in InternalPhoneNumberRedactorOptions options)
         {
             try
             {

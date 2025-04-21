@@ -27,13 +27,13 @@ namespace ZeroRedact
             return RedactDateInternal(date, internalOptions);
         }
 
-        private string RedactDateInternal(DateOnly date, DateRedactorOptions options)
+        private string RedactDateInternal(DateOnly date, in DateRedactorOptions options)
         {
             var internalOptions = new InternalDateRedactorOptions(_baseRedactorOptions, options);
             return RedactDateInternal(date, internalOptions);
         }
 
-        private string RedactDateInternal(DateOnly date, InternalDateRedactorOptions options)
+        private string RedactDateInternal(DateOnly date, in InternalDateRedactorOptions options)
         {
             try
             {

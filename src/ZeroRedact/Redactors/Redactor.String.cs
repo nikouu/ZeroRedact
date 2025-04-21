@@ -28,13 +28,13 @@ namespace ZeroRedact
             return RedactStringInternal(value, internalOptions);
         }
 
-        private string RedactStringInternal(ReadOnlySpan<char> value, StringRedactorOptions options)
+        private string RedactStringInternal(ReadOnlySpan<char> value, in StringRedactorOptions options)
         {
             var internalOptions = new InternalStringRedactorOptions(_baseRedactorOptions, options);
             return RedactStringInternal(value, internalOptions);
         }
 
-        private static string RedactStringInternal(ReadOnlySpan<char> value, InternalStringRedactorOptions options)
+        private static string RedactStringInternal(ReadOnlySpan<char> value, in InternalStringRedactorOptions options)
         {
             try
             {

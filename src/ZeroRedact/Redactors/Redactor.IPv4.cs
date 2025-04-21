@@ -29,13 +29,13 @@ namespace ZeroRedact
             return RedactIPv4Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, IPv4AddressRedactorOptions redactorOptions)
+        private string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, in IPv4AddressRedactorOptions redactorOptions)
         {
             var internalOptions = new InternalIPv4AddressRedactorOptions(_baseRedactorOptions, redactorOptions);
             return RedactIPv4Internal(ipAddress, internalOptions);
         }
 
-        private static string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, InternalIPv4AddressRedactorOptions options)
+        private static string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, in InternalIPv4AddressRedactorOptions options)
         {
             try
             {

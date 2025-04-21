@@ -29,13 +29,13 @@ namespace ZeroRedact
             return RedactIPv6Internal(ipAddress, internalOptions);
         }
 
-        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, IPv6AddressRedactorOptions options)
+        private string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, in IPv6AddressRedactorOptions options)
         {
             var internalOptions = new InternalIPv6AddressRedactorOptions(_baseRedactorOptions, options);
             return RedactIPv6Internal(ipAddress, internalOptions);
         }
 
-        private static string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, InternalIPv6AddressRedactorOptions options)
+        private static string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, in InternalIPv6AddressRedactorOptions options)
         {
             try
             {

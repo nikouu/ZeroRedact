@@ -38,13 +38,13 @@ namespace ZeroRedact
             return RedactEmailInternal(emailAddress, internalOptions, skipValidation);
         }
 
-        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress, EmailAddressRedactorOptions options, bool skipValidation = false)
+        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress, in EmailAddressRedactorOptions options, bool skipValidation = false)
         {
             var internalOptions = new InternalEmailAddressRedactorOptions(_baseRedactorOptions, options);
             return RedactEmailInternal(emailAddress, internalOptions, skipValidation);
         }
 
-        private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, InternalEmailAddressRedactorOptions options, bool skipValidation)
+        private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, in InternalEmailAddressRedactorOptions options, bool skipValidation)
         {
             try
             {
