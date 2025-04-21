@@ -62,7 +62,7 @@ namespace ZeroRedact
             var formatProvider = CultureInfo.CurrentCulture;
             var dateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
 
-            Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold]; //todo can the zeroing be dodged since we know the space we're going to be writing?
+            Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold];
 
             _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, formatProvider);
 
@@ -75,7 +75,7 @@ namespace ZeroRedact
             var formatProvider = CultureInfo.CurrentCulture;
             var dateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
 
-            Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold]; //todo can the zeroing be dodged since we know the space we're going to be writing?
+            Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold];
 
             _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, formatProvider);
 
@@ -92,7 +92,6 @@ namespace ZeroRedact
             return result.ToString();
         }
 
-        // todo improve this since it feels "magic number"y with formatCharacters
         private string CreateDateRedaction(DateOnly date, ReadOnlySpan<char> formatCharacters, char redactionCharacter)
         {
             var formatProvider = CultureInfo.CurrentCulture;

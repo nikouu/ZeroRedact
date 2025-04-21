@@ -1,6 +1,5 @@
 ﻿namespace ZeroRedact
 {
-    // TODO: Review static data locality of this class
     internal static class Constants
     {
         internal const int StackAllocThreshold = 128;

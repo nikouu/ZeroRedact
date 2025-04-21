@@ -235,7 +235,6 @@ namespace ZeroRedact
             {
                 var inputEmailAddress = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
-                // todo: return to this as there is overwriting of the buffer
                 outputBuffer.Fill('*');
 
                 // first characters
