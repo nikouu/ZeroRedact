@@ -78,7 +78,7 @@ namespace ZeroRedact
 
             var result = string.Create(macAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var lastColon = input.LastIndexOf(':');
 

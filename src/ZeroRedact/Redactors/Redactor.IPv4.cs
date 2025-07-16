@@ -77,7 +77,7 @@ namespace ZeroRedact
 
             var result = string.Create(ipv4Address.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var lastDot = input.LastIndexOf('.');
 

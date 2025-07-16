@@ -79,17 +79,17 @@ namespace ZeroRedact
 
             var result = string.Create(creditCardNumber.Length, redactorState, static (outputBuffer, state) =>
             {
-                var inputSpan = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 // Deal with first six
                 var firstSixCount = 0;
                 var firstSixFinalIndex = 0;
-                for (int i = 0; i < inputSpan.Length; i++)
+                for (int i = 0; i < input.Length; i++)
                 {
-                    if (char.IsDigit(inputSpan[i]))
+                    if (char.IsDigit(input[i]))
                     {
                         firstSixCount++;
-                        outputBuffer[i] = inputSpan[i];
+                        outputBuffer[i] = input[i];
                         if (firstSixCount == 6)
                         {
                             firstSixFinalIndex = i;
@@ -98,19 +98,19 @@ namespace ZeroRedact
                     }
                     else
                     {
-                        outputBuffer[i] = inputSpan[i];
+                        outputBuffer[i] = input[i];
                     }
                 }
 
                 // Deal with last four
                 var lastFourCount = 0;
                 var lastFourFinalIndex = 0;
-                for (int i = inputSpan.Length - 1; i >= 0; i--)
+                for (int i = input.Length - 1; i >= 0; i--)
                 {
-                    if (char.IsDigit(inputSpan[i]))
+                    if (char.IsDigit(input[i]))
                     {
                         lastFourCount++;
-                        outputBuffer[i] = inputSpan[i];
+                        outputBuffer[i] = input[i];
                         if (lastFourCount == 4)
                         {
                             lastFourFinalIndex = i;
@@ -119,20 +119,20 @@ namespace ZeroRedact
                     }
                     else
                     {
-                        outputBuffer[i] = inputSpan[i];
+                        outputBuffer[i] = input[i];
                     }
                 }
 
                 // Deal with remaining in the middle
                 for (int i = firstSixFinalIndex + 1; i < lastFourFinalIndex; i++)
                 {
-                    if (char.IsDigit(inputSpan[i]))
+                    if (char.IsDigit(input[i]))
                     {
                         outputBuffer[i] = state.RedactionCharacter;
                     }
                     else
                     {
-                        outputBuffer[i] = inputSpan[i];
+                        outputBuffer[i] = input[i];
                     }
                 }
 

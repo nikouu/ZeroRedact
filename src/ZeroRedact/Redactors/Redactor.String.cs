@@ -73,11 +73,11 @@ namespace ZeroRedact
 
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
-                var inputSpan = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                var halfLength = (int)Math.Ceiling(inputSpan.Length / 2d);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var halfLength = (int)Math.Ceiling(input.Length / 2d);
 
                 outputBuffer[..halfLength].Fill(state.RedactionCharacter);
-                inputSpan[halfLength..].CopyTo(outputBuffer[halfLength..]);
+                input[halfLength..].CopyTo(outputBuffer[halfLength..]);
             });
 
             return result;
@@ -96,13 +96,13 @@ namespace ZeroRedact
 
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
-                var inputSpan = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                var halfLength = (int)Math.Ceiling(inputSpan.Length / 2d);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var halfLength = (int)Math.Ceiling(input.Length / 2d);
 
                 var secondHalfLength = outputBuffer.Length - halfLength;
 
                 outputBuffer[secondHalfLength..].Fill(state.RedactionCharacter);
-                inputSpan[..secondHalfLength].CopyTo(outputBuffer[..secondHalfLength]);
+                input[..secondHalfLength].CopyTo(outputBuffer[..secondHalfLength]);
             });
 
             return result;
@@ -121,7 +121,7 @@ namespace ZeroRedact
 
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 outputBuffer.Fill(state.RedactionCharacter);
                 outputBuffer[0] = input[0];

@@ -93,7 +93,7 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var finalDot = input.LastIndexOf('.');
                 var finalAtIndex = input.LastIndexOf('@');
@@ -119,7 +119,7 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var finalAtIndex = input.LastIndexOf('@');
                 var domain = input[finalAtIndex..];
@@ -144,7 +144,7 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var finalAtIndex = input.LastIndexOf('@');
                 var username = input[..finalAtIndex];
@@ -172,7 +172,7 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var input = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 var finalAtIndex = input.LastIndexOf('@');
                 var username = input[..finalAtIndex];
@@ -204,11 +204,11 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var inputEmailAddress = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
-                var finalAtIndex = inputEmailAddress.LastIndexOf('@');
-                var username = inputEmailAddress[..finalAtIndex];
-                var domain = inputEmailAddress[finalAtIndex..];
+                var finalAtIndex = input.LastIndexOf('@');
+                var username = input[..finalAtIndex];
+                var domain = input[finalAtIndex..];
 
 
                 outputBuffer[..finalAtIndex].Fill(state.RedactionCharacter);
@@ -233,19 +233,19 @@ namespace ZeroRedact
 
             var result = string.Create(emailAddress.Length, redactorState, static (outputBuffer, state) =>
             {
-                var inputEmailAddress = new Span<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+                var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
                 outputBuffer.Fill('*');
 
                 // first characters
-                var finalAtIndex = inputEmailAddress.LastIndexOf('@');
-                outputBuffer[0] = inputEmailAddress[0];
-                outputBuffer[finalAtIndex] = inputEmailAddress[finalAtIndex];
-                outputBuffer[finalAtIndex + 1] = inputEmailAddress[finalAtIndex + 1];
+                var finalAtIndex = input.LastIndexOf('@');
+                outputBuffer[0] = input[0];
+                outputBuffer[finalAtIndex] = input[finalAtIndex];
+                outputBuffer[finalAtIndex + 1] = input[finalAtIndex + 1];
 
                 // domain
-                var finalDot = inputEmailAddress.LastIndexOf('.');
-                inputEmailAddress[finalDot..].CopyTo(outputBuffer[finalDot..]);
+                var finalDot = input.LastIndexOf('.');
+                input[finalDot..].CopyTo(outputBuffer[finalDot..]);
             });
 
             return result;
