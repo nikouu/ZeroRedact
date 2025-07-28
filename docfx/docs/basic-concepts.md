@@ -12,7 +12,7 @@ This similar, but different to *masking*, [via AWS](https://aws.amazon.com/what-
 >Data masking creates fake versions of an organization's data by changing confidential information. Various techniques are used to create realistic and structurally similar changes. Once data is masked, you can’t reverse engineer or track back to the original data values without access to the original dataset.
 
 A simple example for masking would be taking an address, and replacing each part (street number, suburb, etc) with a different but valid piece of data. The address is still an address structure and valid looking, but now isn't the PII it was before.
-For more in depth, feel free to read: [Data Masking vs. Data Redaction: Key Differences and Uses by Graham Thompson at Privacy Dynamics](https://www.privacydynamics.io/post/data-masking-vs-data-redaction-key-differences-and-uses/)
+For more in depth, feel free to read: [Data Masking vs. Data Redaction: Key Differences and Uses by Graham Thompson at Privacy Dynamics](https://web.archive.org/web/20241203000821/https://www.privacydynamics.io/post/data-masking-vs-data-redaction-key-differences-and-uses/) (Wayback Machine).
 
 ## Configuration 
 
