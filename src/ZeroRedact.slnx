@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/" />
+  <Project Path="ZeroRedact.Benchmark/ZeroRedact.Benchmark.csproj" />
+  <Project Path="ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj" />
+  <Project Path="ZeroRedact.UnitTest/ZeroRedact.UnitTest.csproj" />
+  <Project Path="ZeroRedact/ZeroRedact.csproj" />
+</Solution>
