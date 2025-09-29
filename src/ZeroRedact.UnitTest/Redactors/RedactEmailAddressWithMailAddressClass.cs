@@ -20,16 +20,12 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "******************************" };
             yield return new object[] { "Joe Smith <email@example.com>", "*****************" };
             yield return new object[] { "email.@example.com", "******************" };
-            yield return new object[] { "email..email@example.com", "************************" };
             yield return new object[] { "email@example.com (Joe Smith)", "*****************" };
-            yield return new object[] { "email@example", "*************" };
             yield return new object[] { "email@-example.com", "******************" };
             yield return new object[] { "email@[123.123.123.123]", "***********************" };
             yield return new object[] { "email@123.123.123.123", "*********************" };
             yield return new object[] { "email@111.222.333.44444", "***********************" };
-            yield return new object[] { "email@example..com", "******************" };
             yield return new object[] { "\"email\"@example.com", "*******************" };
-            yield return new object[] { "Abc..123@example.com", "********************" };
             yield return new object[] { "just”not”right@example.com", "**************************" };
         }
 
@@ -48,16 +44,12 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "********" };
             yield return new object[] { "Joe Smith <email@example.com>", "********" };
             yield return new object[] { "email.@example.com", "********" };
-            yield return new object[] { "email..email@example.com", "********" };
             yield return new object[] { "email@example.com (Joe Smith)", "********" };
-            yield return new object[] { "email@example", "********" };
             yield return new object[] { "email@-example.com", "********" };
             yield return new object[] { "email@[123.123.123.123]", "********" };
             yield return new object[] { "email@123.123.123.123", "********" };
             yield return new object[] { "email@111.222.333.44444", "********" };
-            yield return new object[] { "email@example..com", "********" };
             yield return new object[] { "\"email\"@example.com", "********" };
-            yield return new object[] { "Abc..123@example.com", "********" };
             yield return new object[] { "just”not”right@example.com", "********" };
         }
 
@@ -76,45 +68,13 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "******************@*******.***" };
             yield return new object[] { "Joe Smith <email@example.com>", "*****@*******.***" };
             yield return new object[] { "email.@example.com", "******@*******.***" };
-            yield return new object[] { "email..email@example.com", "************@*******.***" };
             yield return new object[] { "email@example.com (Joe Smith)", "*****@*******.***" };
-            yield return new object[] { "email@example", "********" };
             yield return new object[] { "email@-example.com", "*****@********.***" };
             yield return new object[] { "email@[123.123.123.123]", "*****@************.****" };
             yield return new object[] { "email@123.123.123.123", "*****@***********.***" };
             yield return new object[] { "email@111.222.333.44444", "*****@***********.*****" };
-            yield return new object[] { "email@example..com", "*****@********.***" };
             yield return new object[] { "\"email\"@example.com", "*******@*******.***" };
-            yield return new object[] { "Abc..123@example.com", "********@*******.***" };
             yield return new object[] { "just”not”right@example.com", "**************@*******.***" };
-        }
-
-        private static IEnumerable<object[]> OnlyAtSymbol_TestData()
-        {
-            yield return new object[] { "email@example.com", "*****@***********" };
-            yield return new object[] { "firstname.lastname@example.com", "******************@***********" };
-            yield return new object[] { "email@subdomain.example.com", "*****@*********************" };
-            yield return new object[] { "firstname+lastname@example.com", "******************@***********" };
-            yield return new object[] { "1234567890@example.com", "**********@***********" };
-            yield return new object[] { "email@example-one.com", "*****@***************" };
-            yield return new object[] { "_______@example.com", "*******@***********" };
-            yield return new object[] { "email@example.name", "*****@************" };
-            yield return new object[] { "email@example.museum", "*****@**************" };
-            yield return new object[] { "email@example.co.jp", "*****@*************" };
-            yield return new object[] { "firstname-lastname@example.com", "******************@***********" };
-            yield return new object[] { "Joe Smith <email@example.com>", "*****@***********" };
-            yield return new object[] { "email.@example.com", "******@***********" };
-            yield return new object[] { "email..email@example.com", "************@***********" };
-            yield return new object[] { "email@example.com (Joe Smith)", "*****@***********" };
-            yield return new object[] { "email@example", "*****@*******" };
-            yield return new object[] { "email@-example.com", "*****@************" };
-            yield return new object[] { "email@[123.123.123.123]", "*****@*****************" };
-            yield return new object[] { "email@123.123.123.123", "*****@***************" };
-            yield return new object[] { "email@111.222.333.44444", "*****@*****************" };
-            yield return new object[] { "email@example..com", "*****@************" };
-            yield return new object[] { "\"email\"@example.com", "*******@***********" };
-            yield return new object[] { "Abc..123@example.com", "********@***********" };
-            yield return new object[] { "just”not”right@example.com", "**************@***********" };
         }
 
         private static IEnumerable<object[]> Username_TestData()
@@ -132,45 +92,13 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "******************@example.com" };
             yield return new object[] { "Joe Smith <email@example.com>", "*****@example.com" };
             yield return new object[] { "email.@example.com", "******@example.com" };
-            yield return new object[] { "email..email@example.com", "************@example.com" };
             yield return new object[] { "email@example.com (Joe Smith)", "*****@example.com" };
-            yield return new object[] { "email@example", "*****@example" };
             yield return new object[] { "email@-example.com", "*****@-example.com" };
             yield return new object[] { "email@[123.123.123.123]", "*****@[123.123.123.123]" };
             yield return new object[] { "email@123.123.123.123", "*****@123.123.123.123" };
             yield return new object[] { "email@111.222.333.44444", "*****@111.222.333.44444" };
-            yield return new object[] { "email@example..com", "*****@example..com" };
             yield return new object[] { "\"email\"@example.com", "*******@example.com" };
-            yield return new object[] { "Abc..123@example.com", "********@example.com" };
             yield return new object[] { "just”not”right@example.com", "**************@example.com" };
-        }
-
-        private static IEnumerable<object[]> Domain_TestData()
-        {
-            yield return new object[] { "email@example.com", "email@***********" };
-            yield return new object[] { "firstname.lastname@example.com", "firstname.lastname@***********" };
-            yield return new object[] { "email@subdomain.example.com", "email@*********************" };
-            yield return new object[] { "firstname+lastname@example.com", "firstname+lastname@***********" };
-            yield return new object[] { "1234567890@example.com", "1234567890@***********" };
-            yield return new object[] { "email@example-one.com", "email@***************" };
-            yield return new object[] { "_______@example.com", "_______@***********" };
-            yield return new object[] { "email@example.name", "email@************" };
-            yield return new object[] { "email@example.museum", "email@**************" };
-            yield return new object[] { "email@example.co.jp", "email@*************" };
-            yield return new object[] { "firstname-lastname@example.com", "firstname-lastname@***********" };
-            yield return new object[] { "Joe Smith <email@example.com>", "email@***********" };
-            yield return new object[] { "email.@example.com", "email.@***********" };
-            yield return new object[] { "email..email@example.com", "email..email@***********" };
-            yield return new object[] { "email@example.com (Joe Smith)", "email@***********" };
-            yield return new object[] { "email@example", "email@*******" };
-            yield return new object[] { "email@-example.com", "email@************" };
-            yield return new object[] { "email@[123.123.123.123]", "email@*****************" };
-            yield return new object[] { "email@123.123.123.123", "email@***************" };
-            yield return new object[] { "email@111.222.333.44444", "email@*****************" };
-            yield return new object[] { "email@example..com", "email@************" };
-            yield return new object[] { "\"email\"@example.com", "\"email\"@***********" };
-            yield return new object[] { "Abc..123@example.com", "Abc..123@***********" };
-            yield return new object[] { "just”not”right@example.com", "just”not”right@***********" };
         }
 
         private static IEnumerable<object[]> HalfUsername_TestData()
@@ -188,16 +116,12 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "*********-lastname@example.com" };
             yield return new object[] { "Joe Smith <email@example.com>", "***il@example.com" };
             yield return new object[] { "email.@example.com", "***il.@example.com" };
-            yield return new object[] { "email..email@example.com", "******.email@example.com" };
             yield return new object[] { "email@example.com (Joe Smith)", "***il@example.com" };
-            yield return new object[] { "email@example", "***il@example" };
             yield return new object[] { "email@-example.com", "***il@-example.com" };
             yield return new object[] { "email@[123.123.123.123]", "***il@[123.123.123.123]" };
             yield return new object[] { "email@123.123.123.123", "***il@123.123.123.123" };
             yield return new object[] { "email@111.222.333.44444", "***il@111.222.333.44444" };
-            yield return new object[] { "email@example..com", "***il@example..com" };
             yield return new object[] { "\"email\"@example.com", "****il\"@example.com" };
-            yield return new object[] { "Abc..123@example.com", "****.123@example.com" };
             yield return new object[] { "just”not”right@example.com", "*******t”right@example.com" };
         }
 
@@ -216,16 +140,12 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "firstname***************le.com" };
             yield return new object[] { "Joe Smith <email@example.com>", "em*********le.com" };
             yield return new object[] { "email.@example.com", "ema*********le.com" };
-            yield return new object[] { "email..email@example.com", "email.************le.com" };
             yield return new object[] { "email@example.com (Joe Smith)", "em*********le.com" };
-            yield return new object[] { "email@example", "em*******mple" };
             yield return new object[] { "email@-example.com", "em**********le.com" };
             yield return new object[] { "email@[123.123.123.123]", "em************.123.123]" };
             yield return new object[] { "email@123.123.123.123", "em***********.123.123" };
             yield return new object[] { "email@111.222.333.44444", "em************333.44444" };
-            yield return new object[] { "email@example..com", "em**********e..com" };
             yield return new object[] { "\"email\"@example.com", "\"em**********le.com" };
-            yield return new object[] { "Abc..123@example.com", "Abc.**********le.com" };
             yield return new object[] { "just”not”right@example.com", "just”no*************le.com" };
         }
 
@@ -244,16 +164,12 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "f****************e@example.com" };
             yield return new object[] { "Joe Smith <email@example.com>", "e***l@example.com" };
             yield return new object[] { "email.@example.com", "e****.@example.com" };
-            yield return new object[] { "email..email@example.com", "e**********l@example.com" };
             yield return new object[] { "email@example.com (Joe Smith)", "e***l@example.com" };
-            yield return new object[] { "email@example", "e***l@example" };
             yield return new object[] { "email@-example.com", "e***l@-example.com" };
             yield return new object[] { "email@[123.123.123.123]", "e***l@[123.123.123.123]" };
             yield return new object[] { "email@123.123.123.123", "e***l@123.123.123.123" };
             yield return new object[] { "email@111.222.333.44444", "e***l@111.222.333.44444" };
-            yield return new object[] { "email@example..com", "e***l@example..com" };
             yield return new object[] { "\"email\"@example.com", "\"*****\"@example.com" };
-            yield return new object[] { "Abc..123@example.com", "A******3@example.com" };
             yield return new object[] { "just”not”right@example.com", "j************t@example.com" };
         }
 
@@ -272,19 +188,14 @@ namespace ZeroRedact.UnitTest.Redactors
             yield return new object[] { "firstname-lastname@example.com", "f*****************@e******.com" };
             yield return new object[] { "Joe Smith <email@example.com>", "e****@e******.com" };
             yield return new object[] { "email.@example.com", "e*****@e******.com" };
-            yield return new object[] { "email..email@example.com", "e***********@e******.com" };
             yield return new object[] { "email@example.com (Joe Smith)", "e****@e******.com" };
-            yield return new object[] { "email@example", "********" };
             yield return new object[] { "email@-example.com", "e****@-*******.com" };
             yield return new object[] { "email@[123.123.123.123]", "e****@[***********.123]" };
             yield return new object[] { "email@123.123.123.123", "e****@1**********.123" };
             yield return new object[] { "email@111.222.333.44444", "e****@1**********.44444" };
-            yield return new object[] { "email@example..com", "e****@e*******.com" };
             yield return new object[] { "\"email\"@example.com", "\"******@e******.com" };
-            yield return new object[] { "Abc..123@example.com", "A*******@e******.com" };
             yield return new object[] { "just”not”right@example.com", "j*************@e******.com" };
         }
-
 
         [TestMethod]
         [DynamicData(nameof(All_TestData), DynamicDataSourceType.Method)]

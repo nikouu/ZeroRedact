@@ -10,13 +10,19 @@
                 return false;
             }
 
-            var finalAtIndex = email.LastIndexOf('@');
             var finalDotIndex = email.LastIndexOf('.');
-
             if (finalDotIndex == -1)
             {
                 return false;
             }
+
+            var doubleDotIndex = email.IndexOf("..");
+            if (doubleDotIndex != -1)
+            {
+                return false;
+            }
+
+            var finalAtIndex = email.LastIndexOf('@');
 
             var username = email[..finalAtIndex];
             var domain = email[(finalAtIndex + 1)..]; // +1 to skip over the @ sign
