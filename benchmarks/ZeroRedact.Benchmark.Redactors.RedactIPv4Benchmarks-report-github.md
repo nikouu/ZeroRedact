@@ -1,20 +1,20 @@
 ```
 
-BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.6093/22H2/2022Update)
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.6332/22H2/2022Update)
 Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
-.NET SDK 9.0.301
-  [Host]     : .NET 8.0.18 (8.0.1825.31117), X64 RyuJIT AVX2
-  DefaultJob : .NET 8.0.18 (8.0.1825.31117), X64 RyuJIT AVX2
+.NET SDK 10.0.100-rc.1.25451.107
+  [Host]     : .NET 10.0.0 (10.0.25.45207), X64 RyuJIT AVX2
+  DefaultJob : .NET 10.0.0 (10.0.25.45207), X64 RyuJIT AVX2
 
 
 ```
 | Method                  | IPv4Input            | Mean     | Error    | StdDev   | Gen0   | Allocated |
 |------------------------ |--------------------- |---------:|---------:|---------:|-------:|----------:|
-| RedactIPv4_String       | 192.168.0.1:All      | 35.31 ns | 0.224 ns | 0.199 ns | 0.0114 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.168.0.1:All      | 31.86 ns | 0.143 ns | 0.127 ns | 0.0114 |      48 B |
-| RedactIPv4_String       | 192.1(...)ength [23] | 18.91 ns | 0.046 ns | 0.038 ns |      - |         - |
-| RedactIPv4_ReadOnlySpan | 192.1(...)ength [23] | 24.74 ns | 0.061 ns | 0.051 ns |      - |         - |
-| RedactIPv4_String       | 192.168.0.1:Full     | 33.81 ns | 0.136 ns | 0.121 ns | 0.0114 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.168.0.1:Full     | 37.29 ns | 0.102 ns | 0.085 ns | 0.0114 |      48 B |
-| RedactIPv4_String       | 192.1(...)Octet [25] | 36.65 ns | 0.226 ns | 0.189 ns | 0.0114 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.1(...)Octet [25] | 41.38 ns | 0.254 ns | 0.237 ns | 0.0114 |      48 B |
+| RedactIPv4_String       | 192.168.0.1:All      | 23.60 ns | 0.158 ns | 0.148 ns | 0.0115 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.168.0.1:All      | 23.84 ns | 0.084 ns | 0.070 ns | 0.0115 |      48 B |
+| RedactIPv4_String       | 192.1(...)ength [23] | 16.57 ns | 0.106 ns | 0.094 ns |      - |         - |
+| RedactIPv4_ReadOnlySpan | 192.1(...)ength [23] | 17.70 ns | 0.067 ns | 0.060 ns |      - |         - |
+| RedactIPv4_String       | 192.168.0.1:Full     | 31.38 ns | 0.121 ns | 0.101 ns | 0.0114 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.168.0.1:Full     | 30.41 ns | 0.115 ns | 0.102 ns | 0.0114 |      48 B |
+| RedactIPv4_String       | 192.1(...)Octet [25] | 32.20 ns | 0.215 ns | 0.201 ns | 0.0114 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.1(...)Octet [25] | 31.48 ns | 0.155 ns | 0.138 ns | 0.0114 |      48 B |
