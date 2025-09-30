@@ -1,4 +1,6 @@
 ﻿using PublicApiGenerator;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
 
 namespace ZeroRedact.UnitTest.PublicApi
 {
@@ -8,7 +10,17 @@ namespace ZeroRedact.UnitTest.PublicApi
         [TestMethod]
         public Task CheckForPublicApiChanges()
         {
-            var publicApi = typeof(Redactor).Assembly.GeneratePublicApi();
+            var assembly = typeof(Redactor).Assembly;
+            var options = new ApiGeneratorOptions
+            {
+                ExcludeAttributes =
+                [
+                    typeof(InternalsVisibleToAttribute).FullName!,
+                    typeof(TargetFrameworkAttribute).FullName!
+                ]
+            };
+
+            var publicApi = assembly.GeneratePublicApi(options);
 
             return Verifier.Verify(publicApi);
         }

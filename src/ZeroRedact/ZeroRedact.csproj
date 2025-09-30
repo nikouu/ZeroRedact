@@ -9,10 +9,10 @@
 
 	<PropertyGroup>
 		<PackageId>Nikouu.ZeroRedact</PackageId>
-		<Version>2.4.2</Version>
+		<Version>3.0.0</Version>
 		<Title>Nikouu.ZeroRedact</Title>
 		<Authors>Niko Uusitalo</Authors>
-		<Copyright>Copyright (c) Niko Uusitalo 2024</Copyright>
+		<Copyright>Copyright (c) Niko Uusitalo 2025</Copyright>
 		<PackageProjectUrl>https://nikouu.github.io/ZeroRedact</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageIcon>Icon.png</PackageIcon>
