@@ -2,7 +2,6 @@
 
 namespace ZeroRedact.Benchmark.Redactors
 {
-    [MemoryDiagnoser]
     public class RedactIPv4Benchmarks
     {
         private Redactor _redactor;

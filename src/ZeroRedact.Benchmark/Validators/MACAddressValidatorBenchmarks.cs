@@ -4,7 +4,6 @@ using ZeroRedact.Validators;
 
 namespace ZeroRedact.Benchmark.Validators
 {
-    [MemoryDiagnoser]
     public class MACAddressValidatorBenchmarks
     {
         [Benchmark]

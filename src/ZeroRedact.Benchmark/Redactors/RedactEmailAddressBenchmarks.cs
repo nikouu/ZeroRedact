@@ -2,7 +2,6 @@
 
 namespace ZeroRedact.Benchmark.Redactors
 {
-    [MemoryDiagnoser]
     public class RedactEmailAddressBenchmarks
     {
         private Redactor _redactor;

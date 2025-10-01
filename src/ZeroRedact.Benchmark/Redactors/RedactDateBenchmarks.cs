@@ -2,7 +2,6 @@
 
 namespace ZeroRedact.Benchmark.Redactors
 {
-    [MemoryDiagnoser]
     public class RedactDateBenchmarks
     {
         private Redactor _redactor;
