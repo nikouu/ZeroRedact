@@ -21,5 +21,9 @@ var u = redactor.RedactString("abcdefghijklmnopqrstuvwxyz", new StringRedactorOp
 Console.WriteLine(result);
 
 #if !DEBUG
-BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
+var config = DefaultConfig.Instance
+    .AddDiagnoser(MemoryDiagnoser.Default)
+    .AddExporter(BenchmarkDotNet.Exporters.Json.JsonExporter.Brief);
+
+BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args, config);
 #endif

@@ -2,7 +2,6 @@
 
 namespace ZeroRedact.Benchmark.Redactors
 {
-    [MemoryDiagnoser]
     public class RedactPhoneNumberBenchmarks
     {
         private Redactor _redactor;

@@ -3,8 +3,6 @@ using System.Text;
 
 namespace ZeroRedact.Benchmark
 {
-    [MemoryDiagnoser]
-
     public class SimpleRedactionBenchmarks
     {
         private Redactor _redactor;
