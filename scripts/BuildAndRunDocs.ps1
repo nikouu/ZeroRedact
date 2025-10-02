@@ -7,6 +7,11 @@ if (-not (Get-Command docfx -ErrorAction SilentlyContinue)) {
 $docsJsonPath = Resolve-Path "..\docfx\docfx.json"
 $apiFolderPath = Resolve-Path "..\docfx\api"
 
+Write-Host "Generating benchmark pages..."
+dotnet run GenerateBenchmarkPages.cs
+Write-Host "Generating benchmark pages complete."
+
+
 # Remove the /api folder and its contents
 # Gives a fresh API refresh each run
 Remove-Item -Path $apiFolderPath -Recurse -Force

@@ -406,7 +406,7 @@ string GenerateIndexMarkdown(List<(string name, string category, string displayN
     var content = new System.Text.StringBuilder();
     content.AppendLine("# Benchmarks");
     content.AppendLine();
-    content.AppendLine("Performance benchmarks for ZeroRedact across different versions. Each benchmark shows the mean duration (in nanoseconds) and memory allocation (in bytes) for various operations.");
+    content.AppendLine("Performance benchmarks for ZeroRedact across different versions. Each benchmark shows the mean duration and memory allocation for various operations.");
     content.AppendLine();
     
     if (redactors.Any())
@@ -437,7 +437,7 @@ string GenerateIndexMarkdown(List<(string name, string category, string displayN
     
     content.AppendLine("## About the Benchmarks");
     content.AppendLine();
-    content.AppendLine("These benchmarks are generated using [BenchmarkDotNet](https://benchmarkdotnet.org/) and track performance metrics across multiple versions of ZeroRedact. The charts display:");
+    content.AppendLine("These benchmarks are generated using [BenchmarkDotNet](https://benchmarkdotnet.org/). The charts display:");
     content.AppendLine();
     content.AppendLine("- **Duration Chart**: Shows the mean execution time in nanoseconds for each method across versions");
     content.AppendLine("- **Memory Chart**: Shows the bytes allocated per operation for each method across versions");
