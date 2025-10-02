@@ -1,0 +1,350 @@
+{
+   "Title":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks-20251002-105601",
+   "HostEnvironmentInfo":{
+      "BenchmarkDotNetCaption":"BenchmarkDotNet",
+      "BenchmarkDotNetVersion":"0.14.0",
+      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
+      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "PhysicalProcessorCount":1,
+      "PhysicalCoreCount":4,
+      "LogicalCoreCount":8,
+      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "Architecture":"X64",
+      "HasAttachedDebugger":false,
+      "HasRyuJit":true,
+      "Configuration":"RELEASE",
+      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "ChronometerFrequency":{
+         "Hertz":10000000
+      },
+      "HardwareTimerKind":"Unknown"
+   },
+   "Benchmarks":[
+      {
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=3000 0000 0000 04]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=3000 0000 0000 04",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"3000 0000 0000 04\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               12.607727944850922,12.596207857131958,12.619449198246002,12.591782212257385,12.68785446882248,12.686541676521301,12.642891705036163,12.599939107894897,12.604591250419617,12.610781192779541,12.642371654510498,12.668423354625702,12.59526014328003,12.6244455575943
+            ],
+            "N":14,
+            "Min":12.591782212257385,
+            "LowerFence":12.538612820208073,
+            "Q1":12.601102143526077,
+            "Median":12.615115195512772,
+            "Mean":12.627019094569343,
+            "Q3":12.642761692404747,
+            "UpperFence":12.705251015722752,
+            "Max":12.68785446882248,
+            "InterquartileRange":0.04165954887866974,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.00895087740625864,
+            "Variance":0.0011216548887861997,
+            "StandardDeviation":0.03349111656523562,
+            "Skewness":0.6969632238536818,
+            "Kurtosis":1.9172551842149845,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":12.627019094569343,
+               "StandardError":0.00895087740625864,
+               "Level":12,
+               "Margin":0.03778014733512699,
+               "Lower":12.589238947234216,
+               "Upper":12.66479924190447
+            },
+            "Percentiles":{
+               "P0":12.591782212257385,
+               "P25":12.601102143526077,
+               "P50":12.615115195512772,
+               "P67":12.6371730864048,
+               "P80":12.653104364871979,
+               "P85":12.669329270720482,
+               "P90":12.681106179952621,
+               "P95":12.687001153826714,
+               "P100":12.68785446882248
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=3400 0000 0000 009]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=3400 0000 0000 009",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"3400 0000 0000 009\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               13.138371706008911,13.213630020618439,13.12897801399231,13.096356391906738,13.093134760856628,13.206547498703003,13.23031485080719,13.179461658000946,13.287937641143799,13.202899694442749,13.105472922325134,13.071136176586151,13.174164295196533
+            ],
+            "N":13,
+            "Min":13.071136176586151,
+            "LowerFence":12.953861057758331,
+            "Q1":13.105472922325134,
+            "Median":13.174164295196533,
+            "Mean":13.163723510045271,
+            "Q3":13.206547498703003,
+            "UpperFence":13.358159363269806,
+            "Max":13.287937641143799,
+            "InterquartileRange":0.10107457637786865,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.017798046640831684,
+            "Variance":0.00411801603497986,
+            "StandardDeviation":0.06417176976661824,
+            "Skewness":0.2249408062948078,
+            "Kurtosis":1.8235605909190238,
+            "ConfidenceInterval":{
+               "N":13,
+               "Mean":13.163723510045271,
+               "StandardError":0.017798046640831684,
+               "Level":12,
+               "Margin":0.076848250630298,
+               "Lower":13.086875259414972,
+               "Upper":13.24057176067557
+            },
+            "Percentiles":{
+               "P0":13.071136176586151,
+               "P25":13.105472922325134,
+               "P50":13.174164295196533,
+               "P67":13.20304560661316,
+               "P80":13.210797011852264,
+               "P85":13.216966986656189,
+               "P90":13.22697788476944,
+               "P95":13.253363966941833,
+               "P100":13.287937641143799
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=4111 1111 1111 1111]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=4111 1111 1111 1111",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"4111 1111 1111 1111\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               13.548952341079712,13.680055737495422,13.484546542167664,13.46932053565979,13.51492702960968,13.58887255191803,13.651028275489807,13.527685403823853,13.470655679702759,13.471850752830505,13.50046694278717,13.47787082195282,13.501736521720886,13.544508814811707
+            ],
+            "N":14,
+            "Min":13.46932053565979,
+            "LowerFence":13.377087190747261,
+            "Q1":13.47953975200653,
+            "Median":13.508331775665283,
+            "Mean":13.530891282217842,
+            "Q3":13.54784145951271,
+            "UpperFence":13.65029402077198,
+            "Max":13.680055737495422,
+            "InterquartileRange":0.06830170750617981,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               13.651028275489807,13.680055737495422
+            ],
+            "AllOutliers":[
+               13.651028275489807,13.680055737495422
+            ],
+            "StandardError":0.01792248985357479,
+            "Variance":0.004497018995720878,
+            "StandardDeviation":0.06705981655000913,
+            "Skewness":1.0167705279961252,
+            "Kurtosis":2.7149266099673603,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":13.530891282217842,
+               "StandardError":0.01792248985357479,
+               "Level":12,
+               "Margin":0.07564781378939696,
+               "Lower":13.455243468428446,
+               "Upper":13.60653909600724
+            },
+            "Percentiles":{
+               "P0":13.46932053565979,
+               "P25":13.47953975200653,
+               "P50":13.508331775665283,
+               "P67":13.539630025625229,
+               "P80":13.564920425415039,
+               "P85":13.591980338096619,
+               "P90":13.632381558418274,
+               "P95":13.661187887191772,
+               "P100":13.680055737495422
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":33554432,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=4111111111111111]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=4111111111111111",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"4111111111111111\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               9.845268726348877,9.753742814064026,9.663952887058258,9.736703336238861,9.773696959018707,9.681852161884308,9.787231683731079,9.694240987300873,9.687332808971405,9.719975292682648,9.6780464053154,9.72340852022171,9.837357699871063,9.703554213047028
+            ],
+            "N":14,
+            "Min":9.663952887058258,
+            "LowerFence":9.569586999714375,
+            "Q1":9.689059853553772,
+            "Median":9.721691906452179,
+            "Mean":9.734740321125303,
+            "Q3":9.768708422780037,
+            "UpperFence":9.888181276619434,
+            "Max":9.845268726348877,
+            "InterquartileRange":0.07964856922626495,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.015480161248416864,
+            "Variance":0.0033548954918778207,
+            "StandardDeviation":0.05792145968359068,
+            "Skewness":0.6427687364179648,
+            "Kurtosis":2.04456907210974,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":9.734740321125303,
+               "StandardError":0.015480161248416864,
+               "Level":12,
+               "Margin":0.0653391557265412,
+               "Lower":9.669401165398762,
+               "Upper":9.800079476851844
+            },
+            "Percentiles":{
+               "P0":9.663952887058258,
+               "P25":9.689059853553772,
+               "P50":9.721691906452179,
+               "P67":9.748801365494728,
+               "P80":9.779110848903656,
+               "P85":9.789737984538078,
+               "P90":9.822319895029068,
+               "P95":9.840126559138298,
+               "P100":9.845268726348877
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=5500-0000-0000-0004]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=5500-0000-0000-0004",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"5500-0000-0000-0004\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               13.599257171154022,13.42569887638092,13.421154022216797,13.529668748378754,13.501991331577301,13.437359035015106,13.567791879177094,13.556389510631561,13.469210267066956,13.495908677577972,13.527435064315796,13.509953022003174,13.496074080467224,13.501447439193726
+            ],
+            "N":14,
+            "Min":13.421154022216797,
+            "LowerFence":13.396046683192253,
+            "Q1":13.47588486969471,
+            "Median":13.501719385385513,
+            "Mean":13.502809937511172,
+            "Q3":13.529110327363014,
+            "UpperFence":13.60894851386547,
+            "Max":13.599257171154022,
+            "InterquartileRange":0.05322545766830444,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.014043964904222142,
+            "Variance":0.0027612613032343258,
+            "StandardDeviation":0.05254770502347677,
+            "Skewness":0.018768501716055697,
+            "Kurtosis":1.9948274305990026,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":13.502809937511172,
+               "StandardError":0.014043964904222142,
+               "Level":12,
+               "Margin":0.0592772126316768,
+               "Lower":13.443532724879494,
+               "Upper":13.56208715014285
+            },
+            "Percentiles":{
+               "P0":13.421154022216797,
+               "P25":13.47588486969471,
+               "P50":13.501719385385513,
+               "P67":13.522365272045135,
+               "P80":13.540357053279877,
+               "P85":13.556959629058838,
+               "P90":13.564371168613434,
+               "P95":13.578804731369019,
+               "P100":13.599257171154022
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      }
+   ]
+}

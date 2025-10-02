@@ -1,0 +1,545 @@
+{
+   "Title":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks-20251001-225449",
+   "HostEnvironmentInfo":{
+      "BenchmarkDotNetCaption":"BenchmarkDotNet",
+      "BenchmarkDotNetVersion":"0.14.0",
+      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
+      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "PhysicalProcessorCount":1,
+      "PhysicalCoreCount":4,
+      "LogicalCoreCount":8,
+      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "Architecture":"X64",
+      "HasAttachedDebugger":false,
+      "HasRyuJit":true,
+      "Configuration":"RELEASE",
+      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "ChronometerFrequency":{
+         "Hertz":10000000
+      },
+      "HardwareTimerKind":"Unknown"
+   },
+   "Benchmarks":[
+      {
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_String: DefaultJob [IPv6Input=2001:(...)4:All [43]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_String",
+         "MethodTitle":"RedactIPv6_String",
+         "Parameters":"IPv6Input=2001:(...)4:All [43]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_String(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:All)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               39.333921670913696,39.19699192047119,39.31785225868225,39.6117627620697,39.289140701293945,39.25454616546631,39.35142755508423,39.49474096298218,39.2534613609314,39.224034547805786,39.365214109420776,39.29399251937866,39.225804805755615
+            ],
+            "N":13,
+            "Min":39.19699192047119,
+            "LowerFence":39.10651206970215,
+            "Q1":39.2534613609314,
+            "Median":39.29399251937866,
+            "Mean":39.324068564635056,
+            "Q3":39.35142755508423,
+            "UpperFence":39.49837684631348,
+            "Max":39.6117627620697,
+            "InterquartileRange":0.09796619415283203,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               39.6117627620697
+            ],
+            "AllOutliers":[
+               39.6117627620697
+            ],
+            "StandardError":0.032247890492844655,
+            "Variance":0.013519043736100507,
+            "StandardDeviation":0.11627142269749909,
+            "Skewness":1.1800905735518175,
+            "Kurtosis":3.454271543936495,
+            "ConfidenceInterval":{
+               "N":13,
+               "Mean":39.324068564635056,
+               "StandardError":0.032247890492844655,
+               "Level":12,
+               "Margin":0.13923966044718303,
+               "Lower":39.184828904187874,
+               "Upper":39.46330822508224
+            },
+            "Percentiles":{
+               "P0":39.19699192047119,
+               "P25":39.2534613609314,
+               "P50":39.29399251937866,
+               "P67":39.33462190628052,
+               "P80":39.35969948768616,
+               "P85":39.39111948013306,
+               "P90":39.4688355922699,
+               "P95":39.54154968261719,
+               "P100":39.6117627620697
+            }
+         },
+         "Memory":{
+            "Gen0Collections":417,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":16777216,
+            "BytesAllocatedPerOperation":104
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan: DefaultJob [IPv6Input=2001:(...)4:All [43]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_ReadOnlySpan",
+         "MethodTitle":"RedactIPv6_ReadOnlySpan",
+         "Parameters":"IPv6Input=2001:(...)4:All [43]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:All)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               39.865678548812866,39.45987820625305,39.5549476146698,39.792466163635254,39.81669545173645,39.59450721740723,39.50108289718628,40.35494923591614,39.97669219970703,39.377593994140625,39.410412311553955,39.44353461265564,39.41061496734619,39.45313096046448,39.41850662231445
+            ],
+            "N":15,
+            "Min":39.377593994140625,
+            "LowerFence":38.87068033218384,
+            "Q1":39.431020617485046,
+            "Median":39.50108289718628,
+            "Mean":39.62871273358663,
+            "Q3":39.80458080768585,
+            "UpperFence":40.36492109298706,
+            "Max":40.35494923591614,
+            "InterquartileRange":0.37356019020080566,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.0719063302970074,
+            "Variance":0.07755780505173485,
+            "StandardDeviation":0.27849201972719945,
+            "Skewness":1.1868044157903705,
+            "Kurtosis":3.454050791294888,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":39.62871273358663,
+               "StandardError":0.0719063302970074,
+               "Level":12,
+               "Margin":0.29772486089127453,
+               "Lower":39.33098787269536,
+               "Upper":39.9264375944779
+            },
+            "Percentiles":{
+               "P0":39.377593994140625,
+               "P25":39.431020617485046,
+               "P50":39.50108289718628,
+               "P67":39.66973161697388,
+               "P80":39.82649207115173,
+               "P85":39.860780239105225,
+               "P90":39.932286739349365,
+               "P95":40.09016931056976,
+               "P100":40.35494923591614
+            }
+         },
+         "Memory":{
+            "Gen0Collections":417,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":16777216,
+            "BytesAllocatedPerOperation":104
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_String: DefaultJob [IPv6Input=2001:(...)ength [51]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_String",
+         "MethodTitle":"RedactIPv6_String",
+         "Parameters":"IPv6Input=2001:(...)ength [51]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_String(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:FixedLength)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               29.40349578857422,29.37861680984497,29.382115602493286,29.391902685165405,29.70210909843445,29.380297660827637,29.372739791870117,29.538780450820923,29.902440309524536,29.44185733795166,29.407286643981934,29.380375146865845,29.63607907295227
+            ],
+            "N":13,
+            "Min":29.372739791870117,
+            "LowerFence":29.142767190933228,
+            "Q1":29.380375146865845,
+            "Median":29.40349578857422,
+            "Mean":29.486007415331326,
+            "Q3":29.538780450820923,
+            "UpperFence":29.77638840675354,
+            "Max":29.902440309524536,
+            "InterquartileRange":0.15840530395507812,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               29.902440309524536
+            ],
+            "AllOutliers":[
+               29.902440309524536
+            ],
+            "StandardError":0.04576426359201583,
+            "Variance":0.027226781687553575,
+            "StandardDeviation":0.16500539896486288,
+            "Skewness":1.330284064636472,
+            "Kurtosis":3.486562171427947,
+            "ConfidenceInterval":{
+               "N":13,
+               "Mean":29.486007415331326,
+               "StandardError":0.04576426359201583,
+               "Level":12,
+               "Margin":0.1976005383850322,
+               "Lower":29.288406876946294,
+               "Upper":29.683607953716358
+            },
+            "Percentiles":{
+               "P0":29.372739791870117,
+               "P25":29.380375146865845,
+               "P50":29.40349578857422,
+               "P67":29.44573426246643,
+               "P80":29.59715962409973,
+               "P85":29.649285078048706,
+               "P90":29.688903093338013,
+               "P95":29.782241582870483,
+               "P100":29.902440309524536
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":16777216,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan: DefaultJob [IPv6Input=2001:(...)ength [51]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_ReadOnlySpan",
+         "MethodTitle":"RedactIPv6_ReadOnlySpan",
+         "Parameters":"IPv6Input=2001:(...)ength [51]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:FixedLength)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               30.08987307548523,29.9527645111084,29.981619119644165,30.112725496292114,30.027341842651367,30.073916912078857,29.99746799468994,30.05562424659729,29.948174953460693,30.080646276474,30.049794912338257,30.026674270629883,30.000460147857666,30.033183097839355
+            ],
+            "N":14,
+            "Min":29.948174953460693,
+            "LowerFence":29.891524463891983,
+            "Q1":29.998216032981873,
+            "Median":30.03026247024536,
+            "Mean":30.030733346939087,
+            "Q3":30.069343745708466,
+            "UpperFence":30.176035314798355,
+            "Max":30.112725496292114,
+            "InterquartileRange":0.07112771272659302,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.013449847007528368,
+            "Variance":0.0025325773833628773,
+            "StandardDeviation":0.05032471940669791,
+            "Skewness":-0.13144306432745392,
+            "Kurtosis":1.7698405256719485,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":30.030733346939087,
+               "StandardError":0.013449847007528368,
+               "Level":12,
+               "Margin":0.05676954096411134,
+               "Lower":29.973963805974975,
+               "Upper":30.0875028879032
+            },
+            "Percentiles":{
+               "P0":29.948174953460693,
+               "P25":29.998216032981873,
+               "P50":30.03026247024536,
+               "P67":30.05393373966217,
+               "P80":30.076608657836914,
+               "P85":30.08110761642456,
+               "P90":30.08710503578186,
+               "P95":30.09787142276764,
+               "P100":30.112725496292114
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":16777216,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_String: DefaultJob [IPv6Input=2001:(...):Full [44]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_String",
+         "MethodTitle":"RedactIPv6_String",
+         "Parameters":"IPv6Input=2001:(...):Full [44]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_String(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:Full)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               69.57210898399353,69.118732213974,69.06848549842834,69.61022019386292,69.99617218971252,69.82881426811218,68.59341263771057,69.96205449104309,69.25724148750305,69.06651854515076,68.68124604225159,68.99521946907043,69.21666264533997,69.226735830307,68.80413889884949
+            ],
+            "N":15,
+            "Min":68.59341263771057,
+            "LowerFence":68.19042563438416,
+            "Q1":69.0308690071106,
+            "Median":69.21666264533997,
+            "Mean":69.2665175596873,
+            "Q3":69.59116458892822,
+            "UpperFence":70.43160796165466,
+            "Max":69.99617218971252,
+            "InterquartileRange":0.560295581817627,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.11406103901054201,
+            "Variance":0.19514880930246578,
+            "StandardDeviation":0.4417565045389437,
+            "Skewness":0.2539772773789071,
+            "Kurtosis":1.7811624135983273,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":69.2665175596873,
+               "StandardError":0.11406103901054201,
+               "Level":12,
+               "Margin":0.4722644978858163,
+               "Lower":68.79425306180148,
+               "Upper":69.73878205757312
+            },
+            "Percentiles":{
+               "P0":68.59341263771057,
+               "P25":69.0308690071106,
+               "P50":69.21666264533997,
+               "P67":69.37689113616943,
+               "P80":69.65393900871277,
+               "P85":69.80695486068726,
+               "P90":69.90875840187073,
+               "P95":69.97228980064392,
+               "P100":69.99617218971252
+            }
+         },
+         "Memory":{
+            "Gen0Collections":208,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":8388608,
+            "BytesAllocatedPerOperation":104
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan: DefaultJob [IPv6Input=2001:(...):Full [44]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_ReadOnlySpan",
+         "MethodTitle":"RedactIPv6_ReadOnlySpan",
+         "Parameters":"IPv6Input=2001:(...):Full [44]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:Full)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               68.22522282600403,67.93943047523499,68.71780753135681,68.13402771949768,68.04940104484558,67.72003769874573,67.60069727897644,67.70380139350891,67.95281767845154,68.90284419059753,67.72980093955994,68.88784766197205,67.54468083381653,68.47954392433167,68.09036135673523
+            ],
+            "N":15,
+            "Min":67.54468083381653,
+            "LowerFence":66.78372323513031,
+            "Q1":67.72491931915283,
+            "Median":68.04940104484558,
+            "Mean":68.11188817024231,
+            "Q3":68.35238337516785,
+            "UpperFence":69.29357945919037,
+            "Max":68.90284419059753,
+            "InterquartileRange":0.6274640560150146,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.11653518091218575,
+            "Variance":0.2037067258535379,
+            "StandardDeviation":0.45133881492016387,
+            "Skewness":0.5266301050666722,
+            "Kurtosis":1.852550249970274,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":68.11188817024231,
+               "StandardError":0.11653518091218575,
+               "Level":12,
+               "Margin":0.4825085688938846,
+               "Lower":67.62937960134842,
+               "Upper":68.5943967391362
+            },
+            "Percentiles":{
+               "P0":67.54468083381653,
+               "P25":67.72491931915283,
+               "P50":68.04940104484558,
+               "P67":68.16868185997009,
+               "P80":68.5271966457367,
+               "P85":68.6939811706543,
+               "P90":68.81983160972595,
+               "P95":68.89234662055969,
+               "P100":68.90284419059753
+            }
+         },
+         "Memory":{
+            "Gen0Collections":208,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":8388608,
+            "BytesAllocatedPerOperation":104
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_String: DefaultJob [IPv6Input=2001:(...)artet [55]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_String",
+         "MethodTitle":"RedactIPv6_String",
+         "Parameters":"IPv6Input=2001:(...)artet [55]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_String(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:ShowLastQuartet)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               77.78653502464294,77.73012518882751,77.6113212108612,77.69977450370789,77.19818949699402,77.71068215370178,77.12696194648743,77.73543000221252,77.58615612983704,77.73829102516174,77.21087336540222,77.57843136787415
+            ],
+            "N":12,
+            "Min":77.12696194648743,
+            "LowerFence":77.11917757987976,
+            "Q1":77.48654186725616,
+            "Median":77.65554785728455,
+            "Mean":77.55939761797588,
+            "Q3":77.73145139217377,
+            "UpperFence":78.09881567955017,
+            "Max":77.78653502464294,
+            "InterquartileRange":0.24490952491760254,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.06903214389347251,
+            "Variance":0.05718524268634912,
+            "StandardDeviation":0.23913436115779999,
+            "Skewness":-0.8291232212972847,
+            "Kurtosis":1.8644001295084827,
+            "ConfidenceInterval":{
+               "N":12,
+               "Mean":77.55939761797588,
+               "StandardError":0.06903214389347251,
+               "Level":12,
+               "Margin":0.30629419605428465,
+               "Lower":77.2531034219216,
+               "Upper":77.86569181403016
+            },
+            "Percentiles":{
+               "P0":77.12696194648743,
+               "P25":77.48654186725616,
+               "P50":77.65554785728455,
+               "P67":77.7178760766983,
+               "P80":77.73436903953552,
+               "P85":77.73643136024475,
+               "P90":77.73800492286682,
+               "P95":77.76000082492828,
+               "P100":77.78653502464294
+            }
+         },
+         "Memory":{
+            "Gen0Collections":208,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":8388608,
+            "BytesAllocatedPerOperation":104
+         }
+      },{
+         "DisplayInfo":"RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan: DefaultJob [IPv6Input=2001:(...)artet [55]]",
+         "Namespace":"ZeroRedact.Benchmark.Redactors",
+         "Type":"RedactIPv6Benchmarks",
+         "Method":"RedactIPv6_ReadOnlySpan",
+         "MethodTitle":"RedactIPv6_ReadOnlySpan",
+         "Parameters":"IPv6Input=2001:(...)artet [55]",
+         "FullName":"ZeroRedact.Benchmark.Redactors.RedactIPv6Benchmarks.RedactIPv6_ReadOnlySpan(IPv6Input: 2001:0db8:85a3:0000:0000:8a2e:0370:7334:ShowLastQuartet)",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               76.54565572738647,76.61586999893188,76.78650617599487,76.06602907180786,76.06568336486816,76.75645351409912,76.29938125610352,76.48764848709106,76.13798379898071,76.21853351593018,75.97068548202515,76.48532390594482,76.49532556533813,76.4572024345398,76.03527307510376
+            ],
+            "N":15,
+            "Min":75.97068548202515,
+            "LowerFence":75.47428011894226,
+            "Q1":76.10200643539429,
+            "Median":76.4572024345398,
+            "Mean":76.36157035827637,
+            "Q3":76.5204906463623,
+            "UpperFence":77.14821696281433,
+            "Max":76.78650617599487,
+            "InterquartileRange":0.4184842109680176,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.06906787935831722,
+            "Variance":0.07155557938582595,
+            "StandardDeviation":0.2674987465126256,
+            "Skewness":0.026570729484247393,
+            "Kurtosis":1.511001660622671,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":76.36157035827637,
+               "StandardError":0.06906787935831722,
+               "Level":12,
+               "Margin":0.28597238503306194,
+               "Lower":76.0755979732433,
+               "Upper":76.64754274330943
+            },
+            "Percentiles":{
+               "P0":75.97068548202515,
+               "P25":76.10200643539429,
+               "P50":76.4572024345398,
+               "P67":76.49056577682495,
+               "P80":76.55969858169556,
+               "P85":76.60884857177734,
+               "P90":76.70022010803223,
+               "P95":76.76546931266785,
+               "P100":76.78650617599487
+            }
+         },
+         "Memory":{
+            "Gen0Collections":208,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":8388608,
+            "BytesAllocatedPerOperation":104
+         }
+      }
+   ]
+}

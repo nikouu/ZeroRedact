@@ -4,3 +4,5 @@
   href: api/
 - name: Demo
   href: demo/
+- name: Benchmarks
+  href: benchmarks/

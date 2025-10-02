@@ -1,0 +1,285 @@
+{
+   "Title":"ZeroRedact.Benchmark.Validators.IPv6ValidatorBenchmarks-20251001-220212",
+   "HostEnvironmentInfo":{
+      "BenchmarkDotNetCaption":"BenchmarkDotNet",
+      "BenchmarkDotNetVersion":"0.14.0",
+      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
+      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "PhysicalProcessorCount":1,
+      "PhysicalCoreCount":4,
+      "LogicalCoreCount":8,
+      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "Architecture":"X64",
+      "HasAttachedDebugger":false,
+      "HasRyuJit":true,
+      "Configuration":"RELEASE",
+      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "ChronometerFrequency":{
+         "Hertz":10000000
+      },
+      "HardwareTimerKind":"Unknown"
+   },
+   "Benchmarks":[
+      {
+         "DisplayInfo":"IPv6ValidatorBenchmarks.ValidateIPv6Addresses: DefaultJob [ipAddress=::1]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"IPv6ValidatorBenchmarks",
+         "Method":"ValidateIPv6Addresses",
+         "MethodTitle":"ValidateIPv6Addresses",
+         "Parameters":"ipAddress=::1",
+         "FullName":"ZeroRedact.Benchmark.Validators.IPv6ValidatorBenchmarks.ValidateIPv6Addresses(ipAddress: \"::1\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               6.484931707382202,6.523136794567108,6.469592452049255,6.467145681381226,6.493595242500305,6.497099995613098,6.515881419181824,6.491048634052277,6.465043127536774,6.48835152387619,6.4979881048202515,6.5315842628479,6.4652785658836365,6.47752583026886
+            ],
+            "N":14,
+            "Min":6.465043127536774,
+            "LowerFence":6.4322903752326965,
+            "Q1":6.4715757966041565,
+            "Median":6.489700078964233,
+            "Mean":6.490585952997208,
+            "Q3":6.497766077518463,
+            "UpperFence":6.537051498889923,
+            "Max":6.5315842628479,
+            "InterquartileRange":0.02619028091430664,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.0057308577547088655,
+            "Variance":0.00045979822846589424,
+            "StandardDeviation":0.02144290625045715,
+            "Skewness":0.4554910217877258,
+            "Kurtosis":1.934048909804699,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":6.490585952997208,
+               "StandardError":0.0057308577547088655,
+               "Level":12,
+               "Margin":0.024188986230351654,
+               "Lower":6.466396966766856,
+               "Upper":6.514774939227559
+            },
+            "Percentiles":{
+               "P0":6.465043127536774,
+               "P25":6.4715757966041565,
+               "P50":6.489700078964233,
+               "P67":6.496083617210388,
+               "P80":6.50514543056488,
+               "P85":6.516244187951088,
+               "P90":6.520960181951523,
+               "P95":6.526093408465385,
+               "P100":6.5315842628479
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"IPv6ValidatorBenchmarks.ValidateIPv6Addresses: DefaultJob [ipAddress=2001:(...):7334 [39]]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"IPv6ValidatorBenchmarks",
+         "Method":"ValidateIPv6Addresses",
+         "MethodTitle":"ValidateIPv6Addresses",
+         "Parameters":"ipAddress=2001:(...):7334 [39]",
+         "FullName":"ZeroRedact.Benchmark.Validators.IPv6ValidatorBenchmarks.ValidateIPv6Addresses(ipAddress: \"2001:0db8:85a3:0000:0000:8a2e:0370:7334\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               10.022294521331787,9.93625521659851,9.925350546836853,9.924724698066711,9.87805426120758,9.97689813375473,10.01204252243042,10.004478693008423,9.890544414520264,9.922727942466736,9.947074949741364,9.96711254119873,9.92954671382904,9.875504672527313,9.936407208442688
+            ],
+            "N":15,
+            "Min":9.875504672527313,
+            "LowerFence":9.851307794451714,
+            "Q1":9.923726320266724,
+            "Median":9.93625521659851,
+            "Mean":9.94326780239741,
+            "Q3":9.97200533747673,
+            "UpperFence":10.04442386329174,
+            "Max":10.022294521331787,
+            "InterquartileRange":0.048279017210006714,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.011838536553343024,
+            "Variance":0.002102264215872584,
+            "StandardDeviation":0.04585045491456529,
+            "Skewness":0.2356629134168346,
+            "Kurtosis":1.8758327744543664,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":9.94326780239741,
+               "StandardError":0.011838536553343024,
+               "Level":12,
+               "Margin":0.049016917341518244,
+               "Lower":9.894250885055891,
+               "Upper":9.992284719738928
+            },
+            "Percentiles":{
+               "P0":9.875504672527313,
+               "P25":9.923726320266724,
+               "P50":9.93625521659851,
+               "P67":9.954689234495163,
+               "P80":9.982414245605469,
+               "P85":10.001720637083054,
+               "P90":10.009016990661621,
+               "P95":10.01511812210083,
+               "P100":10.022294521331787
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"IPv6ValidatorBenchmarks.ValidateIPv6Addresses: DefaultJob [ipAddress=2001:db8::2:1]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"IPv6ValidatorBenchmarks",
+         "Method":"ValidateIPv6Addresses",
+         "MethodTitle":"ValidateIPv6Addresses",
+         "Parameters":"ipAddress=2001:db8::2:1",
+         "FullName":"ZeroRedact.Benchmark.Validators.IPv6ValidatorBenchmarks.ValidateIPv6Addresses(ipAddress: \"2001:db8::2:1\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               5.26571199297905,5.3093962371349335,5.267813056707382,5.25660365819931,5.329582095146179,5.296604335308075,5.2794113755226135,5.270522087812424,5.260509252548218,5.356968939304352,5.250842124223709,5.271591991186142,5.266263335943222,5.274429172277451
+            ],
+            "N":14,
+            "Min":5.250842124223709,
+            "LowerFence":5.2261654287576675,
+            "Q1":5.265849828720093,
+            "Median":5.271057039499283,
+            "Mean":5.282589261020933,
+            "Q3":5.29230609536171,
+            "UpperFence":5.331990495324135,
+            "Max":5.356968939304352,
+            "InterquartileRange":0.02645626664161682,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               5.356968939304352
+            ],
+            "AllOutliers":[
+               5.356968939304352
+            ],
+            "StandardError":0.008099421746087175,
+            "Variance":0.0009184088566938575,
+            "StandardDeviation":0.030305261204844572,
+            "Skewness":1.1829113364041222,
+            "Kurtosis":3.216975098567348,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":5.282589261020933,
+               "StandardError":0.008099421746087175,
+               "Level":12,
+               "Margin":0.03418629627108346,
+               "Lower":5.248402964749849,
+               "Upper":5.316775557292016
+            },
+            "Percentiles":{
+               "P0":5.250842124223709,
+               "P25":5.265849828720093,
+               "P50":5.271057039499283,
+               "P67":5.277966536581516,
+               "P80":5.301721096038818,
+               "P85":5.310405530035496,
+               "P90":5.3235263377428055,
+               "P95":5.33916749060154,
+               "P100":5.356968939304352
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"IPv6ValidatorBenchmarks.ValidateIPv6Addresses: DefaultJob [ipAddress=fe80:(...):890a [24]]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"IPv6ValidatorBenchmarks",
+         "Method":"ValidateIPv6Addresses",
+         "MethodTitle":"ValidateIPv6Addresses",
+         "Parameters":"ipAddress=fe80:(...):890a [24]",
+         "FullName":"ZeroRedact.Benchmark.Validators.IPv6ValidatorBenchmarks.ValidateIPv6Addresses(ipAddress: \"fe80::1ff:fe23:4567:890a\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               8.909398317337036,8.858300745487213,8.895738422870636,8.863437175750732,8.938691020011902,8.869434893131256,8.870184421539307,8.860592544078827,8.926612138748169,8.893027901649475,8.849912881851196,8.883179724216461,8.888106048107147,8.91331285238266
+            ],
+            "N":14,
+            "Min":8.849912881851196,
+            "LowerFence":8.803366497159004,
+            "Q1":8.864936605095863,
+            "Median":8.885642886161804,
+            "Mean":8.887137791940145,
+            "Q3":8.905983343720436,
+            "UpperFence":8.967553451657295,
+            "Max":8.938691020011902,
+            "InterquartileRange":0.041046738624572754,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.007265128282439737,
+            "Variance":0.0007389492454442806,
+            "StandardDeviation":0.027183620903850916,
+            "Skewness":0.39209889297528455,
+            "Kurtosis":1.8075464649314323,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":8.887137791940145,
+               "StandardError":0.007265128282439737,
+               "Level":12,
+               "Margin":0.030664883950622633,
+               "Lower":8.856472907989522,
+               "Upper":8.917802675890767
+            },
+            "Percentiles":{
+               "P0":8.849912881851196,
+               "P25":8.864936605095863,
+               "P50":8.885642886161804,
+               "P67":8.8949523717165,
+               "P80":8.910964131355286,
+               "P85":8.913977816700935,
+               "P90":8.922622352838516,
+               "P95":8.930839747190475,
+               "P100":8.938691020011902
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":67108864,
+            "BytesAllocatedPerOperation":0
+         }
+      }
+   ]
+}

@@ -1,0 +1,285 @@
+{
+   "Title":"ZeroRedact.Benchmark.Validators.MACAddressValidatorBenchmarks-20251002-110628",
+   "HostEnvironmentInfo":{
+      "BenchmarkDotNetCaption":"BenchmarkDotNet",
+      "BenchmarkDotNetVersion":"0.14.0",
+      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
+      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "PhysicalProcessorCount":1,
+      "PhysicalCoreCount":4,
+      "LogicalCoreCount":8,
+      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "Architecture":"X64",
+      "HasAttachedDebugger":false,
+      "HasRyuJit":true,
+      "Configuration":"RELEASE",
+      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "ChronometerFrequency":{
+         "Hertz":10000000
+      },
+      "HardwareTimerKind":"Unknown"
+   },
+   "Benchmarks":[
+      {
+         "DisplayInfo":"MACAddressValidatorBenchmarks.ValidateMacAddresses: DefaultJob [macAddress=00-1A-2B-3C-4D-5E]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"MACAddressValidatorBenchmarks",
+         "Method":"ValidateMacAddresses",
+         "MethodTitle":"ValidateMacAddresses",
+         "Parameters":"macAddress=00-1A-2B-3C-4D-5E",
+         "FullName":"ZeroRedact.Benchmark.Validators.MACAddressValidatorBenchmarks.ValidateMacAddresses(macAddress: \"00-1A-2B-3C-4D-5E\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               4.567721486091614,4.609769582748413,4.578574001789093,4.595574736595154,4.563457518815994,4.580318927764893,4.581253230571747,4.559873044490814,4.559639096260071,4.590227454900742,4.570008814334869,4.576338082551956,4.603836685419083,4.570800811052322
+            ],
+            "N":14,
+            "Min":4.559639096260071,
+            "LowerFence":4.53875744715333,
+            "Q1":4.568293318152428,
+            "Median":4.577456042170525,
+            "Mean":4.5790995338133405,
+            "Q3":4.587983898818493,
+            "UpperFence":4.617519769817591,
+            "Max":4.609769582748413,
+            "InterquartileRange":0.019690580666065216,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.004216580132595993,
+            "Variance":0.0002489136722044455,
+            "StandardDeviation":0.015776998200052045,
+            "Skewness":0.5225146219661968,
+            "Kurtosis":1.9790313185692654,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":4.5790995338133405,
+               "StandardError":0.004216580132595993,
+               "Level":12,
+               "Margin":0.017797475200415316,
+               "Lower":4.561302058612925,
+               "Upper":4.596897009013756
+            },
+            "Percentiles":{
+               "P0":4.559639096260071,
+               "P25":4.568293318152428,
+               "P50":4.577456042170525,
+               "P67":4.580982282757759,
+               "P80":4.5923663675785065,
+               "P85":4.59598783403635,
+               "P90":4.601358100771904,
+               "P95":4.605913199484348,
+               "P100":4.609769582748413
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"MACAddressValidatorBenchmarks.ValidateMacAddresses: DefaultJob [macAddress=00-1A(...)6F-70 [23]]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"MACAddressValidatorBenchmarks",
+         "Method":"ValidateMacAddresses",
+         "MethodTitle":"ValidateMacAddresses",
+         "Parameters":"macAddress=00-1A(...)6F-70 [23]",
+         "FullName":"ZeroRedact.Benchmark.Validators.MACAddressValidatorBenchmarks.ValidateMacAddresses(macAddress: \"00-1A-2B-3C-4D-5E-6F-70\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               13.710451126098633,13.7882798910141,13.700976967811584,13.80549967288971,13.874682784080505,13.80874216556549,13.83061408996582,13.685780763626099,13.710781931877136,13.780689239501953,13.779434561729431,13.707774877548218,13.707724213600159,13.733664155006409
+            ],
+            "N":14,
+            "Min":13.685780763626099,
+            "LowerFence":13.569317758083344,
+            "Q1":13.708443939685822,
+            "Median":13.75654935836792,
+            "Mean":13.758935460022517,
+            "Q3":13.801194727420807,
+            "UpperFence":13.940320909023285,
+            "Max":13.874682784080505,
+            "InterquartileRange":0.09275078773498535,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.015583462586622302,
+            "Variance":0.003399820286641199,
+            "StandardDeviation":0.05830797789875069,
+            "Skewness":0.39329349953828646,
+            "Kurtosis":1.7478922048537349,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":13.758935460022517,
+               "StandardError":0.015583462586622302,
+               "Level":12,
+               "Margin":0.06577517329221452,
+               "Lower":13.693160286730302,
+               "Upper":13.824710633314732
+            },
+            "Percentiles":{
+               "P0":13.685780763626099,
+               "P25":13.708443939685822,
+               "P50":13.75654935836792,
+               "P67":13.786078602075577,
+               "P80":13.806796669960022,
+               "P85":13.809835761785507,
+               "P90":13.824052512645721,
+               "P95":13.84603813290596,
+               "P100":13.874682784080505
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":33554432,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"MACAddressValidatorBenchmarks.ValidateMacAddresses: DefaultJob [macAddress=00:1A:2B:3C:4D:5E]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"MACAddressValidatorBenchmarks",
+         "Method":"ValidateMacAddresses",
+         "MethodTitle":"ValidateMacAddresses",
+         "Parameters":"macAddress=00:1A:2B:3C:4D:5E",
+         "FullName":"ZeroRedact.Benchmark.Validators.MACAddressValidatorBenchmarks.ValidateMacAddresses(macAddress: \"00:1A:2B:3C:4D:5E\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               4.852449893951416,4.83168438076973,4.821880906820297,4.830542206764221,4.854697734117508,4.8806332051754,4.8275090754032135,4.832487553358078,4.858502000570297,4.825233668088913,4.903191328048706,4.834266752004623,4.8285506665706635
+            ],
+            "N":13,
+            "Min":4.821880906820297,
+            "LowerFence":4.789330065250397,
+            "Q1":4.8285506665706635,
+            "Median":4.832487553358078,
+            "Mean":4.84474072089562,
+            "Q3":4.854697734117508,
+            "UpperFence":4.893918335437775,
+            "Max":4.903191328048706,
+            "InterquartileRange":0.026147067546844482,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               4.903191328048706
+            ],
+            "AllOutliers":[
+               4.903191328048706
+            ],
+            "StandardError":0.006768490258111046,
+            "Variance":0.0005955619848638736,
+            "StandardDeviation":0.024404138683097865,
+            "Skewness":1.1282669670486098,
+            "Kurtosis":3.049255209997608,
+            "ConfidenceInterval":{
+               "N":13,
+               "Mean":4.84474072089562,
+               "StandardError":0.006768490258111046,
+               "Level":12,
+               "Margin":0.029224928231772637,
+               "Lower":4.815515792663848,
+               "Upper":4.873965649127393
+            },
+            "Percentiles":{
+               "P0":4.821880906820297,
+               "P25":4.8285506665706635,
+               "P50":4.832487553358078,
+               "P67":4.85253980755806,
+               "P80":4.8569802939891815,
+               "P85":4.862928241491318,
+               "P90":4.876206964254379,
+               "P95":4.889656454324722,
+               "P100":4.903191328048706
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"MACAddressValidatorBenchmarks.ValidateMacAddresses: DefaultJob [macAddress=00:1A(...)6F:70 [23]]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"MACAddressValidatorBenchmarks",
+         "Method":"ValidateMacAddresses",
+         "MethodTitle":"ValidateMacAddresses",
+         "Parameters":"macAddress=00:1A(...)6F:70 [23]",
+         "FullName":"ZeroRedact.Benchmark.Validators.MACAddressValidatorBenchmarks.ValidateMacAddresses(macAddress: \"00:1A:2B:3C:4D:5E:6F:70\")",
+         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               13.82133960723877,13.834086060523987,13.739022612571716,13.638538122177124,13.735496997833252,13.663971424102783,13.67042362689972,13.648855686187744,13.824814558029175,13.688281178474426,13.657253980636597,13.657039403915405,13.687899708747864,13.660931587219238
+            ],
+            "N":14,
+            "Min":13.638538122177124,
+            "LowerFence":13.538221642374992,
+            "Q1":13.658173382282257,
+            "Median":13.679161667823792,
+            "Mean":13.709139611039843,
+            "Q3":13.7381412088871,
+            "UpperFence":13.858092948794365,
+            "Max":13.834086060523987,
+            "InterquartileRange":0.07996782660484314,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.018744001117144696,
+            "Variance":0.004918726090313303,
+            "StandardDeviation":0.07013363023766346,
+            "Skewness":0.791566090107862,
+            "Kurtosis":1.9113343976519803,
+            "ConfidenceInterval":{
+               "N":14,
+               "Mean":13.709139611039843,
+               "StandardError":0.018744001117144696,
+               "Level":12,
+               "Margin":0.07911527459423781,
+               "Lower":13.630024336445606,
+               "Upper":13.78825488563408
+            },
+            "Percentiles":{
+               "P0":13.638538122177124,
+               "P25":13.658173382282257,
+               "P50":13.679161667823792,
+               "P67":13.721804410219193,
+               "P80":13.771949410438538,
+               "P85":13.82151335477829,
+               "P90":13.823772072792053,
+               "P95":13.828059583902359,
+               "P100":13.834086060523987
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":33554432,
+            "BytesAllocatedPerOperation":0
+         }
+      }
+   ]
+}

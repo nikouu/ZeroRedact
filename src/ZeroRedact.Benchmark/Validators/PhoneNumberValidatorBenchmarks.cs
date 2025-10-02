@@ -10,9 +10,9 @@ namespace ZeroRedact.Benchmark.Validators
         [Arguments("+15551234567")]
         [Arguments("+1 (555) 123-4567")]
         [Arguments("+81-90-1234-5678")]
-        public bool ValidatePhoneNumber(string macAddress)
+        public bool ValidatePhoneNumber(string phoneNumber)
         {
-            return PhoneNumberValidator.IsValidForRedaction(macAddress.AsSpan());
+            return PhoneNumberValidator.IsValidForRedaction(phoneNumber.AsSpan());
         }
     }
 }
