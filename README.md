@@ -169,7 +169,8 @@ See [Compliance.Redaction-with-ZeroRedact](https://github.com/nikouu/Compliance.
 ## Performance
 
 ### Benchmarks
-See [benchmarks](benchmarks).
+
+See the [benchmarks](https://nikouu.github.io/ZeroRedact/benchmarks/index.html) section of the documentation. Or view the [raw data](benchmarks).
 
 ## Contributing
 
