@@ -263,7 +263,6 @@ string GenerateChartHtml(string benchmarkName, List<string> versions, List<IGrou
       
     }}
     h2 {{
-        color: #333;
         margin-top: 40px;
         margin-bottom: 20px;
     }}
