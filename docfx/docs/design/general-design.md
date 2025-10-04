@@ -52,13 +52,11 @@ The idea of passing in options to a method is loosely based on [`JsonSerializerO
 
 Depending on redacting type, there are multiple overloads that may include different types (e.g. `DateTime` and `DateOnly` for date redaction) and having redaction options setup just for that method call which may be different from default options.
 
-
 ## Defaults
 
 If there is a common enough consensus, that will be the default and it may not be the strongest redaction type. 
 
 If there is no one strong redaction type, either a redaction that keeps the structure but the data hidden (such as \*\*/\*\*/\*\*\*\) or a full redaction will be the default.
-
 
 ## Data safety
 
@@ -72,8 +70,6 @@ The decision to return a fixed width redaction was weighed up against the securi
 
 Outside of exceptions, any failed data validation will also result in a fixed with redaction result.
 
-
-
 ### Invalid option exceptions
 
 However, any invalid options will throw an exception, whether they are passed to the `Redactor` constructor, or in via one of the redaction methods. It is only during the actual redaction work that errors are suppressed.
@@ -82,7 +78,6 @@ However, any invalid options will throw an exception, whether they are passed to
 
 ZeroRedact is not a data validation tool. Data is only validated enough to perform successful redactions. For example:
 1. "email@example.com" is valid and will be redacted with the requested redaction type
-1. "email..@example.com" is not a valid email due to ".." but will be redacted with the requested redaction type
 1. "emailexample.com" is not a valid email due to no "@" and will be redacted with a fixed width redaction as the "@" symbol is important for redacting
 1. "Call me @ your earliest convenience. Thanks." is not a valid email, but will be redacted with the requested redaction type
 
