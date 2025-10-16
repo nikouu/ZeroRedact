@@ -5,6 +5,6 @@ $output = "..\artifacts"
 
 
 Write-Output "Packing the NuGet package..."
-dotnet pack $project -o $output
+dotnet pack $project -c Release -o $output
 
 Write-Output "NuGet package created successfully."
