@@ -3,7 +3,7 @@
     [TestClass]
     public class RedactEmailAddressTests
     {
-        private static IEnumerable<object?[]> All_TestData()
+        private static IEnumerable<object[]> All_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "*****************" };
@@ -41,7 +41,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "********************************" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "*****************************************************************" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "****************************************" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -52,7 +52,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> FixedLength_TestData()
+        private static IEnumerable<object[]> FixedLength_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "********" };
@@ -90,7 +90,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "********" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "********" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "********" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -101,7 +101,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> Full_TestData()
+        private static IEnumerable<object[]> Full_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "*****@*******.***" };
@@ -139,7 +139,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "********************@*******.***" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "*********************************************@***************.***" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "****************************@*******.***" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -150,7 +150,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> Username_TestData()
+        private static IEnumerable<object[]> Username_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "*****@example.com" };
@@ -188,7 +188,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "********************@example.com" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "*********************************************@strange.example.com" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "****************************@example.com" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -199,7 +199,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> HalfUsername_TestData()
+        private static IEnumerable<object[]> HalfUsername_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "***il@example.com" };
@@ -237,7 +237,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "**********\\ unusual”@example.com" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "***********************very@\\\\ \"very”.unusual@strange.example.com" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "**************@”.unusual.com@example.com" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -248,7 +248,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> Middle_TestData()
+        private static IEnumerable<object[]> Middle_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "em*********le.com" };
@@ -286,7 +286,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "much.”more****************le.com" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "very.”(),:;<>[]”.VERY.*********************************xample.com" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "very.unusual.”********************le.com" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -297,7 +297,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> MostUsername_TestData()
+        private static IEnumerable<object[]> MostUsername_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "e***l@example.com" };
@@ -335,7 +335,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "m******************”@example.com" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "v*******************************************l@strange.example.com" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "v**************************m@example.com" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
@@ -346,7 +346,7 @@
             yield return new object[] { "abc123 !@#", "********" };
         }
 
-        private static IEnumerable<object?[]> ShowFirstCharacters_TestData()
+        private static IEnumerable<object[]> ShowFirstCharacters_TestData()
         {
             yield return new object[] { "", "" };
             yield return new object[] { "email@example.com", "e****@e******.com" };
@@ -384,7 +384,7 @@
             yield return new object[] { "much.”more\\ unusual”@example.com", "m*******************@e******.com" };
             yield return new object[] { "very.”(),:;<>[]”.VERY.”very@\\\\ \"very”.unusual@strange.example.com", "v********************************************@s**************.com" };
             yield return new object[] { "very.unusual.”@”.unusual.com@example.com", "v***************************@e******.com" };
-            yield return new object?[] { null, "" };
+            yield return new object[] { null!, "" };
 
             yield return new object[] { "4111 1111 1111 1111", "********" };
             yield return new object[] { "2023/06/15", "********" };
