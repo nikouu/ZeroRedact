@@ -199,7 +199,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Middle
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
@@ -228,7 +228,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: MostUsername
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
-    startLine: 48
+    startLine: 47
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact
@@ -257,7 +257,7 @@ items:
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowFirstCharacters
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
-    startLine: 54
+    startLine: 53
   assemblies:
   - ZeroRedact
   namespace: ZeroRedact

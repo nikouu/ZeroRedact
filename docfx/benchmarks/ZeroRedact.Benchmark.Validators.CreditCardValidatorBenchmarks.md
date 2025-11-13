@@ -72,11 +72,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">12.641 ns</td><td class="number-col">12.611 ns</td><td class="number-col">12.639 ns</td><td class="number-col">12.627 ns</td><td class="number-col">12.675 ns</td><td class="number-col">12.638 ns</td></tr>
+            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">12.641 ns</td><td class="number-col">12.611 ns</td><td class="number-col">12.639 ns</td><td class="number-col">12.627 ns</td><td class="number-col">12.675 ns</td><td class="number-col">12.638 ns</td><td class="number-col">10.820 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -93,17 +93,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Validators_CreditCardValidatorBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1"];
+    const versions_ZeroRedact_Benchmark_Validators_CreditCardValidatorBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Validators_CreditCardValidatorBenchmarks'), {
@@ -113,7 +113,7 @@
             datasets: [
             {
                 label: 'ValidateCreditCardNumbers',
-                data: [12.64, 12.61, 12.64, 12.63, 12.67, 12.64],
+                data: [12.64, 12.61, 12.64, 12.63, 12.67, 12.64, 10.82],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
@@ -159,7 +159,7 @@
             datasets: [
             {
                 label: 'ValidateCreditCardNumbers',
-                data: [null, null, null, null, null, null],
+                data: [null, null, null, null, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
