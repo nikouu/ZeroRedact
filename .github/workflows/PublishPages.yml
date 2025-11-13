@@ -30,18 +30,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Dotnet Setup
-      uses: actions/setup-dotnet@v3
-
-    - run: dotnet tool update -g docfx
-    - run: docfx docfx/docfx.json
-
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
-    - name: Install .NET WebAssembly Tools
-      run: dotnet workload install wasm-tools
+        dotnet-version: 10.0.x
+
+    - run: dotnet tool update -g docfx
+    - run: docfx docfx/docfx.json
 
     - name: Publish
       run: dotnet publish src/ZeroRedact.DemoSite/ZeroRedact.DemoSite.csproj -c:Release -o:publish -p:GHPages=true -p:GHPagesBase=demoWasm
