@@ -54,7 +54,7 @@ namespace ZeroRedact.UnitTest.ServiceRegistration
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.IsInstanceOfType(result, typeof(IServiceCollection));
+            Assert.IsInstanceOfType<IServiceCollection>(result);
         }
 
         [TestMethod]
@@ -69,7 +69,7 @@ namespace ZeroRedact.UnitTest.ServiceRegistration
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.IsInstanceOfType(result, typeof(IServiceCollection));
+            Assert.IsInstanceOfType<IServiceCollection>(result);
         }
 
         [TestMethod]

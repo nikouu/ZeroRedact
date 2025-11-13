@@ -3,7 +3,7 @@
 When adding or updating a new API:
 
 1. Tests
-	1. Overwrite tests too
+	1. Tests for checking overwriting in the contiguous memory too
 1. Update public API check
 1. Bump version
 1. Code coverage

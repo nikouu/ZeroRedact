@@ -35,7 +35,6 @@
         /// <remarks>Example: "email@example.com" becomes "***il@example.com"</remarks>
         FirstHalfUsername,
 
-
         /// <summary>
         /// The second half of the username and the first half of the domain are redacted.
         /// </summary>

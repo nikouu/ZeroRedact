@@ -14,7 +14,7 @@ namespace ZeroRedact
 
         /// <inheritdoc />
         public string RedactEmailAddress(string emailAddress, EmailAddressRedactorOptions redactorOptions)
-            => RedactEmailAddressInternal(emailAddress, redactorOptions, skipValidation: false);
+            => RedactEmailAddressInternal(emailAddress, redactorOptions);
 
         /// <inheritdoc />
         public ReadOnlySpan<char> RedactEmailAddress(ReadOnlySpan<char> emailAddress)
@@ -22,7 +22,7 @@ namespace ZeroRedact
         /// <inheritdoc />
         /// 
         public ReadOnlySpan<char> RedactEmailAddress(ReadOnlySpan<char> emailAddress, EmailAddressRedactorOptions redactorOptions)
-            => RedactEmailAddressInternal(emailAddress, redactorOptions, skipValidation: false);
+            => RedactEmailAddressInternal(emailAddress, redactorOptions);
 
         /// <inheritdoc />
         public string RedactEmailAddress(MailAddress emailAddress)
@@ -30,35 +30,35 @@ namespace ZeroRedact
 
         /// <inheritdoc />
         public string RedactEmailAddress(MailAddress emailAddress, EmailAddressRedactorOptions redactorOptions)
-            => RedactEmailAddressInternal(emailAddress.Address, redactorOptions, skipValidation: true);
+            => RedactEmailAddressInternal(emailAddress.Address, redactorOptions);
 
-        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress, bool skipValidation = false)
+        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress)
         {
             var internalOptions = new InternalEmailAddressRedactorOptions(_baseRedactorOptions);
-            return RedactEmailInternal(emailAddress, internalOptions, skipValidation);
+            return RedactEmailInternal(emailAddress, internalOptions);
         }
 
-        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress, in EmailAddressRedactorOptions options, bool skipValidation = false)
+        private string RedactEmailAddressInternal(ReadOnlySpan<char> emailAddress, in EmailAddressRedactorOptions options)
         {
             var internalOptions = new InternalEmailAddressRedactorOptions(_baseRedactorOptions, options);
-            return RedactEmailInternal(emailAddress, internalOptions, skipValidation);
+            return RedactEmailInternal(emailAddress, internalOptions);
         }
 
-        private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, in InternalEmailAddressRedactorOptions options, bool skipValidation)
+        private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, in InternalEmailAddressRedactorOptions options)
         {
             try
             {
-                if (!skipValidation)
+                // Previously there was a SkipValidation flag when MailAddress parsing was used.
+                // However due to a breaking change in .NET 10 this meant there was a diffence in behaviour
+                // between versions. To stay consistent the validation is used for all versions now.
+                if (emailAddress.IsEmpty)
                 {
-                    if (emailAddress.IsEmpty)
-                    {
-                        return string.Empty;
-                    }
+                    return string.Empty;
+                }
 
-                    if (!EmailAddressValidator.IsValidForRedaction(emailAddress))
-                    {
-                        return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                    }
+                if (!EmailAddressValidator.IsValidForRedaction(emailAddress))
+                {
+                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
                 }
 
                 return options.RedactorType switch
