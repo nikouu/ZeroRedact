@@ -1,5 +1,7 @@
 # Benchmarks
 
+> **Note**: These values are averaged across multiple benchmarks. They represent an overall view of the performance, not any one single redaction performance. Please see the [benchmarks folder](https://github.com/nikouu/ZeroRedact/tree/main/benchmarks) for per-test benchmarks.
+
 Performance benchmarks for ZeroRedact across different versions. Each benchmark shows the mean duration and memory allocation for various operations.
 
 ## Redactor Benchmarks

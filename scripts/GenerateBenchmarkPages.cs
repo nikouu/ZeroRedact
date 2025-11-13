@@ -116,6 +116,8 @@ string GenerateMarkdownWithHtml(string benchmarkName, string htmlContent)
 {
     return $@"# {benchmarkName}
 
+> **Note**: These values are averaged across multiple benchmarks. They represent an overall view of the performance, not any one single redaction performance. Please see the [benchmarks folder](https://github.com/nikouu/ZeroRedact/tree/main/benchmarks) for per-test benchmarks.
+
 {htmlContent}";
 }
 
@@ -404,6 +406,8 @@ string GenerateIndexMarkdown(List<(string name, string category, string displayN
     
     var content = new System.Text.StringBuilder();
     content.AppendLine("# Benchmarks");
+    content.AppendLine();
+    content.AppendLine("> **Note**: These values are averaged across multiple benchmarks. They represent an overall view of the performance, not any one single redaction performance. Please see the [benchmarks folder](https://github.com/nikouu/ZeroRedact/tree/main/benchmarks) for per-test benchmarks.");
     content.AppendLine();
     content.AppendLine("Performance benchmarks for ZeroRedact across different versions. Each benchmark shows the mean duration and memory allocation for various operations.");
     content.AppendLine();
