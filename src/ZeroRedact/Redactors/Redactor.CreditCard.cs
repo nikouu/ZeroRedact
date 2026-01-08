@@ -37,33 +37,26 @@ namespace ZeroRedact
 
         internal static string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, in InternalCreditCardRedactorOptions options)
         {
-            try
+            // todo, is this what we want?
+            if (creditCardNumber.IsEmpty)
             {
-                // todo, is this what we want?
-                if (creditCardNumber.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!CreditCardValidator.IsValidForRedaction(creditCardNumber))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    CreditCardRedaction.All => CreateAllRedaction(options.RedactionCharacter, creditCardNumber.Length),
-                    CreditCardRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    CreditCardRedaction.Full => CreateFullRedactionWithSymbols(creditCardNumber, options.RedactionCharacter),
-                    CreditCardRedaction.ShowLastFour => CreateShowLastFourDigitRedaction(creditCardNumber, options.RedactionCharacter),
-                    CreditCardRedaction.ShowFirstSixLastFour => CreateShowLastSixLastFourRedaction(creditCardNumber, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
+                return string.Empty;
             }
-            catch
+
+            if (!CreditCardValidator.IsValidForRedaction(creditCardNumber))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                CreditCardRedaction.All => CreateAllRedaction(options.RedactionCharacter, creditCardNumber.Length),
+                CreditCardRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                CreditCardRedaction.Full => CreateFullRedactionWithSymbols(creditCardNumber, options.RedactionCharacter),
+                CreditCardRedaction.ShowLastFour => CreateShowLastFourDigitRedaction(creditCardNumber, options.RedactionCharacter),
+                CreditCardRedaction.ShowFirstSixLastFour => CreateShowLastSixLastFourRedaction(creditCardNumber, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         private static unsafe string CreateShowLastSixLastFourRedaction(ReadOnlySpan<char> creditCardNumber, char redactionCharacter)

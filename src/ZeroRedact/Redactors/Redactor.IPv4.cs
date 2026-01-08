@@ -37,31 +37,24 @@ namespace ZeroRedact
 
         private static string RedactIPv4Internal(ReadOnlySpan<char> ipAddress, in InternalIPv4AddressRedactorOptions options)
         {
-            try
+            if (ipAddress.IsEmpty)
             {
-                if (ipAddress.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!IPv4Validator.IsValidForRedaction(ipAddress))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    IPv4AddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
-                    IPv4AddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    IPv4AddressRedaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
-                    IPv4AddressRedaction.ShowLastOctet => CreateShowLastOctetRedaction(ipAddress, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
+                return string.Empty;
             }
-            catch
+
+            if (!IPv4Validator.IsValidForRedaction(ipAddress))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                IPv4AddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
+                IPv4AddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                IPv4AddressRedaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
+                IPv4AddressRedaction.ShowLastOctet => CreateShowLastOctetRedaction(ipAddress, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         private static unsafe string CreateShowLastOctetRedaction(ReadOnlySpan<char> ipv4Address, char redactionCharacter)

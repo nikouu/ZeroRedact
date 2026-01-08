@@ -37,31 +37,24 @@ namespace ZeroRedact
 
         private static string RedactMACAddressInternal(ReadOnlySpan<char> macAddress, in InternalMACAddressRedactorOptions options)
         {
-            try
+            if (macAddress.IsEmpty)
             {
-                if (macAddress.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!MACAddressValidator.IsValidForRedaction(macAddress))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    MACAddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, macAddress.Length),
-                    MACAddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    MACAddressRedaction.Full => CreateFullRedactionWithSymbols(macAddress, options.RedactionCharacter),
-                    MACAddressRedaction.ShowLastByte => CreateShowLastByteRedaction(macAddress, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
+                return string.Empty;
             }
-            catch
+
+            if (!MACAddressValidator.IsValidForRedaction(macAddress))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                MACAddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, macAddress.Length),
+                MACAddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                MACAddressRedaction.Full => CreateFullRedactionWithSymbols(macAddress, options.RedactionCharacter),
+                MACAddressRedaction.ShowLastByte => CreateShowLastByteRedaction(macAddress, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         // Technically the same as the IPv6 redaction

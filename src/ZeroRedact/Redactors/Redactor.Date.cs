@@ -35,26 +35,19 @@ namespace ZeroRedact
 
         private string RedactDateInternal(DateOnly date, in InternalDateRedactorOptions options)
         {
-            try
+            return options.RedactorType switch
             {
-                return options.RedactorType switch
-                {
-                    DateRedaction.All => CreateAllDateRedaction(date, options.RedactionCharacter),
-                    DateRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    DateRedaction.Full => CreateFullDateRedaction(date, options.RedactionCharacter),
-                    DateRedaction.Day => CreateDateRedaction(date, "d", options.RedactionCharacter),
-                    DateRedaction.Month => CreateDateRedaction(date, "m", options.RedactionCharacter),
-                    DateRedaction.Year => CreateDateRedaction(date, "y", options.RedactionCharacter),
-                    DateRedaction.DayAndMonth => CreateDateRedaction(date, "dm", options.RedactionCharacter),
-                    DateRedaction.MonthAndYear => CreateDateRedaction(date, "my", options.RedactionCharacter),
-                    DateRedaction.DayAndYear => CreateDateRedaction(date, "dy", options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
-            }
-            catch
-            {
-                return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-            }
+                DateRedaction.All => CreateAllDateRedaction(date, options.RedactionCharacter),
+                DateRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                DateRedaction.Full => CreateFullDateRedaction(date, options.RedactionCharacter),
+                DateRedaction.Day => CreateDateRedaction(date, "d", options.RedactionCharacter),
+                DateRedaction.Month => CreateDateRedaction(date, "m", options.RedactionCharacter),
+                DateRedaction.Year => CreateDateRedaction(date, "y", options.RedactionCharacter),
+                DateRedaction.DayAndMonth => CreateDateRedaction(date, "dm", options.RedactionCharacter),
+                DateRedaction.MonthAndYear => CreateDateRedaction(date, "my", options.RedactionCharacter),
+                DateRedaction.DayAndYear => CreateDateRedaction(date, "dy", options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         private string CreateAllDateRedaction(DateOnly date, char redactionCharacter)

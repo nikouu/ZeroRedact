@@ -37,31 +37,24 @@ namespace ZeroRedact
 
         private static string RedactIPv6Internal(ReadOnlySpan<char> ipAddress, in InternalIPv6AddressRedactorOptions options)
         {
-            try
+            if (ipAddress.IsEmpty)
             {
-                if (ipAddress.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!IPv6Validator.IsValidForRedaction(ipAddress))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    IPv6AddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
-                    IPv6AddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    IPv6AddressRedaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
-                    IPv6AddressRedaction.ShowLastQuartet => CreateShowLastQuartetRedaction(ipAddress, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
+                return string.Empty;
             }
-            catch
+
+            if (!IPv6Validator.IsValidForRedaction(ipAddress))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                IPv6AddressRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, ipAddress.Length),
+                IPv6AddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                IPv6AddressRedaction.Full => CreateFullRedactionWithSymbols(ipAddress, options.RedactionCharacter),
+                IPv6AddressRedaction.ShowLastQuartet => CreateShowLastQuartetRedaction(ipAddress, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         // Technically the same as the MAC address redaction

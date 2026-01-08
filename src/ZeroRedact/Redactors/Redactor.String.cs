@@ -36,28 +36,21 @@ namespace ZeroRedact
 
         private static string RedactStringInternal(ReadOnlySpan<char> value, in InternalStringRedactorOptions options)
         {
-            try
+            if (value.IsEmpty)
             {
-                if (value.IsEmpty)
-                {
-                    return string.Empty;
-                }
+                return string.Empty;
+            }
 
-                return options.RedactorType switch
-                {
-                    StringRedaction.All => CreateAllRedaction(options.RedactionCharacter, value.Length),
-                    StringRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    StringRedaction.FirstHalf => CreateFirstHalfStringRedaction(value, options.RedactionCharacter),
-                    StringRedaction.SecondHalf => CreateSecondHalfStringRedaction(value, options.RedactionCharacter),
-                    StringRedaction.IgnoreSymbols => CreateFullRedactionWithSymbols(value, options.RedactionCharacter),
-                    StringRedaction.ShowFirstAndLast => CreateShowFirstAndLastRedaction(value, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
-            }
-            catch
+            return options.RedactorType switch
             {
-                return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-            }
+                StringRedaction.All => CreateAllRedaction(options.RedactionCharacter, value.Length),
+                StringRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                StringRedaction.FirstHalf => CreateFirstHalfStringRedaction(value, options.RedactionCharacter),
+                StringRedaction.SecondHalf => CreateSecondHalfStringRedaction(value, options.RedactionCharacter),
+                StringRedaction.IgnoreSymbols => CreateFullRedactionWithSymbols(value, options.RedactionCharacter),
+                StringRedaction.ShowFirstAndLast => CreateShowFirstAndLastRedaction(value, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         private static unsafe string CreateFirstHalfStringRedaction(ReadOnlySpan<char> value, char redactionCharacter)

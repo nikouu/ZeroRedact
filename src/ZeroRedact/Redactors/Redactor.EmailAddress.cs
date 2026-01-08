@@ -46,38 +46,31 @@ namespace ZeroRedact
 
         private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, in InternalEmailAddressRedactorOptions options)
         {
-            try
+            // Previously there was a SkipValidation flag when MailAddress parsing was used.
+            // However due to a breaking change in .NET 10 this meant there was a diffence in behaviour
+            // between versions. To stay consistent the validation is used for all versions now.
+            if (emailAddress.IsEmpty)
             {
-                // Previously there was a SkipValidation flag when MailAddress parsing was used.
-                // However due to a breaking change in .NET 10 this meant there was a diffence in behaviour
-                // between versions. To stay consistent the validation is used for all versions now.
-                if (emailAddress.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!EmailAddressValidator.IsValidForRedaction(emailAddress))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    EmailAddressRedaction.All => CreateAllRedaction(options.RedactionCharacter, emailAddress.Length),
-                    EmailAddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    EmailAddressRedaction.Full => CreateFullEmailRedaction(emailAddress, options.RedactionCharacter),
-                    EmailAddressRedaction.Username => CreateUsernameRedaction(emailAddress, options.RedactionCharacter),
-                    EmailAddressRedaction.FirstHalfUsername => CreateHalfUsernameRedaction(emailAddress, options.RedactionCharacter),
-                    EmailAddressRedaction.Middle => CreateMiddleRedaction(emailAddress, options.RedactionCharacter),
-                    EmailAddressRedaction.MostUsername => CreateMostUsernameRedaction(emailAddress, options.RedactionCharacter),
-                    EmailAddressRedaction.ShowFirstCharacters => CreateShowFirstCharactersRedaction(emailAddress, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
+                return string.Empty;
             }
-            catch
+
+            if (!EmailAddressValidator.IsValidForRedaction(emailAddress))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                EmailAddressRedaction.All => CreateAllRedaction(options.RedactionCharacter, emailAddress.Length),
+                EmailAddressRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                EmailAddressRedaction.Full => CreateFullEmailRedaction(emailAddress, options.RedactionCharacter),
+                EmailAddressRedaction.Username => CreateUsernameRedaction(emailAddress, options.RedactionCharacter),
+                EmailAddressRedaction.FirstHalfUsername => CreateHalfUsernameRedaction(emailAddress, options.RedactionCharacter),
+                EmailAddressRedaction.Middle => CreateMiddleRedaction(emailAddress, options.RedactionCharacter),
+                EmailAddressRedaction.MostUsername => CreateMostUsernameRedaction(emailAddress, options.RedactionCharacter),
+                EmailAddressRedaction.ShowFirstCharacters => CreateShowFirstCharactersRedaction(emailAddress, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
 
         private static unsafe string CreateFullEmailRedaction(ReadOnlySpan<char> emailAddress, char redactionCharacter)

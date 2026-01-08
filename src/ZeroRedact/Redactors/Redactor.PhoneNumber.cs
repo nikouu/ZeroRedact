@@ -35,32 +35,24 @@ namespace ZeroRedact
 
         private static string RedactPhoneNumberInternal(ReadOnlySpan<char> phoneNumber, in InternalPhoneNumberRedactorOptions options)
         {
-            try
+            if (phoneNumber.IsEmpty)
             {
-                if (phoneNumber.IsEmpty)
-                {
-                    return string.Empty;
-                }
-
-                if (!PhoneNumberValidator.IsValidForRedaction(phoneNumber))
-                {
-                    return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
-                }
-
-                return options.RedactorType switch
-                {
-                    PhoneNumberRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, phoneNumber.Length),
-                    PhoneNumberRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
-                    PhoneNumberRedaction.Full => CreateFullRedactionWithSymbols(phoneNumber, options.RedactionCharacter),
-                    PhoneNumberRedaction.ShowLastFour => CreateShowLastFourDigitRedaction(phoneNumber, options.RedactionCharacter),
-                    _ => throw new NotImplementedException()
-                };
-
+                return string.Empty;
             }
-            catch
+
+            if (!PhoneNumberValidator.IsValidForRedaction(phoneNumber))
             {
                 return CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize);
             }
+
+            return options.RedactorType switch
+            {
+                PhoneNumberRedaction.All => CreateFixedLengthRedaction(options.RedactionCharacter, phoneNumber.Length),
+                PhoneNumberRedaction.FixedLength => CreateFixedLengthRedaction(options.RedactionCharacter, options.FixedLengthSize),
+                PhoneNumberRedaction.Full => CreateFullRedactionWithSymbols(phoneNumber, options.RedactionCharacter),
+                PhoneNumberRedaction.ShowLastFour => CreateShowLastFourDigitRedaction(phoneNumber, options.RedactionCharacter),
+                _ => throw new NotImplementedException()
+            };
         }
     }
 }
