@@ -67,7 +67,7 @@ namespace ZeroRedact
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                var halfLength = (int)Math.Ceiling(input.Length / 2d);
+                var halfLength = (input.Length + 1) / 2;
 
                 outputBuffer[..halfLength].Fill(state.RedactionCharacter);
                 input[halfLength..].CopyTo(outputBuffer[halfLength..]);
@@ -90,7 +90,7 @@ namespace ZeroRedact
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
-                var halfLength = (int)Math.Ceiling(input.Length / 2d);
+                var halfLength = (input.Length + 1) / 2;
 
                 var secondHalfLength = outputBuffer.Length - halfLength;
 
