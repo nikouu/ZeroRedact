@@ -19,7 +19,7 @@
                 }
             }
 
-            return value.Length >= 12 && value.Length <= 19;
+            return digitCount >= 12 && digitCount <= 19;
         }
     }
 }
