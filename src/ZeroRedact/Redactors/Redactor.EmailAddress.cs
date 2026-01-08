@@ -228,7 +228,7 @@ namespace ZeroRedact
             {
                 var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
 
-                outputBuffer.Fill('*');
+                outputBuffer.Fill(state.RedactionCharacter);
 
                 // first characters
                 var finalAtIndex = input.LastIndexOf('@');
