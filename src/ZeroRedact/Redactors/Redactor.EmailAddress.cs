@@ -47,7 +47,7 @@ namespace ZeroRedact
         private static string RedactEmailInternal(ReadOnlySpan<char> emailAddress, in InternalEmailAddressRedactorOptions options)
         {
             // Previously there was a SkipValidation flag when MailAddress parsing was used.
-            // However due to a breaking change in .NET 10 this meant there was a diffence in behaviour
+            // However due to a breaking change in .NET 10 this meant there was a difference in behaviour
             // between versions. To stay consistent the validation is used for all versions now.
             if (emailAddress.IsEmpty)
             {
@@ -143,7 +143,7 @@ namespace ZeroRedact
                 var username = input[..finalAtIndex];
                 var domain = input[finalAtIndex..];
 
-                var halfLength = (int)Math.Ceiling(username.Length / 2d);
+                var halfLength = (username.Length + 1) / 2;
 
                 outputBuffer[..halfLength].Fill(state.RedactionCharacter);
                 username[halfLength..].CopyTo(outputBuffer[halfLength..]);
@@ -171,8 +171,8 @@ namespace ZeroRedact
                 var username = input[..finalAtIndex];
                 var domain = input[finalAtIndex..];
 
-                var secondHalfUsernameIndex = username.Length - (int)Math.Ceiling(username.Length / 2d);
-                var halfDomain = (int)Math.Ceiling(domain.Length / 2d);
+                var secondHalfUsernameIndex = username.Length - ((username.Length + 1) / 2);
+                var halfDomain = (domain.Length + 1) / 2;
                 var secondHalfDomainIndex = finalAtIndex + halfDomain;
 
                 username[..secondHalfUsernameIndex].CopyTo(outputBuffer);
