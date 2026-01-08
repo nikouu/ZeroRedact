@@ -101,6 +101,9 @@ namespace ZeroRedact
             return result;
         }
 
+        // Note that:
+        // - Length 1: Shows the single character (first and last are the same)
+        // - Length 2: Shows both characters (no middle to redact)
         private static unsafe string CreateShowFirstAndLastRedaction(ReadOnlySpan<char> value, char redactionCharacter)
         {
             ref var valueRef = ref MemoryMarshal.GetReference(value);
@@ -115,6 +118,13 @@ namespace ZeroRedact
             var result = string.Create(value.Length, redactorState, static (outputBuffer, state) =>
             {
                 var input = new ReadOnlySpan<char>(state.StartPointer.ToPointer(), outputBuffer.Length);
+
+                // Micro-optimisation for short strings
+                if (outputBuffer.Length <= 2)
+                {
+                    input.CopyTo(outputBuffer);
+                    return;
+                }
 
                 outputBuffer.Fill(state.RedactionCharacter);
                 outputBuffer[0] = input[0];

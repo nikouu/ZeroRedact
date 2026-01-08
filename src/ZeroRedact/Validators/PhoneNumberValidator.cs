@@ -1,6 +1,6 @@
 ﻿namespace ZeroRedact.Validators
 {
-    internal class PhoneNumberValidator
+    internal static class PhoneNumberValidator
     {
         public static bool IsValidForRedaction(ReadOnlySpan<char> phoneNumber)
         {

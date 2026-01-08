@@ -1,6 +1,6 @@
 ﻿namespace ZeroRedact.Validators
 {
-    internal class MACAddressValidator
+    internal static class MACAddressValidator
     {
         public static bool IsValidForRedaction(ReadOnlySpan<char> macAddress)
         {
