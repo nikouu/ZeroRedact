@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: StringRedaction
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: All
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -77,7 +77,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLength
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FirstHalf
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: SecondHalf
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: IgnoreSymbols
     path: ../src/ZeroRedact/Enums/StringRedaction.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/StringRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowFirstAndLast
     path: ../src/ZeroRedact/Enums/StringRedaction.cs

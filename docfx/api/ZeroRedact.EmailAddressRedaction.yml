@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: EmailAddressRedaction
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: All
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -79,7 +79,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLength
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Full
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Username
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FirstHalfUsername
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Middle
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: MostUsername
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/EmailAddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowFirstCharacters
     path: ../src/ZeroRedact/Enums/EmailAddressRedaction.cs

@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.String.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Redactor
     path: ../src/ZeroRedact/Redactors/Redactor.String.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Common.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Common.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Redactors/Redactor.Common.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.CreditCard.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactCreditCard
     path: ../src/ZeroRedact/Redactors/Redactor.CreditCard.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.CreditCard.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactCreditCard
     path: ../src/ZeroRedact/Redactors/Redactor.CreditCard.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.CreditCard.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactCreditCard
     path: ../src/ZeroRedact/Redactors/Redactor.CreditCard.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.CreditCard.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactCreditCard
     path: ../src/ZeroRedact/Redactors/Redactor.CreditCard.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Date.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactDate
     path: ../src/ZeroRedact/Redactors/Redactor.Date.cs
@@ -361,7 +361,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Date.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactDate
     path: ../src/ZeroRedact/Redactors/Redactor.Date.cs
@@ -404,7 +404,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Date.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactDate
     path: ../src/ZeroRedact/Redactors/Redactor.Date.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.Date.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactDate
     path: ../src/ZeroRedact/Redactors/Redactor.Date.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -562,7 +562,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -601,7 +601,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -643,7 +643,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -679,7 +679,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactEmailAddress
     path: ../src/ZeroRedact/Redactors/Redactor.EmailAddress.cs
@@ -718,7 +718,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv4.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv4Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv4.cs
@@ -757,7 +757,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv4.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv4Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv4.cs
@@ -799,7 +799,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv4.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv4Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv4.cs
@@ -838,7 +838,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv4.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv4Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv4.cs
@@ -880,7 +880,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv6.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv6Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv6.cs
@@ -919,7 +919,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv6.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv6Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv6.cs
@@ -961,7 +961,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv6.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv6Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv6.cs
@@ -1000,7 +1000,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.IPv6.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactIPv6Address
     path: ../src/ZeroRedact/Redactors/Redactor.IPv6.cs
@@ -1042,7 +1042,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.MACAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactMACAddress
     path: ../src/ZeroRedact/Redactors/Redactor.MACAddress.cs
@@ -1081,7 +1081,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.MACAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactMACAddress
     path: ../src/ZeroRedact/Redactors/Redactor.MACAddress.cs
@@ -1123,7 +1123,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.MACAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactMACAddress
     path: ../src/ZeroRedact/Redactors/Redactor.MACAddress.cs
@@ -1162,7 +1162,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.MACAddress.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactMACAddress
     path: ../src/ZeroRedact/Redactors/Redactor.MACAddress.cs
@@ -1204,7 +1204,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactPhoneNumber
     path: ../src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
@@ -1243,7 +1243,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactPhoneNumber
     path: ../src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
@@ -1285,7 +1285,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactPhoneNumber
     path: ../src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
@@ -1324,7 +1324,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactPhoneNumber
     path: ../src/ZeroRedact/Redactors/Redactor.PhoneNumber.cs
@@ -1366,7 +1366,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.String.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactString
     path: ../src/ZeroRedact/Redactors/Redactor.String.cs
@@ -1405,7 +1405,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.String.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactString
     path: ../src/ZeroRedact/Redactors/Redactor.String.cs
@@ -1447,7 +1447,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.String.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactString
     path: ../src/ZeroRedact/Redactors/Redactor.String.cs
@@ -1486,7 +1486,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Redactors/Redactor.String.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactString
     path: ../src/ZeroRedact/Redactors/Redactor.String.cs

@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">50.312 ns</td><td class="number-col">50.978 ns</td><td class="number-col">49.992 ns</td><td class="number-col">49.746 ns</td><td class="number-col">49.581 ns</td><td class="number-col">47.476 ns</td><td class="number-col">70.517 ns</td><td class="number-col">67.799 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">50.464 ns</td><td class="number-col">50.060 ns</td><td class="number-col">50.049 ns</td><td class="number-col">51.293 ns</td><td class="number-col">49.768 ns</td><td class="number-col">51.045 ns</td><td class="number-col">73.023 ns</td><td class="number-col">67.760 ns</td></tr>
+            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">50.312 ns</td><td class="number-col">50.978 ns</td><td class="number-col">49.992 ns</td><td class="number-col">49.746 ns</td><td class="number-col">49.581 ns</td><td class="number-col">47.476 ns</td><td class="number-col">70.517 ns</td><td class="number-col">46.895 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">50.464 ns</td><td class="number-col">50.060 ns</td><td class="number-col">50.049 ns</td><td class="number-col">51.293 ns</td><td class="number-col">49.768 ns</td><td class="number-col">51.045 ns</td><td class="number-col">73.023 ns</td><td class="number-col">44.272 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactEmailAddress_String',
-                data: [50.31, 50.98, 49.99, 49.75, 49.58, 47.48, 70.52, 67.80],
+                data: [50.31, 50.98, 49.99, 49.75, 49.58, 47.48, 70.52, 46.89],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactEmailAddress_ReadOnlySpan',
-                data: [50.46, 50.06, 50.05, 51.29, 49.77, 51.04, 73.02, 67.76],
+                data: [50.46, 50.06, 50.05, 51.29, 49.77, 51.04, 73.02, 44.27],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

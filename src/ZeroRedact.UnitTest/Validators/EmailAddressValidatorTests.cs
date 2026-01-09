@@ -20,6 +20,7 @@ namespace ZeroRedact.UnitTest.Validators
             yield return new object[] { "username@com" };
             yield return new object[] { "username@" };
             yield return new object[] { "username@." };
+            yield return new object[] { "test..email@example.com" };
         }
 
         [TestMethod]

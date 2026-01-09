@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/ZeroRedactExtensions.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ZeroRedactExtensions
     path: ../src/ZeroRedact/ZeroRedactExtensions.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/ZeroRedactExtensions.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: AddZeroRedact
     path: ../src/ZeroRedact/ZeroRedactExtensions.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/ZeroRedactExtensions.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: AddZeroRedact
     path: ../src/ZeroRedact/ZeroRedactExtensions.cs

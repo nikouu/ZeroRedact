@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/IPv6AddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: IPv6AddressRedaction
     path: ../src/ZeroRedact/Enums/IPv6AddressRedaction.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/IPv6AddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: All
     path: ../src/ZeroRedact/Enums/IPv6AddressRedaction.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/IPv6AddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLength
     path: ../src/ZeroRedact/Enums/IPv6AddressRedaction.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/IPv6AddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Full
     path: ../src/ZeroRedact/Enums/IPv6AddressRedaction.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/IPv6AddressRedaction.cs
-      branch: Exception-swallowing-removal
+      branch: 4.0.0
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowLastQuartet
     path: ../src/ZeroRedact/Enums/IPv6AddressRedaction.cs
