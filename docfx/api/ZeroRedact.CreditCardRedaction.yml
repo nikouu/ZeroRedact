@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: CreditCardRedaction
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: All
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLength
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Full
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowLastFour
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs
@@ -163,7 +163,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/CreditCardRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowFirstSixLastFour
     path: ../src/ZeroRedact/Enums/CreditCardRedaction.cs

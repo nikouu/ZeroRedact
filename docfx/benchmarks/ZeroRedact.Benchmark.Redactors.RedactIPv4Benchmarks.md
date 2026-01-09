@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">35.875 ns</td><td class="number-col">35.401 ns</td><td class="number-col">35.250 ns</td><td class="number-col">35.001 ns</td><td class="number-col">35.008 ns</td><td class="number-col">29.564 ns</td><td class="number-col">22.419 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">34.904 ns</td><td class="number-col">34.641 ns</td><td class="number-col">35.372 ns</td><td class="number-col">34.663 ns</td><td class="number-col">34.753 ns</td><td class="number-col">34.481 ns</td><td class="number-col">22.944 ns</td></tr>
+            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">35.875 ns</td><td class="number-col">35.401 ns</td><td class="number-col">35.250 ns</td><td class="number-col">35.001 ns</td><td class="number-col">35.008 ns</td><td class="number-col">29.564 ns</td><td class="number-col">22.419 ns</td><td class="number-col">21.982 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">34.904 ns</td><td class="number-col">34.641 ns</td><td class="number-col">35.372 ns</td><td class="number-col">34.663 ns</td><td class="number-col">34.753 ns</td><td class="number-col">34.481 ns</td><td class="number-col">22.944 ns</td><td class="number-col">22.059 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
+            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0", "4.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactIPv4_String',
-                data: [35.88, 35.40, 35.25, 35.00, 35.01, 29.56, 22.42],
+                data: [35.88, 35.40, 35.25, 35.00, 35.01, 29.56, 22.42, 21.98],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv4_ReadOnlySpan',
-                data: [34.90, 34.64, 35.37, 34.66, 34.75, 34.48, 22.94],
+                data: [34.90, 34.64, 35.37, 34.66, 34.75, 34.48, 22.94, 22.06],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactIPv4_String',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48, 48, 48],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv4_ReadOnlySpan',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48, 48, 48],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

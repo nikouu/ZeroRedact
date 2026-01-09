@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: StringRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: EmailAddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: DateRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -153,7 +153,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: CreditCardRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -184,7 +184,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: PhoneNumberRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -215,7 +215,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: IPv4AddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: IPv6AddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -277,7 +277,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: MACAddressRedactorOptions
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -308,7 +308,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactionCharacter
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -339,7 +339,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLengthSize
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs
@@ -370,7 +370,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/RedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Options/Public/RedactorOptions.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/DateRedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: DateRedactorOptions
     path: ../src/ZeroRedact/Options/Public/DateRedactorOptions.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/DateRedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactionCharacter
     path: ../src/ZeroRedact/Options/Public/DateRedactorOptions.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/DateRedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLengthSize
     path: ../src/ZeroRedact/Options/Public/DateRedactorOptions.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/DateRedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: RedactorType
     path: ../src/ZeroRedact/Options/Public/DateRedactorOptions.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Options/Public/DateRedactorOptions.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: .ctor
     path: ../src/ZeroRedact/Options/Public/DateRedactorOptions.cs

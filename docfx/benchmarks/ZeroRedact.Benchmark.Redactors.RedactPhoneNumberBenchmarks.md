@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">35.770 ns</td><td class="number-col">35.857 ns</td><td class="number-col">35.750 ns</td><td class="number-col">37.240 ns</td><td class="number-col">37.293 ns</td><td class="number-col">30.988 ns</td><td class="number-col">25.037 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">36.834 ns</td><td class="number-col">35.745 ns</td><td class="number-col">36.757 ns</td><td class="number-col">37.314 ns</td><td class="number-col">35.571 ns</td><td class="number-col">36.818 ns</td><td class="number-col">26.013 ns</td></tr>
+            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">35.770 ns</td><td class="number-col">35.857 ns</td><td class="number-col">35.750 ns</td><td class="number-col">37.240 ns</td><td class="number-col">37.293 ns</td><td class="number-col">30.988 ns</td><td class="number-col">25.037 ns</td><td class="number-col">21.344 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">36.834 ns</td><td class="number-col">35.745 ns</td><td class="number-col">36.757 ns</td><td class="number-col">37.314 ns</td><td class="number-col">35.571 ns</td><td class="number-col">36.818 ns</td><td class="number-col">26.013 ns</td><td class="number-col">23.538 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
+            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactPhoneNumberBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactPhoneNumberBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0", "4.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactPhoneNumberBenchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactPhoneNumber_String',
-                data: [35.77, 35.86, 35.75, 37.24, 37.29, 30.99, 25.04],
+                data: [35.77, 35.86, 35.75, 37.24, 37.29, 30.99, 25.04, 21.34],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactPhoneNumber_ReadOnlySpan',
-                data: [36.83, 35.75, 36.76, 37.31, 35.57, 36.82, 26.01],
+                data: [36.83, 35.75, 36.76, 37.31, 35.57, 36.82, 26.01, 23.54],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactPhoneNumber_String',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48, 48, 48],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactPhoneNumber_ReadOnlySpan',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48, 48, 48],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">4.627 ns</td><td class="number-col">4.570 ns</td><td class="number-col">4.574 ns</td><td class="number-col">4.579 ns</td><td class="number-col">4.595 ns</td><td class="number-col">4.573 ns</td><td class="number-col">3.266 ns</td></tr>
+            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">4.627 ns</td><td class="number-col">4.570 ns</td><td class="number-col">4.574 ns</td><td class="number-col">4.579 ns</td><td class="number-col">4.595 ns</td><td class="number-col">4.573 ns</td><td class="number-col">3.266 ns</td><td class="number-col">3.294 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th><th class="number-col">4.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Validators_MACAddressValidatorBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Validators_MACAddressValidatorBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0", "4.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Validators_MACAddressValidatorBenchmarks'), {
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateMacAddresses',
-                data: [4.63, 4.57, 4.57, 4.58, 4.60, 4.57, 3.27],
+                data: [4.63, 4.57, 4.57, 4.58, 4.60, 4.57, 3.27, 3.29],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
@@ -161,7 +161,7 @@
             datasets: [
             {
                 label: 'ValidateMacAddresses',
-                data: [null, null, null, null, null, null, null],
+                data: [null, null, null, null, null, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/MACAddressRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: MACAddressRedaction
     path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/MACAddressRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: All
     path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/MACAddressRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: FixedLength
     path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/MACAddressRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: Full
     path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: src/ZeroRedact/Enums/MACAddressRedaction.cs
-      branch: main
+      branch: Exception-swallowing-removal
       repo: https://github.com/nikouu/ZeroRedact.git
     id: ShowLastByte
     path: ../src/ZeroRedact/Enums/MACAddressRedaction.cs
