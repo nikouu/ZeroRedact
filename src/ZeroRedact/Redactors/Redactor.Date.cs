@@ -141,7 +141,7 @@ namespace ZeroRedact
         // (e.g., 'd' in "dd") to remain defensive against custom cultures with unusual
         // ShortDatePattern formats. Standard patterns always have single-type specifiers
         // per part (d/dd, M/MM, y/yy/yyyy), but we don't assume this.
-        // TODO: Spend time properly understand whether we can move to checking just the first character.
+        // TODO: Spend time to properly understand whether we can move to checking just the first character.
         private static bool ContainsCharIgnoreCase(ReadOnlySpan<char> span, char target)
         {
             char lowerTarget = char.ToLowerInvariant(target);

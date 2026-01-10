@@ -377,5 +377,55 @@ namespace ZeroRedact.UnitTest.Redactors
             // Assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        [DataRow("hu-HU", 2023, 6, 15, "****. **. **.")]
+        [DataRow("ko-KR", 2023, 6, 15, "****. *. **.")]
+        [DataRow("hr-HR", 2023, 6, 15, "**. **. ****.")]
+        [DataRow("sk-SK", 2023, 6, 15, "**. *. ****")]
+        [DataRow("sl-SI", 2023, 6, 15, "**. **. ****")]
+        public void RedactDate_Full_WithMultiCharSeparator_ShouldRedactCorrectly(
+            string cultureName, int year, int month, int day, string expected)
+        {
+            // Arrange
+            var originalCulture = CultureInfo.CurrentCulture;
+            CultureInfo.CurrentCulture = new CultureInfo(cultureName);
+
+            var redactor = new Redactor();
+            var date = new DateOnly(year, month, day);
+
+            // Act
+            string result = redactor.RedactDate(date, new DateRedactorOptions { RedactorType = DateRedaction.Full });
+
+            // Assert
+            Assert.AreEqual(expected, result);
+            CultureInfo.CurrentCulture = originalCulture;
+        }
+
+        [TestMethod]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.Day, "**. 6. 2023")]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.Month, "15. *. 2023")]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.Year, "15. 6. ****")]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.DayAndMonth, "**. *. 2023")]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.MonthAndYear, "15. *. ****")]
+        [DataRow("sk-SK", 2023, 6, 15, DateRedaction.DayAndYear, "**. 6. ****")]
+        public void RedactDate_WithMultiCharSeparator_ShouldRedactCorrectParts(
+            string cultureName, int year, int month, int day, DateRedaction redactionType, string expected)
+        {
+            // Arrange
+            var originalCulture = CultureInfo.CurrentCulture;
+            CultureInfo.CurrentCulture = new CultureInfo(cultureName);
+
+            var redactor = new Redactor();
+            var date = new DateOnly(year, month, day);
+
+            // Act
+            string result = redactor.RedactDate(date, new DateRedactorOptions { RedactorType = redactionType });
+
+            // Assert
+            Assert.AreEqual(expected, result);
+
+            CultureInfo.CurrentCulture = originalCulture;
+        }
     }
 }
