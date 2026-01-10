@@ -80,9 +80,7 @@ namespace ZeroRedact
                 }
             }
 
-            Span<char> result = dateCharSpan[..charsWritten];
-
-            return result.ToString();
+            return dateCharSpan[..charsWritten].ToString();
         }
 
         private static string CreateDateRedaction(DateOnly date, ReadOnlySpan<char> formatCharacters, char redactionCharacter)
@@ -96,32 +94,38 @@ namespace ZeroRedact
 
             _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, culture);
 
-            // get the different date parts (day, month, year)
+            // Get the different date parts (day, month, year)
             ReadOnlySpan<char> cleanDate = dateCharSpan[..charsWritten];
             Span<Range> cleanDateParts = stackalloc Range[3];
-            // Fast path for single-char separator
+            Span<Range> cleanFormatParts = stackalloc Range[3];
+            
+            // Fast path for single-char separator (most cultures)
             if (dateSeparator.Length == 1)
             {
-                cleanDate.Split(cleanDateParts, dateSeparator[0]);
+                char sep = dateSeparator[0];
+                cleanDate.Split(cleanDateParts, sep);
+                dateFormat.AsSpan().Split(cleanFormatParts, sep);
             }
             else
             {
                 cleanDate.Split(cleanDateParts, dateSeparator);
+                dateFormat.AsSpan().Split(cleanFormatParts, dateSeparator);
             }
 
-            // get the different format parts e.g. (dd, mm, yyyy)
             var cleanFormat = dateFormat.AsSpan();
-            Span<Range> cleanFormatParts = stackalloc Range[3];
-            cleanFormat.Split(cleanFormatParts, dateSeparator);
 
-            for (int i = 0; i < formatCharacters.Length; i++)
+            // Iterate over format parts first (always 3), then check against target chars
+            for (int j = 0; j < 3; j++)
             {
-                var formatChar = new ReadOnlySpan<char>(in formatCharacters[i]);
+                var formatPart = cleanFormat[cleanFormatParts[j]];
+                if (formatPart.IsEmpty) continue;
 
-                for (int j = 0; j < 3; j++)
+                // Check if any of the target format characters exist in this part
+                for (int i = 0; i < formatCharacters.Length; i++)
                 {
-                    // also accounts for when the date format has but the date number is two characters e.g. "d", being 31
-                    if (cleanFormat[cleanFormatParts[j]].Contains(formatChar, StringComparison.OrdinalIgnoreCase))
+                    char target = formatCharacters[i];                    
+                    
+                    if (ContainsCharIgnoreCase(formatPart, target))
                     {
                         dateCharSpan[cleanDateParts[j]].Fill(redactionCharacter);
                         break;
@@ -130,6 +134,27 @@ namespace ZeroRedact
             }
 
             return cleanDate.ToString();
+        }
+
+        // Manual case-insensitive search (faster than Contains with StringComparison).
+        // Note: We search the entire format part rather than just checking the first character
+        // (e.g., 'd' in "dd") to remain defensive against custom cultures with unusual
+        // ShortDatePattern formats. Standard patterns always have single-type specifiers
+        // per part (d/dd, M/MM, y/yy/yyyy), but we don't assume this.
+        // TODO: Spend time properly understand whether we can move to checking just the first character.
+        private static bool ContainsCharIgnoreCase(ReadOnlySpan<char> span, char target)
+        {
+            char lowerTarget = char.ToLowerInvariant(target);
+            
+            for (int i = 0; i < span.Length; i++)
+            {
+                if (char.ToLowerInvariant(span[i]) == lowerTarget)
+                {
+                    return true;
+                }
+            }
+            
+            return false;
         }
     }
 }
