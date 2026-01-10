@@ -35,9 +35,8 @@ namespace ZeroRedact
             return RedactCreditCardInternal(creditCardNumber, internalOptions);
         }
 
-        internal static string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, in InternalCreditCardRedactorOptions options)
+        private static string RedactCreditCardInternal(ReadOnlySpan<char> creditCardNumber, in InternalCreditCardRedactorOptions options)
         {
-            // todo, is this what we want?
             if (creditCardNumber.IsEmpty)
             {
                 return string.Empty;

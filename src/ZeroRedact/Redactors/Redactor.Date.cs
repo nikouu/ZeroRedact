@@ -50,27 +50,27 @@ namespace ZeroRedact
             };
         }
 
-        private string CreateAllDateRedaction(DateOnly date, char redactionCharacter)
+        private static string CreateAllDateRedaction(DateOnly date, char redactionCharacter)
         {
-            var formatProvider = CultureInfo.CurrentCulture;
-            var dateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
+            var culture = CultureInfo.CurrentCulture;
+            var dateFormat = culture.DateTimeFormat.ShortDatePattern;
 
             Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold];
 
-            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, formatProvider);
+            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, culture);
 
             return new string(redactionCharacter, charsWritten);
         }
 
         // 2.5 - 3x faster than using CreateDateRedaction()
-        private string CreateFullDateRedaction(DateOnly date, char redactionCharacter)
+        private static string CreateFullDateRedaction(DateOnly date, char redactionCharacter)
         {
-            var formatProvider = CultureInfo.CurrentCulture;
-            var dateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
+            var culture = CultureInfo.CurrentCulture;
+            var dateFormat = culture.DateTimeFormat.ShortDatePattern;
 
             Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold];
 
-            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, formatProvider);
+            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, culture);
 
             for (int i = 0; i < charsWritten; i++)
             {
@@ -85,24 +85,26 @@ namespace ZeroRedact
             return result.ToString();
         }
 
-        private string CreateDateRedaction(DateOnly date, ReadOnlySpan<char> formatCharacters, char redactionCharacter)
+        private static string CreateDateRedaction(DateOnly date, ReadOnlySpan<char> formatCharacters, char redactionCharacter)
         {
-            var formatProvider = CultureInfo.CurrentCulture;
-            var dateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
+            var culture = CultureInfo.CurrentCulture;
+            var dateTimeFormat = culture.DateTimeFormat;
+            var dateFormat = dateTimeFormat.ShortDatePattern;
+            var dateSeparator = dateTimeFormat.DateSeparator;
 
             Span<char> dateCharSpan = stackalloc char[Constants.StackAllocThreshold];
 
-            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, formatProvider);
+            _ = date.TryFormat(dateCharSpan, out var charsWritten, dateFormat, culture);
 
             // get the different date parts (day, month, year)
             ReadOnlySpan<char> cleanDate = dateCharSpan[..charsWritten];
             Span<Range> cleanDateParts = stackalloc Range[3];
-            cleanDate.Split(cleanDateParts, CultureInfo.CurrentCulture.DateTimeFormat.DateSeparator);
+            cleanDate.Split(cleanDateParts, dateSeparator);
 
             // get the different format parts e.g. (dd, mm, yyyy)
             var cleanFormat = dateFormat.AsSpan();
             Span<Range> cleanFormatParts = stackalloc Range[3];
-            cleanFormat.Split(cleanFormatParts, CultureInfo.CurrentCulture.DateTimeFormat.DateSeparator);
+            cleanFormat.Split(cleanFormatParts, dateSeparator);
 
             for (int i = 0; i < formatCharacters.Length; i++)
             {
