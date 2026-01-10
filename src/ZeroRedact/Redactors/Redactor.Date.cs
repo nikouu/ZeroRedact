@@ -33,7 +33,7 @@ namespace ZeroRedact
             return RedactDateInternal(date, internalOptions);
         }
 
-        private string RedactDateInternal(DateOnly date, in InternalDateRedactorOptions options)
+        private static string RedactDateInternal(DateOnly date, in InternalDateRedactorOptions options)
         {
             return options.RedactorType switch
             {

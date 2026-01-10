@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">87.730 ns</td><td class="number-col">91.973 ns</td><td class="number-col">89.920 ns</td><td class="number-col">90.203 ns</td><td class="number-col">90.045 ns</td><td class="number-col">86.637 ns</td><td class="number-col">73.704 ns</td><td class="number-col">70.352 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">87.408 ns</td><td class="number-col">90.642 ns</td><td class="number-col">95.330 ns</td><td class="number-col">89.517 ns</td><td class="number-col">87.840 ns</td><td class="number-col">89.421 ns</td><td class="number-col">74.610 ns</td><td class="number-col">71.975 ns</td></tr>
+            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">87.730 ns</td><td class="number-col">91.973 ns</td><td class="number-col">89.920 ns</td><td class="number-col">90.203 ns</td><td class="number-col">90.045 ns</td><td class="number-col">86.637 ns</td><td class="number-col">73.704 ns</td><td class="number-col">70.445 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">87.408 ns</td><td class="number-col">90.642 ns</td><td class="number-col">95.330 ns</td><td class="number-col">89.517 ns</td><td class="number-col">87.840 ns</td><td class="number-col">89.421 ns</td><td class="number-col">74.610 ns</td><td class="number-col">69.707 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactDate_DateTime',
-                data: [87.73, 91.97, 89.92, 90.20, 90.04, 86.64, 73.70, 70.35],
+                data: [87.73, 91.97, 89.92, 90.20, 90.04, 86.64, 73.70, 70.44],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateOnly',
-                data: [87.41, 90.64, 95.33, 89.52, 87.84, 89.42, 74.61, 71.98],
+                data: [87.41, 90.64, 95.33, 89.52, 87.84, 89.42, 74.61, 69.71],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
