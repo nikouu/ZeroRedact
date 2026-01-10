@@ -8,23 +8,23 @@ Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cor
 
 
 ```
-| Method              | DateInput    | Mean      | Error    | StdDev   | Median    | Gen0   | Allocated |
-|-------------------- |------------- |----------:|---------:|---------:|----------:|-------:|----------:|
-| RedactDate_DateTime | All          |  70.79 ns | 1.176 ns | 1.259 ns |  70.58 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | All          |  67.98 ns | 0.434 ns | 0.385 ns |  68.07 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Day          | 163.23 ns | 3.316 ns | 5.162 ns | 160.18 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Day          | 164.87 ns | 3.360 ns | 4.368 ns | 162.85 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | DayAndMonth  | 181.67 ns | 2.234 ns | 1.866 ns | 180.92 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | DayAndMonth  | 179.63 ns | 3.352 ns | 3.587 ns | 177.87 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | DayAndYear   | 191.03 ns | 2.469 ns | 2.062 ns | 190.43 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | DayAndYear   | 189.31 ns | 1.376 ns | 1.149 ns | 189.33 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | FixedLength  |  10.24 ns | 0.049 ns | 0.046 ns |  10.23 ns |      - |         - |
-| RedactDate_DateOnly | FixedLength  |  10.42 ns | 0.044 ns | 0.036 ns |  10.41 ns |      - |         - |
-| RedactDate_DateTime | Full         |  73.90 ns | 0.612 ns | 0.542 ns |  73.67 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Full         |  78.14 ns | 0.476 ns | 0.398 ns |  78.21 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Month        | 166.88 ns | 2.053 ns | 1.603 ns | 166.22 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Month        | 170.96 ns | 3.446 ns | 5.262 ns | 168.34 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | MonthAndYear | 194.14 ns | 0.826 ns | 0.645 ns | 194.15 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | MonthAndYear | 195.85 ns | 1.171 ns | 1.150 ns | 195.55 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Year         | 175.10 ns | 2.094 ns | 1.749 ns | 174.67 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Year         | 175.08 ns | 3.496 ns | 3.270 ns | 173.70 ns | 0.0095 |      40 B |
+| Method              | DateInput    | Mean       | Error     | StdDev    | Gen0   | Allocated |
+|-------------------- |------------- |-----------:|----------:|----------:|-------:|----------:|
+| RedactDate_DateTime | All          |  70.407 ns | 1.1523 ns | 1.0779 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | All          |  68.600 ns | 0.9220 ns | 0.8174 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | Day          | 148.998 ns | 1.1642 ns | 1.0320 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | Day          | 147.815 ns | 0.8581 ns | 0.7165 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | DayAndMonth  | 171.713 ns | 1.6107 ns | 1.3450 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | DayAndMonth  | 169.107 ns | 0.6630 ns | 0.5536 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | DayAndYear   | 180.665 ns | 2.7388 ns | 2.4279 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | DayAndYear   | 176.566 ns | 1.9170 ns | 1.6008 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | FixedLength  |   9.968 ns | 0.0430 ns | 0.0381 ns |      - |         - |
+| RedactDate_DateOnly | FixedLength  |   9.959 ns | 0.0243 ns | 0.0203 ns |      - |         - |
+| RedactDate_DateTime | Full         |  78.682 ns | 1.0108 ns | 0.8441 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | Full         |  77.422 ns | 0.8659 ns | 0.7230 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | Month        | 156.056 ns | 0.5817 ns | 0.5157 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | Month        | 156.711 ns | 1.3790 ns | 1.2899 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | MonthAndYear | 183.741 ns | 1.4160 ns | 1.1824 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | MonthAndYear | 176.029 ns | 0.4578 ns | 0.3574 ns | 0.0095 |      40 B |
+| RedactDate_DateTime | Year         | 165.751 ns | 1.2961 ns | 1.0823 ns | 0.0095 |      40 B |
+| RedactDate_DateOnly | Year         | 161.091 ns | 1.9733 ns | 1.6478 ns | 0.0095 |      40 B |

@@ -99,7 +99,15 @@ namespace ZeroRedact
             // get the different date parts (day, month, year)
             ReadOnlySpan<char> cleanDate = dateCharSpan[..charsWritten];
             Span<Range> cleanDateParts = stackalloc Range[3];
-            cleanDate.Split(cleanDateParts, dateSeparator);
+            // Fast path for single-char separator
+            if (dateSeparator.Length == 1)
+            {
+                cleanDate.Split(cleanDateParts, dateSeparator[0]);
+            }
+            else
+            {
+                cleanDate.Split(cleanDateParts, dateSeparator);
+            }
 
             // get the different format parts e.g. (dd, mm, yyyy)
             var cleanFormat = dateFormat.AsSpan();
