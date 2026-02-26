@@ -1,20 +1,20 @@
 ```
 
-BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.6456/22H2/2022Update)
-Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
-.NET SDK 10.0.100
-  [Host]     : .NET 10.0.0 (10.0.25.52411), X64 RyuJIT AVX2
-  DefaultJob : .NET 10.0.0 (10.0.25.52411), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7840/25H2/2025Update/HudsonValley2)
+Intel Core Ultra 7 265KF 3.90GHz, 1 CPU, 20 logical and 20 physical cores
+.NET SDK 10.0.200-preview.0.26103.119
+  [Host]     : .NET 10.0.2 (10.0.2, 10.0.225.61305), X64 RyuJIT x86-64-v3
+  DefaultJob : .NET 10.0.2 (10.0.2, 10.0.225.61305), X64 RyuJIT x86-64-v3
 
 
 ```
-| Method                  | IPv4Input            | Mean     | Error    | StdDev   | Gen0   | Allocated |
-|------------------------ |--------------------- |---------:|---------:|---------:|-------:|----------:|
-| RedactIPv4_String       | 192.168.0.1:All      | 22.42 ns | 0.044 ns | 0.036 ns | 0.0115 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.168.0.1:All      | 22.94 ns | 0.077 ns | 0.065 ns | 0.0115 |      48 B |
-| RedactIPv4_String       | 192.1(...)ength [23] | 16.23 ns | 0.046 ns | 0.043 ns |      - |         - |
-| RedactIPv4_ReadOnlySpan | 192.1(...)ength [23] | 17.19 ns | 0.026 ns | 0.020 ns |      - |         - |
-| RedactIPv4_String       | 192.168.0.1:Full     | 30.05 ns | 0.100 ns | 0.089 ns | 0.0114 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.168.0.1:Full     | 30.60 ns | 0.087 ns | 0.077 ns | 0.0114 |      48 B |
-| RedactIPv4_String       | 192.1(...)Octet [25] | 31.17 ns | 0.071 ns | 0.063 ns | 0.0114 |      48 B |
-| RedactIPv4_ReadOnlySpan | 192.1(...)Octet [25] | 31.97 ns | 0.119 ns | 0.100 ns | 0.0114 |      48 B |
+| Method                  | IPv4Input            | Mean     | Error    | StdDev   | Median   | Gen0   | Allocated |
+|------------------------ |--------------------- |---------:|---------:|---------:|---------:|-------:|----------:|
+| RedactIPv4_String       | 192.168.0.1:All      | 12.81 ns | 0.031 ns | 0.027 ns | 12.81 ns | 0.0030 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.168.0.1:All      | 13.14 ns | 0.274 ns | 0.450 ns | 12.84 ns | 0.0031 |      48 B |
+| RedactIPv4_String       | 192.1(...)ength [23] | 10.50 ns | 0.238 ns | 0.284 ns | 10.62 ns |      - |         - |
+| RedactIPv4_ReadOnlySpan | 192.1(...)ength [23] | 10.45 ns | 0.016 ns | 0.013 ns | 10.46 ns |      - |         - |
+| RedactIPv4_String       | 192.168.0.1:Full     | 14.50 ns | 0.317 ns | 0.521 ns | 14.12 ns | 0.0030 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.168.0.1:Full     | 15.98 ns | 0.329 ns | 0.353 ns | 16.11 ns | 0.0030 |      48 B |
+| RedactIPv4_String       | 192.1(...)Octet [25] | 14.72 ns | 0.032 ns | 0.027 ns | 14.72 ns | 0.0030 |      48 B |
+| RedactIPv4_ReadOnlySpan | 192.1(...)Octet [25] | 16.16 ns | 0.337 ns | 0.553 ns | 16.56 ns | 0.0030 |      48 B |

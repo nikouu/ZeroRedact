@@ -1,30 +1,30 @@
 ```
 
-BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.6456/22H2/2022Update)
-Intel Core i7-7700K CPU 4.20GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
-.NET SDK 10.0.100
-  [Host]     : .NET 10.0.0 (10.0.25.52411), X64 RyuJIT AVX2
-  DefaultJob : .NET 10.0.0 (10.0.25.52411), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7840/25H2/2025Update/HudsonValley2)
+Intel Core Ultra 7 265KF 3.90GHz, 1 CPU, 20 logical and 20 physical cores
+.NET SDK 10.0.200-preview.0.26103.119
+  [Host]     : .NET 10.0.2 (10.0.2, 10.0.225.61305), X64 RyuJIT x86-64-v3
+  DefaultJob : .NET 10.0.2 (10.0.2, 10.0.225.61305), X64 RyuJIT x86-64-v3
 
 
 ```
-| Method              | DateInput    | Mean      | Error    | StdDev   | Gen0   | Allocated |
-|-------------------- |------------- |----------:|---------:|---------:|-------:|----------:|
-| RedactDate_DateTime | All          |  73.70 ns | 0.163 ns | 0.144 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | All          |  74.61 ns | 0.142 ns | 0.126 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Day          | 168.28 ns | 1.124 ns | 0.938 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Day          | 167.09 ns | 0.130 ns | 0.109 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | DayAndMonth  | 185.90 ns | 0.937 ns | 0.783 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | DayAndMonth  | 186.64 ns | 1.070 ns | 0.894 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | DayAndYear   | 201.79 ns | 0.228 ns | 0.190 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | DayAndYear   | 195.51 ns | 0.341 ns | 0.285 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | FixedLength  |  11.98 ns | 0.040 ns | 0.035 ns |      - |         - |
-| RedactDate_DateOnly | FixedLength  |  11.94 ns | 0.005 ns | 0.004 ns |      - |         - |
-| RedactDate_DateTime | Full         |  79.15 ns | 0.073 ns | 0.057 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Full         |  80.05 ns | 0.250 ns | 0.195 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Month        | 177.02 ns | 0.163 ns | 0.145 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Month        | 178.53 ns | 0.152 ns | 0.118 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | MonthAndYear | 205.09 ns | 2.763 ns | 2.307 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | MonthAndYear | 200.48 ns | 0.307 ns | 0.256 ns | 0.0095 |      40 B |
-| RedactDate_DateTime | Year         | 184.65 ns | 0.840 ns | 0.744 ns | 0.0095 |      40 B |
-| RedactDate_DateOnly | Year         | 185.88 ns | 0.183 ns | 0.162 ns | 0.0095 |      40 B |
+| Method              | DateInput    | Mean      | Error     | StdDev    | Median    | Gen0   | Allocated |
+|-------------------- |------------- |----------:|----------:|----------:|----------:|-------:|----------:|
+| RedactDate_DateTime | All          | 29.515 ns | 0.1051 ns | 0.0931 ns | 29.514 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | All          | 29.333 ns | 0.0989 ns | 0.0925 ns | 29.341 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | Day          | 69.519 ns | 1.3942 ns | 2.2113 ns | 71.050 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | Day          | 66.666 ns | 0.2155 ns | 0.2016 ns | 66.657 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | DayAndMonth  | 72.012 ns | 0.1270 ns | 0.1060 ns | 72.042 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | DayAndMonth  | 73.156 ns | 0.2398 ns | 0.2126 ns | 73.144 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | DayAndYear   | 75.358 ns | 0.1548 ns | 0.1448 ns | 75.336 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | DayAndYear   | 76.066 ns | 1.5297 ns | 2.1444 ns | 74.917 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | FixedLength  |  7.809 ns | 0.0326 ns | 0.0272 ns |  7.803 ns |      - |         - |
+| RedactDate_DateOnly | FixedLength  |  7.990 ns | 0.0191 ns | 0.0169 ns |  7.989 ns |      - |         - |
+| RedactDate_DateTime | Full         | 34.332 ns | 0.7047 ns | 1.1966 ns | 33.658 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | Full         | 33.461 ns | 0.0750 ns | 0.0701 ns | 33.459 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | Month        | 69.236 ns | 0.1806 ns | 0.1689 ns | 69.199 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | Month        | 71.478 ns | 1.4396 ns | 2.3247 ns | 69.738 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | MonthAndYear | 78.084 ns | 0.1658 ns | 0.1628 ns | 78.109 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | MonthAndYear | 81.733 ns | 1.6442 ns | 2.7471 ns | 79.762 ns | 0.0025 |      40 B |
+| RedactDate_DateTime | Year         | 74.019 ns | 1.4746 ns | 2.2518 ns | 72.347 ns | 0.0025 |      40 B |
+| RedactDate_DateOnly | Year         | 71.949 ns | 0.7230 ns | 0.5645 ns | 71.738 ns | 0.0025 |      40 B |
