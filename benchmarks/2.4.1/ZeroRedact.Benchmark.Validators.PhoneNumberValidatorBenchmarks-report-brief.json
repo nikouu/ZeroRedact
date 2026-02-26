@@ -1,19 +1,19 @@
 {
-   "Title":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks-20251002-135840",
+   "Title":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks-20260226-193725",
    "HostEnvironmentInfo":{
       "BenchmarkDotNetCaption":"BenchmarkDotNet",
-      "BenchmarkDotNetVersion":"0.14.0",
-      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
-      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "BenchmarkDotNetVersion":"0.15.8",
+      "OsVersion":"Windows 11 (10.0.26200.7840/25H2/2025Update/HudsonValley2)",
+      "ProcessorName":"Intel Core Ultra 7 265KF",
       "PhysicalProcessorCount":1,
-      "PhysicalCoreCount":4,
-      "LogicalCoreCount":8,
-      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "PhysicalCoreCount":20,
+      "LogicalCoreCount":20,
+      "RuntimeVersion":".NET 10.0.2 (10.0.2, 10.0.225.61305)",
       "Architecture":"X64",
       "HasAttachedDebugger":false,
       "HasRyuJit":true,
       "Configuration":"RELEASE",
-      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "DotNetCliVersion":"10.0.200-preview.0.26103.119",
       "ChronometerFrequency":{
          "Hertz":10000000
       },
@@ -21,28 +21,28 @@
    },
    "Benchmarks":[
       {
-         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [macAddress=+1 (555) 123-4567]",
+         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [phoneNumber=+1 (555) 123-4567]",
          "Namespace":"ZeroRedact.Benchmark.Validators",
          "Type":"PhoneNumberValidatorBenchmarks",
          "Method":"ValidatePhoneNumber",
          "MethodTitle":"ValidatePhoneNumber",
-         "Parameters":"macAddress=+1 (555) 123-4567",
-         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(macAddress: \"+1 (555) 123-4567\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Parameters":"phoneNumber=+1 (555) 123-4567",
+         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(phoneNumber: \"+1 (555) 123-4567\")",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               13.23697566986084,13.153325021266937,13.166968524456024,13.095025718212128,13.025526702404022,13.139832019805908,13.105851411819458,13.097317516803741,13.145619630813599,13.08206170797348,13.049103319644928,13.069824874401093,13.176488876342773,13.037112355232239,13.139812648296356
+               4.1307903826236725,4.140819609165192,4.10669669508934,4.092870652675629,3.9699308574199677,3.9649203419685364,3.9845705032348633,4.045552015304565,3.9851129055023193,4.103811085224152,4.1540563106536865,4.142218828201294,4.134715348482132,4.188067466020584,4.135448485612869
             ],
             "N":15,
-            "Min":13.025526702404022,
-            "LowerFence":12.965649738907814,
-            "Q1":13.075943291187286,
-            "Median":13.105851411819458,
-            "Mean":13.114723066488901,
-            "Q3":13.149472326040268,
-            "UpperFence":13.25976587831974,
-            "Max":13.23697566986084,
-            "InterquartileRange":0.07352903485298157,
+            "Min":3.9649203419685364,
+            "LowerFence":3.8311300799250603,
+            "Q1":4.015332460403442,
+            "Median":4.10669669508934,
+            "Mean":4.085305432478587,
+            "Q3":4.1381340473890305,
+            "UpperFence":4.322336427867413,
+            "Max":4.188067466020584,
+            "InterquartileRange":0.12280158698558807,
             "LowerOutliers":[
                
             ],
@@ -52,192 +52,62 @@
             "AllOutliers":[
                
             ],
-            "StandardError":0.015013102120670653,
-            "Variance":0.003380898529285285,
-            "StandardDeviation":0.058145494488268695,
-            "Skewness":0.2459979220408433,
-            "Kurtosis":2.1747425467825274,
+            "StandardError":0.019402965719824285,
+            "Variance":0.005647126180870145,
+            "StandardDeviation":0.07514736309991286,
+            "Skewness":-0.510307396862665,
+            "Kurtosis":1.5975834619866778,
             "ConfidenceInterval":{
                "N":15,
-               "Mean":13.114723066488901,
-               "StandardError":0.015013102120670653,
+               "Mean":4.085305432478587,
+               "StandardError":0.019402965719824285,
                "Level":12,
-               "Margin":0.062161060395668565,
-               "Lower":13.052562006093233,
-               "Upper":13.17688412688457
+               "Margin":0.08033708918188627,
+               "Lower":4.004968343296701,
+               "Upper":4.165642521660473
             },
             "Percentiles":{
-               "P0":13.025526702404022,
-               "P25":13.075943291187286,
-               "P50":13.105851411819458,
-               "P67":13.14203131198883,
-               "P80":13.156053721904755,
-               "P85":13.165604174137115,
-               "P90":13.172680735588074,
-               "P95":13.194634914398193,
-               "P100":13.23697566986084
+               "P0":3.9649203419685364,
+               "P25":4.015332460403442,
+               "P50":4.10669669508934,
+               "P67":4.134993940591812,
+               "P80":4.141099452972412,
+               "P85":4.142078906297684,
+               "P90":4.1493213176727295,
+               "P95":4.164259657263756,
+               "P100":4.188067466020584
             }
          },
          "Memory":{
             "Gen0Collections":0,
             "Gen1Collections":0,
             "Gen2Collections":0,
-            "TotalOperations":67108864,
+            "TotalOperations":134217728,
             "BytesAllocatedPerOperation":0
          }
       },{
-         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [macAddress=+15551234567]",
+         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [phoneNumber=+15551234567]",
          "Namespace":"ZeroRedact.Benchmark.Validators",
          "Type":"PhoneNumberValidatorBenchmarks",
          "Method":"ValidatePhoneNumber",
          "MethodTitle":"ValidatePhoneNumber",
-         "Parameters":"macAddress=+15551234567",
-         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(macAddress: \"+15551234567\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "Parameters":"phoneNumber=+15551234567",
+         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(phoneNumber: \"+15551234567\")",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               10.135677456855774,10.27829796075821,9.986738860607147,10.047315061092377,9.90804135799408,10.02492904663086,9.850755333900452,10.126566886901855,10.041464865207672,9.933823347091675,9.84496921300888,10.021524131298065,9.926727414131165,9.940028190612793
+               3.4552253782749176,3.462870419025421,3.4261174499988556,3.4689977765083313,3.4662529826164246,3.459063172340393,3.4457512199878693,3.523104637861252,3.522779792547226,3.533255308866501,3.5081803798675537,3.4477554261684418,3.447268158197403,3.4423060715198517,3.4523554146289825
             ],
-            "N":14,
-            "Min":9.84496921300888,
-            "LowerFence":9.75247472524643,
-            "Q1":9.928501397371292,
-            "Median":10.004131495952606,
-            "Mean":10.004775651863643,
-            "Q3":10.0458525121212,
-            "UpperFence":10.221879184246063,
-            "Max":10.27829796075821,
-            "InterquartileRange":0.11735111474990845,
-            "LowerOutliers":[
-               
-            ],
-            "UpperOutliers":[
-               10.27829796075821
-            ],
-            "AllOutliers":[
-               10.27829796075821
-            ],
-            "StandardError":0.03187254907111664,
-            "Variance":0.014222031380070336,
-            "StandardDeviation":0.1192561586672585,
-            "Skewness":0.6275985980350507,
-            "Kurtosis":2.6481391435270902,
-            "ConfidenceInterval":{
-               "N":14,
-               "Mean":10.004775651863643,
-               "StandardError":0.03187254907111664,
-               "Level":12,
-               "Margin":0.13452866631944763,
-               "Lower":9.870246985544195,
-               "Upper":10.13930431818309
-            },
-            "Percentiles":{
-               "P0":9.84496921300888,
-               "P25":9.928501397371292,
-               "P50":10.004131495952606,
-               "P67":10.036669477820396,
-               "P80":10.079015791416168,
-               "P85":10.127022415399551,
-               "P90":10.132944285869598,
-               "P95":10.185594633221626,
-               "P100":10.27829796075821
-            }
-         },
-         "Memory":{
-            "Gen0Collections":0,
-            "Gen1Collections":0,
-            "Gen2Collections":0,
-            "TotalOperations":67108864,
-            "BytesAllocatedPerOperation":0
-         }
-      },{
-         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [macAddress=+81-90-1234-5678]",
-         "Namespace":"ZeroRedact.Benchmark.Validators",
-         "Type":"PhoneNumberValidatorBenchmarks",
-         "Method":"ValidatePhoneNumber",
-         "MethodTitle":"ValidatePhoneNumber",
-         "Parameters":"macAddress=+81-90-1234-5678",
-         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(macAddress: \"+81-90-1234-5678\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
-         "Statistics":{
-            "OriginalValues":[
-               12.47980147600174,12.583169341087341,12.633444368839264,12.432882189750671,12.512364983558655,12.527525424957275,12.50421404838562,12.603174149990082,12.440672516822815,12.494254112243652,12.532533705234528,12.536589801311493,12.53565102815628,12.479379773139954
-            ],
-            "N":14,
-            "Min":12.432882189750671,
-            "LowerFence":12.40400392562151,
-            "Q1":12.483414635062218,
-            "Median":12.519945204257965,
-            "Mean":12.521118351391383,
-            "Q3":12.53635510802269,
-            "UpperFence":12.615765817463398,
-            "Max":12.633444368839264,
-            "InterquartileRange":0.05294047296047211,
-            "LowerOutliers":[
-               
-            ],
-            "UpperOutliers":[
-               12.633444368839264
-            ],
-            "AllOutliers":[
-               12.633444368839264
-            ],
-            "StandardError":0.015301538533879524,
-            "Variance":0.003277919141053199,
-            "StandardDeviation":0.057253114684296426,
-            "Skewness":0.32026095367386465,
-            "Kurtosis":2.1839698729106543,
-            "ConfidenceInterval":{
-               "N":14,
-               "Mean":12.521118351391383,
-               "StandardError":0.015301538533879524,
-               "Level":12,
-               "Margin":0.06458521930597282,
-               "Lower":12.45653313208541,
-               "Upper":12.585703570697357
-            },
-            "Percentiles":{
-               "P0":12.432882189750671,
-               "P25":12.483414635062218,
-               "P50":12.519945204257965,
-               "P67":12.534747004508972,
-               "P80":12.555221617221832,
-               "P85":12.584169581532478,
-               "P90":12.59717270731926,
-               "P95":12.613768726587296,
-               "P100":12.633444368839264
-            }
-         },
-         "Memory":{
-            "Gen0Collections":0,
-            "Gen1Collections":0,
-            "Gen2Collections":0,
-            "TotalOperations":67108864,
-            "BytesAllocatedPerOperation":0
-         }
-      },{
-         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [macAddress=15551234567]",
-         "Namespace":"ZeroRedact.Benchmark.Validators",
-         "Type":"PhoneNumberValidatorBenchmarks",
-         "Method":"ValidatePhoneNumber",
-         "MethodTitle":"ValidatePhoneNumber",
-         "Parameters":"macAddress=15551234567",
-         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(macAddress: \"15551234567\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
-         "Statistics":{
-            "OriginalValues":[
-               9.05042290687561,9.036427736282349,8.98783802986145,8.994024991989136,9.012424945831299,8.992515504360199,9.021545946598053,8.993244171142578,9.064015746116638,9.056465327739716,9.014596045017242,9.116239845752716,9.016600251197815,9.016603231430054
-            ],
-            "N":14,
-            "Min":8.98783802986145,
-            "LowerFence":8.926176279783249,
-            "Q1":8.998624980449677,
-            "Median":9.016601741313934,
-            "Mean":9.026640334299632,
-            "Q3":9.046924114227295,
-            "UpperFence":9.119372814893723,
-            "Max":9.116239845752716,
-            "InterquartileRange":0.04829913377761841,
+            "N":15,
+            "Min":3.4261174499988556,
+            "LowerFence":3.385895863175392,
+            "Q1":3.4475117921829224,
+            "Median":3.459063172340393,
+            "Mean":3.470752239227295,
+            "Q3":3.4885890781879425,
+            "UpperFence":3.5502050071954727,
+            "Max":3.533255308866501,
+            "InterquartileRange":0.04107728600502014,
             "LowerOutliers":[
                
             ],
@@ -247,37 +117,167 @@
             "AllOutliers":[
                
             ],
-            "StandardError":0.00949255256632871,
-            "Variance":0.001261519759143193,
-            "StandardDeviation":0.03551787942914375,
-            "Skewness":1.013188832655435,
-            "Kurtosis":3.3035385552540952,
+            "StandardError":0.008746046743936715,
+            "Variance":0.0011474000047068905,
+            "StandardDeviation":0.0338732933844185,
+            "Skewness":0.7137139737932129,
+            "Kurtosis":1.9170247293950757,
             "ConfidenceInterval":{
-               "N":14,
-               "Mean":9.026640334299632,
-               "StandardError":0.00949255256632871,
+               "N":15,
+               "Mean":3.470752239227295,
+               "StandardError":0.008746046743936715,
                "Level":12,
-               "Margin":0.04006646703613378,
-               "Lower":8.986573867263498,
-               "Upper":9.066706801335766
+               "Margin":0.036212605196673665,
+               "Lower":3.4345396340306213,
+               "Upper":3.5069648444239685
             },
             "Percentiles":{
-               "P0":8.98783802986145,
-               "P25":8.998624980449677,
-               "P50":9.016601741313934,
-               "P67":9.032112017273903,
-               "P80":9.052839875221252,
-               "P85":9.056842848658562,
-               "P90":9.061750620603561,
-               "P95":9.082294180989265,
-               "P100":9.116239845752716
+               "P0":3.4261174499988556,
+               "P25":3.4475117921829224,
+               "P50":3.459063172340393,
+               "P67":3.467296004295349,
+               "P80":3.511100262403488,
+               "P85":3.5213198512792587,
+               "P90":3.5229746997356415,
+               "P95":3.5261498391628265,
+               "P100":3.533255308866501
             }
          },
          "Memory":{
             "Gen0Collections":0,
             "Gen1Collections":0,
             "Gen2Collections":0,
-            "TotalOperations":67108864,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [phoneNumber=+81-90-1234-5678]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"PhoneNumberValidatorBenchmarks",
+         "Method":"ValidatePhoneNumber",
+         "MethodTitle":"ValidatePhoneNumber",
+         "Parameters":"phoneNumber=+81-90-1234-5678",
+         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(phoneNumber: \"+81-90-1234-5678\")",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               3.9232030510902405,3.935469686985016,3.904338926076889,3.899621218442917,3.8969844579696655,3.9323247969150543,3.913547098636627,3.9027169346809387,3.916791081428528,3.87631356716156,3.881385177373886,3.74482199549675,3.7637516856193542,3.768239915370941,3.7413574755191803
+            ],
+            "N":15,
+            "Min":3.7413574755191803,
+            "LowerFence":3.6829382181167603,
+            "Q1":3.8222767412662506,
+            "Median":3.899621218442917,
+            "Mean":3.8667244712511697,
+            "Q3":3.9151690900325775,
+            "UpperFence":4.054507613182068,
+            "Max":3.935469686985016,
+            "InterquartileRange":0.0928923487663269,
+            "LowerOutliers":[
+               
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               
+            ],
+            "StandardError":0.018620638229774226,
+            "Variance":0.005200922521261941,
+            "StandardDeviation":0.07211742175966873,
+            "Skewness":-0.8258344704459339,
+            "Kurtosis":1.8292707794541776,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":3.8667244712511697,
+               "StandardError":0.018620638229774226,
+               "Level":12,
+               "Margin":0.07709789810949376,
+               "Lower":3.789626573141676,
+               "Upper":3.9438223693606633
+            },
+            "Percentiles":{
+               "P0":3.7413574755191803,
+               "P25":3.8222767412662506,
+               "P50":3.899621218442917,
+               "P67":3.9078380316495895,
+               "P80":3.9180734753608704,
+               "P85":3.922561854124069,
+               "P90":3.928676098585129,
+               "P95":3.933268263936043,
+               "P100":3.935469686985016
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
+         "DisplayInfo":"PhoneNumberValidatorBenchmarks.ValidatePhoneNumber: DefaultJob [phoneNumber=15551234567]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"PhoneNumberValidatorBenchmarks",
+         "Method":"ValidatePhoneNumber",
+         "MethodTitle":"ValidatePhoneNumber",
+         "Parameters":"phoneNumber=15551234567",
+         "FullName":"ZeroRedact.Benchmark.Validators.PhoneNumberValidatorBenchmarks.ValidatePhoneNumber(phoneNumber: \"15551234567\")",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               3.219137340784073,3.4072458744049072,3.4151092171669006,3.446807712316513,3.431376814842224,3.436218947172165,3.457219898700714,3.4835875034332275,3.4018926322460175,3.4778594970703125,3.457268327474594,3.4688644111156464,3.434313088655472,3.4306414425373077,3.447072207927704
+            ],
+            "N":15,
+            "Min":3.219137340784073,
+            "LowerFence":3.3713221549987793,
+            "Q1":3.422875329852104,
+            "Median":3.436218947172165,
+            "Mean":3.427640994389852,
+            "Q3":3.457244113087654,
+            "UpperFence":3.508797287940979,
+            "Max":3.4835875034332275,
+            "InterquartileRange":0.03436878323554993,
+            "LowerOutliers":[
+               3.219137340784073
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               3.219137340784073
+            ],
+            "StandardError":0.01613923359139714,
+            "Variance":0.003907122913765227,
+            "StandardDeviation":0.06250698292003244,
+            "Skewness":-2.3620211678772742,
+            "Kurtosis":8.347618116060387,
+            "ConfidenceInterval":{
+               "N":15,
+               "Mean":3.427640994389852,
+               "StandardError":0.01613923359139714,
+               "Level":12,
+               "Margin":0.06682375607326015,
+               "Lower":3.3608172383165917,
+               "Upper":3.4944647504631123
+            },
+            "Percentiles":{
+               "P0":3.219137340784073,
+               "P25":3.422875329852104,
+               "P50":3.436218947172165,
+               "P67":3.4509283304214478,
+               "P80":3.4595875442028046,
+               "P85":3.467704802751541,
+               "P90":3.474261462688446,
+               "P95":3.479577898979187,
+               "P100":3.4835875034332275
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
             "BytesAllocatedPerOperation":0
          }
       }
