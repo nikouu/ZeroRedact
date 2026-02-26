@@ -1,19 +1,19 @@
 {
-   "Title":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks-20251002-122222",
+   "Title":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks-20260226-191858",
    "HostEnvironmentInfo":{
       "BenchmarkDotNetCaption":"BenchmarkDotNet",
-      "BenchmarkDotNetVersion":"0.14.0",
-      "OsVersion":"Windows 10 (10.0.19045.6332/22H2/2022Update)",
-      "ProcessorName":"Intel Core i7-7700K CPU 4.20GHz (Kaby Lake)",
+      "BenchmarkDotNetVersion":"0.15.8",
+      "OsVersion":"Windows 11 (10.0.26200.7840/25H2/2025Update/HudsonValley2)",
+      "ProcessorName":"Intel Core Ultra 7 265KF",
       "PhysicalProcessorCount":1,
-      "PhysicalCoreCount":4,
-      "LogicalCoreCount":8,
-      "RuntimeVersion":".NET 8.0.20 (8.0.2025.41914)",
+      "PhysicalCoreCount":20,
+      "LogicalCoreCount":20,
+      "RuntimeVersion":".NET 10.0.2 (10.0.2, 10.0.225.61305)",
       "Architecture":"X64",
       "HasAttachedDebugger":false,
       "HasRyuJit":true,
       "Configuration":"RELEASE",
-      "DotNetCliVersion":"10.0.100-rc.1.25451.107",
+      "DotNetCliVersion":"10.0.200-preview.0.26103.119",
       "ChronometerFrequency":{
          "Hertz":10000000
       },
@@ -28,54 +28,54 @@
          "MethodTitle":"ValidateCreditCardNumbers",
          "Parameters":"creditCardNumber=3000 0000 0000 04",
          "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"3000 0000 0000 04\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               12.633185088634491,12.670892477035522,12.654431164264679,12.655571103096008,12.679508328437805,12.694409489631653,12.691676616668701,12.619030475616455,12.793736159801483,12.706007063388824,12.59469985961914,12.607118487358093,12.736383080482483,12.620691955089569,12.762130796909332
+               6.107205152511597,6.071002781391144,6.122079491615295,6.089587509632111,6.116443872451782,6.117045879364014,6.114418804645538,6.107348203659058,6.468555331230164,6.545603275299072,6.478689610958099,6.500893831253052,6.083622574806213,6.093032658100128,6.104065477848053,6.100519001483917,6.104141473770142,6.1113521456718445,6.095497310161591,6.098370254039764,6.106564402580261
             ],
-            "N":15,
-            "Min":12.59469985961914,
-            "LowerFence":12.517033889889717,
-            "Q1":12.62693852186203,
-            "Median":12.670892477035522,
-            "Mean":12.674631476402283,
-            "Q3":12.700208276510239,
-            "UpperFence":12.810112908482552,
-            "Max":12.793736159801483,
-            "InterquartileRange":0.07326975464820862,
+            "N":21,
+            "Min":6.071002781391144,
+            "LowerFence":6.0703568160533905,
+            "Q1":6.098370254039764,
+            "Median":6.107205152511597,
+            "Mean":6.177906621070135,
+            "Q3":6.117045879364014,
+            "UpperFence":6.145059317350388,
+            "Max":6.545603275299072,
+            "InterquartileRange":0.018675625324249268,
             "LowerOutliers":[
                
             ],
             "UpperOutliers":[
-               
+               6.468555331230164,6.478689610958099,6.500893831253052,6.545603275299072
             ],
             "AllOutliers":[
-               
+               6.468555331230164,6.478689610958099,6.500893831253052,6.545603275299072
             ],
-            "StandardError":0.014927823012463062,
-            "Variance":0.0033425984983713264,
-            "StandardDeviation":0.05781520992240127,
-            "Skewness":0.48469433504263043,
-            "Kurtosis":2.1389259261463502,
+            "StandardError":0.034980125875556344,
+            "Variance":0.025695793331665096,
+            "StandardDeviation":0.16029907464382037,
+            "Skewness":1.4708979840587115,
+            "Kurtosis":3.255232875122987,
             "ConfidenceInterval":{
-               "N":15,
-               "Mean":12.674631476402283,
-               "StandardError":0.014927823012463062,
+               "N":21,
+               "Mean":6.177906621070135,
+               "StandardError":0.034980125875556344,
                "Level":12,
-               "Margin":0.061807966161500784,
-               "Lower":12.612823510240782,
-               "Upper":12.736439442563784
+               "Margin":0.13465656382656438,
+               "Lower":6.04325005724357,
+               "Upper":6.3125631848967
             },
             "Percentiles":{
-               "P0":12.59469985961914,
-               "P25":12.62693852186203,
-               "P50":12.670892477035522,
-               "P67":12.692715108394623,
-               "P80":12.712082266807556,
-               "P85":12.733345478773117,
-               "P90":12.751831710338593,
-               "P95":12.771612405776978,
-               "P100":12.793736159801483
+               "P0":6.071002781391144,
+               "P25":6.098370254039764,
+               "P50":6.107205152511597,
+               "P67":6.115228831768036,
+               "P80":6.122079491615295,
+               "P85":6.468555331230164,
+               "P90":6.478689610958099,
+               "P95":6.500893831253052,
+               "P100":6.545603275299072
             }
          },
          "Memory":{
@@ -93,54 +93,54 @@
          "MethodTitle":"ValidateCreditCardNumbers",
          "Parameters":"creditCardNumber=3400 0000 0000 009",
          "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"3400 0000 0000 009\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               13.098430633544922,13.111671805381775,13.05951327085495,13.083525002002716,13.094457983970642,13.056185841560364,13.16874474287033,13.181442022323608,13.075821101665497,13.052813708782196,13.05643767118454,13.190118968486786,13.068938255310059,13.111960887908936
+               6.773759424686432,6.76078200340271,6.776806712150574,6.773249804973602,6.77935928106308,6.7811548709869385,6.760089099407196,6.784611940383911,6.784330308437347,6.774298846721649,6.793093681335449,6.773655116558075,6.773948669433594
             ],
-            "N":14,
-            "Min":13.052813708782196,
-            "LowerFence":12.9868408665061,
-            "Q1":13.061869516968727,
-            "Median":13.088991492986679,
-            "Mean":13.100718706846237,
-            "Q3":13.111888617277145,
-            "UpperFence":13.186917267739773,
-            "Max":13.190118968486786,
-            "InterquartileRange":0.050019100308418274,
+            "N":13,
+            "Min":6.760089099407196,
+            "LowerFence":6.76240548491478,
+            "Q1":6.773655116558075,
+            "Median":6.774298846721649,
+            "Mean":6.776087673810812,
+            "Q3":6.7811548709869385,
+            "UpperFence":6.792404502630234,
+            "Max":6.793093681335449,
+            "InterquartileRange":0.007499754428863525,
             "LowerOutliers":[
-               
+               6.760089099407196,6.76078200340271
             ],
             "UpperOutliers":[
-               13.190118968486786
+               6.793093681335449
             ],
             "AllOutliers":[
-               13.190118968486786
+               6.760089099407196,6.76078200340271,6.793093681335449
             ],
-            "StandardError":0.012685819999216223,
-            "Variance":0.0022530204067352,
-            "StandardDeviation":0.04746599210735197,
-            "Skewness":0.7682084190923458,
-            "Kurtosis":2.043259109591892,
+            "StandardError":0.002511626944209453,
+            "Variance":8.200750878942589e-05,
+            "StandardDeviation":0.009055799732184115,
+            "Skewness":-0.15358090270115804,
+            "Kurtosis":2.4575835010999607,
             "ConfidenceInterval":{
-               "N":14,
-               "Mean":13.100718706846237,
-               "StandardError":0.012685819999216223,
+               "N":13,
+               "Mean":6.776087673810812,
+               "StandardError":0.002511626944209453,
                "Level":12,
-               "Margin":0.053544711527628824,
-               "Lower":13.047173995318609,
-               "Upper":13.154263418373866
+               "Margin":0.010844680924456673,
+               "Lower":6.765242992886355,
+               "Upper":6.786932354735269
             },
             "Percentiles":{
-               "P0":13.052813708782196,
-               "P25":13.061869516968727,
-               "P50":13.088991492986679,
-               "P67":13.107831865549088,
-               "P80":13.134674429893494,
-               "P85":13.169379606842995,
-               "P90":13.177632838487625,
-               "P95":13.18447895348072,
-               "P100":13.190118968486786
+               "P0":6.760089099407196,
+               "P25":6.773655116558075,
+               "P50":6.774298846721649,
+               "P67":6.779431104660034,
+               "P80":6.783060133457184,
+               "P85":6.78438663482666,
+               "P90":6.784555613994598,
+               "P95":6.788004636764526,
+               "P100":6.793093681335449
             }
          },
          "Memory":{
@@ -158,119 +158,54 @@
          "MethodTitle":"ValidateCreditCardNumbers",
          "Parameters":"creditCardNumber=4111 1111 1111 1111",
          "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"4111 1111 1111 1111\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               13.529255986213684,13.542437553405762,13.517817854881287,13.516923785209656,13.543838262557983,13.504540920257568,13.521763682365417,13.616150617599487,13.51279616355896,13.5905921459198,13.527223467826843,13.53975534439087,13.486212491989136,13.585218787193298
+               7.192990183830261,7.187393307685852,7.190816104412079,7.709269225597382,7.709050178527832,7.732872664928436,7.733914256095886,7.724876701831818,7.669854164123535,7.2001442313194275,7.187525928020477,7.215669751167297,7.210811972618103,7.181262969970703,7.1890681982040405,7.199867069721222,7.17916339635849,7.197935879230499,7.161425054073334,7.1920812129974365,7.186412811279297,7.741296291351318,7.824124395847321,7.738710939884186,7.797576487064362,7.721510529518127,7.715269923210144,7.7476829290390015,7.804542779922485,7.685816287994385,7.770067453384399,7.711832225322723,7.897597551345825,7.70447850227356,7.734484970569611,7.156215608119965,7.158301770687103,7.159309089183807,7.202494144439697
             ],
-            "N":14,
-            "Min":13.486212491989136,
-            "LowerFence":13.477636128664017,
-            "Q1":13.517147302627563,
-            "Median":13.528239727020264,
-            "Mean":13.53818050452641,
-            "Q3":13.543488085269928,
-            "UpperFence":13.582999259233475,
-            "Max":13.616150617599487,
-            "InterquartileRange":0.026340782642364502,
+            "N":39,
+            "Min":7.156215608119965,
+            "LowerFence":6.374765187501907,
+            "Q1":7.18994215130806,
+            "Median":7.669854164123535,
+            "Mean":7.4724030036192675,
+            "Q3":7.733393460512161,
+            "UpperFence":8.548570424318314,
+            "Max":7.897597551345825,
+            "InterquartileRange":0.5434513092041016,
             "LowerOutliers":[
                
-            ],
-            "UpperOutliers":[
-               13.585218787193298,13.5905921459198,13.616150617599487
-            ],
-            "AllOutliers":[
-               13.585218787193298,13.5905921459198,13.616150617599487
-            ],
-            "StandardError":0.009637351103233969,
-            "Variance":0.0013002995080180699,
-            "StandardDeviation":0.036059665944349374,
-            "Skewness":0.7663308980727819,
-            "Kurtosis":2.4866019898025087,
-            "ConfidenceInterval":{
-               "N":14,
-               "Mean":13.53818050452641,
-               "StandardError":0.009637351103233969,
-               "Level":12,
-               "Margin":0.04067763729463452,
-               "Lower":13.497502867231775,
-               "Upper":13.578858141821046
-            },
-            "Percentiles":{
-               "P0":13.486212491989136,
-               "P25":13.517147302627563,
-               "P50":13.528239727020264,
-               "P67":13.541659712791443,
-               "P80":13.56039047241211,
-               "P85":13.585487455129623,
-               "P90":13.58898013830185,
-               "P95":13.59953761100769,
-               "P100":13.616150617599487
-            }
-         },
-         "Memory":{
-            "Gen0Collections":0,
-            "Gen1Collections":0,
-            "Gen2Collections":0,
-            "TotalOperations":33554432,
-            "BytesAllocatedPerOperation":0
-         }
-      },{
-         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=4111111111111111]",
-         "Namespace":"ZeroRedact.Benchmark.Validators",
-         "Type":"CreditCardValidatorBenchmarks",
-         "Method":"ValidateCreditCardNumbers",
-         "MethodTitle":"ValidateCreditCardNumbers",
-         "Parameters":"creditCardNumber=4111111111111111",
-         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"4111111111111111\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
-         "Statistics":{
-            "OriginalValues":[
-               9.694944322109222,9.68991070985794,9.718948602676392,9.705734252929688,9.61315631866455,9.683384001255035,9.685331583023071,9.656129777431488,9.726046025753021,9.670054912567139,9.683555364608765,9.648002684116364,9.737087786197662,9.69763696193695,9.737743437290192
-            ],
-            "N":15,
-            "Min":9.61315631866455,
-            "LowerFence":9.623286500573158,
-            "Q1":9.676719456911087,
-            "Median":9.68991070985794,
-            "Mean":9.689844449361166,
-            "Q3":9.71234142780304,
-            "UpperFence":9.765774384140968,
-            "Max":9.737743437290192,
-            "InterquartileRange":0.035621970891952515,
-            "LowerOutliers":[
-               9.61315631866455
             ],
             "UpperOutliers":[
                
             ],
             "AllOutliers":[
-               9.61315631866455
+               
             ],
-            "StandardError":0.008806068663263535,
-            "Variance":0.0011632026795316806,
-            "StandardDeviation":0.03410575727837868,
-            "Skewness":-0.46866292643241675,
-            "Kurtosis":2.5547269285681806,
+            "StandardError":0.04559643897525565,
+            "Variance":0.08108237464174428,
+            "StandardDeviation":0.28474967013456626,
+            "Skewness":-0.0009252875698600321,
+            "Kurtosis":1.0367086905736036,
             "ConfidenceInterval":{
-               "N":15,
-               "Mean":9.689844449361166,
-               "StandardError":0.008806068663263535,
+               "N":39,
+               "Mean":7.4724030036192675,
+               "StandardError":0.04559643897525565,
                "Level":12,
-               "Margin":0.036461123199305605,
-               "Lower":9.65338332616186,
-               "Upper":9.726305572560472
+               "Margin":0.16258222239078554,
+               "Lower":7.309820781228482,
+               "Upper":7.634985226010053
             },
             "Percentiles":{
-               "P0":9.61315631866455,
-               "P25":9.676719456911087,
-               "P50":9.68991070985794,
-               "P67":9.70071393251419,
-               "P80":9.720368087291718,
-               "P85":9.725336283445358,
-               "P90":9.732671082019806,
-               "P95":9.737284481525421,
-               "P100":9.737743437290192
+               "P0":7.156215608119965,
+               "P25":7.18994215130806,
+               "P50":7.669854164123535,
+               "P67":7.718140602111816,
+               "P80":7.736175358295441,
+               "P85":7.743212282657623,
+               "P90":7.775569260120392,
+               "P95":7.806500941514969,
+               "P100":7.897597551345825
             }
          },
          "Memory":{
@@ -281,6 +216,71 @@
             "BytesAllocatedPerOperation":0
          }
       },{
+         "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=4111111111111111]",
+         "Namespace":"ZeroRedact.Benchmark.Validators",
+         "Type":"CreditCardValidatorBenchmarks",
+         "Method":"ValidateCreditCardNumbers",
+         "MethodTitle":"ValidateCreditCardNumbers",
+         "Parameters":"creditCardNumber=4111111111111111",
+         "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"4111111111111111\")",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
+         "Statistics":{
+            "OriginalValues":[
+               3.6918364465236664,3.695877641439438,3.6899499595165253,3.677760064601898,3.6884963512420654,3.6868855357170105,3.681787848472595,3.68543341755867,3.687220811843872,3.691573441028595,3.686734288930893,3.688499331474304
+            ],
+            "N":12,
+            "Min":3.677760064601898,
+            "LowerFence":3.680488932877779,
+            "Q1":3.686409071087837,
+            "Median":3.6878585815429688,
+            "Mean":3.6876712615291276,
+            "Q3":3.6903558298945427,
+            "UpperFence":3.696275968104601,
+            "Max":3.695877641439438,
+            "InterquartileRange":0.003946758806705475,
+            "LowerOutliers":[
+               3.677760064601898
+            ],
+            "UpperOutliers":[
+               
+            ],
+            "AllOutliers":[
+               3.677760064601898
+            ],
+            "StandardError":0.0013652391467837718,
+            "Variance":2.2366535134930572e-05,
+            "StandardDeviation":0.004729327133422953,
+            "Skewness":-0.3880397182699617,
+            "Kurtosis":2.660268643907036,
+            "ConfidenceInterval":{
+               "N":12,
+               "Mean":3.6876712615291276,
+               "StandardError":0.0013652391467837718,
+               "Level":12,
+               "Margin":0.006057537884543572,
+               "Lower":3.681613723644584,
+               "Upper":3.6937287994136714
+            },
+            "Percentiles":{
+               "P0":3.677760064601898,
+               "P25":3.686409071087837,
+               "P50":3.6878585815429688,
+               "P67":3.689036063849926,
+               "P80":3.691248744726181,
+               "P85":3.69166549295187,
+               "P90":3.6918101459741592,
+               "P95":3.6936549842357635,
+               "P100":3.695877641439438
+            }
+         },
+         "Memory":{
+            "Gen0Collections":0,
+            "Gen1Collections":0,
+            "Gen2Collections":0,
+            "TotalOperations":134217728,
+            "BytesAllocatedPerOperation":0
+         }
+      },{
          "DisplayInfo":"CreditCardValidatorBenchmarks.ValidateCreditCardNumbers: DefaultJob [creditCardNumber=5500-0000-0000-0004]",
          "Namespace":"ZeroRedact.Benchmark.Validators",
          "Type":"CreditCardValidatorBenchmarks",
@@ -288,21 +288,21 @@
          "MethodTitle":"ValidateCreditCardNumbers",
          "Parameters":"creditCardNumber=5500-0000-0000-0004",
          "FullName":"ZeroRedact.Benchmark.Validators.CreditCardValidatorBenchmarks.ValidateCreditCardNumbers(creditCardNumber: \"5500-0000-0000-0004\")",
-         "HardwareIntrinsics":"AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256",
+         "HardwareIntrinsics":"AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL,AvxVnni,SERIALIZE VectorSize=256",
          "Statistics":{
             "OriginalValues":[
-               13.398590683937073,13.397899270057678,13.487568497657776,13.470959663391113,13.47651481628418,13.443341851234436,13.63247036933899,13.461083173751831,13.536173105239868,13.415661454200745,13.547289371490479,13.50361704826355,13.594600558280945,13.470044732093811
+               7.002559304237366,7.066521048545837,7.057155668735504,7.52263069152832,7.5386494398117065,7.5654298067092896,7.554838061332703,7.582639157772064,7.5607553124427795,7.4035897850990295,7.604745030403137,7.456839084625244,6.963244080543518,7.570528984069824,7.5508564710617065,7.571952044963837,7.166171073913574,7.06896036863327,6.668585538864136,6.553952395915985,6.736132502555847,7.057671248912811,7.057666778564453,7.055725157260895,7.066206634044647,7.032328844070435,7.060857117176056,7.03984797000885,6.562945246696472,6.878077983856201,6.943915784358978,7.043226063251495,7.040661573410034,7.017789781093597,6.987130641937256,7.057000696659088,7.060582935810089,6.888167560100555,7.0422157645225525,7.089461386203766,7.064737379550934,7.056307792663574
             ],
-            "N":14,
-            "Min":13.397899270057678,
-            "LowerFence":13.32739181816578,
-            "Q1":13.447777181863785,
-            "Median":13.473737239837646,
-            "Mean":13.488272471087319,
-            "Q3":13.528034090995789,
-            "UpperFence":13.648419454693794,
-            "Max":13.63247036933899,
-            "InterquartileRange":0.08025690913200378,
+            "N":42,
+            "Min":6.553952395915985,
+            "LowerFence":6.388271227478981,
+            "Q1":7.021424546837807,
+            "Median":7.057669013738632,
+            "Mean":7.1397442902837485,
+            "Q3":7.4435267597436905,
+            "UpperFence":8.076680079102516,
+            "Max":7.604745030403137,
+            "InterquartileRange":0.4221022129058838,
             "LowerOutliers":[
                
             ],
@@ -312,37 +312,37 @@
             "AllOutliers":[
                
             ],
-            "StandardError":0.018623342289065294,
-            "Variance":0.004855604292219628,
-            "StandardDeviation":0.06968216624230068,
-            "Skewness":0.5390858741258518,
-            "Kurtosis":2.2469051645696227,
+            "StandardError":0.04448608714244132,
+            "Variance":0.0831185018682851,
+            "StandardDeviation":0.2883027954569381,
+            "Skewness":0.18040137725730757,
+            "Kurtosis":2.261957965704013,
             "ConfidenceInterval":{
-               "N":14,
-               "Mean":13.488272471087319,
-               "StandardError":0.018623342289065294,
+               "N":42,
+               "Mean":7.1397442902837485,
+               "StandardError":0.04448608714244132,
                "Level":12,
-               "Margin":0.07860599398461443,
-               "Lower":13.409666477102704,
-               "Upper":13.566878465071934
+               "Margin":0.15766686214046852,
+               "Lower":6.98207742814328,
+               "Upper":7.297411152424217
             },
             "Percentiles":{
-               "P0":13.397899270057678,
-               "P25":13.447777181863785,
-               "P50":13.473737239837646,
-               "P67":13.498962968587875,
-               "P80":13.540619611740112,
-               "P85":13.549654930830002,
-               "P90":13.580407202243805,
-               "P95":13.60785499215126,
-               "P100":13.63247036933899
+               "P0":6.553952395915985,
+               "P25":7.021424546837807,
+               "P50":7.057669013738632,
+               "P67":7.078595846891403,
+               "P80":7.535445690155029,
+               "P85":7.554240822792053,
+               "P90":7.5649623572826385,
+               "P95":7.571880891919136,
+               "P100":7.604745030403137
             }
          },
          "Memory":{
             "Gen0Collections":0,
             "Gen1Collections":0,
             "Gen2Collections":0,
-            "TotalOperations":33554432,
+            "TotalOperations":67108864,
             "BytesAllocatedPerOperation":0
          }
       }
