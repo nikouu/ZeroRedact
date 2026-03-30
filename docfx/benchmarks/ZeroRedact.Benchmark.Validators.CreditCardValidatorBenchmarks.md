@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">12.641 ns</td><td class="number-col">12.611 ns</td><td class="number-col">12.639 ns</td><td class="number-col">12.627 ns</td><td class="number-col">12.675 ns</td><td class="number-col">12.638 ns</td><td class="number-col">10.820 ns</td></tr>
+            <tr><td class="method-col">ValidateCreditCardNumbers</td><td class="number-col">8.986 ns</td><td class="number-col">8.320 ns</td><td class="number-col">8.770 ns</td><td class="number-col">8.346 ns</td><td class="number-col">6.178 ns</td><td class="number-col">6.178 ns</td><td class="number-col">6.178 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateCreditCardNumbers',
-                data: [12.64, 12.61, 12.64, 12.63, 12.67, 12.64, 10.82],
+                data: [8.99, 8.32, 8.77, 8.35, 6.18, 6.18, 6.18],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

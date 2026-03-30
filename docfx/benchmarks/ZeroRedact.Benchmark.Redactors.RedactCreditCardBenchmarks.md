@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">35.998 ns</td><td class="number-col">35.895 ns</td><td class="number-col">35.426 ns</td><td class="number-col">35.814 ns</td><td class="number-col">35.232 ns</td><td class="number-col">30.301 ns</td><td class="number-col">24.858 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">35.096 ns</td><td class="number-col">34.944 ns</td><td class="number-col">35.514 ns</td><td class="number-col">35.292 ns</td><td class="number-col">34.628 ns</td><td class="number-col">34.519 ns</td><td class="number-col">27.778 ns</td></tr>
+            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">22.511 ns</td><td class="number-col">22.642 ns</td><td class="number-col">22.765 ns</td><td class="number-col">22.156 ns</td><td class="number-col">12.727 ns</td><td class="number-col">12.727 ns</td><td class="number-col">12.727 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">23.006 ns</td><td class="number-col">23.332 ns</td><td class="number-col">22.882 ns</td><td class="number-col">23.351 ns</td><td class="number-col">13.654 ns</td><td class="number-col">13.654 ns</td><td class="number-col">13.654 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactCreditCard_String',
-                data: [36.00, 35.89, 35.43, 35.81, 35.23, 30.30, 24.86],
+                data: [22.51, 22.64, 22.77, 22.16, 12.73, 12.73, 12.73],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactCreditCard_ReadOnlySpan',
-                data: [35.10, 34.94, 35.51, 35.29, 34.63, 34.52, 27.78],
+                data: [23.01, 23.33, 22.88, 23.35, 13.65, 13.65, 13.65],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

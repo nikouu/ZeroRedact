@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">50.312 ns</td><td class="number-col">50.978 ns</td><td class="number-col">49.992 ns</td><td class="number-col">49.746 ns</td><td class="number-col">49.581 ns</td><td class="number-col">47.476 ns</td><td class="number-col">70.517 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">50.464 ns</td><td class="number-col">50.060 ns</td><td class="number-col">50.049 ns</td><td class="number-col">51.293 ns</td><td class="number-col">49.768 ns</td><td class="number-col">51.045 ns</td><td class="number-col">73.023 ns</td></tr>
+            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">31.188 ns</td><td class="number-col">32.353 ns</td><td class="number-col">30.270 ns</td><td class="number-col">31.960 ns</td><td class="number-col">36.765 ns</td><td class="number-col">36.765 ns</td><td class="number-col">36.765 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">31.439 ns</td><td class="number-col">32.132 ns</td><td class="number-col">31.033 ns</td><td class="number-col">33.164 ns</td><td class="number-col">36.909 ns</td><td class="number-col">36.909 ns</td><td class="number-col">36.909 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactEmailAddress_String',
-                data: [50.31, 50.98, 49.99, 49.75, 49.58, 47.48, 70.52],
+                data: [31.19, 32.35, 30.27, 31.96, 36.76, 36.76, 36.76],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactEmailAddress_ReadOnlySpan',
-                data: [50.46, 50.06, 50.05, 51.29, 49.77, 51.04, 73.02],
+                data: [31.44, 32.13, 31.03, 33.16, 36.91, 36.91, 36.91],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

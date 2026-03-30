@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactString_String</td><td class="number-col">17.229 ns</td><td class="number-col">17.062 ns</td><td class="number-col">16.495 ns</td><td class="number-col">16.542 ns</td><td class="number-col">17.626 ns</td><td class="number-col">16.244 ns</td><td class="number-col">10.088 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">18.751 ns</td><td class="number-col">19.659 ns</td><td class="number-col">17.267 ns</td><td class="number-col">17.198 ns</td><td class="number-col">17.840 ns</td><td class="number-col">17.348 ns</td><td class="number-col">10.537 ns</td></tr>
+            <tr><td class="method-col">RedactString_String</td><td class="number-col">12.620 ns</td><td class="number-col">22.441 ns</td><td class="number-col">12.944 ns</td><td class="number-col">25.605 ns</td><td class="number-col">4.933 ns</td><td class="number-col">4.933 ns</td><td class="number-col">4.933 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">13.045 ns</td><td class="number-col">12.365 ns</td><td class="number-col">12.622 ns</td><td class="number-col">12.627 ns</td><td class="number-col">5.664 ns</td><td class="number-col">5.664 ns</td><td class="number-col">5.664 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactString_String',
-                data: [17.23, 17.06, 16.50, 16.54, 17.63, 16.24, 10.09],
+                data: [12.62, 22.44, 12.94, 25.60, 4.93, 4.93, 4.93],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactString_ReadOnlySpan',
-                data: [18.75, 19.66, 17.27, 17.20, 17.84, 17.35, 10.54],
+                data: [13.05, 12.36, 12.62, 12.63, 5.66, 5.66, 5.66],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

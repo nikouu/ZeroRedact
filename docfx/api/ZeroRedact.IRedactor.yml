@@ -62,6 +62,8 @@ items:
   syntax:
     content: public interface IRedactor
     content.vb: Public Interface IRedactor
+  derivedClasses:
+  - ZeroRedact.Redactor
 - uid: ZeroRedact.IRedactor.RedactString(System.String)
   commentId: M:ZeroRedact.IRedactor.RedactString(System.String)
   id: RedactString(System.String)

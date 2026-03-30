@@ -65,7 +65,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "*********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul></p>
+
+    <ul><li>en-NZ: "*********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: All = 0
@@ -99,7 +102,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul></p>
+
+    <ul><li>en-NZ: "********"</li><li>en-US: "********"</li><li>ja-JP: "********"</li><li>InvariantCulture: "********"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: FixedLength = 1
@@ -133,7 +139,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "**/**/****"</li><li>en-US: "*/**/****"</li><li>ja-JP: "****/**/**"</li><li>InvariantCulture: "**/**/****"</li></ul></p>
+
+    <ul><li>en-NZ: "**/**/****"</li><li>en-US: "*/**/****"</li><li>ja-JP: "****/**/**"</li><li>InvariantCulture: "**/**/****"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: Full = 2
@@ -167,7 +176,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "**/06/2023"</li><li>en-US: "6/**/2023"</li><li>ja-JP: "2023/06/**"</li><li>InvariantCulture: "06/**/2023"</li></ul></p>
+
+    <ul><li>en-NZ: "**/06/2023"</li><li>en-US: "6/**/2023"</li><li>ja-JP: "2023/06/**"</li><li>InvariantCulture: "06/**/2023"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: Day = 3
@@ -201,7 +213,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "15/**/2023"</li><li>en-US: "*/15/2023"</li><li>ja-JP: "2023/**/15"</li><li>InvariantCulture: "**/15/2023"</li></ul></p>
+
+    <ul><li>en-NZ: "15/**/2023"</li><li>en-US: "*/15/2023"</li><li>ja-JP: "2023/**/15"</li><li>InvariantCulture: "**/15/2023"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: Month = 4
@@ -235,7 +250,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "15/06/****"</li><li>en-US: "6/15/****"</li><li>ja-JP: "****/06/15"</li><li>InvariantCulture: "06/15/****"</li></ul></p>
+
+    <ul><li>en-NZ: "15/06/****"</li><li>en-US: "6/15/****"</li><li>ja-JP: "****/06/15"</li><li>InvariantCulture: "06/15/****"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: Year = 5
@@ -269,7 +287,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "**/**/2023"</li><li>en-US: "*/**/2023"</li><li>ja-JP: "2023/**/**"</li><li>InvariantCulture: "**/**/2023"</li></ul></p>
+
+    <ul><li>en-NZ: "**/**/2023"</li><li>en-US: "*/**/2023"</li><li>ja-JP: "2023/**/**"</li><li>InvariantCulture: "**/**/2023"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: DayAndMonth = 6
@@ -303,7 +324,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "15/**/****"</li><li>en-US: "*/15/****"</li><li>ja-JP: "****/**/15"</li><li>InvariantCulture: "**/15/****"</li></ul></p>
+
+    <ul><li>en-NZ: "15/**/****"</li><li>en-US: "*/15/****"</li><li>ja-JP: "****/**/15"</li><li>InvariantCulture: "**/15/****"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: MonthAndYear = 7
@@ -337,7 +361,10 @@ items:
 
     <p>Example for "2023/06/15":
 
-    <ul><li>en-NZ: "**/06/****"</li><li>en-US: "6/**/****"</li><li>ja-JP: "****/06/**"</li><li>InvariantCulture: "06/**/****"</li></ul></p>
+
+    <ul><li>en-NZ: "**/06/****"</li><li>en-US: "6/**/****"</li><li>ja-JP: "****/06/**"</li><li>InvariantCulture: "06/**/****"</li></ul>
+
+    </p>
   example: []
   syntax:
     content: DayAndYear = 8

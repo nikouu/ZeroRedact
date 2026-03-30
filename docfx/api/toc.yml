@@ -2,45 +2,66 @@
 items:
 - uid: ZeroRedact
   name: ZeroRedact
+  type: Namespace
   items:
   - uid: ZeroRedact.CreditCardRedaction
     name: CreditCardRedaction
+    type: Enum
   - uid: ZeroRedact.CreditCardRedactorOptions
     name: CreditCardRedactorOptions
+    type: Struct
   - uid: ZeroRedact.DateRedaction
     name: DateRedaction
+    type: Enum
   - uid: ZeroRedact.DateRedactorOptions
     name: DateRedactorOptions
+    type: Struct
   - uid: ZeroRedact.EmailAddressRedaction
     name: EmailAddressRedaction
+    type: Enum
   - uid: ZeroRedact.EmailAddressRedactorOptions
     name: EmailAddressRedactorOptions
+    type: Struct
   - uid: ZeroRedact.IPv4AddressRedaction
     name: IPv4AddressRedaction
+    type: Enum
   - uid: ZeroRedact.IPv4AddressRedactorOptions
     name: IPv4AddressRedactorOptions
+    type: Struct
   - uid: ZeroRedact.IPv6AddressRedaction
     name: IPv6AddressRedaction
+    type: Enum
   - uid: ZeroRedact.IPv6AddressRedactorOptions
     name: IPv6AddressRedactorOptions
+    type: Struct
   - uid: ZeroRedact.IRedactor
     name: IRedactor
+    type: Interface
   - uid: ZeroRedact.MACAddressRedaction
     name: MACAddressRedaction
+    type: Enum
   - uid: ZeroRedact.MACAddressRedactorOptions
     name: MACAddressRedactorOptions
+    type: Struct
   - uid: ZeroRedact.PhoneNumberRedaction
     name: PhoneNumberRedaction
+    type: Enum
   - uid: ZeroRedact.PhoneNumberRedactorOptions
     name: PhoneNumberRedactorOptions
+    type: Struct
   - uid: ZeroRedact.Redactor
     name: Redactor
+    type: Class
   - uid: ZeroRedact.RedactorOptions
     name: RedactorOptions
+    type: Struct
   - uid: ZeroRedact.StringRedaction
     name: StringRedaction
+    type: Enum
   - uid: ZeroRedact.StringRedactorOptions
     name: StringRedactorOptions
+    type: Struct
   - uid: ZeroRedact.ZeroRedactExtensions
     name: ZeroRedactExtensions
+    type: Class
 memberLayout: SamePage

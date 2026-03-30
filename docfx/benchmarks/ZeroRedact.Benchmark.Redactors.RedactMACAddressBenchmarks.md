@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactMACAddress_String</td><td class="number-col">34.920 ns</td><td class="number-col">33.767 ns</td><td class="number-col">33.721 ns</td><td class="number-col">34.608 ns</td><td class="number-col">33.529 ns</td><td class="number-col">30.943 ns</td><td class="number-col">23.480 ns</td></tr><tr><td class="method-col">RedactMACAddress_ReadOnlySpan</td><td class="number-col">33.490 ns</td><td class="number-col">33.687 ns</td><td class="number-col">33.196 ns</td><td class="number-col">33.159 ns</td><td class="number-col">33.305 ns</td><td class="number-col">33.684 ns</td><td class="number-col">23.719 ns</td></tr>
+            <tr><td class="method-col">RedactMACAddress_String</td><td class="number-col">34.545 ns</td><td class="number-col">23.448 ns</td><td class="number-col">21.955 ns</td><td class="number-col">23.558 ns</td><td class="number-col">13.031 ns</td><td class="number-col">13.031 ns</td><td class="number-col">13.031 ns</td></tr><tr><td class="method-col">RedactMACAddress_ReadOnlySpan</td><td class="number-col">23.400 ns</td><td class="number-col">23.788 ns</td><td class="number-col">23.051 ns</td><td class="number-col">23.271 ns</td><td class="number-col">14.684 ns</td><td class="number-col">14.684 ns</td><td class="number-col">14.684 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactMACAddress_String',
-                data: [34.92, 33.77, 33.72, 34.61, 33.53, 30.94, 23.48],
+                data: [34.55, 23.45, 21.95, 23.56, 13.03, 13.03, 13.03],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactMACAddress_ReadOnlySpan',
-                data: [33.49, 33.69, 33.20, 33.16, 33.31, 33.68, 23.72],
+                data: [23.40, 23.79, 23.05, 23.27, 14.68, 14.68, 14.68],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

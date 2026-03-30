@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">35.770 ns</td><td class="number-col">35.857 ns</td><td class="number-col">35.750 ns</td><td class="number-col">37.240 ns</td><td class="number-col">37.293 ns</td><td class="number-col">30.988 ns</td><td class="number-col">25.037 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">36.834 ns</td><td class="number-col">35.745 ns</td><td class="number-col">36.757 ns</td><td class="number-col">37.314 ns</td><td class="number-col">35.571 ns</td><td class="number-col">36.818 ns</td><td class="number-col">26.013 ns</td></tr>
+            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">23.620 ns</td><td class="number-col">21.883 ns</td><td class="number-col">21.977 ns</td><td class="number-col">22.254 ns</td><td class="number-col">12.160 ns</td><td class="number-col">12.160 ns</td><td class="number-col">12.160 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">23.667 ns</td><td class="number-col">22.376 ns</td><td class="number-col">22.394 ns</td><td class="number-col">23.675 ns</td><td class="number-col">13.119 ns</td><td class="number-col">13.119 ns</td><td class="number-col">13.119 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactPhoneNumber_String',
-                data: [35.77, 35.86, 35.75, 37.24, 37.29, 30.99, 25.04],
+                data: [23.62, 21.88, 21.98, 22.25, 12.16, 12.16, 12.16],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactPhoneNumber_ReadOnlySpan',
-                data: [36.83, 35.75, 36.76, 37.31, 35.57, 36.82, 26.01],
+                data: [23.67, 22.38, 22.39, 23.67, 13.12, 13.12, 13.12],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

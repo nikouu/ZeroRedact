@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">87.730 ns</td><td class="number-col">91.973 ns</td><td class="number-col">89.920 ns</td><td class="number-col">90.203 ns</td><td class="number-col">90.045 ns</td><td class="number-col">86.637 ns</td><td class="number-col">73.704 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">87.408 ns</td><td class="number-col">90.642 ns</td><td class="number-col">95.330 ns</td><td class="number-col">89.517 ns</td><td class="number-col">87.840 ns</td><td class="number-col">89.421 ns</td><td class="number-col">74.610 ns</td></tr>
+            <tr><td class="method-col">RedactkDate_DateTime</td><td class="number-col">44.289 ns</td><td class="number-col">42.788 ns</td><td class="number-col">43.758 ns</td><td class="number-col">42.809 ns</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">43.955 ns</td><td class="number-col">41.561 ns</td><td class="number-col">43.377 ns</td><td class="number-col">43.070 ns</td><td class="number-col">29.333 ns</td><td class="number-col">29.333 ns</td><td class="number-col">29.333 ns</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">29.515 ns</td><td class="number-col">29.515 ns</td><td class="number-col">29.515 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -99,7 +99,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr>
+            <tr><td class="method-col">RedactkDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr>
         </tbody>
     </table>
 </div>
@@ -114,17 +114,24 @@
             labels: versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks,
             datasets: [
             {
-                label: 'RedactDate_DateTime',
-                data: [87.73, 91.97, 89.92, 90.20, 90.04, 86.64, 73.70],
+                label: 'RedactkDate_DateTime',
+                data: [44.29, 42.79, 43.76, 42.81, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateOnly',
-                data: [87.41, 90.64, 95.33, 89.52, 87.84, 89.42, 74.61],
+                data: [43.96, 41.56, 43.38, 43.07, 29.33, 29.33, 29.33],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
+                tension: 0.1
+            },
+            {
+                label: 'RedactDate_DateTime',
+                data: [null, null, null, null, 29.51, 29.51, 29.51],
+                borderColor: '#FFCE56',
+                backgroundColor: '#FFCE5633',
                 tension: 0.1
             }]
         },
@@ -167,8 +174,8 @@
             labels: versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks,
             datasets: [
             {
-                label: 'RedactDate_DateTime',
-                data: [40, 40, 40, 40, 40, 40, 40],
+                label: 'RedactkDate_DateTime',
+                data: [40, 40, 40, 40, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
@@ -178,6 +185,13 @@
                 data: [40, 40, 40, 40, 40, 40, 40],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
+                tension: 0.1
+            },
+            {
+                label: 'RedactDate_DateTime',
+                data: [null, null, null, null, 40, 40, 40],
+                borderColor: '#FFCE56',
+                backgroundColor: '#FFCE5633',
                 tension: 0.1
             }]
         },
