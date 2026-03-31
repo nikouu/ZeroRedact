@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">22.694 ns</td><td class="number-col">22.169 ns</td><td class="number-col">22.116 ns</td><td class="number-col">22.566 ns</td><td class="number-col">12.811 ns</td><td class="number-col">12.811 ns</td><td class="number-col">12.811 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">22.467 ns</td><td class="number-col">23.112 ns</td><td class="number-col">23.285 ns</td><td class="number-col">21.978 ns</td><td class="number-col">13.135 ns</td><td class="number-col">13.135 ns</td><td class="number-col">13.135 ns</td></tr>
+            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">21.981 ns</td><td class="number-col">21.705 ns</td><td class="number-col">22.343 ns</td><td class="number-col">22.403 ns</td><td class="number-col">17.193 ns</td><td class="number-col">13.364 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">23.032 ns</td><td class="number-col">22.600 ns</td><td class="number-col">22.303 ns</td><td class="number-col">22.560 ns</td><td class="number-col">22.953 ns</td><td class="number-col">12.914 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
+            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td><td class="number-col">48 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactIPv4Benchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactIPv4_String',
-                data: [22.69, 22.17, 22.12, 22.57, 12.81, 12.81, 12.81],
+                data: [21.98, 21.70, 22.34, 22.40, 17.19, 13.36],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv4_ReadOnlySpan',
-                data: [22.47, 23.11, 23.28, 21.98, 13.14, 13.14, 13.14],
+                data: [23.03, 22.60, 22.30, 22.56, 22.95, 12.91],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactIPv4_String',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv4_ReadOnlySpan',
-                data: [48, 48, 48, 48, 48, 48, 48],
+                data: [48, 48, 48, 48, 48, 48],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

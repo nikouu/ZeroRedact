@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactkDate_DateTime</td><td class="number-col">44.289 ns</td><td class="number-col">42.788 ns</td><td class="number-col">43.758 ns</td><td class="number-col">42.809 ns</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">43.955 ns</td><td class="number-col">41.561 ns</td><td class="number-col">43.377 ns</td><td class="number-col">43.070 ns</td><td class="number-col">29.333 ns</td><td class="number-col">29.333 ns</td><td class="number-col">29.333 ns</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">29.515 ns</td><td class="number-col">29.515 ns</td><td class="number-col">29.515 ns</td></tr>
+            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">41.829 ns</td><td class="number-col">42.792 ns</td><td class="number-col">43.634 ns</td><td class="number-col">-</td><td class="number-col">43.495 ns</td><td class="number-col">31.289 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">42.684 ns</td><td class="number-col">43.104 ns</td><td class="number-col">43.009 ns</td><td class="number-col">51.865 ns</td><td class="number-col">42.221 ns</td><td class="number-col">31.558 ns</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">43.423 ns</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactkDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr>
+            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks'), {
@@ -114,22 +114,22 @@
             labels: versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks,
             datasets: [
             {
-                label: 'RedactkDate_DateTime',
-                data: [44.29, 42.79, 43.76, 42.81, null, null, null],
+                label: 'RedactDate_DateTime',
+                data: [41.83, 42.79, 43.63, null, 43.49, 31.29],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateOnly',
-                data: [43.96, 41.56, 43.38, 43.07, 29.33, 29.33, 29.33],
+                data: [42.68, 43.10, 43.01, 51.87, 42.22, 31.56],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateTime',
-                data: [null, null, null, null, 29.51, 29.51, 29.51],
+                data: [null, null, null, 43.42, null, null],
                 borderColor: '#FFCE56',
                 backgroundColor: '#FFCE5633',
                 tension: 0.1
@@ -174,22 +174,22 @@
             labels: versions_ZeroRedact_Benchmark_Redactors_RedactDateBenchmarks,
             datasets: [
             {
-                label: 'RedactkDate_DateTime',
-                data: [40, 40, 40, 40, null, null, null],
+                label: 'RedactDate_DateTime',
+                data: [40, 40, 40, null, 40, 40],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateOnly',
-                data: [40, 40, 40, 40, 40, 40, 40],
+                data: [40, 40, 40, 40, 40, 40],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateTime',
-                data: [null, null, null, null, 40, 40, 40],
+                data: [null, null, null, 40, null, null],
                 borderColor: '#FFCE56',
                 backgroundColor: '#FFCE5633',
                 tension: 0.1

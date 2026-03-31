@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">3.755 ns</td><td class="number-col">3.679 ns</td><td class="number-col">3.647 ns</td><td class="number-col">3.706 ns</td><td class="number-col">6.156 ns</td><td class="number-col">6.156 ns</td><td class="number-col">6.156 ns</td></tr>
+            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">3.675 ns</td><td class="number-col">3.710 ns</td><td class="number-col">3.698 ns</td><td class="number-col">3.736 ns</td><td class="number-col">3.745 ns</td><td class="number-col">6.231 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Validators_EmailValidatorBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Validators_EmailValidatorBenchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Validators_EmailValidatorBenchmarks'), {
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateEmailAddresses',
-                data: [3.76, 3.68, 3.65, 3.71, 6.16, 6.16, 6.16],
+                data: [3.68, 3.71, 3.70, 3.74, 3.75, 6.23],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
@@ -161,7 +161,7 @@
             datasets: [
             {
                 label: 'ValidateEmailAddresses',
-                data: [null, null, null, null, null, null, null],
+                data: [null, null, null, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

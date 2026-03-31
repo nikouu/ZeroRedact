@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">22.511 ns</td><td class="number-col">22.642 ns</td><td class="number-col">22.765 ns</td><td class="number-col">22.156 ns</td><td class="number-col">12.727 ns</td><td class="number-col">12.727 ns</td><td class="number-col">12.727 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">23.006 ns</td><td class="number-col">23.332 ns</td><td class="number-col">22.882 ns</td><td class="number-col">23.351 ns</td><td class="number-col">13.654 ns</td><td class="number-col">13.654 ns</td><td class="number-col">13.654 ns</td></tr>
+            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">22.671 ns</td><td class="number-col">22.359 ns</td><td class="number-col">22.163 ns</td><td class="number-col">21.617 ns</td><td class="number-col">17.602 ns</td><td class="number-col">12.885 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">23.113 ns</td><td class="number-col">23.345 ns</td><td class="number-col">22.959 ns</td><td class="number-col">22.356 ns</td><td class="number-col">22.349 ns</td><td class="number-col">14.096 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td></tr>
+            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td><td class="number-col">56 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactCreditCardBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactCreditCardBenchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactCreditCardBenchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactCreditCard_String',
-                data: [22.51, 22.64, 22.77, 22.16, 12.73, 12.73, 12.73],
+                data: [22.67, 22.36, 22.16, 21.62, 17.60, 12.89],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactCreditCard_ReadOnlySpan',
-                data: [23.01, 23.33, 22.88, 23.35, 13.65, 13.65, 13.65],
+                data: [23.11, 23.35, 22.96, 22.36, 22.35, 14.10],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactCreditCard_String',
-                data: [56, 56, 56, 56, 56, 56, 56],
+                data: [56, 56, 56, 56, 56, 56],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactCreditCard_ReadOnlySpan',
-                data: [56, 56, 56, 56, 56, 56, 56],
+                data: [56, 56, 56, 56, 56, 56],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

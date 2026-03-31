@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactString_String</td><td class="number-col">12.620 ns</td><td class="number-col">22.441 ns</td><td class="number-col">12.944 ns</td><td class="number-col">25.605 ns</td><td class="number-col">4.933 ns</td><td class="number-col">4.933 ns</td><td class="number-col">4.933 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">13.045 ns</td><td class="number-col">12.365 ns</td><td class="number-col">12.622 ns</td><td class="number-col">12.627 ns</td><td class="number-col">5.664 ns</td><td class="number-col">5.664 ns</td><td class="number-col">5.664 ns</td></tr>
+            <tr><td class="method-col">RedactString_String</td><td class="number-col">10.671 ns</td><td class="number-col">10.802 ns</td><td class="number-col">12.777 ns</td><td class="number-col">11.402 ns</td><td class="number-col">12.166 ns</td><td class="number-col">5.160 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">13.374 ns</td><td class="number-col">12.439 ns</td><td class="number-col">12.966 ns</td><td class="number-col">12.835 ns</td><td class="number-col">13.179 ns</td><td class="number-col">5.807 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactString_String</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td></tr>
+            <tr><td class="method-col">RedactString_String</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td><td class="number-col">80 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactStringBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactStringBenchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactStringBenchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactString_String',
-                data: [12.62, 22.44, 12.94, 25.60, 4.93, 4.93, 4.93],
+                data: [10.67, 10.80, 12.78, 11.40, 12.17, 5.16],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactString_ReadOnlySpan',
-                data: [13.05, 12.36, 12.62, 12.63, 5.66, 5.66, 5.66],
+                data: [13.37, 12.44, 12.97, 12.84, 13.18, 5.81],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactString_String',
-                data: [80, 80, 80, 80, 80, 80, 80],
+                data: [80, 80, 80, 80, 80, 80],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactString_ReadOnlySpan',
-                data: [80, 80, 80, 80, 80, 80, 80],
+                data: [80, 80, 80, 80, 80, 80],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

@@ -74,11 +74,11 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">31.188 ns</td><td class="number-col">32.353 ns</td><td class="number-col">30.270 ns</td><td class="number-col">31.960 ns</td><td class="number-col">36.765 ns</td><td class="number-col">36.765 ns</td><td class="number-col">36.765 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">31.439 ns</td><td class="number-col">32.132 ns</td><td class="number-col">31.033 ns</td><td class="number-col">33.164 ns</td><td class="number-col">36.909 ns</td><td class="number-col">36.909 ns</td><td class="number-col">36.909 ns</td></tr>
+            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">32.314 ns</td><td class="number-col">31.014 ns</td><td class="number-col">32.316 ns</td><td class="number-col">32.045 ns</td><td class="number-col">26.319 ns</td><td class="number-col">38.230 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">31.106 ns</td><td class="number-col">31.529 ns</td><td class="number-col">30.856 ns</td><td class="number-col">31.241 ns</td><td class="number-col">30.651 ns</td><td class="number-col">39.498 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -95,17 +95,17 @@
         <thead>
             <tr>
                 <th class="method-col">Method</th>
-                <th class="number-col">2.0.0</th><th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
+                <th class="number-col">2.1.0</th><th class="number-col">2.2.0</th><th class="number-col">2.3.0</th><th class="number-col">2.4.0</th><th class="number-col">2.4.1</th><th class="number-col">3.0.0</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td></tr>
+            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td><td class="number-col">224 B</td></tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    const versions_ZeroRedact_Benchmark_Redactors_RedactEmailAddressBenchmarks = ["2.0.0", "2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
+    const versions_ZeroRedact_Benchmark_Redactors_RedactEmailAddressBenchmarks = ["2.1.0", "2.2.0", "2.3.0", "2.4.0", "2.4.1", "3.0.0"];
     
     // Duration Chart
     new Chart(document.getElementById('durationChart_ZeroRedact_Benchmark_Redactors_RedactEmailAddressBenchmarks'), {
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactEmailAddress_String',
-                data: [31.19, 32.35, 30.27, 31.96, 36.76, 36.76, 36.76],
+                data: [32.31, 31.01, 32.32, 32.05, 26.32, 38.23],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactEmailAddress_ReadOnlySpan',
-                data: [31.44, 32.13, 31.03, 33.16, 36.91, 36.91, 36.91],
+                data: [31.11, 31.53, 30.86, 31.24, 30.65, 39.50],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
@@ -168,14 +168,14 @@
             datasets: [
             {
                 label: 'RedactEmailAddress_String',
-                data: [224, 224, 224, 224, 224, 224, 224],
+                data: [224, 224, 224, 224, 224, 224],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactEmailAddress_ReadOnlySpan',
-                data: [224, 224, 224, 224, 224, 224, 224],
+                data: [224, 224, 224, 224, 224, 224],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
