@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">22.254 ns</td><td class="number-col">21.581 ns</td><td class="number-col">21.418 ns</td><td class="number-col">21.677 ns</td><td class="number-col">17.594 ns</td><td class="number-col">12.551 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">21.955 ns</td><td class="number-col">22.121 ns</td><td class="number-col">22.091 ns</td><td class="number-col">22.339 ns</td><td class="number-col">23.132 ns</td><td class="number-col">13.503 ns</td></tr>
+            <tr><td class="method-col">RedactPhoneNumber_String</td><td class="number-col">22.730 ns</td><td class="number-col">21.809 ns</td><td class="number-col">21.193 ns</td><td class="number-col">21.977 ns</td><td class="number-col">18.023 ns</td><td class="number-col">12.773 ns</td></tr><tr><td class="method-col">RedactPhoneNumber_ReadOnlySpan</td><td class="number-col">23.235 ns</td><td class="number-col">23.733 ns</td><td class="number-col">22.046 ns</td><td class="number-col">22.753 ns</td><td class="number-col">22.513 ns</td><td class="number-col">13.899 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactPhoneNumber_String',
-                data: [22.25, 21.58, 21.42, 21.68, 17.59, 12.55],
+                data: [22.73, 21.81, 21.19, 21.98, 18.02, 12.77],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactPhoneNumber_ReadOnlySpan',
-                data: [21.96, 22.12, 22.09, 22.34, 23.13, 13.50],
+                data: [23.23, 23.73, 22.05, 22.75, 22.51, 13.90],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

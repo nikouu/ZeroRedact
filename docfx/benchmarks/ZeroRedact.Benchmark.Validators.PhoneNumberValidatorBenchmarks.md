@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">-</td><td class="number-col">7.780 ns</td><td class="number-col">7.835 ns</td><td class="number-col">7.929 ns</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">ValidatePhoneNumber</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">7.773 ns</td><td class="number-col">4.224 ns</td></tr>
+            <tr><td class="method-col">ValidatePhoneNumber</td><td class="number-col">-</td><td class="number-col">7.931 ns</td><td class="number-col">7.966 ns</td><td class="number-col">7.813 ns</td><td class="number-col">8.009 ns</td><td class="number-col">4.220 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -99,7 +99,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr><tr><td class="method-col">ValidatePhoneNumber</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">ValidatePhoneNumber</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td></tr>
         </tbody>
     </table>
 </div>
@@ -114,17 +114,10 @@
             labels: versions_ZeroRedact_Benchmark_Validators_PhoneNumberValidatorBenchmarks,
             datasets: [
             {
-                label: 'ValidateMacAddresses',
-                data: [null, 7.78, 7.84, 7.93, null, null],
+                label: 'ValidatePhoneNumber',
+                data: [null, 7.93, 7.97, 7.81, 8.01, 4.22],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
-                tension: 0.1
-            },
-            {
-                label: 'ValidatePhoneNumber',
-                data: [null, null, null, null, 7.77, 4.22],
-                borderColor: '#36A2EB',
-                backgroundColor: '#36A2EB33',
                 tension: 0.1
             }]
         },
@@ -167,17 +160,10 @@
             labels: versions_ZeroRedact_Benchmark_Validators_PhoneNumberValidatorBenchmarks,
             datasets: [
             {
-                label: 'ValidateMacAddresses',
+                label: 'ValidatePhoneNumber',
                 data: [null, null, null, null, null, null],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
-                tension: 0.1
-            },
-            {
-                label: 'ValidatePhoneNumber',
-                data: [null, null, null, null, null, null],
-                borderColor: '#36A2EB',
-                backgroundColor: '#36A2EB33',
                 tension: 0.1
             }]
         },

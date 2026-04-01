@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv6_String</td><td class="number-col">24.982 ns</td><td class="number-col">24.656 ns</td><td class="number-col">24.479 ns</td><td class="number-col">24.839 ns</td><td class="number-col">20.163 ns</td><td class="number-col">16.500 ns</td></tr><tr><td class="method-col">RedactIPv6_ReadOnlySpan</td><td class="number-col">24.752 ns</td><td class="number-col">24.860 ns</td><td class="number-col">25.068 ns</td><td class="number-col">25.127 ns</td><td class="number-col">24.861 ns</td><td class="number-col">16.599 ns</td></tr>
+            <tr><td class="method-col">RedactIPv6_String</td><td class="number-col">25.102 ns</td><td class="number-col">25.342 ns</td><td class="number-col">25.124 ns</td><td class="number-col">24.596 ns</td><td class="number-col">20.005 ns</td><td class="number-col">16.480 ns</td></tr><tr><td class="method-col">RedactIPv6_ReadOnlySpan</td><td class="number-col">25.871 ns</td><td class="number-col">24.949 ns</td><td class="number-col">24.756 ns</td><td class="number-col">24.880 ns</td><td class="number-col">25.264 ns</td><td class="number-col">17.363 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactIPv6_String',
-                data: [24.98, 24.66, 24.48, 24.84, 20.16, 16.50],
+                data: [25.10, 25.34, 25.12, 24.60, 20.00, 16.48],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv6_ReadOnlySpan',
-                data: [24.75, 24.86, 25.07, 25.13, 24.86, 16.60],
+                data: [25.87, 24.95, 24.76, 24.88, 25.26, 17.36],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

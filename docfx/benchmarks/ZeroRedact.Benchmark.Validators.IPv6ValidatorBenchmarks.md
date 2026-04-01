@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateIPv6Addresses</td><td class="number-col">3.861 ns</td><td class="number-col">4.099 ns</td><td class="number-col">3.909 ns</td><td class="number-col">4.028 ns</td><td class="number-col">3.992 ns</td><td class="number-col">2.309 ns</td></tr>
+            <tr><td class="method-col">ValidateIPv6Addresses</td><td class="number-col">3.889 ns</td><td class="number-col">3.841 ns</td><td class="number-col">3.853 ns</td><td class="number-col">3.949 ns</td><td class="number-col">3.996 ns</td><td class="number-col">2.006 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateIPv6Addresses',
-                data: [3.86, 4.10, 3.91, 4.03, 3.99, 2.31],
+                data: [3.89, 3.84, 3.85, 3.95, 4.00, 2.01],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

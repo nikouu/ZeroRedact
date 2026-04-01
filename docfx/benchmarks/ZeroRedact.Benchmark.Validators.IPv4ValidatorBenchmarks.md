@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateIPv4Addresses</td><td class="number-col">1.602 ns</td><td class="number-col">1.775 ns</td><td class="number-col">2.143 ns</td><td class="number-col">2.129 ns</td><td class="number-col">1.665 ns</td><td class="number-col">1.188 ns</td></tr>
+            <tr><td class="method-col">ValidateIPv4Addresses</td><td class="number-col">1.821 ns</td><td class="number-col">1.788 ns</td><td class="number-col">1.765 ns</td><td class="number-col">1.783 ns</td><td class="number-col">2.188 ns</td><td class="number-col">1.183 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateIPv4Addresses',
-                data: [1.60, 1.78, 2.14, 2.13, 1.66, 1.19],
+                data: [1.82, 1.79, 1.77, 1.78, 2.19, 1.18],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

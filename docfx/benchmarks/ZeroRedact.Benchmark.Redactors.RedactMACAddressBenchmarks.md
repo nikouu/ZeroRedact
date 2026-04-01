@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactMACAddress_String</td><td class="number-col">22.819 ns</td><td class="number-col">24.248 ns</td><td class="number-col">21.941 ns</td><td class="number-col">23.491 ns</td><td class="number-col">17.630 ns</td><td class="number-col">13.878 ns</td></tr><tr><td class="method-col">RedactMACAddress_ReadOnlySpan</td><td class="number-col">23.389 ns</td><td class="number-col">22.570 ns</td><td class="number-col">22.486 ns</td><td class="number-col">23.152 ns</td><td class="number-col">23.008 ns</td><td class="number-col">14.514 ns</td></tr>
+            <tr><td class="method-col">RedactMACAddress_String</td><td class="number-col">28.200 ns</td><td class="number-col">23.560 ns</td><td class="number-col">24.206 ns</td><td class="number-col">24.441 ns</td><td class="number-col">18.422 ns</td><td class="number-col">14.415 ns</td></tr><tr><td class="method-col">RedactMACAddress_ReadOnlySpan</td><td class="number-col">24.459 ns</td><td class="number-col">23.148 ns</td><td class="number-col">23.548 ns</td><td class="number-col">23.046 ns</td><td class="number-col">23.248 ns</td><td class="number-col">15.237 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactMACAddress_String',
-                data: [22.82, 24.25, 21.94, 23.49, 17.63, 13.88],
+                data: [28.20, 23.56, 24.21, 24.44, 18.42, 14.42],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactMACAddress_ReadOnlySpan',
-                data: [23.39, 22.57, 22.49, 23.15, 23.01, 14.51],
+                data: [24.46, 23.15, 23.55, 23.05, 23.25, 15.24],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

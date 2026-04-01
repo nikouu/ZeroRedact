@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">3.675 ns</td><td class="number-col">3.710 ns</td><td class="number-col">3.698 ns</td><td class="number-col">3.736 ns</td><td class="number-col">3.745 ns</td><td class="number-col">6.231 ns</td></tr>
+            <tr><td class="method-col">ValidateEmailAddresses</td><td class="number-col">3.790 ns</td><td class="number-col">3.485 ns</td><td class="number-col">3.651 ns</td><td class="number-col">3.751 ns</td><td class="number-col">3.734 ns</td><td class="number-col">6.409 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateEmailAddresses',
-                data: [3.68, 3.71, 3.70, 3.74, 3.75, 6.23],
+                data: [3.79, 3.49, 3.65, 3.75, 3.73, 6.41],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

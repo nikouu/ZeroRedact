@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactString_String</td><td class="number-col">10.671 ns</td><td class="number-col">10.802 ns</td><td class="number-col">12.777 ns</td><td class="number-col">11.402 ns</td><td class="number-col">12.166 ns</td><td class="number-col">5.160 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">13.374 ns</td><td class="number-col">12.439 ns</td><td class="number-col">12.966 ns</td><td class="number-col">12.835 ns</td><td class="number-col">13.179 ns</td><td class="number-col">5.807 ns</td></tr>
+            <tr><td class="method-col">RedactString_String</td><td class="number-col">12.432 ns</td><td class="number-col">12.769 ns</td><td class="number-col">11.234 ns</td><td class="number-col">12.126 ns</td><td class="number-col">11.714 ns</td><td class="number-col">4.884 ns</td></tr><tr><td class="method-col">RedactString_ReadOnlySpan</td><td class="number-col">13.455 ns</td><td class="number-col">12.408 ns</td><td class="number-col">13.094 ns</td><td class="number-col">13.123 ns</td><td class="number-col">11.984 ns</td><td class="number-col">5.368 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactString_String',
-                data: [10.67, 10.80, 12.78, 11.40, 12.17, 5.16],
+                data: [12.43, 12.77, 11.23, 12.13, 11.71, 4.88],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactString_ReadOnlySpan',
-                data: [13.37, 12.44, 12.97, 12.84, 13.18, 5.81],
+                data: [13.45, 12.41, 13.09, 13.12, 11.98, 5.37],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

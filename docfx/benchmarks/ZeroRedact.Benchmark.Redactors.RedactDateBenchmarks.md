@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">41.829 ns</td><td class="number-col">42.792 ns</td><td class="number-col">43.634 ns</td><td class="number-col">-</td><td class="number-col">43.495 ns</td><td class="number-col">31.289 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">42.684 ns</td><td class="number-col">43.104 ns</td><td class="number-col">43.009 ns</td><td class="number-col">51.865 ns</td><td class="number-col">42.221 ns</td><td class="number-col">31.558 ns</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">43.423 ns</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">43.985 ns</td><td class="number-col">42.685 ns</td><td class="number-col">43.192 ns</td><td class="number-col">46.569 ns</td><td class="number-col">43.026 ns</td><td class="number-col">29.077 ns</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">44.162 ns</td><td class="number-col">42.711 ns</td><td class="number-col">44.258 ns</td><td class="number-col">44.343 ns</td><td class="number-col">42.962 ns</td><td class="number-col">31.620 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -99,7 +99,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">-</td><td class="number-col">40 B</td><td class="number-col">-</td><td class="number-col">-</td></tr>
+            <tr><td class="method-col">RedactDate_DateTime</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr><tr><td class="method-col">RedactDate_DateOnly</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td><td class="number-col">40 B</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,23 +115,16 @@
             datasets: [
             {
                 label: 'RedactDate_DateTime',
-                data: [41.83, 42.79, 43.63, null, 43.49, 31.29],
+                data: [43.99, 42.69, 43.19, 46.57, 43.03, 29.08],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactDate_DateOnly',
-                data: [42.68, 43.10, 43.01, 51.87, 42.22, 31.56],
+                data: [44.16, 42.71, 44.26, 44.34, 42.96, 31.62],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
-                tension: 0.1
-            },
-            {
-                label: 'RedactDate_DateTime',
-                data: [null, null, null, 43.42, null, null],
-                borderColor: '#FFCE56',
-                backgroundColor: '#FFCE5633',
                 tension: 0.1
             }]
         },
@@ -175,7 +168,7 @@
             datasets: [
             {
                 label: 'RedactDate_DateTime',
-                data: [40, 40, 40, null, 40, 40],
+                data: [40, 40, 40, 40, 40, 40],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
@@ -185,13 +178,6 @@
                 data: [40, 40, 40, 40, 40, 40],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
-                tension: 0.1
-            },
-            {
-                label: 'RedactDate_DateTime',
-                data: [null, null, null, 40, null, null],
-                borderColor: '#FFCE56',
-                backgroundColor: '#FFCE5633',
                 tension: 0.1
             }]
         },

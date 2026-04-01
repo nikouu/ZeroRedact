@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">22.671 ns</td><td class="number-col">22.359 ns</td><td class="number-col">22.163 ns</td><td class="number-col">21.617 ns</td><td class="number-col">17.602 ns</td><td class="number-col">12.885 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">23.113 ns</td><td class="number-col">23.345 ns</td><td class="number-col">22.959 ns</td><td class="number-col">22.356 ns</td><td class="number-col">22.349 ns</td><td class="number-col">14.096 ns</td></tr>
+            <tr><td class="method-col">RedactCreditCard_String</td><td class="number-col">22.818 ns</td><td class="number-col">20.856 ns</td><td class="number-col">22.835 ns</td><td class="number-col">22.711 ns</td><td class="number-col">18.239 ns</td><td class="number-col">13.510 ns</td></tr><tr><td class="method-col">RedactCreditCard_ReadOnlySpan</td><td class="number-col">22.659 ns</td><td class="number-col">22.752 ns</td><td class="number-col">23.455 ns</td><td class="number-col">22.939 ns</td><td class="number-col">23.244 ns</td><td class="number-col">13.955 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactCreditCard_String',
-                data: [22.67, 22.36, 22.16, 21.62, 17.60, 12.89],
+                data: [22.82, 20.86, 22.83, 22.71, 18.24, 13.51],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactCreditCard_ReadOnlySpan',
-                data: [23.11, 23.35, 22.96, 22.36, 22.35, 14.10],
+                data: [22.66, 22.75, 23.46, 22.94, 23.24, 13.95],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

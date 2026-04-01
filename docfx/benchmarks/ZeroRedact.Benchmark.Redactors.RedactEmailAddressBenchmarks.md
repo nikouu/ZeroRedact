@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">32.314 ns</td><td class="number-col">31.014 ns</td><td class="number-col">32.316 ns</td><td class="number-col">32.045 ns</td><td class="number-col">26.319 ns</td><td class="number-col">38.230 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">31.106 ns</td><td class="number-col">31.529 ns</td><td class="number-col">30.856 ns</td><td class="number-col">31.241 ns</td><td class="number-col">30.651 ns</td><td class="number-col">39.498 ns</td></tr>
+            <tr><td class="method-col">RedactEmailAddress_String</td><td class="number-col">30.313 ns</td><td class="number-col">32.402 ns</td><td class="number-col">30.891 ns</td><td class="number-col">32.530 ns</td><td class="number-col">26.107 ns</td><td class="number-col">38.717 ns</td></tr><tr><td class="method-col">RedactEmailAddress_ReadOnlySpan</td><td class="number-col">31.787 ns</td><td class="number-col">31.413 ns</td><td class="number-col">31.793 ns</td><td class="number-col">32.804 ns</td><td class="number-col">32.469 ns</td><td class="number-col">39.980 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactEmailAddress_String',
-                data: [32.31, 31.01, 32.32, 32.05, 26.32, 38.23],
+                data: [30.31, 32.40, 30.89, 32.53, 26.11, 38.72],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactEmailAddress_ReadOnlySpan',
-                data: [31.11, 31.53, 30.86, 31.24, 30.65, 39.50],
+                data: [31.79, 31.41, 31.79, 32.80, 32.47, 39.98],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1

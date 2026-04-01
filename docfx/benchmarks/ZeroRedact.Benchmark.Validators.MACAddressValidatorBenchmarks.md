@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">1.937 ns</td><td class="number-col">2.034 ns</td><td class="number-col">1.976 ns</td><td class="number-col">1.983 ns</td><td class="number-col">1.967 ns</td><td class="number-col">1.226 ns</td></tr>
+            <tr><td class="method-col">ValidateMacAddresses</td><td class="number-col">1.932 ns</td><td class="number-col">1.998 ns</td><td class="number-col">1.990 ns</td><td class="number-col">1.954 ns</td><td class="number-col">1.983 ns</td><td class="number-col">1.246 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,7 +115,7 @@
             datasets: [
             {
                 label: 'ValidateMacAddresses',
-                data: [1.94, 2.03, 1.98, 1.98, 1.97, 1.23],
+                data: [1.93, 2.00, 1.99, 1.95, 1.98, 1.25],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1

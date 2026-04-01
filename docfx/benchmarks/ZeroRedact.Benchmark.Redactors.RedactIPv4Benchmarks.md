@@ -78,7 +78,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">21.981 ns</td><td class="number-col">21.705 ns</td><td class="number-col">22.343 ns</td><td class="number-col">22.403 ns</td><td class="number-col">17.193 ns</td><td class="number-col">13.364 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">23.032 ns</td><td class="number-col">22.600 ns</td><td class="number-col">22.303 ns</td><td class="number-col">22.560 ns</td><td class="number-col">22.953 ns</td><td class="number-col">12.914 ns</td></tr>
+            <tr><td class="method-col">RedactIPv4_String</td><td class="number-col">22.475 ns</td><td class="number-col">21.087 ns</td><td class="number-col">22.737 ns</td><td class="number-col">22.644 ns</td><td class="number-col">17.264 ns</td><td class="number-col">13.413 ns</td></tr><tr><td class="method-col">RedactIPv4_ReadOnlySpan</td><td class="number-col">22.773 ns</td><td class="number-col">22.734 ns</td><td class="number-col">22.627 ns</td><td class="number-col">22.756 ns</td><td class="number-col">22.307 ns</td><td class="number-col">13.664 ns</td></tr>
         </tbody>
     </table>
 </div>
@@ -115,14 +115,14 @@
             datasets: [
             {
                 label: 'RedactIPv4_String',
-                data: [21.98, 21.70, 22.34, 22.40, 17.19, 13.36],
+                data: [22.47, 21.09, 22.74, 22.64, 17.26, 13.41],
                 borderColor: '#FF6384',
                 backgroundColor: '#FF638433',
                 tension: 0.1
             },
             {
                 label: 'RedactIPv4_ReadOnlySpan',
-                data: [23.03, 22.60, 22.30, 22.56, 22.95, 12.91],
+                data: [22.77, 22.73, 22.63, 22.76, 22.31, 13.66],
                 borderColor: '#36A2EB',
                 backgroundColor: '#36A2EB33',
                 tension: 0.1
